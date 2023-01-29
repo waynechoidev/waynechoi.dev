@@ -1,8 +1,20 @@
 import Head from "next/head";
-import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
+import { GetStaticProps } from "next";
+import { getBlogList } from "@/service";
 
-export default function Home() {
+interface HomeProps {
+  posts: {
+    slug: string;
+    title: string;
+    date: string;
+    tag: string[];
+    excerpt: string;
+    content: string;
+  }[];
+}
+
+export default function Home({ posts }: HomeProps) {
   return (
     <>
       <Head>
@@ -15,6 +27,20 @@ export default function Home() {
         Blog
       </Typography>
       <main className="text-3xl font-bold underline">Hello world</main>
+      {posts.map((post, index) => (
+        <a href={post.slug} key={index}>
+          <p>{post.title}</p>
+        </a>
+      ))}
     </>
   );
 }
+
+export const getStaticProps: GetStaticProps = async () => {
+  const posts = getBlogList();
+  return {
+    props: {
+      posts,
+    },
+  };
+};
