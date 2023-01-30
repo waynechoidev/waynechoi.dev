@@ -2,6 +2,7 @@ import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
 import { GetStaticPropsContext } from "next";
+import { projectList } from "@/constant";
 
 export const getBlogList = () => {
   const files = fs.readdirSync(path.join("posts"));
@@ -59,5 +60,32 @@ export const getPostProps = (context: GetStaticPropsContext) => {
   const { title, date, tag, excerpt } = frontMatter;
   return {
     props: { title, date, tag, excerpt, content },
+  };
+};
+
+export const getProjectPath = () => {
+  const paths = projectList.map((project) => ({
+    params: {
+      slug: project.slug,
+    },
+  }));
+
+  return {
+    paths,
+    fallback: false,
+  };
+};
+
+export const getProjectProps = async (context: GetStaticPropsContext) => {
+  const slug = context.params?.slug;
+
+  const project = projectList.find((project) => project.slug === slug);
+  if (!project) return;
+
+  const response = await fetch(project.markdown);
+  const markdownWithMeta = await response.text();
+  const { content } = matter(markdownWithMeta);
+  return {
+    props: { content },
   };
 };
