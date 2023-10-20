@@ -27,8 +27,8 @@ export default function About() {
           platforms. Strugling with mathematics, and computer science.
         </p>
         <p className="my-2">
-          NZ qualified boat builder with 7 years past experience. Maybe the
-          software engineer who is the most skilled at building boats
+          NZ qualified boat builder with 7 years past experience. Maybe one of
+          the software engineer who is the most skilled at building boats
           nationwide.
         </p>
         <div className="flex flex-row space-x-3 mt-10">
