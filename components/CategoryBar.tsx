@@ -12,7 +12,7 @@ export default function CategoryBar({
   categoryList,
 }: CategoryBarProps) {
   return (
-    <div>
+    <div className="whitespace-nowrap overflow-x-auto pb-3">
       <CategoryItem category="all" highlight={!currentCategory} link="/posts" />
       {categoryList.map((category) => (
         <CategoryItem

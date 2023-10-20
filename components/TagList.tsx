@@ -7,7 +7,7 @@ interface TagListProps {
 
 export default function TagList({ tags }: TagListProps) {
   return (
-    <>
+    <div className="whitespace-nowrap overflow-x-auto pb-3">
       {tags.map((tag) => (
         <Link
           href={`/tag/${tag}`}
@@ -17,6 +17,6 @@ export default function TagList({ tags }: TagListProps) {
           {`#${tag}`}
         </Link>
       ))}
-    </>
+    </div>
   );
 }
