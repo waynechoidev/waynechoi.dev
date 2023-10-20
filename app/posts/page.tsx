@@ -1,14 +1,14 @@
 import CategoryBar from "@/components/CategoryBar";
 import PostList from "@/components/PostList";
-import { getPostList } from "@/lib/posts";
+import { categoryList, getPostList } from "@/lib/posts";
 
 export default function Posts() {
-  const { data, categoryList } = getPostList();
+  const posts = getPostList();
+  console.log(categoryList);
   return (
     <>
       <CategoryBar categoryList={categoryList} />
-      <h2 className="pl-2">ALL POSTS</h2>
-      <PostList list={data} />
+      <PostList list={posts} />
     </>
   );
 }

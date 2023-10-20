@@ -30,7 +30,7 @@ export default function Post({
 }
 
 export async function generateStaticParams() {
-  return getPostList().data.map((post) => ({
+  return getPostList().map((post) => ({
     category: post.category,
     slug: post.slug,
   }));

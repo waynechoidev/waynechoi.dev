@@ -12,7 +12,7 @@ export default function CategoryBar({
   categoryList,
 }: CategoryBarProps) {
   return (
-    <div className="whitespace-nowrap overflow-x-auto pb-3">
+    <>
       <CategoryItem category="all" highlight={!currentCategory} link="/posts" />
       {categoryList.map((category) => (
         <CategoryItem
@@ -22,7 +22,7 @@ export default function CategoryBar({
           link={`/posts/${category}`}
         />
       ))}
-    </div>
+    </>
   );
 }
 
@@ -40,7 +40,7 @@ function CategoryItem({
       <span
         className={`px-3 text-lg ${highlight ? "font-bold" : "font-normal"}`}
       >
-        {category.replaceAll("_", " ").toUpperCase()}
+        {category.toUpperCase()}
       </span>
     </Link>
   );

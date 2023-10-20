@@ -29,11 +29,13 @@ img {
   width: 100%;
 }
 
-h1,
+h1 {
+  color: #222;
+  font-family: Georgia, serif;
+  font-style: italic;
+}
+
 h2,
 h3 {
   color: #222;
-  font-family: Georgia, serif;
-  font-weight: bold;
-  font-style: italic;
 }

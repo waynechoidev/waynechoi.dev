@@ -18,13 +18,10 @@ export type postDataType = {
   content: string;
 };
 
-type getPostListParams = { category?: string; picks?: string[] };
-
-export const categoryList = ["Web", "Web Graphics", "Native Graphics", "CS"];
+export const categoryList = ["graphics", "web", "cs"];
 
 export const getPostList = () => {
   const files = fs.readdirSync(path.join("posts"));
-  const categoryList: string[] = [];
 
   const posts: postListType[] = files
     .map((filename) => {
@@ -40,10 +37,6 @@ export const getPostList = () => {
         frontMatter;
       const { tags }: { [eky: string]: string[] } = frontMatter;
 
-      if (!categoryList.includes(category)) {
-        categoryList.push(category);
-      }
-
       return {
         category,
         slug,
@@ -57,19 +50,11 @@ export const getPostList = () => {
       return new Date(b.date!).getTime() - new Date(a.date!).getTime();
     });
 
-  return {
-    categoryList: categoryList.sort(),
-    data: posts,
-  };
+  return posts;
 };
 
 export const getPostListByCategory = (category: string) => {
-  const { data, categoryList } = getPostList();
-
-  return {
-    categoryList: categoryList,
-    data: data.filter((post) => post.category === category),
-  };
+  return getPostList().filter((post) => post.category === category);
 };
 
 export const getPostListBySlugs = (slugs: string[]) => {
@@ -112,7 +97,7 @@ export const getTags = () => {
   const posts = getPostList();
   const res: string[] = [];
 
-  posts.data.forEach((post) => {
+  posts.forEach((post) => {
     post.tags.forEach((tag) => {
       if (!res.includes(tag)) {
         res.push(tag);
@@ -124,7 +109,5 @@ export const getTags = () => {
 };
 
 export const getPostListByTag = (tag: string) => {
-  const { data } = getPostList();
-
-  return data.filter((post) => post.tags.includes(tag));
+  return getPostList().filter((post) => post.tags.includes(tag));
 };

@@ -9,7 +9,7 @@ export default function Home() {
   ]);
   return (
     <div>
-      <h2 className="pl-2">Pinned</h2>
+      <h2 className="pl-3 my-2">Pinned</h2>
       <PostList list={posts} />
     </div>
   );

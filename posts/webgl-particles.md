@@ -1,7 +1,7 @@
 ---
 title: "Webgl particles"
 date: "Aug 25, 2023"
-category: "web_graphics"
+category: "graphics"
 tags: ["toyproject", "webgl", "particles"]
 excerpt: "Simple particle system using a web-based approach..."
 ---
