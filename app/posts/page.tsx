@@ -7,6 +7,7 @@ export default function Posts() {
   return (
     <>
       <CategoryBar categoryList={categoryList} />
+      <h2 className="pl-2">ALL POSTS</h2>
       <PostList list={data} />
     </>
   );

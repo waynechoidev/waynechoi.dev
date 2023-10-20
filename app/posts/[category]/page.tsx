@@ -10,6 +10,9 @@ export default function Post({ params }: { params: { category: string } }) {
         categoryList={categoryList}
         currentCategory={params.category}
       />
+      <h2 className="pl-2">
+        {params.category.replaceAll("_", " ").toUpperCase()}
+      </h2>
       <PostList list={data} />
     </>
   );
