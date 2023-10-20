@@ -72,28 +72,27 @@ export const getPostListByCategory = (category: string) => {
   };
 };
 
-const getPostListData = (slug: string) => {
-  const markdownWithMeta = fs.readFileSync(
-    path.join("posts", slug + ".md"),
-    "utf-8"
-  );
-
-  const { data: frontMatter } = matter(markdownWithMeta);
-  const { title, date, tags, category, excerpt } = frontMatter;
-  const res: postListType = {
-    title,
-    date,
-    tags,
-    category,
-    slug,
-    excerpt,
-  };
-  return res;
-};
-
 export const getPostListBySlugs = (slugs: string[]) => {
   const res: postListType[] = [];
-  slugs.forEach((slug) => res.push(getPostListData(slug)));
+
+  slugs.forEach((slug) => {
+    const markdownWithMeta = fs.readFileSync(
+      path.join("posts", slug + ".md"),
+      "utf-8"
+    );
+
+    const { data: frontMatter } = matter(markdownWithMeta);
+    const { title, date, tags, category, excerpt } = frontMatter;
+    res.push({
+      title,
+      date,
+      tags,
+      category,
+      slug,
+      excerpt,
+    });
+  });
+
   return res;
 };
 
@@ -107,4 +106,25 @@ export const getPostData = (slug: string) => {
   const { title, date, tags } = frontMatter;
   const res: postDataType = { title, date, tags, content };
   return res;
+};
+
+export const getTags = () => {
+  const posts = getPostList();
+  const res: string[] = [];
+
+  posts.data.forEach((post) => {
+    post.tags.forEach((tag) => {
+      if (!res.includes(tag)) {
+        res.push(tag);
+      }
+    });
+  });
+
+  return res;
+};
+
+export const getPostListByTag = (tag: string) => {
+  const { data } = getPostList();
+
+  return data.filter((post) => post.tags.includes(tag));
 };
