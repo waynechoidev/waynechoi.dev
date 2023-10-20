@@ -38,9 +38,9 @@ function CategoryItem({
   return (
     <Link key={category} href={link} className="hover:text-blue-800">
       <span
-        className={`pl-3 text-lg ${highlight ? "font-bold" : "font-normal"}`}
+        className={`px-3 text-lg ${highlight ? "font-bold" : "font-normal"}`}
       >
-        {formatPascal(category)}
+        {category.replaceAll("_", " ").toUpperCase()}
       </span>
     </Link>
   );

@@ -1,9 +1,9 @@
 "use client";
 
 import { postListType } from "@/lib/posts";
-import Link from "next/link";
 import { useRouter } from "next/navigation";
 import React from "react";
+import TagList from "./TagList";
 
 interface PostListProps {
   list: postListType[];
@@ -23,11 +23,7 @@ export default function PostList({ list }: PostListProps) {
           <h3>{post.title}</h3>
           <p className="text-gray-400 text-sm m-0 mt-1">{post.date}</p>
           <p>{post.excerpt}</p>
-          {post.tags.map((tag) => (
-            <Link href="" key={tag} className="mr-2 text-gray-500">
-              {`#${tag}`}
-            </Link>
-          ))}
+          <TagList tags={post.tags} />
         </div>
       ))}
     </div>

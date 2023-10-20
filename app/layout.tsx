@@ -30,6 +30,11 @@ export default function RootLayout({
           </div>
         </header>
         <div className="max-w-default mx-auto p-5">{children}</div>
+        <footer className="h-24 flex justify-center items-end">
+          <p className="text-gray-500 text-sm">
+            (C) 2023. Wayne Choi. All rights reserved.
+          </p>
+        </footer>
       </body>
     </html>
   );
