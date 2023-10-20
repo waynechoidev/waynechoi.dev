@@ -1,7 +1,8 @@
 ---
 title: "Turing machine simulator"
 date: "Sep 23, 2021"
-tags: ["JavaScript", "Immutability"]
+category: "cs"
+tags: ["toyproject", "turingmachine"]
 excerpt: "Explain primitive and reference data type of JavaScript, and immutability of object..."
 ---
 

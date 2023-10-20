@@ -1,7 +1,8 @@
 ---
 title: "Immutability (2) - Immutable.js, pros and cons"
 date: "Oct 14, 2021"
-tags: ["JavaScript", "Library", "Immutability"]
+category: "web"
+tags: ["javascript", "immutability"]
 excerpt: "How Immutable.js works with persistent data structures, and its pros and cons..."
 ---
 
@@ -69,19 +70,19 @@ const data = {
 };
 ```
 
-<img src="/img/immutability_immutable_js_pros_and_cons-1.png">
+<img src="/img/immutability_immutable_js_pros_and_cons-1.png" class="post-pic">
 
 I made an JS object, and created a trie with same keys and values. A trie is a type of tree where the leaves hold the values, and the paths from the root to the values represent the keys. So I can access a value by traversing the tree to get one letter at a time.
 
 ---
 
-<img src="/img/immutability_immutable_js_pros_and_cons-2.png">
+<img src="/img/immutability_immutable_js_pros_and_cons-2.png" class="post-pic">
 
 For example, if I want to get a value with a key, 'ted', I can start from root, and follow the paths represented 't', 'e', and 'd'. I arrived at a node that contains 4.
 
 ---
 
-<img src="/img/immutability_immutable_js_pros_and_cons-3.png">
+<img src="/img/immutability_immutable_js_pros_and_cons-3.png" class="post-pic">
 
 I changed the value at the key 'ted' from 4 to 8. Other nodes are still used. With this structures, only few nodes are recreated when we change a single item,
 

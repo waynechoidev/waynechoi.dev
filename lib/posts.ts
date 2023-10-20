@@ -3,6 +3,7 @@ import path from "path";
 import matter from "gray-matter";
 
 export type postListType = {
+  category: string;
   slug: string;
   title: string;
   date: string;
@@ -17,9 +18,11 @@ export type postDataType = {
   content: string;
 };
 
-export const getPostList = () => {
-  const files = fs.readdirSync(path.join("posts"));
+export const categoryList = ["Web", "Web Graphics", "Native Graphics", "CS"];
 
+export const getPostList = (category?: string) => {
+  const files = fs.readdirSync(path.join("posts"));
+  const categoryList: string[] = [];
   const posts: postListType[] = files.map((filename) => {
     const slug = filename.replace(".md", "");
 
@@ -29,10 +32,16 @@ export const getPostList = () => {
     );
 
     const { data: frontMatter } = matter(markdownWithMeta);
-    const { title, date, excerpt }: { [key: string]: string } = frontMatter;
+    const { category, title, date, excerpt }: { [key: string]: string } =
+      frontMatter;
     const { tags }: { [eky: string]: string[] } = frontMatter;
 
+    if (!categoryList.includes(category)) {
+      categoryList.push(category);
+    }
+
     return {
+      category,
       slug,
       title,
       date,
@@ -41,9 +50,14 @@ export const getPostList = () => {
     };
   });
 
-  return posts.sort((a, b): number => {
-    return new Date(b.date!).getTime() - new Date(a.date!).getTime();
-  });
+  return {
+    categoryList: categoryList.sort(),
+    data: posts
+      .sort((a, b): number => {
+        return new Date(b.date!).getTime() - new Date(a.date!).getTime();
+      })
+      .filter((post) => (category ? post.category === category : true)),
+  };
 };
 
 export const getPostData = (slug: string) => {

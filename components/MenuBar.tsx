@@ -14,10 +14,10 @@ export default function MenuBar() {
   return (
     <div className="flex justify-end">
       {menus.map((menu) => (
-        <Link key={menu.label} href={menu.link}>
+        <Link key={menu.label} href={menu.link} className="hover:text-blue-800">
           <span
             className={`pl-3 text-lg ${
-              menu.link.replaceAll("/", "") === pathname.replaceAll("/", "")
+              pathname.includes(menu.link.replaceAll("/", ""))
                 ? "font-bold"
                 : "font-normal"
             }`}

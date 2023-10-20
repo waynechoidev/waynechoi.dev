@@ -1,15 +1,13 @@
-import { getPostList } from "@/service";
-import Link from "next/link";
+import CategoryBar from "@/components/CategoryBar";
+import PostList from "@/components/PostList";
+import { getPostList } from "@/lib/posts";
 
 export default function Posts() {
-  const posts = getPostList();
+  const { data, categoryList } = getPostList();
   return (
     <>
-      {posts.map((post) => (
-        <div key={post.slug}>
-          <Link href={`/posts/${post.slug}`}>{post.title}</Link>
-        </div>
-      ))}
+      <CategoryBar categoryList={categoryList} />
+      <PostList list={data} />
     </>
   );
 }
