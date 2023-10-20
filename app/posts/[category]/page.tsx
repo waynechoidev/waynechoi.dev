@@ -1,9 +1,9 @@
 import CategoryBar from "@/components/CategoryBar";
 import PostList from "@/components/PostList";
-import { getPostList } from "@/lib/posts";
+import { getPostList, getPostListByCategory } from "@/lib/posts";
 
 export default function Post({ params }: { params: { category: string } }) {
-  const { data, categoryList } = getPostList(params.category);
+  const { data, categoryList } = getPostListByCategory(params.category);
   return (
     <>
       <CategoryBar
