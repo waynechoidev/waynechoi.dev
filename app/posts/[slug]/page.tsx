@@ -22,5 +22,5 @@ export default function Post({ params }: { params: { slug: string } }) {
 }
 
 export async function generateStaticParams() {
-  return getPostList();
+  return getPostList().map((post) => ({ slug: post.slug }));
 }
