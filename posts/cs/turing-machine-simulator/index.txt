@@ -1,6 +1,6 @@
 1:HL["/_next/static/media/c9a5bc6a7c948fb0-s.p.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
 2:HL["/_next/static/css/d42d85e6c210d2d2.css","style",{"crossOrigin":""}]
-0:["RlJSsTqIt6Y2wF4_IBbBZ",[[["",{"children":["posts",{"children":[["category","cs","d"],{"children":[["slug","turing-machine-simulator","d"],{"children":["__PAGE__?{\"category\":\"cs\",\"slug\":\"turing-machine-simulator\"}",{}]}]}]}]},"$undefined","$undefined",true],"$L3",[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/d42d85e6c210d2d2.css","precedence":"next","crossOrigin":""}]],"$L4"]]]]
+0:["STxzheDiuIWQu_r1S_nZo",[[["",{"children":["posts",{"children":[["category","cs","d"],{"children":[["slug","turing-machine-simulator","d"],{"children":["__PAGE__?{\"category\":\"cs\",\"slug\":\"turing-machine-simulator\"}",{}]}]}]}]},"$undefined","$undefined",true],"$L3",[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/d42d85e6c210d2d2.css","precedence":"next","crossOrigin":""}]],"$L4"]]]]
 5:HL["/_next/static/css/602feae4669a507e.css","style",{"crossOrigin":""}]
 6:I[9194,["326","static/chunks/326-6784f49434136418.js","185","static/chunks/app/layout-7c417103f701ae27.js"],""]
 7:I[8326,["326","static/chunks/326-6784f49434136418.js","691","static/chunks/691-9d3e023f99a4fdb9.js","210","static/chunks/app/posts/%5Bcategory%5D/%5Bslug%5D/page-e3a87aa8a1ff4cb9.js"],""]
