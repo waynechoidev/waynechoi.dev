@@ -1,18 +1,16 @@
 ---
 title: "Turing machine simulator"
-date: "Sep 23, 2021"
+date: "Aug 28, 2022"
 category: "cs"
 tags: ["toyproject", "turingmachine"]
-excerpt: "Explain primitive and reference data type of JavaScript, and immutability of object..."
+excerpt: "Implemented a turing machine simulator with typescript and react..."
 ---
 
-<img src="/img/turing-machine-simulator.png">
+Lately I've been immersing myself in introductory computer science courses. Suddenly, I became captivated by the subject and decided to take a shot at implementing a Turing machine.
 
-[Repository](https://github.com/waynechoidev/turing-machine/) / [Sample](https://waynechoidev.github.io/turing-machine/)
+I implemented with TypeScript and React. When you select a machine, you can also view the corresponding action table below. To ensure finite tape length, I made certain adjustments, and I ended up creating a total of seven different Turing machines.
 
-Built with React, and TypeScript.
-
-I implemented a turing machine simulator and 7 turning machines. I tried to pick machines can explain the core concepts of the turing machine well.
+Personally, I selected these particular machines because I believe they can provide a better understanding of Turing machines.
 
 - Copy 1s
 - Repeat Binary
@@ -21,3 +19,5 @@ I implemented a turing machine simulator and 7 turning machines. I tried to pick
 - Binary Addition
 - 3-State Busy Beaver
 - 4-State Busy Beaver
+
+[Repository](https://github.com/waynechoidev/turing-machine/) / [Sample](https://waynechoidev.github.io/turing-machine/)
