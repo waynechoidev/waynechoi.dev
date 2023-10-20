@@ -9,6 +9,8 @@ const config: Config = {
   theme: {
     maxWidth: {
       default: "1000px",
+      profile_out: "800px",
+      profile_in: "500px",
     },
   },
   plugins: [],
