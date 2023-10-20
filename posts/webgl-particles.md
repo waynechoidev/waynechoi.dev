@@ -12,6 +12,6 @@ When utilizing GPGPU, like calculating the positions, in WebGL, there are typica
 
 While WebGPU supports compute shaders explicitly designed for GPGPU tasks, I chose to stick with WebGL due to my unfamiliarity with the new shader languages associated with WebGPU. (WebGL2 also introduced experimental support for compute shaders, but it seems this feature is no longer available, possibly due to the emergence of WebGPU.)
 
-I referred to the code provided in [this example](https://webgl2fundamentals.org/webgl/lessons/ko/webgl-gpgpu.html). To enhance code clarity and encapsulate the pipeline, I restructured and re-wrote the logic in a type-safe manner.
+I referred to the code provided in [this example](https://webgl2fundamentals.org/webgl/lessons/webgl-gpgpu.html). To enhance code clarity and encapsulate the pipeline, I restructured and re-wrote the logic in a type-safe manner.
 
 [Repository](https://github.com/waynechoidev/simple-particles/) / [Sample](https://waynechoidev.github.io/simple-particles//)
