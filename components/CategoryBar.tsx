@@ -12,7 +12,7 @@ export default function CategoryBar({
   categoryList,
 }: CategoryBarProps) {
   return (
-    <>
+    <div className="overflow-hidden">
       <CategoryItem category="all" highlight={!currentCategory} link="/posts" />
       {categoryList.map((category) => (
         <CategoryItem
@@ -22,7 +22,7 @@ export default function CategoryBar({
           link={`/posts/${category}`}
         />
       ))}
-    </>
+    </div>
   );
 }
 
@@ -38,7 +38,9 @@ function CategoryItem({
   return (
     <Link key={category} href={link} className="hover:text-blue-800">
       <span
-        className={`px-3 text-lg ${highlight ? "font-bold" : "font-normal"}`}
+        className={`px-2 text-md sm:text-lg ${
+          highlight ? "font-bold" : "font-normal"
+        }`}
       >
         {category.toUpperCase()}
       </span>

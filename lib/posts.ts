@@ -18,7 +18,7 @@ export type postDataType = {
   content: string;
 };
 
-export const categoryList = ["graphics", "web", "cs"];
+export const categoryList = ["graphics", "web", "cs", "story"];
 
 export const getPostList = () => {
   const files = fs.readdirSync(path.join("posts"));
