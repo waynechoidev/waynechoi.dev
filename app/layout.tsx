@@ -21,7 +21,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className="mx-auto my-0">
-        <nav className="max-w-default mx-auto p-5">
+        <nav className="max-w-default mx-auto px-5 py-3">
           <MenuBar />
         </nav>
         <header className="bg-blue-950">
