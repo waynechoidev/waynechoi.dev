@@ -28,8 +28,8 @@ export default function About() {
         </p>
         <p className="my-2">
           NZ qualified boat builder with 7 years past experience. Maybe one of
-          the software engineer who is the most skilled at building boats
-          nationwide.
+          the most skilled software engineers nationwide when it comes to
+          building boats.
         </p>
         <div className="flex flex-row space-x-3 mt-10">
           {linkList.map((link) => (
