@@ -3,9 +3,10 @@ import { getPostListBySlugs } from "@/lib/posts";
 
 export default function Home() {
   const posts = getPostListBySlugs([
+    "phong-shading",
     "webgl-particles",
-    "ray-tracing-on-canvas",
     "web-based-deep-learning",
+    "ray-tracing-on-canvas",
   ]);
   return (
     <div>
