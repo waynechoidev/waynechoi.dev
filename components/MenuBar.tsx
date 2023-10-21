@@ -16,7 +16,7 @@ export default function MenuBar() {
       {menus.map((menu) => (
         <Link key={menu.label} href={menu.link}>
           <span
-            className={`hover:text-blue-800 pl-3 text-lg ${
+            className={`hover:font-bold pl-3 text-lg ${
               pathname.includes(menu.link.replaceAll("/", ""))
                 ? "font-bold"
                 : "font-normal"

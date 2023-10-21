@@ -17,11 +17,8 @@ export default function PostList({ list }: PostListProps) {
           </Link>
           <p className="text-gray-400 text-sm m-0 mt-1">{post.date}</p>
           <p>{post.excerpt}</p>
-          <Link
-            href={`/post/${post.slug}`}
-            className="text-gray-500 hover:text-blue-800"
-          >
-            <p>read more...</p>
+          <Link href={`/post/${post.slug}`}>
+            <p className="text-gray-500 hover:font-bold">read more...</p>
           </Link>
           <TagList tags={post.tags} />
         </div>

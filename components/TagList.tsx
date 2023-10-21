@@ -12,7 +12,7 @@ export default function TagList({ tags }: TagListProps) {
         <Link
           href={`/tag/${tag}`}
           key={tag}
-          className="mr-2 text-gray-500 hover:text-blue-800"
+          className="mr-2 text-gray-500 hover:font-bold"
         >
           {`#${tag}`}
         </Link>

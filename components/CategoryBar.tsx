@@ -36,9 +36,9 @@ function CategoryItem({
   link: string;
 }) {
   return (
-    <Link key={category} href={link} className="hover:text-blue-800">
+    <Link key={category} href={link}>
       <span
-        className={`px-2 text-md sm:text-lg ${
+        className={`hover:font-bold px-2 text-md sm:text-lg ${
           highlight ? "font-bold" : "font-normal"
         }`}
       >

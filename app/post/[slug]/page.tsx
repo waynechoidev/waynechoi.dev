@@ -9,7 +9,7 @@ export default function Post({ params }: { params: { slug: string } }) {
     <div>
       <Link
         href={`/posts/${category}`}
-        className="text-gray-600 text-md pl-1 hover:text-blue-800 font-semibold"
+        className="text-gray-600 text-md pl-1 hover:font-bold"
       >
         {category.toUpperCase()}
       </Link>
