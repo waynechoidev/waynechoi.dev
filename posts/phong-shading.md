@@ -16,7 +16,7 @@ In my experience, when implementing Phong shading, one of the most crucial conce
 
 If non-uniform scaling is part of the transformation, the transformed normal vectors no longer correspond to the model's normals. In such cases, it's essential to multiply the normal vector by the inverse transpose of the model matrix to ignore the scaling while preserving the correct normals. In this process, you first find the inverse of the model matrix to undo the scaling, and then take the transpose to account for changes in the orientation of the normals.
 
-Ii is glsl codes to get normal world vector with the inverse transpose of the model matrix.
+It is glsl codes to get normal world vector with the inverse transpose of the model matrix.
 
 ```glsl
 // vec3 normal
