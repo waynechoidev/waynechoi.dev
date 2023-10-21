@@ -3,7 +3,7 @@ title: "Phong shading"
 date: "Oct 9, 2023"
 category: "graphics"
 tags: ["toyproject", "opengl", "phongshading", "cpp"]
-excerpt: "Simple particle system using a web-based approach..."
+excerpt: "Implemented the phong shading with OpenGL..."
 ---
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/r_5rToXmMso?si=lpXZsbQGmN2RKfhb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
