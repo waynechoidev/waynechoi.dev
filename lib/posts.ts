@@ -16,6 +16,7 @@ export type postDataType = {
   date: string;
   tags: string[];
   content: string;
+  category: string;
 };
 
 export const categoryList = ["graphics", "web", "cs", "story"];
@@ -88,8 +89,8 @@ export const getPostData = (slug: string) => {
   );
 
   const { data: frontMatter, content } = matter(markdownWithMeta);
-  const { title, date, tags } = frontMatter;
-  const res: postDataType = { title, date, tags, content };
+  const { title, date, tags, category } = frontMatter;
+  const res: postDataType = { title, date, tags, content, category };
   return res;
 };
 

@@ -12,13 +12,13 @@ export default function PostList({ list }: PostListProps) {
     <div className="mt-3 grid grid-cols-1 gap-3 sm:grid-cols-2">
       {list.map((post) => (
         <div key={post.slug} className="p-5 shadow-lg rounded-xl">
-          <Link href={`/posts/${post.category}/${post.slug}`}>
+          <Link href={`/post/${post.slug}`}>
             <h3>{post.title}</h3>
           </Link>
           <p className="text-gray-400 text-sm m-0 mt-1">{post.date}</p>
           <p>{post.excerpt}</p>
           <Link
-            href={`/posts/${post.category}/${post.slug}`}
+            href={`/post/${post.slug}`}
             className="text-gray-500 hover:text-blue-800"
           >
             <p>read more...</p>

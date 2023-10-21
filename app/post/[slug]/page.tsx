@@ -3,19 +3,15 @@ import TagList from "@/components/TagList";
 import { getPostData, getPostList } from "@/lib/posts";
 import Link from "next/link";
 
-export default function Post({
-  params,
-}: {
-  params: { category: string; slug: string };
-}) {
-  const { title, date, tags, content } = getPostData(params.slug);
+export default function Post({ params }: { params: { slug: string } }) {
+  const { title, date, tags, content, category } = getPostData(params.slug);
   return (
     <div>
       <Link
-        href={`/posts/${params.category}`}
+        href={`/posts/${category}`}
         className="text-gray-600 text-md pl-1 hover:text-blue-800 font-semibold"
       >
-        {params.category.replaceAll("_", " ").toUpperCase()}
+        {category.toUpperCase()}
       </Link>
       <h1>{title}</h1>
       <p className="text-gray-400 text-sm m-0 mt-1">{date}</p>
@@ -31,7 +27,6 @@ export default function Post({
 
 export async function generateStaticParams() {
   return getPostList().map((post) => ({
-    category: post.category,
     slug: post.slug,
   }));
 }
