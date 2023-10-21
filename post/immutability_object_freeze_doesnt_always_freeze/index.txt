@@ -1,0 +1,219 @@
+1:HL["/_next/static/css/a25c16defe2e7450.css","style",{"crossOrigin":""}]
+0:["BeJD-ygIdVAcKSYWmexx3",[[["",{"children":["post",{"children":[["slug","immutability_object_freeze_doesnt_always_freeze","d"],{"children":["__PAGE__?{\"slug\":\"immutability_object_freeze_doesnt_always_freeze\"}",{}]}]}]},"$undefined","$undefined",true],"$L2",[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/a25c16defe2e7450.css","precedence":"next","crossOrigin":""}]],"$L3"]]]]
+4:HL["/_next/static/css/602feae4669a507e.css","style",{"crossOrigin":""}]
+5:I[9194,["326","static/chunks/326-6784f49434136418.js","185","static/chunks/app/layout-b8dcdcac54a5e040.js"],""]
+6:I[5629,["326","static/chunks/326-6784f49434136418.js","185","static/chunks/app/layout-b8dcdcac54a5e040.js"],""]
+7:I[6954,[],""]
+8:I[7264,[],""]
+a:I[8326,["326","static/chunks/326-6784f49434136418.js","691","static/chunks/691-d72542b099e0bc41.js","605","static/chunks/app/post/%5Bslug%5D/page-35089305ab495287.js"],""]
+b:I[7708,["326","static/chunks/326-6784f49434136418.js","691","static/chunks/691-d72542b099e0bc41.js","605","static/chunks/app/post/%5Bslug%5D/page-35089305ab495287.js"],""]
+3:[["$","meta","0",{"charSet":"utf-8"}],["$","title","1",{"children":"WayneChoi.Dev"}],["$","meta","2",{"name":"description","content":"Wayne Choi blog"}],["$","meta","3",{"name":"viewport","content":"width=device-width, initial-scale=1"}],["$","link","4",{"rel":"icon","href":"/favicon.ico"}]]
+c:T1c2a,
+Immutability in JavaScript is getting more attention, while functional programming paradigm is on the rise. One of the important features of functional programming is that it has no side-effect.
+
+A side effect is any application state change that is observable outside the called function other than its return value. It cause more problems by concurrency in an application. JavaScript is single thread language though, execution environment (browser and node.js) process various task at the same time. To avoid side effects, we need to keep the state outside the function immutable.
+
+We can declare and assign immutable primitive variable with 'const' keyword, and keep properties of an object with 'Object.freeze()' method. The freeze method, however, does not always make objects immutable.
+
+In this post, I would like to explain why 'Object.freeze()' method is not complete way to make an object immutable, and to illustrate this, I need to deal with data type of JavaScript first.
+
+## Data type of JavaScript
+
+JavaScript has 2 kinds of data types. One is primitive, and other is reference. Reference type is object which including array and function, and primitive type values are below.
+
+- string
+- number
+- bigint
+- boolean
+- undefined
+- symbol
+- null
+
+## Primitive type
+
+```js
+let p1; // declare variable
+p = 1; // assign 1 (1000)
+
+let p2 = 1; //assign 1 (1000)
+console.log(p1 === p2); // true
+
+p = 2; // reassign 2 (1001)
+```
+
+| 1000 | 1001 |
+| ---- | ---- |
+| 1    | 2    |
+
+I declared a variable p1 and assigned number 1 to p1. Number 1 was not assigned to p1 directly, but allocated to memory first, and the memory address of number 1 is assigned to p1. Let's suppose the address of number 1 is '1000'. (All of memory address in this post is hypothetical to help understand memory allocation of JavaScript)
+
+I declared new variable p2, and assigned number 1 to p2. The same memory address, '1000', was assigned to p2. Number 1 is primitive type data, and immutable.
+
+And I reassigned number 2 to p1. At this time, number 1 in the memory '1000' won't be changed. Number 2 is allocated to the other space of memory, and its address '1001' is assigned to p1. (I would not deal with garbage collection to free memory in this post)
+
+## Object
+
+```js
+let o1 = { name: "choi" }; // 2000
+let o2 = { name: "choi" }; // 2001
+
+console.log(o1 === o2); // false
+```
+
+| 2000              | 2001              |
+| ----------------- | ----------------- |
+| { name : 'choi' } | { name : 'choi' } |
+
+Object is basically mutable. If I declare two variables, and assigned objects which have same keys and values to those variables, two different memory addresses are assigned to each ones. Object is reference type data.
+
+## Copy
+
+```js
+let p1 = 1;
+let p2 = p1;
+
+console.log(p1); // 1
+console.log(p2); // 1
+
+p1 = 2;
+
+console.log(p1); // 2
+console.log(p2); // 1
+```
+
+It is simple to copy primitive type data. Primitive type data is immutable, so if I copied then changed one data, it doesn't affect the other one.
+
+---
+
+```js
+let o1 = { name: "choi" };
+let o2 = o1;
+
+console.log(o1); // { name: "choi" }
+console.log(o2); // { name: "choi" }
+console.log(o1 === o2); // true
+
+o2.name = "kim";
+
+console.log(o1); // { name: "kim" }
+console.log(o2); // { name: "kim" }
+console.log(o1 === o2); // true
+```
+
+| 2000                        |
+| --------------------------- |
+| { name : ~~'choi'~~ 'kim' } |
+
+It, however, does work in different way for an object to copy. I assigned one variable, o1, which is assigned an object, to other variable, o2. I changed one of them, then it affects other variables as well. Object is reference type value, so both variable reference same object with same memory address.
+
+---
+
+```js
+let o1 = { name: "choi" };
+let o2 = Object.assign({}, o1);
+
+console.log(o1); // { name: "choi" }
+console.log(o2); // { name: "choi" }
+console.log(o1 === o2); // false
+
+o2.name = "kim";
+
+console.log(o1); // { name: "choi" }
+console.log(o2); // { name: "kim" }
+```
+
+| 2000              | 2001                        |
+| ----------------- | --------------------------- |
+| { name : 'choi' } | { name : ~~'choi'~~ 'kim' } |
+
+If we did not mean to change the property of the original object, it could cause serious errors of an application. To keep the o1 object immutable, we can use Object.assign() to copy an object. (If it is an array, we can use Array.concat() as well.)
+
+## Object.freeze()
+
+```js
+let o1 = { name: "choi" };
+Object.freeze(o1);
+
+o1.name = "kim";
+o1.age = 30; // even cannot add new properties
+
+console.log(o1); // { name: "choi" }
+```
+
+Finally we reached the freeze method. It freeze all properties of an object. we can block to change the original object from the very beginning with this method.
+
+## Const vs Freeze
+
+```js
+let o1 = { name: "choi" };
+Object.freeze(o1);
+
+console.log(o1); // { name: "choi" };
+
+o1 = "hello world";
+
+console.log(o1); // hello world
+
+const o2 = { name: "choi" };
+
+o2 = "hello world"; // Uncaught TypeError: Assignment to constant variable.
+```
+
+Const keyword is for immutable reference, and the freeze method is for immutable value. I declared variable o1 with let keyword and assigned an object to it. Then I freezed it.
+I can still reassign other value to o1.
+But if I make same variable o2 but with const keyword, I cannot reassign, even though I wouldn't freeze.
+
+## Cannot freeze Nested Object
+
+```js
+let o1 = { name: "choi", occupation: { job: "boat builder" } };
+Object.freeze(o1);
+
+o1.name = kim;
+o1.occupation.job = "software engineer";
+
+console.log(o1); // { name : "choi", occupation : { job : "software engineer"}}
+// name hasn't changed, but job has
+
+let o2 = Object.assign({}, o1);
+o2.name = "kim";
+o2.occupation.job = "chef";
+
+console.log(o1); // { name : "choi", occupation : { job : "chef"}}
+console.log(o2); // { name : "kim", occupation : { job : "chef"}}
+```
+
+If values of one or multiple properties are reference type, aka nested object, both assign and freeze methods can not keep the original object immutable when cloning. They are called shallow freeze and clone.
+
+---
+
+```js
+function deepFreeze(object) {
+  var propNames = Object.getOwnPropertyNames(object);
+
+  for (let name of propNames) {
+    let value = object[name];
+    object[name] =
+      value && typeof value === "object" ? deepFreeze(value) : value;
+  }
+
+  return Object.freeze(object);
+}
+```
+
+If an object is nested with only one layer, we can freeze each properties with reference type value. It, however, is not easy to freeze all layers when the object is nested much deeper.
+
+We can implement a function to deep freeze an object with recursion, or can use a library to support immutable data structure like immutable.js.
+
+---
+
+- **Immutability (1) - Object.freeze() doesn't always freeze**
+- [Immutability (2) - Immutable.js, pros and cons](/posts/immutability_immutable_js_pros_and_cons)
+
+## References
+
+- [Master the JavaScript Interview: What is Functional Programming? - Eric Elliott](https://medium.com/javascript-scene/master-the-javascript-interview-what-is-functional-programming-7f218c68b3a0)
+- [Anjana Vakil: Immutable data structures for functional JS | JSConf EU](https://youtu.be/Wo0qiGPSV-s)
+- 함수형 자바스크립트 프로그래밍 - 유인동
+2:[null,["$","html",null,{"lang":"en","children":["$","body",null,{"className":"mx-auto my-0","children":[["$","nav",null,{"className":"max-w-default mx-auto px-5 py-3","children":["$","$L5",null,{}]}],["$","header",null,{"children":["$","$L6",null,{}]}],["$","div",null,{"className":"max-w-default mx-auto p-5","children":["$","$L7",null,{"parallelRouterKey":"children","segmentPath":["children"],"loading":"$undefined","loadingStyles":"$undefined","hasLoading":false,"error":"$undefined","errorStyles":"$undefined","template":["$","$L8",null,{}],"templateStyles":"$undefined","notFound":[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":"404"}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],"notFoundStyles":[],"childProp":{"current":["$","$L7",null,{"parallelRouterKey":"children","segmentPath":["children","post","children"],"loading":"$undefined","loadingStyles":"$undefined","hasLoading":false,"error":"$undefined","errorStyles":"$undefined","template":["$","$L8",null,{}],"templateStyles":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined","childProp":{"current":[null,["$","$L7",null,{"parallelRouterKey":"children","segmentPath":["children","post","children",["slug","immutability_object_freeze_doesnt_always_freeze","d"],"children"],"loading":"$undefined","loadingStyles":"$undefined","hasLoading":false,"error":"$undefined","errorStyles":"$undefined","template":["$","$L8",null,{}],"templateStyles":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined","childProp":{"current":["$L9",["$","div",null,{"children":[["$","$La",null,{"href":"/posts/web","className":"text-gray-600 text-md pl-1 hover:text-blue-800 font-semibold","children":"WEB"}],["$","h1",null,{"children":"Immutability (1) - Object.freeze() doesn't always freeze"}],["$","p",null,{"className":"text-gray-400 text-sm m-0 mt-1","children":"Sep 23, 2021"}],["$","div",null,{"className":"mt-1","children":["$","div",null,{"className":"whitespace-nowrap overflow-x-auto pb-3","children":[["$","$La","javascript",{"href":"/tag/javascript","className":"mr-2 text-gray-500 hover:text-blue-800","children":"#javascript"}],["$","$La","immutability",{"href":"/tag/immutability","className":"mr-2 text-gray-500 hover:text-blue-800","children":"#immutability"}]]}]}],["$","div",null,{"className":"mt-8","children":["$","$Lb",null,{"content":"$c"}]}]]}],null],"segment":"__PAGE__?{\"slug\":\"immutability_object_freeze_doesnt_always_freeze\"}"},"styles":[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/602feae4669a507e.css","precedence":"next","crossOrigin":""}]]}],null],"segment":["slug","immutability_object_freeze_doesnt_always_freeze","d"]},"styles":[]}],"segment":"post"},"styles":[]}]}],["$","footer",null,{"className":"h-40 flex justify-center items-end","children":["$","p",null,{"className":"text-gray-500 text-sm","children":"(C) 2021. Wayne Choi. All rights reserved."}]}]]}]}],null]
+9:null
