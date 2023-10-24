@@ -32,7 +32,7 @@ Let's examine the image below. The long white vertical lines represent points wh
 
 However, for vertices 'b' and 'c,' the texture coordinates used to draw the middle triangle will be close to (1.0, -) and (0.0, -). As a result, the texture coordinate for point 'd' will be interpolated, leading to an entirely unexpected value like (0.5, -).
 
-<img src="/img/sphere-texture-mapping-5.jpg" width="48%">
+<img src="/img/sphere-texture-mapping-5.jpg" class="post-pic">
 
 [Source code](https://github.com/waynechoidev/sphere-texture-mapping/tree/ae35dcc752c384a9a4354c8b2148dc0ca0f43cf7)
 
