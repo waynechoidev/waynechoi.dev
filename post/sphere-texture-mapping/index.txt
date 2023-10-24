@@ -1,5 +1,5 @@
 1:HL["/_next/static/css/c042ef4705772485.css","style",{"crossOrigin":""}]
-0:["VxgjOfgyw9TP9zWJvl6Fd",[[["",{"children":["post",{"children":[["slug","sphere-texture-mapping","d"],{"children":["__PAGE__?{\"slug\":\"sphere-texture-mapping\"}",{}]}]}]},"$undefined","$undefined",true],"$L2",[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/c042ef4705772485.css","precedence":"next","crossOrigin":""}]],"$L3"]]]]
+0:["zJX8kBlt2JNty-P9uRB9q",[[["",{"children":["post",{"children":[["slug","sphere-texture-mapping","d"],{"children":["__PAGE__?{\"slug\":\"sphere-texture-mapping\"}",{}]}]}]},"$undefined","$undefined",true],"$L2",[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/c042ef4705772485.css","precedence":"next","crossOrigin":""}]],"$L3"]]]]
 4:HL["/_next/static/css/602feae4669a507e.css","style",{"crossOrigin":""}]
 5:I[9194,["326","static/chunks/326-6784f49434136418.js","185","static/chunks/app/layout-398490756c68e5b6.js"],""]
 6:I[5629,["326","static/chunks/326-6784f49434136418.js","185","static/chunks/app/layout-398490756c68e5b6.js"],""]
@@ -8,7 +8,7 @@
 a:I[8326,["326","static/chunks/326-6784f49434136418.js","691","static/chunks/691-d72542b099e0bc41.js","605","static/chunks/app/post/%5Bslug%5D/page-35089305ab495287.js"],""]
 b:I[7708,["326","static/chunks/326-6784f49434136418.js","691","static/chunks/691-d72542b099e0bc41.js","605","static/chunks/app/post/%5Bslug%5D/page-35089305ab495287.js"],""]
 3:[["$","meta","0",{"charSet":"utf-8"}],["$","title","1",{"children":"WayneChoi.Dev"}],["$","meta","2",{"name":"description","content":"Wayne Choi blog"}],["$","meta","3",{"name":"viewport","content":"width=device-width, initial-scale=1"}],["$","link","4",{"rel":"icon","href":"/favicon.ico"}]]
-c:T1253,
+c:T1258,
 I want to map an Earth-like texture onto a spherical model. While the simplest method for mapping would be to use a cube map, creating an Earth-like texture as a cube map can be quite challenging. Due to the complexities involved in ensuring the cube map accurately represents the Earth's surface, it's often more suitable to explore alternative approaches.
 
 ## First attempt
@@ -35,7 +35,7 @@ Let's examine the image below. The long white vertical lines represent points wh
 
 However, for vertices 'b' and 'c,' the texture coordinates used to draw the middle triangle will be close to (1.0, -) and (0.0, -). As a result, the texture coordinate for point 'd' will be interpolated, leading to an entirely unexpected value like (0.5, -).
 
-<img src="/img/sphere-texture-mapping-5.jpg" width="48%">
+<img src="/img/sphere-texture-mapping-5.jpg" class="post-pic">
 
 [Source code](https://github.com/waynechoidev/sphere-texture-mapping/tree/ae35dcc752c384a9a4354c8b2148dc0ca0f43cf7)
 
