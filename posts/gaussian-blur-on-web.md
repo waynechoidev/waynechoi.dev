@@ -17,4 +17,6 @@ On my machine, the canvas 2D version took around 350ms, while the WebGL2 version
 
 You can try it out for yourself by following the link below:
 
+---
+
 [Repository](https://github.com/waynechoidev/gaussian-blur/) / [Sample](https://waynechoidev.github.io/gaussian-blur/)

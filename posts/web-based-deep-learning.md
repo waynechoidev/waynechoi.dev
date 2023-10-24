@@ -12,4 +12,6 @@ As I had been using libraries with abstracted training processes like backpropag
 
 You can try out the example below to see the learning process in action.
 
+---
+
 [Repository](https://github.com/waynechoidev/web-deep-learning/) / [Sample](https://waynechoidev.github.io/web-deep-learning/)

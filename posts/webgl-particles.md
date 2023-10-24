@@ -14,4 +14,6 @@ While WebGPU supports compute shaders explicitly designed for GPGPU tasks, I cho
 
 I referred to the code provided in [this example](https://webgl2fundamentals.org/webgl/lessons/webgl-gpgpu.html). To enhance code clarity and encapsulate the pipeline, I restructured and re-wrote the logic in a type-safe manner.
 
+---
+
 [Repository](https://github.com/waynechoidev/simple-particles/) / [Sample](https://waynechoidev.github.io/simple-particles//)

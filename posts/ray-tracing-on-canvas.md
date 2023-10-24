@@ -12,4 +12,6 @@ Although I initially wanted to implement more complex ray tracing, I decided to 
 
 In C++, I used the "glm" library, but here, I utilized "glmatrix" for matrix operations. The latter has a different interface based on references, which was a bit unfamiliar and challenging at first.
 
+---
+
 [Repository](https://github.com/waynechoidev/ray-tracing-canvas/) / [Sample](https://waynechoidev.github.io/ray-tracing-canvas/)

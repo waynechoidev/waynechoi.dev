@@ -20,4 +20,6 @@ Personally, I selected these particular machines because I believe they can prov
 - 3-State Busy Beaver
 - 4-State Busy Beaver
 
+---
+
 [Repository](https://github.com/waynechoidev/turing-machine/) / [Sample](https://waynechoidev.github.io/turing-machine/)

@@ -24,4 +24,6 @@ It is glsl codes to get normal world vector with the inverse transpose of the mo
 vec3 normalWorld = normalize(mat3(transpose(inverse(model))) * normal);
 ```
 
+---
+
 [Repository](https://github.com/waynechoidev/OpenGL-Lighting/)
