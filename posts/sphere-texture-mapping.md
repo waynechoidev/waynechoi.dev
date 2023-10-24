@@ -6,6 +6,8 @@ tags: ["toyproject", "opengl", "texture", "cpp"]
 excerpt: "Texture mapping an Earth-like texture onto a sphere model using OpenGL..."
 ---
 
+I want to map an Earth-like texture onto a spherical model. While the simplest method for mapping would be to use a cube map, creating an Earth-like texture as a cube map can be quite challenging. Due to the complexities involved in ensuring the cube map accurately represents the Earth's surface, it's often more suitable to explore alternative approaches.
+
 ## First attempt
 
 At first, I began by generating the vertices of an tetrahedron model and performed multiple stages of triangle subdivision on the CPU to create a sphere model. Then, I attempted texture mapping on it, but it resulted in completely unexpected outcomes.
