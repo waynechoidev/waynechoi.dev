@@ -75,8 +75,6 @@ uv.y = acos(posModel.y / 1.5) / PI;
 
 ### References
 
-[http://www.songho.ca/opengl/gl_sphere.html](http://www.songho.ca/opengl/gl_sphere.html)
-
-[https://mathworld.wolfram.com/RegularTetrahedron.html](https://mathworld.wolfram.com/RegularTetrahedron.html)
-
-[https://mathworld.wolfram.com/Isohedron.html](https://mathworld.wolfram.com/Isohedron.html)
+- [http://www.songho.ca/opengl/gl_sphere.html](http://www.songho.ca/opengl/gl_sphere.html)
+- [https://mathworld.wolfram.com/RegularTetrahedron.html](https://mathworld.wolfram.com/RegularTetrahedron.html)
+- [https://mathworld.wolfram.com/Isohedron.html](https://mathworld.wolfram.com/Isohedron.html)
