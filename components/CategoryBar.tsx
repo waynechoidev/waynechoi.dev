@@ -12,7 +12,7 @@ export default function CategoryBar({
   categoryList,
 }: CategoryBarProps) {
   return (
-    <div className="overflow-hidden">
+    <div className="overflow-x-auto sm:overflow-x-hidden pb-3 sm:pb-0">
       <CategoryItem category="all" highlight={!currentCategory} link="/posts" />
       {categoryList.map((category) => (
         <CategoryItem

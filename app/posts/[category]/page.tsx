@@ -4,10 +4,15 @@ import { categoryList, getPostListByCategory } from "@/lib/posts";
 
 export default function Post({ params }: { params: { category: string } }) {
   const posts = getPostListByCategory(params.category);
+
+  const categoryIndex = categoryList.indexOf(params.category);
+  const filtredList = [...categoryList];
+  filtredList.unshift(filtredList.splice(categoryIndex, 1)[0]);
+
   return (
     <>
       <CategoryBar
-        categoryList={categoryList}
+        categoryList={filtredList}
         currentCategory={params.category}
       />
       <PostList list={posts} />
