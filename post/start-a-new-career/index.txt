@@ -1,12 +1,12 @@
 1:HL["/_next/static/css/c7afeb134dd1cb93.css","style",{"crossOrigin":""}]
-0:["qmB7eZg-vNnSWeGbXhCQj",[[["",{"children":["post",{"children":[["slug","start-a-new-career","d"],{"children":["__PAGE__?{\"slug\":\"start-a-new-career\"}",{}]}]}]},"$undefined","$undefined",true],"$L2",[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/c7afeb134dd1cb93.css","precedence":"next","crossOrigin":""}]],"$L3"]]]]
+0:["2vH3S8PiNNNiKNtU8iawL",[[["",{"children":["post",{"children":[["slug","start-a-new-career","d"],{"children":["__PAGE__?{\"slug\":\"start-a-new-career\"}",{}]}]}]},"$undefined","$undefined",true],"$L2",[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/c7afeb134dd1cb93.css","precedence":"next","crossOrigin":""}]],"$L3"]]]]
 4:HL["/_next/static/css/602feae4669a507e.css","style",{"crossOrigin":""}]
 5:I[9194,["326","static/chunks/326-6784f49434136418.js","185","static/chunks/app/layout-8dd766f55875cf30.js"],""]
 6:I[5629,["326","static/chunks/326-6784f49434136418.js","185","static/chunks/app/layout-8dd766f55875cf30.js"],""]
 7:I[6954,[],""]
 8:I[7264,[],""]
-a:I[8326,["326","static/chunks/326-6784f49434136418.js","691","static/chunks/691-d72542b099e0bc41.js","605","static/chunks/app/post/%5Bslug%5D/page-f450d13385fbbb63.js"],""]
-b:I[7708,["326","static/chunks/326-6784f49434136418.js","691","static/chunks/691-d72542b099e0bc41.js","605","static/chunks/app/post/%5Bslug%5D/page-f450d13385fbbb63.js"],""]
+a:I[8326,["326","static/chunks/326-6784f49434136418.js","691","static/chunks/691-d72542b099e0bc41.js","605","static/chunks/app/post/%5Bslug%5D/page-d950cea58624c07c.js"],""]
+b:I[7708,["326","static/chunks/326-6784f49434136418.js","691","static/chunks/691-d72542b099e0bc41.js","605","static/chunks/app/post/%5Bslug%5D/page-d950cea58624c07c.js"],""]
 3:[["$","meta","0",{"charSet":"utf-8"}],["$","title","1",{"children":"WayneChoi.Dev"}],["$","meta","2",{"name":"description","content":"Wayne Choi blog"}],["$","meta","3",{"name":"viewport","content":"width=device-width, initial-scale=1"}],["$","link","4",{"rel":"icon","href":"/favicon.ico"}]]
 c:T924,
 I've started working as a frontend developer at a fintech startup in New Zealand.
