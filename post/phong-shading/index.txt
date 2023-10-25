@@ -1,12 +1,12 @@
-1:HL["/_next/static/css/c042ef4705772485.css","style",{"crossOrigin":""}]
-0:["zJX8kBlt2JNty-P9uRB9q",[[["",{"children":["post",{"children":[["slug","phong-shading","d"],{"children":["__PAGE__?{\"slug\":\"phong-shading\"}",{}]}]}]},"$undefined","$undefined",true],"$L2",[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/c042ef4705772485.css","precedence":"next","crossOrigin":""}]],"$L3"]]]]
+1:HL["/_next/static/css/b05efc29c64ae1ad.css","style",{"crossOrigin":""}]
+0:["cr2SG3sfF7cOZTtrEfbul",[[["",{"children":["post",{"children":[["slug","phong-shading","d"],{"children":["__PAGE__?{\"slug\":\"phong-shading\"}",{}]}]}]},"$undefined","$undefined",true],"$L2",[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/b05efc29c64ae1ad.css","precedence":"next","crossOrigin":""}]],"$L3"]]]]
 4:HL["/_next/static/css/602feae4669a507e.css","style",{"crossOrigin":""}]
-5:I[9194,["326","static/chunks/326-6784f49434136418.js","185","static/chunks/app/layout-398490756c68e5b6.js"],""]
-6:I[5629,["326","static/chunks/326-6784f49434136418.js","185","static/chunks/app/layout-398490756c68e5b6.js"],""]
+5:I[9194,["326","static/chunks/326-6784f49434136418.js","185","static/chunks/app/layout-4ef20e8c321c26e2.js"],""]
+6:I[5629,["326","static/chunks/326-6784f49434136418.js","185","static/chunks/app/layout-4ef20e8c321c26e2.js"],""]
 7:I[6954,[],""]
 8:I[7264,[],""]
-a:I[8326,["326","static/chunks/326-6784f49434136418.js","691","static/chunks/691-d72542b099e0bc41.js","605","static/chunks/app/post/%5Bslug%5D/page-35089305ab495287.js"],""]
-b:I[7708,["326","static/chunks/326-6784f49434136418.js","691","static/chunks/691-d72542b099e0bc41.js","605","static/chunks/app/post/%5Bslug%5D/page-35089305ab495287.js"],""]
+a:I[8326,["326","static/chunks/326-6784f49434136418.js","691","static/chunks/691-d72542b099e0bc41.js","605","static/chunks/app/post/%5Bslug%5D/page-f450d13385fbbb63.js"],""]
+b:I[7708,["326","static/chunks/326-6784f49434136418.js","691","static/chunks/691-d72542b099e0bc41.js","605","static/chunks/app/post/%5Bslug%5D/page-f450d13385fbbb63.js"],""]
 3:[["$","meta","0",{"charSet":"utf-8"}],["$","title","1",{"children":"WayneChoi.Dev"}],["$","meta","2",{"name":"description","content":"Wayne Choi blog"}],["$","meta","3",{"name":"viewport","content":"width=device-width, initial-scale=1"}],["$","link","4",{"rel":"icon","href":"/favicon.ico"}]]
 c:T851,
 <iframe width="560" height="315" src="https://www.youtube.com/embed/r_5rToXmMso?si=lpXZsbQGmN2RKfhb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>

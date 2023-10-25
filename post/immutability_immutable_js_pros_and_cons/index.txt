@@ -1,19 +1,28 @@
-1:HL["/_next/static/css/c042ef4705772485.css","style",{"crossOrigin":""}]
-0:["zJX8kBlt2JNty-P9uRB9q",[[["",{"children":["post",{"children":[["slug","immutability_immutable_js_pros_and_cons","d"],{"children":["__PAGE__?{\"slug\":\"immutability_immutable_js_pros_and_cons\"}",{}]}]}]},"$undefined","$undefined",true],"$L2",[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/c042ef4705772485.css","precedence":"next","crossOrigin":""}]],"$L3"]]]]
+1:HL["/_next/static/css/b05efc29c64ae1ad.css","style",{"crossOrigin":""}]
+0:["cr2SG3sfF7cOZTtrEfbul",[[["",{"children":["post",{"children":[["slug","immutability_immutable_js_pros_and_cons","d"],{"children":["__PAGE__?{\"slug\":\"immutability_immutable_js_pros_and_cons\"}",{}]}]}]},"$undefined","$undefined",true],"$L2",[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/b05efc29c64ae1ad.css","precedence":"next","crossOrigin":""}]],"$L3"]]]]
 4:HL["/_next/static/css/602feae4669a507e.css","style",{"crossOrigin":""}]
-5:I[9194,["326","static/chunks/326-6784f49434136418.js","185","static/chunks/app/layout-398490756c68e5b6.js"],""]
-6:I[5629,["326","static/chunks/326-6784f49434136418.js","185","static/chunks/app/layout-398490756c68e5b6.js"],""]
+5:I[9194,["326","static/chunks/326-6784f49434136418.js","185","static/chunks/app/layout-4ef20e8c321c26e2.js"],""]
+6:I[5629,["326","static/chunks/326-6784f49434136418.js","185","static/chunks/app/layout-4ef20e8c321c26e2.js"],""]
 7:I[6954,[],""]
 8:I[7264,[],""]
-a:I[8326,["326","static/chunks/326-6784f49434136418.js","691","static/chunks/691-d72542b099e0bc41.js","605","static/chunks/app/post/%5Bslug%5D/page-35089305ab495287.js"],""]
-b:I[7708,["326","static/chunks/326-6784f49434136418.js","691","static/chunks/691-d72542b099e0bc41.js","605","static/chunks/app/post/%5Bslug%5D/page-35089305ab495287.js"],""]
+a:I[8326,["326","static/chunks/326-6784f49434136418.js","691","static/chunks/691-d72542b099e0bc41.js","605","static/chunks/app/post/%5Bslug%5D/page-f450d13385fbbb63.js"],""]
+b:I[7708,["326","static/chunks/326-6784f49434136418.js","691","static/chunks/691-d72542b099e0bc41.js","605","static/chunks/app/post/%5Bslug%5D/page-f450d13385fbbb63.js"],""]
 3:[["$","meta","0",{"charSet":"utf-8"}],["$","title","1",{"children":"WayneChoi.Dev"}],["$","meta","2",{"name":"description","content":"Wayne Choi blog"}],["$","meta","3",{"name":"viewport","content":"width=device-width, initial-scale=1"}],["$","link","4",{"rel":"icon","href":"/favicon.ico"}]]
-c:T12cd,
+c:T12d6,
+### Immutability series
+
+1. [Object.freeze() doesn't always freeze](/post/immutability_object_freeze_doesnt_always_freeze)
+2. **Immutable.js, pros and cons**
+
+---
+
 We need to keep original data to avoid side effects. If it is primitive data type, there is nothing to care about. If it is an object, we normally copy and manipulate it to keep the original data immutable. In this way, we might get problem when we deal with large data.
 
 To keep the original object, we need to deep copy it. It means we need to allocate the space in memory for the entire object, even all of the stuff that didn't change. The both time and space complexity will be so bad. The code runs slow.
 
 There are many of libraries to solve this problem, and I picked Immutable.js. It is a library to support immutable data structure, supported by Facebook. I would explain how it deal with immutability efficiently, and its disadvantages.
+
+---
 
 ## How Immutable.js works
 
@@ -49,6 +58,8 @@ console.log(nested == nested2); // false
 ```
 
 The collections in Immutable.js are intended to be nested, allowing for deep trees of data, similar to JSON.
+
+---
 
 ## Persistent data structures
 
@@ -89,6 +100,8 @@ For example, if I want to get a value with a key, 'ted', I can start from root, 
 
 I changed the value at the key 'ted' from 4 to 8. Other nodes are still used. With this structures, only few nodes are recreated when we change a single item,
 
+---
+
 ## Disadvantages of Immutable.js
 
 All the data structure implemented with Immutable.js are custom object. It means it is not JSON format. JSON is widely used format to communicate. If we use custom objects like data structures of Immutable.js, we need to convert them to JSON format first. It consumes time and memory, and it is a huge consumption when data is large.
@@ -97,10 +110,7 @@ In addition, we cannot use methods of Object and Array object in Immutable.js da
 
 ---
 
-- [Immutability (1) - Object.freeze() doesn't always freeze](/posts/immutability_object_freeze_doesnt_always_freeze)
-- **Immutability (2) - Immutable.js, pros and cons**
-
-## References
+### References
 
 - [Anjana Vakil: Immutable data structures for functional JS | JSConf EU](https://youtu.be/Wo0qiGPSV-s)
 - [Wikipedia](https://en.wikipedia.org/wiki/Persistent_data_structure#Trees)
