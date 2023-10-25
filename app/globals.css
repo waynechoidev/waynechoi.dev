@@ -49,6 +49,12 @@ h3 {
   color: #222;
 }
 
+hr {
+  margin: 60px 30px;
+  border-color: #e2e2e2;
+  border-style: solid;
+}
+
 #sky {
   background: linear-gradient(
     to bottom,

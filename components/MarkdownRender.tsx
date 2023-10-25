@@ -23,7 +23,7 @@ export default function MarkdownRender({ content }: MarkdownRenderProps) {
       .current!.querySelectorAll<HTMLAnchorElement>("a")
       .forEach((link) => {
         link.target = "_blank";
-        link.style.textDecoration = "underline";
+        // link.style.textDecoration = "underline";
       });
   }, [content]);
   return <div ref={postRef}></div>;

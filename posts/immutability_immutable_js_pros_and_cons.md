@@ -6,11 +6,20 @@ tags: ["javascript", "immutability"]
 excerpt: "How Immutable.js works with persistent data structures, and its pros and cons..."
 ---
 
+### Immutability series
+
+1. [Object.freeze() doesn't always freeze](/post/immutability_object_freeze_doesnt_always_freeze)
+2. **Immutable.js, pros and cons**
+
+---
+
 We need to keep original data to avoid side effects. If it is primitive data type, there is nothing to care about. If it is an object, we normally copy and manipulate it to keep the original data immutable. In this way, we might get problem when we deal with large data.
 
 To keep the original object, we need to deep copy it. It means we need to allocate the space in memory for the entire object, even all of the stuff that didn't change. The both time and space complexity will be so bad. The code runs slow.
 
 There are many of libraries to solve this problem, and I picked Immutable.js. It is a library to support immutable data structure, supported by Facebook. I would explain how it deal with immutability efficiently, and its disadvantages.
+
+---
 
 ## How Immutable.js works
 
@@ -46,6 +55,8 @@ console.log(nested == nested2); // false
 ```
 
 The collections in Immutable.js are intended to be nested, allowing for deep trees of data, similar to JSON.
+
+---
 
 ## Persistent data structures
 
@@ -86,6 +97,8 @@ For example, if I want to get a value with a key, 'ted', I can start from root, 
 
 I changed the value at the key 'ted' from 4 to 8. Other nodes are still used. With this structures, only few nodes are recreated when we change a single item,
 
+---
+
 ## Disadvantages of Immutable.js
 
 All the data structure implemented with Immutable.js are custom object. It means it is not JSON format. JSON is widely used format to communicate. If we use custom objects like data structures of Immutable.js, we need to convert them to JSON format first. It consumes time and memory, and it is a huge consumption when data is large.
@@ -94,10 +107,7 @@ In addition, we cannot use methods of Object and Array object in Immutable.js da
 
 ---
 
-- [Immutability (1) - Object.freeze() doesn't always freeze](/posts/immutability_object_freeze_doesnt_always_freeze)
-- **Immutability (2) - Immutable.js, pros and cons**
-
-## References
+### References
 
 - [Anjana Vakil: Immutable data structures for functional JS | JSConf EU](https://youtu.be/Wo0qiGPSV-s)
 - [Wikipedia](https://en.wikipedia.org/wiki/Persistent_data_structure#Trees)
