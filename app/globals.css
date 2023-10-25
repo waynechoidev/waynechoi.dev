@@ -15,11 +15,6 @@ body {
   background: #fff;
 }
 
-p {
-  white-space: normal;
-  word-wrap: break-word;
-}
-
 a {
   text-decoration: none;
   color: inherit;
@@ -63,4 +58,11 @@ hr {
     rgba(196, 231, 255, 0.4),
     rgb(255, 255, 255)
   );
+}
+
+#md-link {
+  color: #6b7280;
+  text-decoration: underline;
+  white-space: normal;
+  word-wrap: break-word;
 }
