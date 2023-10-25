@@ -2,7 +2,7 @@
 title: "Sphere texture mapping"
 date: "Oct 24, 2023"
 category: "graphics"
-tags: ["toyproject", "opengl", "texture", "cpp"]
+tags: ["opengl", "texture", "cpp"]
 excerpt: "Texture mapping an Earth-like texture onto a sphere model using OpenGL..."
 ---
 

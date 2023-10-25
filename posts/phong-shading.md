@@ -2,7 +2,7 @@
 title: "Phong shading"
 date: "Oct 9, 2023"
 category: "graphics"
-tags: ["toyproject", "opengl", "phongshading", "cpp"]
+tags: ["opengl", "phongshading", "cpp"]
 excerpt: "Implemented the phong shading with OpenGL..."
 ---
 
