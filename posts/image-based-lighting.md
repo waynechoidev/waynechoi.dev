@@ -1,8 +1,8 @@
 ---
 title: "Image based lighting"
-date: "Oct 9, 2023"
+date: "Oct 30, 2023"
 category: "graphics"
-tags: ["opengl", "phongshading", "cpp"]
+tags: ["opengl", "cubemap", "lighting", "cpp"]
 excerpt: "Implemented a simple Image-Based Lighting (IBL) technique..."
 ---
 
