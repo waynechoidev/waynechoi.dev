@@ -18,7 +18,7 @@ I first implemented an environment map. I positioned a sphere model at the cente
 
 ```glsl
 vec3 toEye = normalize(viewPosition - posWorld);
-    colour = texture(skybox, reflect(-toEye, normalWorld));
+colour = texture(cubemapTexture, reflect(-toEye, normalWorld));
 ```
 
 ---
@@ -36,7 +36,7 @@ I got the Specular cubemap texture from [www.humus.name](http://www.humus.name),
 vec3 toEye = normalize(viewPosition - posWorld);
 
 vec4 diffuse = texture(diffuseCubemap, normalWorld);
-vec4 specular = texture(skybox, reflect(-toEye, normalWorld));
+vec4 specular = texture(SpecularCubemap, reflect(-toEye, normalWorld));
 
 specular *= pow((specular.x + specular.y + specular.z) / 3.0, material.shininess);
 
