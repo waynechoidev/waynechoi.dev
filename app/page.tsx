@@ -3,8 +3,8 @@ import { getPostListBySlugs } from "@/lib/posts";
 
 export default function Home() {
   const posts = getPostListBySlugs([
+    "image-based-lighting",
     "sphere-texture-mapping",
-    "phong-shading",
     "webgl-particles",
     "web-based-deep-learning",
   ]);
