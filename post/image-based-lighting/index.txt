@@ -1,5 +1,5 @@
 1:HL["/_next/static/css/c00f190515c854a4.css","style",{"crossOrigin":""}]
-0:["Uwk_U-U36OQGy25lF3JAk",[[["",{"children":["post",{"children":[["slug","image-based-lighting","d"],{"children":["__PAGE__?{\"slug\":\"image-based-lighting\"}",{}]}]}]},"$undefined","$undefined",true],"$L2",[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/c00f190515c854a4.css","precedence":"next","crossOrigin":""}]],"$L3"]]]]
+0:["ZfT5wmKE8OrM5yWfyHWzx",[[["",{"children":["post",{"children":[["slug","image-based-lighting","d"],{"children":["__PAGE__?{\"slug\":\"image-based-lighting\"}",{}]}]}]},"$undefined","$undefined",true],"$L2",[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/c00f190515c854a4.css","precedence":"next","crossOrigin":""}]],"$L3"]]]]
 4:HL["/_next/static/css/602feae4669a507e.css","style",{"crossOrigin":""}]
 5:I[9194,["326","static/chunks/326-6784f49434136418.js","185","static/chunks/app/layout-2839943a160ba1e9.js"],""]
 6:I[5629,["326","static/chunks/326-6784f49434136418.js","185","static/chunks/app/layout-2839943a160ba1e9.js"],""]
@@ -8,7 +8,7 @@
 a:I[8326,["326","static/chunks/326-6784f49434136418.js","691","static/chunks/691-d72542b099e0bc41.js","605","static/chunks/app/post/%5Bslug%5D/page-8d1612d00a7872d1.js"],""]
 b:I[7708,["326","static/chunks/326-6784f49434136418.js","691","static/chunks/691-d72542b099e0bc41.js","605","static/chunks/app/post/%5Bslug%5D/page-8d1612d00a7872d1.js"],""]
 3:[["$","meta","0",{"charSet":"utf-8"}],["$","title","1",{"children":"WayneChoi.Dev"}],["$","meta","2",{"name":"description","content":"Wayne Choi blog"}],["$","meta","3",{"name":"viewport","content":"width=device-width, initial-scale=1"}],["$","link","4",{"rel":"icon","href":"/favicon.ico"}]]
-c:Tc1f,
+c:Tc2c,
 <iframe width="560" height="315" src="https://www.youtube.com/embed/qR98uFPMKvo?si=uHEEg5A6C9q1Ofzi" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 I tried to implement a simple Image-Based Lighting (IBL) technique. It's not as complex as the methods used in actual products, but I wanted to explore a straightforward approach. Traditional Phong or Blinn-Phong lighting often falls short when it comes to capturing intricate real-world environments. That's why using cube maps and environment maps as the foundation for lighting can allow for the creation of more complex environments.
@@ -21,7 +21,7 @@ I first implemented an environment map. I positioned a sphere model at the cente
 
 ```glsl
 vec3 toEye = normalize(viewPosition - posWorld);
-    colour = texture(skybox, reflect(-toEye, normalWorld));
+colour = texture(cubemapTexture, reflect(-toEye, normalWorld));
 ```
 
 ---
@@ -39,7 +39,7 @@ I got the Specular cubemap texture from [www.humus.name](http://www.humus.name),
 vec3 toEye = normalize(viewPosition - posWorld);
 
 vec4 diffuse = texture(diffuseCubemap, normalWorld);
-vec4 specular = texture(skybox, reflect(-toEye, normalWorld));
+vec4 specular = texture(SpecularCubemap, reflect(-toEye, normalWorld));
 
 specular *= pow((specular.x + specular.y + specular.z) / 3.0, material.shininess);
 
