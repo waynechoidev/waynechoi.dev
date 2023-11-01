@@ -6,7 +6,7 @@ tags: ["opengl", "texture", "cpp"]
 excerpt: "Texture mapping an Earth-like texture onto a sphere model using OpenGL..."
 ---
 
-> The code in this post is based on the lecture ,[Introduction to Computer Graphics with DirectX 11 - Part 3: Rendering Techniques, from Honglab](https://honglab.co.kr/courses/graphicspt3). I have adapted this example to OpenGL with some minor customizations in line with my own implementation approach.
+> The code in this post is based on the lecture ,[Introduction to Computer Graphics with DirectX 11 - Part 2. Realtime Pipeline from Honglab](https://honglab.co.kr/courses/graphicspt2). I have adapted this example to OpenGL with some minor customizations in line with my own implementation approach.
 
 <br/>
 
@@ -79,7 +79,7 @@ uv.y = acos(posModel.y / 1.5) / PI;
 
 ### References
 
-- [Introduction to Computer Graphics with DirectX 11 - Part 3. Rendering Techniques](https://honglab.co.kr/courses/graphicspt3)
+- [Introduction to Computer Graphics with DirectX 11 - Part 2. Realtime Pipeline](https://honglab.co.kr/courses/graphicspt2)
 - [http://www.songho.ca/opengl/gl_sphere.html](http://www.songho.ca/opengl/gl_sphere.html)
 - [https://mathworld.wolfram.com/RegularTetrahedron.html](https://mathworld.wolfram.com/RegularTetrahedron.html)
 - [https://mathworld.wolfram.com/Isohedron.html](https://mathworld.wolfram.com/Isohedron.html)
