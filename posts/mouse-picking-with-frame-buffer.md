@@ -35,7 +35,6 @@ glBindFramebuffer(GL_FRAMEBUFFER, 0);
 At this stage, I ensured that the shader had the necessary information by providing it with two crucial uniforms. The first uniform served the purpose of specifying a distinct index color, specifically assigned to individual objects. This color acted as a means of identification, allowing the shader to differentiate between objects efficiently. The second uniform conveyed a boolean value, serving as an indicator of whether the rendering process was occurring off-screen or within the default frame buffer. This distinction was vital for tailoring the shader's behavior and adapting it to the specific rendering context.
 
 ```cpp
-// cpp
 GLuint useFBOUniform = glGetUniformLocation(programID, "useFBO");
 GLuint indexColorUniform = glGetUniformLocation(programID, "indexColor");
 
@@ -51,7 +50,6 @@ object.draw();
 At this point, the behavior in the fragment shader is determined by the value of 'useFBO.' As you can see in the code below, if 'useFBO' is true, indicating off-screen rendering, the shader processes the index color as part of the off-screen rendering workflow. On the other hand, if 'useFBO' is false, indicating direct rendering to the screen, the shader switches to an alternative mode.
 
 ```glsl
-// glsl
 out vec4 color;
 
 uniform bool useFBO;
