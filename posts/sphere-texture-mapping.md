@@ -6,7 +6,7 @@ tags: ["opengl", "texture", "cpp"]
 excerpt: "Texture mapping an Earth-like texture onto a sphere model using OpenGL..."
 ---
 
-> The code in this post is based on the lecture 'Introduction to Computer Graphics with DirectX 11 - Part 3: Rendering Techniques' at Honglab. I have adapted this example to OpenGL with some minor customizations in line with my own implementation approach.
+> The code in this post is based on the lecture ,[Introduction to Computer Graphics with DirectX 11 - Part 3: Rendering Techniques, from Honglab](https://honglab.co.kr/courses/graphicspt3). I have adapted this example to OpenGL with some minor customizations in line with my own implementation approach.
 
 <br/>
 
