@@ -6,6 +6,10 @@ tags: ["opengl", "texture", "cpp"]
 excerpt: "Texture mapping an Earth-like texture onto a sphere model using OpenGL..."
 ---
 
+> The code in this post is based on the lecture 'Introduction to Computer Graphics with DirectX 11 - Part 3: Rendering Techniques' at Honglab. I have adapted this example to OpenGL with some minor customizations in line with my own implementation approach.
+
+<br/>
+
 I want to map an Earth-like texture onto a spherical model. While the simplest method for mapping would be to use a cube map, creating an Earth-like texture as a cube map can be quite challenging. Due to the complexities involved in ensuring the cube map accurately represents the Earth's surface, it's often more suitable to explore alternative approaches.
 
 ---
@@ -75,6 +79,7 @@ uv.y = acos(posModel.y / 1.5) / PI;
 
 ### References
 
+- [Introduction to Computer Graphics with DirectX 11 - Part 3. Rendering Techniques](https://honglab.co.kr/courses/graphicspt3)
 - [http://www.songho.ca/opengl/gl_sphere.html](http://www.songho.ca/opengl/gl_sphere.html)
 - [https://mathworld.wolfram.com/RegularTetrahedron.html](https://mathworld.wolfram.com/RegularTetrahedron.html)
 - [https://mathworld.wolfram.com/Isohedron.html](https://mathworld.wolfram.com/Isohedron.html)
