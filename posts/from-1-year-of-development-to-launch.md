@@ -1,0 +1,27 @@
+---
+title: "From 1 Year of Development to Launch"
+date: "Nov 7, 2023"
+category: "story"
+tags: ["career", "web", "crm", "business"]
+excerpt: "Reflection on the Past Year of Developing and Launching a Web-Based CRM..."
+---
+
+I've been working at a FinTech startup in New Zealand, joining the team from the very beginning of product development. It's incredible how a year has already passed, and we've successfully launched our service. As a software engineer, guiding a product through its entire lifecycle, from concept to release, has been a truly enriching journey. However, we're only halfway through the cycle, as there's still the post-launch phase to navigate. Going forward, I'm excited to share my insights and experiences from the past year.
+
+Our current project focuses on a web-based CRM designed for specific B2B professionals, rather than the broader B2C market. In parallel, we're developing a B2C platform to allow these professionals to connect with their clients. What sets our product apart from other frontend applications is its intricate business logic and state management. Within the company, we collaborate with in-house experts in this field, leading to strong and invaluable feedback and frequent adjustments in our product planning.
+
+Our application comprises numerous pages, each with its own distinct states, and these states were interdependent on one another. Even within a single page, the user interface's form elements would dynamically change based on the current and past state. While we were aware that this wasn't the most decoupled or elegant software architecture, it was a necessity driven by the expectations of our user base and the resemblance to the legacy systems' interfaces that experts in the field had been using for a long time. These similarities with the legacy system's interface were a crucial factor in attracting the user base (our potential customers).
+
+Initially, our team manually tested interactions whenever there were modifications or additions, which I felt was time-consuming. So, in my early days as a new hire with no prior professional experience, I took the initiative to develop a testing library customized to our codebase and created test samples for everyone to consider. I proposed, "What if we introduce testing like this?"
+
+The testing methodology I proposed was as follows. Firstly, I realized that many of the critical computations were primarily happening on the backend, which made writing unit tests for all calculations time-consuming and cost-inefficient. Additionally, there were an overwhelming number of user scenarios for each page, and conducting individual E2E tests for each one proved to be excessively expensive. Therefore, I believed that integration testing was a more suitable approach. At the time, one of our team members had drawn diagrams for these scenarios and shared them, serving as a foundation for outlining the scenarios. I abstracted the functionalities of the testing library into a library to enable declarative test code writing based on scenarios.
+
+At that point, it seemed to be the best approach, and my perspective hasn't changed significantly even today. However, the situation has recently evolved. Due to significant changes in our planning, the scenarios within the pages have become much simpler. Instead, interactions between various frontend applications, interactions between users and their clients, and interactions among users themselves have intensified dramatically. As a result, we streamlined integration testing significantly and shifted our testing strategy towards covering most of the applications with E2E testing.
+
+With the introduction of the new project direction, looking at individual page scenarios alone was no longer sufficient. Instead, understanding the broader business picture became essential for implementing the expanding array of features. The project plan, whether it evolved into business logic or even user experience, was never entirely sufficient or flawless for implementation.
+
+The role of software engineers involved continuous communication and discussions with the project planner and domain experts in the business. We are supposed to play a vital role in shaping and completing the plan with them. At times, I actively shared my insights, and it helped me gradually gain a deeper understanding of the overall business flow. Among the experiences of the past year, this journey of comprehending the entire business ecosystem stands out as the most valuable.
+
+Moreover, as I worked on implementing the complex features involving the state of the current page and even interactions with other applications beyond the global state, along with interactions with the backend and databases, I became much more proficient with backend development. While I may not be as proficient as a dedicated backend engineer in creating highly sophisticated applications, I feel confident that I can handle the immediate task of feature implementation without significant issues.
+
+Both from a business and technical perspective, there are still many tasks ahead. We are dealing with an incomplete testing system and scattered sections of code that are not very maintainable. While continuous feedback and improvements are part of the journey, the greater goal seems to be building a more robust and sustainable system. As mentioned earlier, it feels like we've reached the midpoint of the product development cycle. I'm looking forward to the experiences that lie ahead.
