@@ -125,7 +125,7 @@ Now, I'm going to implement a trackball using the picked point obtained through 
 
 ---
 
-They also address certain problems associated with rotation representations, such as gimbal lock. The video below provides an example of gimbal lock. When the y-axis rotation angle approaches π/180 (approximately 1.57), a loss of freedom along one axis occurs, resulting in the x-axis and z-axis rotations producing the same outcome.
+They also address certain problems associated with rotation representations, such as gimbal lock. Gimbal lock is a phenomenon where a loss of Degrees of Freedom occurs when the y-axis rotation angle approaches π/180 (approximately 1.57). This results in a noticeable occurrence, as demonstrated in the accompanying video. In the flowing video, you can observe the x-axis and z-axis rotations producing the same outcome when the y-axis rotation angle reaches the specified value.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/IVYbnSeXclE?si=S3ndvwE02ofkB0eK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
