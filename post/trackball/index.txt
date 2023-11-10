@@ -1,5 +1,5 @@
 1:HL["/_next/static/css/7e64c3d656a6c0a2.css","style",{"crossOrigin":""}]
-0:["KwJeiJ35vEVbqZ7QuWNFq",[[["",{"children":["post",{"children":[["slug","trackball","d"],{"children":["__PAGE__?{\"slug\":\"trackball\"}",{}]}]}]},"$undefined","$undefined",true],"$L2",[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/7e64c3d656a6c0a2.css","precedence":"next","crossOrigin":""}]],"$L3"]]]]
+0:["c86cuwWHDxEtd4D9fHhWP",[[["",{"children":["post",{"children":[["slug","trackball","d"],{"children":["__PAGE__?{\"slug\":\"trackball\"}",{}]}]}]},"$undefined","$undefined",true],"$L2",[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/7e64c3d656a6c0a2.css","precedence":"next","crossOrigin":""}]],"$L3"]]]]
 4:HL["/_next/static/css/602feae4669a507e.css","style",{"crossOrigin":""}]
 5:I[9194,["326","static/chunks/326-6784f49434136418.js","185","static/chunks/app/layout-c79e65110ce35cf4.js"],""]
 6:I[5629,["326","static/chunks/326-6784f49434136418.js","185","static/chunks/app/layout-c79e65110ce35cf4.js"],""]
@@ -8,7 +8,7 @@
 a:I[8326,["326","static/chunks/326-6784f49434136418.js","691","static/chunks/691-d72542b099e0bc41.js","605","static/chunks/app/post/%5Bslug%5D/page-8d1612d00a7872d1.js"],""]
 b:I[7708,["326","static/chunks/326-6784f49434136418.js","691","static/chunks/691-d72542b099e0bc41.js","605","static/chunks/app/post/%5Bslug%5D/page-8d1612d00a7872d1.js"],""]
 3:[["$","meta","0",{"charSet":"utf-8"}],["$","title","1",{"children":"WayneChoi.Dev"}],["$","meta","2",{"name":"description","content":"Wayne Choi blog"}],["$","meta","3",{"name":"viewport","content":"width=device-width, initial-scale=1"}],["$","link","4",{"rel":"icon","href":"/favicon.ico"}]]
-c:T2277,
+c:T2308,
 <iframe width="560" height="315" src="https://www.youtube.com/embed/KQhOrAeFm8A?si=n0SRJXAz3kiEg2eL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 I have implemented a trackball feature using OpenGL. A trackball enables users to interactively rotate objects within a 3D space, offering an intuitive and engaging user experience. This feature enhances the overall interactivity of the application, allowing for dynamic and visually appealing manipulation of 3D objects.
@@ -128,7 +128,7 @@ Now, I'm going to implement a trackball using the picked point obtained through 
 
 ---
 
-They also address certain problems associated with rotation representations, such as gimbal lock. The video below provides an example of gimbal lock. When the y-axis rotation angle approaches π/180 (approximately 1.57), a loss of freedom along one axis occurs, resulting in the x-axis and z-axis rotations producing the same outcome.
+They also address certain problems associated with rotation representations, such as gimbal lock. Gimbal lock is a phenomenon where a loss of Degrees of Freedom occurs when the y-axis rotation angle approaches π/180 (approximately 1.57). This results in a noticeable occurrence, as demonstrated in the accompanying video. In the flowing video, you can observe the x-axis and z-axis rotations producing the same outcome when the y-axis rotation angle reaches the specified value.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/IVYbnSeXclE?si=S3ndvwE02ofkB0eK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
