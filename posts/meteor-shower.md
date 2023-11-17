@@ -6,7 +6,7 @@ tags: ["toyproject", "opengl", "transformfeedback", "geometryshader"]
 excerpt: "Implemented meteor shower with GPGPU via Transform Feedback in OpenGL..."
 ---
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/rCIerO22Ztc?si=iyogCp2NFkNpk1JN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/L4oEm8MGUyg?si=FID0zEP2dFe5tnCv" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 This post provides an overview of the overall concept and key implementation points behind creating a meteor shower simulation using OpenGL. It highlights important concepts and crucial implementation details without providing a step-by-step tutorial. So it might be challenging to reconstruct this project with the provided code. The complete code can be found at the repository link provided at the end.
 
