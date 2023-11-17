@@ -5,10 +5,10 @@ import Link from "next/link";
 export default function Home() {
   const posts = getPostListBySlugs([
     "from-1-year-of-development-to-launch",
-    "earth-animation",
     "image-based-lighting",
     "sphere-texture-mapping",
-    "webgl-particles",
+    "earth-animation",
+    "meteor-shower",
     "web-based-deep-learning",
   ]);
   return (
