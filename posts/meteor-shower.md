@@ -224,8 +224,6 @@ uniform vec2 resolution;
 
 out vec4 color;
 
-
-
 float circle(vec2 st, vec2 center, float radius) {
     float distance = length(st - center);
 
@@ -270,7 +268,7 @@ void main() {
 
 I've had an experience implementing transform feedback in WebGL, but its API usage differs significantly. Moreover, finding examples using transform feedback was challenging, possibly due to the prevalence of compute shaders. During the initial setup, I struggled a bit due to the scarcity of examples.
 
-Often, I found myself amazed by the incredible implementations showcased on shader toy. Observing those mesmerizing examples, I couldn't help but wonder how they achieved such effects. Finally, getting the chance to implement something simple on my own felt rewarding.
+Often, I found myself amazed by the incredible implementations showcased on [Shadertoy](https://www.shadertoy.com/). Observing those mesmerizing examples, I couldn't help but wonder how they achieved such effects. Finally, getting the chance to implement something simple on my own felt rewarding.
 
 ---
 
