@@ -1,0 +1,282 @@
+1:HL["/_next/static/css/7e64c3d656a6c0a2.css","style",{"crossOrigin":""}]
+0:["fgkalrA7lSTw5NrqzVW7B",[[["",{"children":["post",{"children":[["slug","meteor-shower","d"],{"children":["__PAGE__?{\"slug\":\"meteor-shower\"}",{}]}]}]},"$undefined","$undefined",true],"$L2",[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/7e64c3d656a6c0a2.css","precedence":"next","crossOrigin":""}]],"$L3"]]]]
+4:HL["/_next/static/css/602feae4669a507e.css","style",{"crossOrigin":""}]
+5:I[9194,["326","static/chunks/326-6784f49434136418.js","185","static/chunks/app/layout-c79e65110ce35cf4.js"],""]
+6:I[5629,["326","static/chunks/326-6784f49434136418.js","185","static/chunks/app/layout-c79e65110ce35cf4.js"],""]
+7:I[6954,[],""]
+8:I[7264,[],""]
+a:I[8326,["326","static/chunks/326-6784f49434136418.js","691","static/chunks/691-d72542b099e0bc41.js","605","static/chunks/app/post/%5Bslug%5D/page-8d1612d00a7872d1.js"],""]
+b:I[7708,["326","static/chunks/326-6784f49434136418.js","691","static/chunks/691-d72542b099e0bc41.js","605","static/chunks/app/post/%5Bslug%5D/page-8d1612d00a7872d1.js"],""]
+3:[["$","meta","0",{"charSet":"utf-8"}],["$","title","1",{"children":"WayneChoi.Dev"}],["$","meta","2",{"name":"description","content":"Wayne Choi blog"}],["$","meta","3",{"name":"viewport","content":"width=device-width, initial-scale=1"}],["$","link","4",{"rel":"icon","href":"/favicon.ico"}]]
+c:T2884,
+<iframe width="560" height="315" src="https://www.youtube.com/embed/V2BDsedF-BY?si=pH9mWDPtk-olyTXg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+This post provides an overview of the overall concept and key implementation points behind creating a meteor shower simulation using OpenGL. It highlights important concepts and crucial implementation details without providing a step-by-step tutorial. So it might be challenging to reconstruct this project with the provided code. The complete code can be found at the repository link provided at the end.
+
+---
+
+## GPGPU with Transform Feedback
+
+Transform Feedback is a feature in OpenGL that allows retrieving computed data from the GPU back into buffers. This enables updating vertex positions or computing other data and writing it to buffers. By swapping buffers, the GPU computes the data and writes it into a buffer without retrieving it to the CPU.
+
+In this context, rather than fetching buffer data to the CPU, the approach involves swapping between two buffers. Within a single frame, one buffer undergoes GPGPU operations, updating vertex positions via the vertex shader, utilizing transform feedback to update that buffer. Meanwhile, the other buffer handles rendering those updated vertices onto the screen.
+
+---
+
+First, I created Vertex Buffer Objects (VBOs) and Vertex Array Objects (VAOs), initializing both VBOs with the same initial values. The position vertices included here represent individual entities, using points as the primitive type. I bound the respective VBOs to the VAO according to their indices. In reality, there are more STATIC_DRAW VBOs required for computations or rendering. However, for brevity, I omitted them in this explanation.
+
+```c++
+// std::vector<GLfloat> positions...
+
+// Generate VBOs
+GLuint positionVBO[2];
+glGenBuffers(2, positionVBO);
+for (GLint i = 0; i < 2; ++i)
+{
+	glBindBuffer(GL_ARRAY_BUFFER, positionVBO[i]);
+	glBufferData(GL_ARRAY_BUFFER, sizeof(GLfloat) * positions.size(), positions.data(), GL_DYNAMIC_DRAW);
+
+	glBindBuffer(GL_ARRAY_BUFFER, 0);
+}
+
+// Generate VAOs
+GLuint drawPositionVAO[2];
+glGenVertexArrays(2, drawPositionVAO);
+for (GLint i = 0; i < 2; ++i) {
+	glBindVertexArray(drawPositionVAO[i]);
+
+	glBindBuffer(GL_ARRAY_BUFFER, positionVBO[i]);
+	glEnableVertexAttribArray(0);
+	glVertexAttribPointer(0, 2, GL_FLOAT, GL_FALSE, 2 * sizeof(GLfloat), (GLvoid*)0);
+
+	glBindVertexArray(0);
+}
+
+GLuint computePositionVAO[2];
+glGenVertexArrays(2, computePositionVAO);
+for (GLint i = 0; i < 2; ++i) {
+	glBindVertexArray(computePositionVAO[i]);
+
+	glBindBuffer(GL_ARRAY_BUFFER, positionVBO[i]);
+	glEnableVertexAttribArray(0);
+	glVertexAttribPointer(0, 2, GL_FLOAT, GL_FALSE, 2 * sizeof(GLfloat), (GLvoid*)0);
+
+	glBindVertexArray(0);
+}
+```
+
+---
+
+This section sets up and generates Transform Feedback. Unlike WebGL, in OpenGL, it's necessary to explicitly specify which variables from the shader will be recorded in the Transform Feedback. Here, we're using the "newPosition" variable. Then, we generate objects for Transform Feedback and bind buffers (previously created VBOs) to these objects to enable recording data into them.
+
+```c++
+// GLuint ProgramID...
+const GLchar* feedbackVaryings[] = { "newPosition" };
+glTransformFeedbackVaryings(programID, 1, feedbackVaryings, GL_INTERLEAVED_ATTRIBS);
+glLinkProgram(programID);
+
+// Generate Transform feedbacks
+GLuint transformFeedback[2];
+glGenTransformFeedbacks(2, transformFeedback);
+for (int i = 0; i < 2; ++i) {
+	glBindTransformFeedback(GL_TRANSFORM_FEEDBACK, transformFeedback[i]);
+	glBindBufferBase(GL_TRANSFORM_FEEDBACK_BUFFER, 0, positionVBO[i]);
+}
+```
+
+---
+
+In the main loop, two steps are executed. In the 'Compute Position' step, the position is calculated and stored via Transform Feedback. During this process, rasterization is turned off (for Transform Feedback), and the results are recorded into the corresponding buffer. Then, in the 'Draw' step, the updated positions are retrieved from another buffer and displayed on the screen. To achieve this, the flag variable is toggled every loop iteration to swap the buffers used for updating and rendering.
+
+```c++
+GLint swapFlag = 0;
+while (!mainWindow.getShouldClose())
+{
+	swapFlag = swapFlag ? 0 : 1;
+
+	// Compute position
+	computeProgram.use();
+	glUniform1f(deltaTimeLoc, deltaTime);
+
+	glBindVertexArray(computePositionVAO[swapFlag ? 0 : 1]);
+	glEnable(GL_RASTERIZER_DISCARD);
+
+	glBindTransformFeedback(GL_TRANSFORM_FEEDBACK, transformFeedback[swapFlag]);
+	glBeginTransformFeedback(GL_POINTS);
+	glDrawArrays(GL_POINTS, 0, NUM_OF_PARTICLES);
+	glEndTransformFeedback();
+
+	glDisable(GL_RASTERIZER_DISCARD);
+	glBindTransformFeedback(GL_TRANSFORM_FEEDBACK, 0);
+
+	// Draw
+	drawProgram.use();
+	glUniform1f(currentTimeLoc, currentFrameTime);
+
+	glBindVertexArray(drawPositionVAO[swapFlag]);
+	glDrawArrays(GL_POINTS, 0, NUM_OF_PARTICLES);
+	glBindVertexArray(0);
+}
+```
+
+---
+
+The following code is a vertex shader responsible for computing updates to vertices. It takes a scalar value for speed instead of vector, and forcing vertices to move unilaterally at a 45-degree angle towards the bottom left. When vertices exceed the screen boundaries, they reset to their original positions. While currently displayed as points, their rendering generates length, thus requiring the screen width to be expanded to accommodate this effect.
+
+```glsl
+#version 420
+
+in vec2 position;
+in float speed;
+
+uniform float deltaTime;
+uniform vec2 windowSize;
+
+out vec2 newPosition;
+
+void main()
+{
+    float expansionRatio = 1.2;
+
+    vec2 newPositionTemp = position + vec2(-speed) * deltaTime;
+
+    vec2 expandedWindowSize = windowSize * expansionRatio;
+    vec2 adjustedPosition = mod(newPositionTemp, expandedWindowSize);
+
+    // Wrap around if position is outside the window bounds
+    adjustedPosition = mix(adjustedPosition, adjustedPosition - expandedWindowSize, step(windowSize, adjustedPosition));
+
+    newPosition = adjustedPosition;
+}
+```
+
+---
+
+## Geometry Shader
+
+I decided to handle operations using points for convenience and delegate details for drawing to the geometry shader. Initially, I intended to draw lines for simplicity, but that seemed too uniform. Consequently, I opted to draw billboards in the geometry shader and manage intricate details in the fragment shader.
+
+Similar to before, I didn't take directional input but received a scalar float value named 'distance.' Based on this, I decided to draw smaller billboards as the distance increased. However, to maintain compatibility with the movement at a 45-degree angle, regardless of the screen's aspect ratio, I received the resolution as a uniform to adjust the proportions and draw billboards as perfect squares.
+
+```glsl
+#version 420
+
+layout(points) in;
+layout(triangle_strip, max_vertices = 4) out;
+
+in float distanceVal[];
+in vec3 color[];
+
+out vec2 texCoord;
+out vec3 colorValue;
+out float distanceValue;
+
+uniform vec2 resolution;
+
+void main() {
+    vec4 bottomLeftVertex = gl_in[0].gl_Position;;
+    vec4 topRightVertex = bottomLeftVertex + vec4(-1.0 * resolution.y / resolution.x, -1.0, 0.0, 0.0) * distanceVal[0];
+
+    // Bottom Left
+    gl_Position = bottomLeftVertex;
+    texCoord = vec2(0.0,0.0);
+    colorValue = color[0];
+    distanceValue = distanceVal[0];
+    EmitVertex();
+
+    // Bottom Right
+    gl_Position = vec4(topRightVertex.x, bottomLeftVertex.y, 0.0, 1.0);
+    texCoord = vec2(1.0,0.0);
+    colorValue = color[0];
+    distanceValue = distanceVal[0];
+    EmitVertex();
+
+    // Top Left
+    gl_Position = vec4(bottomLeftVertex.x, topRightVertex.y, 0.0, 1.0);
+    texCoord = vec2(0.0,1.0);
+    colorValue = color[0];
+    distanceValue = distanceVal[0];
+    EmitVertex();
+
+    // Top Right
+    gl_Position = topRightVertex;
+    texCoord = vec2(1.0,1.0);
+    colorValue = color[0];
+    distanceValue = distanceVal[0];
+    EmitVertex();
+
+    EndPrimitive();
+}
+```
+
+---
+
+## Fragment Shader
+
+In the fragment shader, I implemented the rendering of meteors with distinct components: the central meteor, its glow, and the tail. I didn't just receive positions but also randomly generated color values to create a variety of colored meteors. To achieve a flickering effect, I used the time value as a uniform and applied a sine function to modulate brightness. However, I encountered uniform flickering across all meteors, which seemed odd. To address this, I applied the sine function to the distance variable as well, introducing variation and diversifying the flickering effect.
+
+```glsl
+#version 420
+
+in vec3 colorValue;
+in vec2 texCoord;
+in float distanceValue;
+
+uniform float currentTime;
+uniform vec2 resolution;
+
+out vec4 color;
+
+
+
+float circle(vec2 st, vec2 center, float radius) {
+    float distance = length(st - center);
+
+    if (distance > radius*0.9) return 0.0;
+
+    return 1.0;
+}
+
+float glow(vec2 st, vec2 center, float radius) {
+    float distance = length(st - center);
+    return 1.0 - smoothstep(radius * 0.5, radius * 3.0, distance);
+}
+
+float tail(vec2 st, vec2 center, float radius) {
+    if (st.x + st.y < center.x + center.y) return 0.0;
+    return smoothstep(radius * 0.5, 0.0, abs(st.y - st.x) * (st.x + radius * 10.0));
+}
+
+void main() {
+	vec2 st = texCoord;
+    st.x = 1.0 - st.x;
+    st.y = 1.0 - st.y;
+
+    vec2 center = vec2(0.05, 0.05);
+    float radius = 0.02;
+
+    float pct = circle(st, center, radius) + glow(st, center, radius) + tail(st, center, radius);
+    float brightness = 0.7 + 0.3 * sin(currentTime * distanceValue * 10.0);
+
+    color = vec4(pct * colorValue * brightness, 1.0);
+
+    if (dot(color.rgb, vec3(1.0)) - 0.1 < 0.0) {
+    discard;
+    }
+
+}
+```
+
+---
+
+## Conclusion
+
+I've had an experience implementing transform feedback in WebGL, but its API usage differs significantly. Moreover, finding examples using transform feedback was challenging, possibly due to the prevalence of compute shaders. During the initial setup, I struggled a bit due to the scarcity of examples.
+
+Often, I found myself amazed by the incredible implementations showcased on shader toy. Observing those mesmerizing examples, I couldn't help but wonder how they achieved such effects. Finally, getting the chance to implement something simple on my own felt rewarding.
+
+---
+
+[Repository](https://github.com/waynechoidev/meteor-shower/)
+2:[null,["$","html",null,{"lang":"en","children":["$","body",null,{"className":"mx-auto my-0","children":[["$","nav",null,{"className":"max-w-default mx-auto px-5 py-3","children":["$","$L5",null,{}]}],["$","header",null,{"children":["$","$L6",null,{}]}],["$","div",null,{"className":"max-w-default mx-auto p-5","children":["$","$L7",null,{"parallelRouterKey":"children","segmentPath":["children"],"loading":"$undefined","loadingStyles":"$undefined","hasLoading":false,"error":"$undefined","errorStyles":"$undefined","template":["$","$L8",null,{}],"templateStyles":"$undefined","notFound":[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":"404"}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],"notFoundStyles":[],"childProp":{"current":["$","$L7",null,{"parallelRouterKey":"children","segmentPath":["children","post","children"],"loading":"$undefined","loadingStyles":"$undefined","hasLoading":false,"error":"$undefined","errorStyles":"$undefined","template":["$","$L8",null,{}],"templateStyles":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined","childProp":{"current":[null,["$","$L7",null,{"parallelRouterKey":"children","segmentPath":["children","post","children",["slug","meteor-shower","d"],"children"],"loading":"$undefined","loadingStyles":"$undefined","hasLoading":false,"error":"$undefined","errorStyles":"$undefined","template":["$","$L8",null,{}],"templateStyles":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined","childProp":{"current":["$L9",["$","div",null,{"children":[["$","$La",null,{"href":"/posts/graphics","className":"text-gray-600 text-md pl-1 hover:font-bold","children":"GRAPHICS"}],["$","h1",null,{"children":"Meteor shower"}],["$","p",null,{"className":"text-gray-400 text-sm m-0 mt-1","children":"Nov 17, 2023"}],["$","div",null,{"className":"mt-1","children":["$","div",null,{"className":"whitespace-nowrap overflow-x-auto pb-3","children":[["$","$La","toyproject",{"href":"/tag/toyproject","className":"mr-2 text-gray-500 hover:font-bold","children":"#toyproject"}],["$","$La","opengl",{"href":"/tag/opengl","className":"mr-2 text-gray-500 hover:font-bold","children":"#opengl"}],["$","$La","transformfeedback",{"href":"/tag/transformfeedback","className":"mr-2 text-gray-500 hover:font-bold","children":"#transformfeedback"}],["$","$La","geometryshader",{"href":"/tag/geometryshader","className":"mr-2 text-gray-500 hover:font-bold","children":"#geometryshader"}]]}]}],["$","div",null,{"className":"mt-8","children":["$","$Lb",null,{"content":"$c"}]}]]}],null],"segment":"__PAGE__?{\"slug\":\"meteor-shower\"}"},"styles":[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/602feae4669a507e.css","precedence":"next","crossOrigin":""}]]}],null],"segment":["slug","meteor-shower","d"]},"styles":[]}],"segment":"post"},"styles":[]}]}],["$","footer",null,{"className":"h-40 flex justify-center items-end","children":["$","p",null,{"className":"text-gray-500 text-sm","children":"(C) 2021. Wayne Choi. All rights reserved."}]}]]}]}],null]
+9:null
