@@ -8,7 +8,7 @@ excerpt: "Started diving deep into graphics programming..."
 
 I started diving deep into graphics programming.
 
-I've tried various fields, from web backend to AI deep learning. Initially, working on server applications felt more challenging in terms of system scale, operations, design, and database complexities, rather than focusing on feature implementation. These tasks didn't appeal to me. Deep learning, on the other hand, felt less explicit, and as someone with a limited mathematical understanding of models, it seemed like I was tinkering with hyperparameters to achieve better results without a deeper motivation to study further.
+I've tried various fields, from web backend to AI deep learning. Initially, working on server applications felt more challenging in terms of system scale, operations, design, and database complexities, rather than focusing on feature implementation. These tasks didn't appeal to me. I felt that deep learning was less explicit to me, and as someone with a limited mathematical understanding of models, it seemed like I was tinkering with hyperparameters to achieve better results without a deeper motivation to study further.
 
 On the other hand, client programming was the most appealing to me because I could develop complex and challenging applications even when the system scale was small. So I could do it on my own. Above all, it was significant to see the results visually as I created them. So I realized that it seems like client programming is the most interesting to me.
 
