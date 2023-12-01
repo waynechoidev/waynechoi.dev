@@ -1,5 +1,5 @@
 1:HL["/_next/static/css/f6087d240bf37d69.css","style",{"crossOrigin":""}]
-0:["AU0zKJGXGISqBOBYYQhGt",[[["",{"children":["post",{"children":[["slug","dive-into-graphics-programming","d"],{"children":["__PAGE__?{\"slug\":\"dive-into-graphics-programming\"}",{}]}]}]},"$undefined","$undefined",true],"$L2",[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/f6087d240bf37d69.css","precedence":"next","crossOrigin":""}]],"$L3"]]]]
+0:["UqkMTU0m3l7aQ4phG_xG1",[[["",{"children":["post",{"children":[["slug","dive-into-graphics-programming","d"],{"children":["__PAGE__?{\"slug\":\"dive-into-graphics-programming\"}",{}]}]}]},"$undefined","$undefined",true],"$L2",[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/f6087d240bf37d69.css","precedence":"next","crossOrigin":""}]],"$L3"]]]]
 4:HL["/_next/static/css/602feae4669a507e.css","style",{"crossOrigin":""}]
 5:I[9194,["326","static/chunks/326-6784f49434136418.js","185","static/chunks/app/layout-202024dbb3731b22.js"],""]
 6:I[5629,["326","static/chunks/326-6784f49434136418.js","185","static/chunks/app/layout-202024dbb3731b22.js"],""]
@@ -8,10 +8,10 @@
 a:I[8326,["326","static/chunks/326-6784f49434136418.js","691","static/chunks/691-d72542b099e0bc41.js","605","static/chunks/app/post/%5Bslug%5D/page-8d1612d00a7872d1.js"],""]
 b:I[7708,["326","static/chunks/326-6784f49434136418.js","691","static/chunks/691-d72542b099e0bc41.js","605","static/chunks/app/post/%5Bslug%5D/page-8d1612d00a7872d1.js"],""]
 3:[["$","meta","0",{"charSet":"utf-8"}],["$","title","1",{"children":"WayneChoi.Dev"}],["$","meta","2",{"name":"description","content":"Wayne Choi blog"}],["$","meta","3",{"name":"viewport","content":"width=device-width, initial-scale=1"}],["$","link","4",{"rel":"icon","href":"/favicon.ico"}]]
-c:T7d3,
+c:T7d0,
 I started diving deep into graphics programming.
 
-I've tried various fields, from web backend to AI deep learning. Initially, working on server applications felt more challenging in terms of system scale, operations, design, and database complexities, rather than focusing on feature implementation. These tasks didn't appeal to me. Deep learning, on the other hand, felt less explicit, and as someone with a limited mathematical understanding of models, it seemed like I was tinkering with hyperparameters to achieve better results without a deeper motivation to study further.
+I've tried various fields, from web backend to AI deep learning. Initially, working on server applications felt more challenging in terms of system scale, operations, design, and database complexities, rather than focusing on feature implementation. These tasks didn't appeal to me. I felt that deep learning was less explicit to me, and as someone with a limited mathematical understanding of models, it seemed like I was tinkering with hyperparameters to achieve better results without a deeper motivation to study further.
 
 On the other hand, client programming was the most appealing to me because I could develop complex and challenging applications even when the system scale was small. So I could do it on my own. Above all, it was significant to see the results visually as I created them. So I realized that it seems like client programming is the most interesting to me.
 
