@@ -1,0 +1,48 @@
+1:HL["/_next/static/css/f6087d240bf37d69.css","style",{"crossOrigin":""}]
+0:["cEQCihxyIcnoidDIs4D5O",[[["",{"children":["post",{"children":[["slug","how-does-youtube-autoplay-their-videos","d"],{"children":["__PAGE__?{\"slug\":\"how-does-youtube-autoplay-their-videos\"}",{}]}]}]},"$undefined","$undefined",true],"$L2",[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/f6087d240bf37d69.css","precedence":"next","crossOrigin":""}]],"$L3"]]]]
+4:HL["/_next/static/css/602feae4669a507e.css","style",{"crossOrigin":""}]
+5:I[9194,["326","static/chunks/326-6784f49434136418.js","185","static/chunks/app/layout-202024dbb3731b22.js"],""]
+6:I[5629,["326","static/chunks/326-6784f49434136418.js","185","static/chunks/app/layout-202024dbb3731b22.js"],""]
+7:I[6954,[],""]
+8:I[7264,[],""]
+a:I[8326,["326","static/chunks/326-6784f49434136418.js","691","static/chunks/691-d72542b099e0bc41.js","605","static/chunks/app/post/%5Bslug%5D/page-8d1612d00a7872d1.js"],""]
+b:I[7708,["326","static/chunks/326-6784f49434136418.js","691","static/chunks/691-d72542b099e0bc41.js","605","static/chunks/app/post/%5Bslug%5D/page-8d1612d00a7872d1.js"],""]
+3:[["$","meta","0",{"charSet":"utf-8"}],["$","title","1",{"children":"WayneChoi.Dev"}],["$","meta","2",{"name":"description","content":"Wayne Choi blog"}],["$","meta","3",{"name":"viewport","content":"width=device-width, initial-scale=1"}],["$","link","4",{"rel":"icon","href":"/favicon.ico"}]]
+c:Tacf,
+## Introduction
+
+When it comes to web browsers, making videos play automatically faces certain limitations due to concerns about user experience and data consumption. Unexpected sounds accompanying the automatic loading of a page can lead to confusion and discomfort, especially on mobile devices where such playback might be considered inappropriate based on the user's current context or location. Additionally, autoplayed videos consuming user data could result in unexpected charges, particularly on mobile networks, prompting users to desire control over such data-heavy autoplay features.
+
+Despite these challenges, autoplaying videos can significantly enhance user interaction. YouTube employs various strategies to implement this feature smoothly, providing users with a seamless viewing experience. Let's explore some of the methods used to achieve autoplay, even when faced with browser restrictions.
+
+## Muted Playback
+
+Most browsers generally allow autoplay with muted content to avoid surprising users with unexpected sound. Muting the content by default is a common practice to prevent disruptive audio experiences. Below is an example code snippet illustrating muted autoplay:
+
+```html
+<video width="640" height="360" autoplay muted>
+  <source src="video.mp4" type="video/mp4" />
+</video>
+```
+
+**However, YouTube autoplays videos with sound.**
+
+## Whitelisting
+
+YouTube employs a whitelist system to circumvent default restrictions on autoplay. This grants YouTube special permission to autoplay videos with sound, even in situations where other websites might face limitations. The whitelist includes domains or conditions that, when met, allow for autoplay with sound.
+
+## Media Engagement Index (MEI)
+
+In the case of Chrome, there's the concept of the Media Engagement Index (MEI), measuring an individual's tendency to consume media on a site. Chrome calculates this index based on significant media playback events relative to site visits. If the MEI is high enough, media can autoplay on desktop.
+
+**However, YouTube supports autoplay with sound even on mobile devices.**
+
+## Collaboration and Negotiation
+
+YouTube collaborates with various browser vendors to support and optimize autoplay functionality. This collaboration ensures that YouTube's service remains smooth and adaptive, adhering to changing browser policies and user preferences. Given YouTube's significant scale and influence, it maintains a strong position to build and sustain robust collaboration with browser manufacturers. This suggests that YouTube may enjoy special privileges or exceptions.
+
+## Conclusion
+
+If you are developing a large-scale application with a significant impact, comparable to YouTube, you can collaborate with vendors to provide such functionalities.
+2:[null,["$","html",null,{"lang":"en","children":["$","body",null,{"className":"mx-auto my-0","children":[["$","nav",null,{"className":"max-w-default mx-auto px-5 py-3","children":["$","$L5",null,{}]}],["$","header",null,{"children":["$","$L6",null,{}]}],["$","div",null,{"className":"max-w-default mx-auto p-5","children":["$","$L7",null,{"parallelRouterKey":"children","segmentPath":["children"],"loading":"$undefined","loadingStyles":"$undefined","hasLoading":false,"error":"$undefined","errorStyles":"$undefined","template":["$","$L8",null,{}],"templateStyles":"$undefined","notFound":[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":"404"}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],"notFoundStyles":[],"childProp":{"current":["$","$L7",null,{"parallelRouterKey":"children","segmentPath":["children","post","children"],"loading":"$undefined","loadingStyles":"$undefined","hasLoading":false,"error":"$undefined","errorStyles":"$undefined","template":["$","$L8",null,{}],"templateStyles":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined","childProp":{"current":[null,["$","$L7",null,{"parallelRouterKey":"children","segmentPath":["children","post","children",["slug","how-does-youtube-autoplay-their-videos","d"],"children"],"loading":"$undefined","loadingStyles":"$undefined","hasLoading":false,"error":"$undefined","errorStyles":"$undefined","template":["$","$L8",null,{}],"templateStyles":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined","childProp":{"current":["$L9",["$","div",null,{"children":[["$","$La",null,{"href":"/posts/web","className":"text-gray-600 text-md pl-1 hover:font-bold","children":"WEB"}],["$","h1",null,{"children":"How Does YouTube Autoplay Their Videos?"}],["$","p",null,{"className":"text-gray-400 text-sm m-0 mt-1","children":"Feb 1, 2024"}],["$","div",null,{"className":"mt-1","children":["$","div",null,{"className":"whitespace-nowrap overflow-x-auto pb-3","children":[["$","$La","web",{"href":"/tag/web","className":"mr-2 text-gray-500 hover:font-bold","children":"#web"}],["$","$La","html",{"href":"/tag/html","className":"mr-2 text-gray-500 hover:font-bold","children":"#html"}]]}]}],["$","div",null,{"className":"mt-8","children":["$","$Lb",null,{"content":"$c"}]}]]}],null],"segment":"__PAGE__?{\"slug\":\"how-does-youtube-autoplay-their-videos\"}"},"styles":[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/602feae4669a507e.css","precedence":"next","crossOrigin":""}]]}],null],"segment":["slug","how-does-youtube-autoplay-their-videos","d"]},"styles":[]}],"segment":"post"},"styles":[]}]}],["$","footer",null,{"className":"h-40 flex justify-center items-end","children":["$","p",null,{"className":"text-gray-500 text-sm","children":"(C) 2021. Wayne Choi. All rights reserved."}]}]]}]}],null]
+9:null
