@@ -41,3 +41,8 @@ YouTube collaborates with various browser vendors to support and optimize autopl
 ## Conclusion
 
 If you are developing a large-scale application with a significant impact, comparable to YouTube, you can collaborate with vendors to provide such functionalities.
+
+### References
+
+- [Google blog - Autoplay policy in Chrome ](https://developer.chrome.com/blog/autoplay)
+- [Google blog - Improving Autoplay in Chrome](https://blog.google/products/chrome/improving-autoplay-chrome/)
