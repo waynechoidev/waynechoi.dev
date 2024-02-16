@@ -15,3 +15,5 @@ You can check out the code in the shared repository below, and I've also include
 ---
 
 [Repository](https://github.com/waynechoidev/picture-particles/) / [Sample](https://waynechoidev.github.io/picture-particles/)
+
+[Repository](https://github.com/waynechoidev/picture-particles-change/) / [Sample](https://waynechoidev.github.io/picture-particles-change/)
