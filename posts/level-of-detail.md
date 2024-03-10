@@ -175,7 +175,7 @@ void Texture::initialise(std::string fileLoc)
 
 ---
 
-The above video demonstrates the simultaneous application of LOD based on geometric level and mipmaps.
+The above video demonstrates the simultaneous application of LOD based on geometric level and mipmaps. LOD has been exaggerated for explanatory purposes, but it's not typically this extreme in actual products.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/uXcf-MrRKBE?si=Wk-HblygMDMWqNV-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
