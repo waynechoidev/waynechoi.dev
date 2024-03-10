@@ -1,5 +1,5 @@
 1:HL["/_next/static/css/f6087d240bf37d69.css","style",{"crossOrigin":""}]
-0:["1ObjhNtePiAnYdZDJAKuM",[[["",{"children":["post",{"children":[["slug","level-of-detail","d"],{"children":["__PAGE__?{\"slug\":\"level-of-detail\"}",{}]}]}]},"$undefined","$undefined",true],"$L2",[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/f6087d240bf37d69.css","precedence":"next","crossOrigin":""}]],"$L3"]]]]
+0:["Q30jR7bv1z_3fZv74N7q4",[[["",{"children":["post",{"children":[["slug","level-of-detail","d"],{"children":["__PAGE__?{\"slug\":\"level-of-detail\"}",{}]}]}]},"$undefined","$undefined",true],"$L2",[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/f6087d240bf37d69.css","precedence":"next","crossOrigin":""}]],"$L3"]]]]
 4:HL["/_next/static/css/602feae4669a507e.css","style",{"crossOrigin":""}]
 5:I[9194,["326","static/chunks/326-6784f49434136418.js","185","static/chunks/app/layout-202024dbb3731b22.js"],""]
 6:I[5629,["326","static/chunks/326-6784f49434136418.js","185","static/chunks/app/layout-202024dbb3731b22.js"],""]
@@ -8,7 +8,7 @@
 a:I[8326,["326","static/chunks/326-6784f49434136418.js","691","static/chunks/691-d72542b099e0bc41.js","605","static/chunks/app/post/%5Bslug%5D/page-8d1612d00a7872d1.js"],""]
 b:I[7708,["326","static/chunks/326-6784f49434136418.js","691","static/chunks/691-d72542b099e0bc41.js","605","static/chunks/app/post/%5Bslug%5D/page-8d1612d00a7872d1.js"],""]
 3:[["$","meta","0",{"charSet":"utf-8"}],["$","title","1",{"children":"WayneChoi.Dev"}],["$","meta","2",{"name":"description","content":"Wayne Choi blog"}],["$","meta","3",{"name":"viewport","content":"width=device-width, initial-scale=1"}],["$","link","4",{"rel":"icon","href":"/favicon.ico"}]]
-c:T2281,
+c:T22ec,
 Level of Detail (LOD) is a crucial concept in computer graphics and game development, utilized to optimize rendering performance while maintaining visual fidelity. LOD techniques dynamically adjust the complexity of objects based on factors such as viewer distance, screen size, or importance within the scene. I implemented several LOD techniques directly using OpenGL.
 
 ---
@@ -178,7 +178,7 @@ void Texture::initialise(std::string fileLoc)
 
 ---
 
-The above video demonstrates the simultaneous application of LOD based on geometric level and mipmaps.
+The above video demonstrates the simultaneous application of LOD based on geometric level and mipmaps. LOD has been exaggerated for explanatory purposes, but it's not typically this extreme in actual products.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/uXcf-MrRKBE?si=Wk-HblygMDMWqNV-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
