@@ -1,0 +1,618 @@
+1:HL["/_next/static/css/baa01199c04a1a03.css","style",{"crossOrigin":""}]
+0:["kBh2uVt1QaUwnopTNwZZo",[[["",{"children":["post",{"children":[["slug","pbr-rendering","d"],{"children":["__PAGE__?{\"slug\":\"pbr-rendering\"}",{}]}]}]},"$undefined","$undefined",true],"$L2",[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/baa01199c04a1a03.css","precedence":"next","crossOrigin":""}]],"$L3"]]]]
+4:HL["/_next/static/css/602feae4669a507e.css","style",{"crossOrigin":""}]
+5:I[9194,["326","static/chunks/326-6784f49434136418.js","185","static/chunks/app/layout-21c5cbba278c1661.js"],""]
+6:I[5629,["326","static/chunks/326-6784f49434136418.js","185","static/chunks/app/layout-21c5cbba278c1661.js"],""]
+7:I[6954,[],""]
+8:I[7264,[],""]
+a:I[8326,["326","static/chunks/326-6784f49434136418.js","691","static/chunks/691-d72542b099e0bc41.js","605","static/chunks/app/post/%5Bslug%5D/page-8d1612d00a7872d1.js"],""]
+b:I[7708,["326","static/chunks/326-6784f49434136418.js","691","static/chunks/691-d72542b099e0bc41.js","605","static/chunks/app/post/%5Bslug%5D/page-8d1612d00a7872d1.js"],""]
+3:[["$","meta","0",{"charSet":"utf-8"}],["$","title","1",{"children":"WayneChoi.Dev"}],["$","meta","2",{"name":"description","content":"Wayne Choi blog"}],["$","meta","3",{"name":"viewport","content":"width=device-width, initial-scale=1"}],["$","link","4",{"rel":"icon","href":"/favicon.ico"}]]
+c:T68b6,
+<iframe width="560" height="315" src="https://www.youtube.com/embed/XrfiBfOx1LE?si=N0abz-D93HKovMzM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+I've implemented PBR rendering using OpenGL. Primarily, I based my implementation on the code from [Learn OpenGL](https://learnopengl.com/) and made modifications to align with my intentions. I'll focus more on implementation rather than delving into mathematical and physical theories.
+
+The following code snippets are intended to supplement the concepts explained as needed and may not represent exact implementations. The complete implementation can be found in the repository link below.
+
+[Repository](https://github.com/waynechoidev/pbr/)
+
+## 1. PBR Textures
+
+PBR (Physically Based Rendering) textures are used to describe the physical properties of materials. Typically, a combination of various texture maps is used to compose a single PBR material. There are several types of textures commonly used, primarily including:
+
+- Albedo Map
+
+  It represents the base color of the surface, indicating the material's actual color.
+
+- Normal Map
+
+  It manipulates the surface's normal vectors to add three-dimensional detail, simulating irregular shapes or textures.
+
+- Metallic Map
+
+  It indicates whether the surface is metallic or non-metallic. It ranges from black (non-metallic) to white (metallic).
+
+- Roughness Map
+
+  It represents the roughness or smoothness of the surface. It ranges from black (smooth) to white (rough).
+
+- Ambient Occlusion Map (AO Map)
+
+  It simulates indirect lighting by considering occlusion of the surface. Darker areas in the texture typically represent surface occlusion or concavities.
+
+- Height Map
+
+  It represents the three-dimensional detail of a surface. It is mainly employed to provide finer details on the surface of objects. Although not covered in [Learn OpenGL](https://learnopengl.com/) (presumably because it is unrelated to lighting), it is included in most PBR textures.
+
+To use these textures, a normal vector is required. The normal vector indicates the direction of the surface and plays a crucial role in determining the surface's lighting reflection properties based on the lighting and viewpoint between the light source and observer.
+
+Normal vectors are primarily represented through normal maps, with each pixel of the texture representing the local direction of the surface. This information is used in lighting models considering the directions of the light source and observer. For instance, normal vectors provide the angle between the surface and light, allowing for the simulation of highlights and shadows.
+
+Normal maps are commonly used in tangent space. Tangent space defines the local coordinate space of the surface, with basis vectors representing the normal, tangent, and binormal at each point on the surface. Normal maps are stored in this tangent space, facilitating the easy transformation of normals from texture space.
+
+Therefore, to use a normal map, tangent vectors and normal vectors associated with the surface's local coordinate space are required. This information enables the mapping of normals stored in the normal map to the actual normals of the surface.
+
+While the LearnOpenGL example attempted to calculate tangent vectors using gradients of WorldPos and TexCoords, this method is an inaccurate estimation. Typically, tangent vectors are provided along with the model, so I passed tangent vectors from the CPU to the vertices.
+
+```glsl
+// the code used in [Learn OpenGL](https://learnopengl.com/) to calculate tangents
+
+vec3 Q1  = dFdx(WorldPos);
+vec3 Q2  = dFdy(WorldPos);
+vec2 st1 = dFdx(TexCoords);
+vec2 st2 = dFdy(TexCoords);
+
+vec3 T  = normalize(Q1*st2.t - Q2*st1.t);
+```
+
+The normal and tangent vectors calculated in the vertex shader exist in the local coordinate space of the model. When passing these vectors to the fragment shader, they need to be transformed into world coordinates. To achieve this, the vectors should be transformed using the model transformation matrix to convert them into world coordinates.
+
+Typically, the transformation of the tangent vector involves only the model transformation matrix. However, for the normal vector, relying solely on the model transformation may not yield correct results when the normal is defined in a non-standard texture coordinate space. This is because the normal vector represents direction, and transformation matrices only preserve length and rotation, not direction.
+
+Therefore, for the normal vector, it's necessary to use the transpose and inverse of the model transformation matrix for the correct transformation into world coordinates. This ensures that the normal vector is accurately transformed into world coordinates. The reason for using transpose and inverse is to ensure preservation of direction during the transformation, as these operations are used to perform transformations that preserve direction. You can find more detailed explanations at this [link](https://paroj.github.io/gltut/Illumination/Tut09%20Normal%20Transformation.html).
+
+```glsl
+// the code for calculating the normal world and tangent world vectors in the vertex shader
+
+vec3 normalWorld = normalize(mat3(transpose(inverse(model))) * norm);
+vec3 tangentWorld = normalize(model * vec4(tangent, 1.0)).xyz;
+```
+
+First, we apply the height map in the Vertex shader. This texture directly manipulates texture coordinates to implement the three-dimensional shape of the surface, rather than affecting lighting or shadows.
+
+```glsl
+uniform sampler2D heightTex;
+
+float height = texture(heightTex, tex).r;
+height = height * 2.0 - 1.0; // 0~1 -> -1~1
+vec3 newPos = position + vec3(normalWorld * height);
+```
+
+All remaining textures are related to lighting, and we'll cover them from the next chapter onward.
+
+---
+
+## 2. Direct Lighting
+
+Direct Lighting is one of the crucial concepts in Physically Based Rendering (PBR). It deals with scenarios where light directly reflects off an object's surface. In other words, it models the process where light travels in a straight line from the light source to the object, determining aspects like the object's color and shadows. Typically, the Bidirectional Reflectance Distribution Function (BRDF) is used for these calculations. Here, we'll implement it using the widely adopted Cook-Torrance model. This model considers the microstructure of the object's surface and the angle of incidence of light to provide realistic lighting effects. In this explanation, rather than delving into the microfacet theory that deals with fine surface structures, we'll focus on implementing the function. You can find more detailed theoretical information on this topic in this [link](https://blog.selfshadow.com/publications/s2013-shading-course/hoffman/s2013_pbs_physics_math_slides.pdf).
+
+> #### Microfacet BRDF
+>
+> f(l,v) = F(l, h) G(l, v, h) D(h) / 4(n · l)(n · v)
+
+The equation represents the general form of the BRDF (Bidirectional Reflectance Distribution Function). I'll provide explanations and implementations for each component.
+
+### F (Fresnel Reflectance)
+
+> F(Cspec, l, h) = Cspec + (1 - Cspec)(1 - (l · h)) ^ 5
+
+Fresnel Reflectance represents the optical properties when light reaches and reflects off the surface.
+
+```glsl
+uniform sampler2D albedoMap;
+uniform sampler2D metallicMap;
+
+// Apply gamma correction to the sampled albedo texture to convert it from sRGB space to linear space
+vec3 albedo = pow(texture(albedoMap, TexCoord).rgb, vec3(2.2));
+float metallic  = texture(metallicMap, TexCoord).r;
+
+vec3 fresnelSchlick(float cosTheta, vec3 F0)
+{
+    return F0 + (1.0 - F0) * pow(clamp(1.0 - cosTheta, 0.0, 1.0), 5.0);
+}
+
+// Initialize the surface reflectance coefficient F0 with a default value
+vec3 F0 = vec3(0.04);
+
+// Linearly interpolate between the surface reflectance coefficient F0 and the albedo (surface color) based on metallic value
+F0 = mix(F0, albedo, metallic);
+
+vec3 F = fresnelSchlick(max(dot(H, V), 0.0), F0);
+```
+
+### G (Geometry Factor)
+
+> GSchlickGGX(n, v, k) = n ⋅ v ( n ⋅ v) (1 − k) + k
+>
+> G(l, v, h) = Gs1(l, h) Gs2(v, h)
+
+Geometry Factor indicates the portions occluded between the light and the observer, modeling effects such as occluded shadows. it takes a material's roughness parameter as input with rougher surfaces having a higher probability of overshadowing microfacets. The geometry function we will use is a combination of the GGX and Schlick-Beckmann approximation known as Schlick-GGX.
+
+```glsl
+uniform sampler2D roughnessMap;
+uniform sampler2D normalMap;
+
+uniform vec3 camPos;
+
+float roughness = texture(roughnessMap, TexCoord).r;
+
+vec3 N = normalize(normalWorld);
+// Adjust the tangent vector to ensure it is perpendicular to the surface
+// by removing the component parallel to the normal vector.
+vec3 T = normalize(tangentWorld - dot(tangentWorld, N) * N);
+vec3 B = cross(N, T);
+
+// Create a TBN matrix containing the tangent, binormal, and normal vectors.
+mat3 TBN = mat3(T, B, N);
+
+// Sample the normal map from the texture and map it to the [-1, 1] range to update the normal vector.
+N = normalize(TBN * (texture(normalMap, TexCoord).xyz * 2.0 - 1.0));
+
+// Compute the view vector.
+vec3 V = normalize(camPos - posWorld);
+
+// Compute the light direction vector
+vec3 L = normalize(lightPos - posWorld);
+
+float GeometrySchlickGGX(float NdotV, float roughness)
+{
+    float r = (roughness + 1.0);
+    float k = (r * r) / 8.0;
+
+    float nom   = NdotV;
+    float denom = NdotV * (1.0 - k) + k;
+
+    return nom / denom;
+}
+
+float GeometrySmith(vec3 N, vec3 V, vec3 L, float roughness)
+{
+    float NdotV = max(dot(N, V), 0.0);
+    float NdotL = max(dot(N, L), 0.0);
+    float ggx2 = GeometrySchlickGGX(NdotV, roughness);
+    float ggx1 = GeometrySchlickGGX(NdotL, roughness);
+
+    return ggx1 * ggx2;
+}
+
+float G = GeometrySmith(N, V, L, roughness);
+```
+
+### D (Normal Distribution Function)
+
+> NDF(n, h, α) = α ^ 2 / π((n ⋅ h) ^ 2 (α ^ 2 − 1) + 1) ^ 2
+
+Normal Distribution Function denotes the reflection direction due to the microstructure of the surface, considering surface roughness or fine surface characteristics. The NDF function we'll be using is known as the Trowbridge-Reitz GGX.
+
+```glsl
+float DistributionGGX(vec3 N, vec3 H, float roughness)
+{
+    float a = roughness*roughness;
+    float a2 = a*a;
+    float NdotH = max(dot(N, H), 0.0);
+    float NdotH2 = NdotH*NdotH;
+
+    float nom   = a2;
+    float denom = (NdotH2 * (a2 - 1.0) + 1.0);
+    denom = PI * denom * denom;
+
+    return nom / denom;
+}
+
+float NDF = DistributionGGX(N, H, roughness);
+```
+
+### BRDF
+
+```glsl
+vec3 numerator = NDF * G * F;
+// + 0.0001 to prevent divide by zero
+float denominator = 4.0 * max(dot(N, V), 0.0) * max(dot(N, L), 0.0) + 0.0001;
+
+vec3 BRDF = numerator / denominator;
+```
+
+Now we can finally calculate this direct light's contribution to the reflectance equation.
+
+In the [Learn OpenGL](https://learnopengl.com/) example, they used point lights coming from four directions, but I only used one point light.
+
+```glsl
+// Calculate the specular reflection coefficient.
+vec3 kS = F;
+
+// Calculate the diffuse reflection coefficient.
+vec3 kD = vec3(1.0) - kS;
+kD *= 1.0 - metallic;
+
+// Scale the light intensity by the cosine of the angle between the normal vector and the light direction.
+float NdotL = max(dot(N, L), 0.0);
+
+// Calculate the direct lighting contribution, combining diffuse and specular reflections.
+vec3 directLight = (kD * albedo / PI + BRDF) * radiance * NdotL;
+```
+
+---
+
+## 3. Environment Lighting
+
+Environment Lighting is primarily implemented using the IBL (Image-Based Lighting) technique. This method involves representing the surrounding environment with appropriate maps and using these maps to calculate lighting for objects. To implement Environment Lighting for PBR (Physically Based Rendering), three main textures are required: the Irradiance Map, Specular Map, and BRDF Texture.
+
+### Irradiance Map
+
+Irradiance Map is used to model the lighting of the surrounding environment. It represents the incoming radiance at a specific point, typically captured and generated around the camera's surroundings. Irradiance Map is utilized to simulate indirect lighting on the surface of objects, thus determining their color and brightness.
+
+In [Learn OpenGL](https://learnopengl.com/), the environment map is sampled using point sampling in a spherical coordinate system. As the desired results weren't achieved with this method, I opted for importance sampling to sample the Irradiance Map from the environment map. This approach involves sampling the more important areas of the environment map more frequently to obtain a more accurate Irradiance value.
+
+```glsl
+#version 420 core
+out vec4 FragColor;
+in vec3 WorldPos;
+
+uniform samplerCube envCubemap;
+
+const float PI = 3.14159265359;
+const int sampleCount = 512; // Sample count as a constant variable
+
+void main()
+{
+    vec3 N = normalize(WorldPos);
+
+    const vec3 up = vec3(0.0, 1.0, 0.0);
+    const float invSampleCount = 1.0 / float(sampleCount); // Using the sampleCount variable
+
+    vec3 irradiance = vec3(0.0);
+
+    // Sampling from the cubemap using importance sampling
+    for (int i = 0; i < sampleCount; ++i) {
+        // Sampling direction for importance sampling
+        vec3 sampleDir = normalize(texture(envCubemap, N).rgb * 2.0 - 1.0);
+
+        // Calculating the cosine of the angle between sampling direction and surface normal
+        float cosTheta = dot(sampleDir, N);
+
+        irradiance += texture(envCubemap, sampleDir).rgb * cosTheta * invSampleCount;
+
+        // Randomly rotating N direction for the next sampling direction
+        N = normalize(N * 0.9 + sampleDir * 0.1);
+    }
+
+    irradiance = PI * irradiance;
+
+    FragColor = vec4(irradiance, 1.0);
+}
+```
+
+### Pre-filtered Environment Map
+
+The pre-filtered environment map serves as a pre-computed representation of how light is reflected on the surface of an object across varying roughness levels. This map captures the reflection properties and surface characteristics, particularly defining glossiness or specular highlights of the object. It encompasses the simulation of both direct and indirect specular highlights present on the surface of objects. The code for generating the pre-filtered environment map from the Environment Map was directly adopted from [Learn OpenGL](https://learnopengl.com/).
+
+```glsl
+#version 420 core
+out vec4 FragColor;
+in vec3 WorldPos;
+
+uniform samplerCube envCubemap;
+uniform float roughness;
+
+const float PI = 3.14159265359;
+
+float DistributionGGX(vec3 N, vec3 H, float roughness)
+{
+    float a = roughness*roughness;
+    float a2 = a*a;
+    float NdotH = max(dot(N, H), 0.0);
+    float NdotH2 = NdotH*NdotH;
+
+    float nom   = a2;
+    float denom = (NdotH2 * (a2 - 1.0) + 1.0);
+    denom = PI * denom * denom;
+
+    return nom / denom;
+}
+
+// http://holger.dammertz.org/stuff/notes_HammersleyOnHemisphere.html
+// efficient VanDerCorpus calculation.
+float RadicalInverse_VdC(uint bits)
+{
+     bits = (bits << 16u) | (bits >> 16u);
+     bits = ((bits & 0x55555555u) << 1u) | ((bits & 0xAAAAAAAAu) >> 1u);
+     bits = ((bits & 0x33333333u) << 2u) | ((bits & 0xCCCCCCCCu) >> 2u);
+     bits = ((bits & 0x0F0F0F0Fu) << 4u) | ((bits & 0xF0F0F0F0u) >> 4u);
+     bits = ((bits & 0x00FF00FFu) << 8u) | ((bits & 0xFF00FF00u) >> 8u);
+     return float(bits) * 2.3283064365386963e-10; // / 0x100000000
+}
+
+vec2 Hammersley(uint i, uint N)
+{
+	return vec2(float(i)/float(N), RadicalInverse_VdC(i));
+}
+
+vec3 ImportanceSampleGGX(vec2 Xi, vec3 N, float roughness)
+{
+	float a = roughness*roughness;
+
+	float phi = 2.0 * PI * Xi.x;
+	float cosTheta = sqrt((1.0 - Xi.y) / (1.0 + (a*a - 1.0) * Xi.y));
+	float sinTheta = sqrt(1.0 - cosTheta*cosTheta);
+
+	// from spherical coordinates to cartesian coordinates - halfway vector
+	vec3 H;
+	H.x = cos(phi) * sinTheta;
+	H.y = sin(phi) * sinTheta;
+	H.z = cosTheta;
+
+	// from tangent-space H vector to world-space sample vector
+	vec3 up          = abs(N.z) < 0.999 ? vec3(0.0, 0.0, 1.0) : vec3(1.0, 0.0, 0.0);
+	vec3 tangent   = normalize(cross(up, N));
+	vec3 bitangent = cross(N, tangent);
+
+	vec3 sampleVec = tangent * H.x + bitangent * H.y + N * H.z;
+	return normalize(sampleVec);
+}
+
+void main()
+{
+    vec3 N = normalize(WorldPos);
+
+    // make the simplifying assumption that V equals R equals the normal
+    vec3 R = N;
+    vec3 V = R;
+
+    const uint SAMPLE_COUNT = 1024u;
+    vec3 prefilteredColor = vec3(0.0);
+    float totalWeight = 0.0;
+
+    for(uint i = 0u; i < SAMPLE_COUNT; ++i)
+    {
+        // generates a sample vector that's biased towards the preferred alignment direction (importance sampling).
+        vec2 Xi = Hammersley(i, SAMPLE_COUNT);
+        vec3 H = ImportanceSampleGGX(Xi, N, roughness);
+        vec3 L  = normalize(2.0 * dot(V, H) * H - V);
+
+        float NdotL = max(dot(N, L), 0.0);
+        if(NdotL > 0.0)
+        {
+            // sample from the environment's mip level based on roughness/pdf
+            float D   = DistributionGGX(N, H, roughness);
+            float NdotH = max(dot(N, H), 0.0);
+            float HdotV = max(dot(H, V), 0.0);
+            float pdf = D * NdotH / (4.0 * HdotV) + 0.0001;
+
+            float resolution = 512.0; // resolution of source cubemap (per face)
+            float saTexel  = 4.0 * PI / (6.0 * resolution * resolution);
+            float saSample = 1.0 / (float(SAMPLE_COUNT) * pdf + 0.0001);
+
+            float mipLevel = roughness == 0.0 ? 0.0 : 0.5 * log2(saSample / saTexel);
+
+            prefilteredColor += textureLod(envCubemap, L, mipLevel).rgb * NdotL;
+            totalWeight      += NdotL;
+        }
+    }
+
+    prefilteredColor = prefilteredColor / totalWeight;
+
+    FragColor = vec4(prefilteredColor, 1.0);
+}
+```
+
+### BRDF Texture
+
+The BRDF (Bidirectional Reflectance Distribution Function) texture is used to define the surface properties of an object. This texture is composed of a function that represents how light is reflected from the surface of the object, indicating the direction and amount of reflection. In other words, it determines how light coming from a certain direction is reflected in various directions from the surface. The BRDF texture is used to define properties such as surface roughness, glossiness, and reflection characteristics.
+
+In environment lighting, the BRDF texture is primarily used to model the interaction of light reflection on the surface of an object. This texture determines how light is reflected from the surface of the object depending on its properties when the light reaches the surface, thus making the appearance of the object more realistic.
+
+For example, when the surface of an object is rough and lacks glossiness, the BRDF texture can accurately model how light is reflected from the surface of the object. This allows for a more accurate simulation of how light generated from environment lighting is reflected from the surface of the object.
+
+Here, the code for generating the BRDF texture from the Environment Map was directly borrowed from [Learn OpenGL](https://learnopengl.com/).
+
+```glsl
+#version 420 core
+out vec2 FragColor;
+in vec2 TexCoords;
+
+const float PI = 3.14159265359;
+
+// http://holger.dammertz.org/stuff/notes_HammersleyOnHemisphere.html
+// efficient VanDerCorpus calculation.
+float RadicalInverse_VdC(uint bits)
+{
+     bits = (bits << 16u) | (bits >> 16u);
+     bits = ((bits & 0x55555555u) << 1u) | ((bits & 0xAAAAAAAAu) >> 1u);
+     bits = ((bits & 0x33333333u) << 2u) | ((bits & 0xCCCCCCCCu) >> 2u);
+     bits = ((bits & 0x0F0F0F0Fu) << 4u) | ((bits & 0xF0F0F0F0u) >> 4u);
+     bits = ((bits & 0x00FF00FFu) << 8u) | ((bits & 0xFF00FF00u) >> 8u);
+     return float(bits) * 2.3283064365386963e-10; // / 0x100000000
+}
+
+vec2 Hammersley(uint i, uint N)
+{
+	return vec2(float(i)/float(N), RadicalInverse_VdC(i));
+}
+
+vec3 ImportanceSampleGGX(vec2 Xi, vec3 N, float roughness)
+{
+	float a = roughness*roughness;
+
+	float phi = 2.0 * PI * Xi.x;
+	float cosTheta = sqrt((1.0 - Xi.y) / (1.0 + (a*a - 1.0) * Xi.y));
+	float sinTheta = sqrt(1.0 - cosTheta*cosTheta);
+
+	// from spherical coordinates to cartesian coordinates - halfway vector
+	vec3 H;
+	H.x = cos(phi) * sinTheta;
+	H.y = sin(phi) * sinTheta;
+	H.z = cosTheta;
+
+	// from tangent-space H vector to world-space sample vector
+	vec3 up          = abs(N.z) < 0.999 ? vec3(0.0, 0.0, 1.0) : vec3(1.0, 0.0, 0.0);
+	vec3 tangent   = normalize(cross(up, N));
+	vec3 bitangent = cross(N, tangent);
+
+	vec3 sampleVec = tangent * H.x + bitangent * H.y + N * H.z;
+	return normalize(sampleVec);
+}
+
+float GeometrySchlickGGX(float NdotV, float roughness)
+{
+    // note that we use a different k for IBL
+    float a = roughness;
+    float k = (a * a) / 2.0;
+
+    float nom   = NdotV;
+    float denom = NdotV * (1.0 - k) + k;
+
+    return nom / denom;
+}
+
+float GeometrySmith(vec3 N, vec3 V, vec3 L, float roughness)
+{
+    float NdotV = max(dot(N, V), 0.0);
+    float NdotL = max(dot(N, L), 0.0);
+    float ggx2 = GeometrySchlickGGX(NdotV, roughness);
+    float ggx1 = GeometrySchlickGGX(NdotL, roughness);
+
+    return ggx1 * ggx2;
+}
+
+vec2 IntegrateBRDF(float NdotV, float roughness)
+{
+    vec3 V;
+    V.x = sqrt(1.0 - NdotV*NdotV);
+    V.y = 0.0;
+    V.z = NdotV;
+
+    float A = 0.0;
+    float B = 0.0;
+
+    vec3 N = vec3(0.0, 0.0, 1.0);
+
+    const uint SAMPLE_COUNT = 1024u;
+    for(uint i = 0u; i < SAMPLE_COUNT; ++i)
+    {
+        // generates a sample vector that's biased towards the
+        // preferred alignment direction (importance sampling).
+        vec2 Xi = Hammersley(i, SAMPLE_COUNT);
+        vec3 H = ImportanceSampleGGX(Xi, N, roughness);
+        vec3 L = normalize(2.0 * dot(V, H) * H - V);
+
+        float NdotL = max(L.z, 0.0);
+        float NdotH = max(H.z, 0.0);
+        float VdotH = max(dot(V, H), 0.0);
+
+        if(NdotL > 0.0)
+        {
+            float G = GeometrySmith(N, V, L, roughness);
+            float G_Vis = (G * VdotH) / (NdotH * NdotV);
+            float Fc = pow(1.0 - VdotH, 5.0);
+
+            A += (1.0 - Fc) * G_Vis;
+            B += Fc * G_Vis;
+        }
+    }
+    A /= float(SAMPLE_COUNT);
+    B /= float(SAMPLE_COUNT);
+    return vec2(A, B);
+}
+
+void main()
+{
+    vec2 integratedBRDF = IntegrateBRDF(TexCoords.x, TexCoords.y);
+    FragColor = integratedBRDF;
+}
+```
+
+### Ambient Lighting
+
+Now we calculate indirect lighting using the given textures. Here, we use Image-Based Lighting (IBL) for this purpose.
+
+First, we compute the Fresnel reflection coefficient on the surface. This coefficient determines the ratio of incident light to reflected light and is used in conjunction with the surface roughness.
+
+```glsl
+vec3 fresnelSchlickRoughness(float cosTheta, vec3 F0, float roughness)
+{
+    return F0 + (max(vec3(1.0 - roughness), F0) - F0) * pow(clamp(1.0 - cosTheta, 0.0, 1.0), 5.0);
+}
+
+// ambient lighting (we now use IBL as the ambient term)
+vec3 F = fresnelSchlickRoughness(max(dot(N, V), 0.0), F0, roughness);
+```
+
+Based on the Fresnel coefficient, we calculate the Specular and Diffuse coefficients. kS represents the Specular coefficient, while KD represents the Diffuse coefficient. These coefficients are determined based on the surface's metallic property.
+
+```glsl
+vec3 kS = F;
+vec3 kD = 1.0 - kS;
+kD \*= 1.0 - metallic;
+```
+
+We calculate the surface's environmental lighting using the Irradiance Cubemap. By sampling the Irradiance Cubemap with the surface's normal vector (N), we obtain the diffuse component by multiplying the result with the surface's albedo.
+
+```glsl
+vec3 irradiance = texture(irradianceCubemap, N).rgb;
+vec3 diffuse = irradiance \* albedo;
+```
+
+We compute the specular component using the Pre-filtered Environment Map and the BRDF Look-Up Table (LUT). The Pre-filtered Environment Map represents the level of reflected environment map details based on the surface's roughness. The BRDF LUT is a precomputed table of BRDF values based on the angle and roughness between the surface's normal vector and the view vector. By combining these, we obtain the specular component.
+
+```glsl
+// sample both the pre-filter map and the BRDF lut and combine them together as per the Split-Sum approximation to get the IBL specular part.
+const float MAX_REFLECTION_LOD = 4.0;
+vec3 prefilteredColor = textureLod(preFilteredEnvmap, R, roughness _ MAX_REFLECTION_LOD).rgb;
+vec2 brdf = texture(brdfLUT, vec2(max(dot(N, V), 0.0), roughness)).rg;
+specular = prefilteredColor * (F \* brdf.x + brdf.y);
+```
+
+We combine the diffuse and specular components to compute the overall indirect lighting. We multiply this by the Ambient Occlusion (AO) value to obtain the final indirect lighting.
+
+```glsl
+vec3 ambient = (kD * diffuse + specular) * ao;
+```
+
+---
+
+## 4. Post Processing
+
+### HDR Tonemapping
+
+HDR images represent a wide range of luminance values, requiring proper tonemapping to display them accurately on standard display devices. In this code, Reinhard tonemapping is used to compress the brightness and bring the dynamic range of the image into a suitable range.
+
+Reinhard tonemapping is a method used to compress the dynamic range of high dynamic range (HDR) images so that they can be accurately displayed on low dynamic range (LDR) devices, such as computer monitors and TVs. This technique adjusts the brightness of the pixels in the HDR image based on their luminance values, aiming to maintain natural-looking contrast while preventing overexposure or loss of detail in both shadow and highlight areas.
+
+### Gamma Correction
+
+HDR operations are performed entirely in linear space. In linear space, adjustments to brightness and color occur linearly, enabling more accurate and predictable calculations. However, most screens and image storage media use gamma-corrected nonlinear spaces. This helps efficiently represent details in bright areas by considering human visual characteristics.
+
+Therefore, before displaying HDR images, they need to be transformed from linear space to nonlinear space through gamma correction. This preserves details in bright areas better and results in a more natural display on the screen.
+
+```glsl
+vec3 color = directLight + ambient;
+
+// HDR tonemapping
+color = color / (color + vec3(1.0));
+
+// gamma correct
+color = pow(color, vec3(1.0/2.2));
+```
+
+---
+
+### References
+
+- [Learn OpenGL](https://learnopengl.com/)
+- [Normal Transformation](https://paroj.github.io/gltut/Illumination/Tut09%20Normal%20Transformation.html)
+- [SIGGRAPH 2013 Course: Physically Based Shading in Theory and Practice](https://blog.selfshadow.com/publications/s2013-shading-course)
+- [Tonemapping - 64.github.io](https://64.github.io/tonemapping/)
+- [Introduction to Computer Graphics with DirectX 11 - Part 3. Rendering Techniques](https://honglab.co.kr/courses/graphicspt3)
+2:[null,["$","html",null,{"lang":"en","children":["$","body",null,{"className":"mx-auto my-0","children":[["$","nav",null,{"className":"max-w-default mx-auto px-5 py-3","children":["$","$L5",null,{}]}],["$","header",null,{"children":["$","$L6",null,{}]}],["$","div",null,{"className":"max-w-default mx-auto p-5","children":["$","$L7",null,{"parallelRouterKey":"children","segmentPath":["children"],"loading":"$undefined","loadingStyles":"$undefined","hasLoading":false,"error":"$undefined","errorStyles":"$undefined","template":["$","$L8",null,{}],"templateStyles":"$undefined","notFound":[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":"404"}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],"notFoundStyles":[],"childProp":{"current":["$","$L7",null,{"parallelRouterKey":"children","segmentPath":["children","post","children"],"loading":"$undefined","loadingStyles":"$undefined","hasLoading":false,"error":"$undefined","errorStyles":"$undefined","template":["$","$L8",null,{}],"templateStyles":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined","childProp":{"current":[null,["$","$L7",null,{"parallelRouterKey":"children","segmentPath":["children","post","children",["slug","pbr-rendering","d"],"children"],"loading":"$undefined","loadingStyles":"$undefined","hasLoading":false,"error":"$undefined","errorStyles":"$undefined","template":["$","$L8",null,{}],"templateStyles":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined","childProp":{"current":["$L9",["$","div",null,{"children":[["$","$La",null,{"href":"/posts/graphics","className":"text-gray-600 text-md pl-1 hover:font-bold","children":"GRAPHICS"}],["$","h1",null,{"children":"PBR Rendering"}],["$","p",null,{"className":"text-gray-400 text-sm m-0 mt-1","children":"1 April, 2024"}],["$","div",null,{"className":"mt-1","children":["$","div",null,{"className":"whitespace-nowrap overflow-x-auto pb-3","children":[["$","$La","opengl",{"href":"/tag/opengl","className":"mr-2 text-gray-500 hover:font-bold","children":"#opengl"}],["$","$La","pbr",{"href":"/tag/pbr","className":"mr-2 text-gray-500 hover:font-bold","children":"#pbr"}],["$","$La","glsl",{"href":"/tag/glsl","className":"mr-2 text-gray-500 hover:font-bold","children":"#glsl"}]]}]}],["$","div",null,{"className":"mt-8","children":["$","$Lb",null,{"content":"$c"}]}]]}],null],"segment":"__PAGE__?{\"slug\":\"pbr-rendering\"}"},"styles":[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/602feae4669a507e.css","precedence":"next","crossOrigin":""}]]}],null],"segment":["slug","pbr-rendering","d"]},"styles":[]}],"segment":"post"},"styles":[]}]}],["$","footer",null,{"className":"h-40 flex justify-center items-end","children":["$","p",null,{"className":"text-gray-500 text-sm","children":"(C) 2021. Wayne Choi. All rights reserved."}]}]]}]}],null]
+9:null
