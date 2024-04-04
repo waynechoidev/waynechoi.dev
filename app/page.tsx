@@ -4,6 +4,7 @@ import Link from "next/link";
 
 export default function Home() {
   const posts = getPostListBySlugs([
+    "pbr-rendering",
     "from-1-year-of-development-to-launch",
     "image-based-lighting",
     "sphere-texture-mapping",

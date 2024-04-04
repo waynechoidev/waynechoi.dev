@@ -44,6 +44,9 @@ h3 {
   color: #222;
 }
 
+h4 {
+  margin: 5px 0;
+}
 hr {
   margin: 40px 20px;
   border-color: rgb(200, 200, 200, 0.3);
@@ -65,4 +68,13 @@ hr {
   text-decoration: underline;
   white-space: normal;
   word-wrap: break-word;
+}
+
+blockquote {
+  background-color: rgb(200, 200, 200, 0.3);
+  padding: 10px 20px;
+  margin: 0px;
+}
+blockquote p {
+  margin: 0;
 }
