@@ -1,5 +1,5 @@
 1:HL["/_next/static/css/baa01199c04a1a03.css","style",{"crossOrigin":""}]
-0:["XEynjT4yuND98pr4Bxhrr",[[["",{"children":["post",{"children":[["slug","pbr-rendering","d"],{"children":["__PAGE__?{\"slug\":\"pbr-rendering\"}",{}]}]}]},"$undefined","$undefined",true],"$L2",[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/baa01199c04a1a03.css","precedence":"next","crossOrigin":""}]],"$L3"]]]]
+0:["PrzqQkcfWlE0RtKWyjIWX",[[["",{"children":["post",{"children":[["slug","pbr-rendering","d"],{"children":["__PAGE__?{\"slug\":\"pbr-rendering\"}",{}]}]}]},"$undefined","$undefined",true],"$L2",[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/baa01199c04a1a03.css","precedence":"next","crossOrigin":""}]],"$L3"]]]]
 4:HL["/_next/static/css/602feae4669a507e.css","style",{"crossOrigin":""}]
 5:I[9194,["326","static/chunks/326-6784f49434136418.js","185","static/chunks/app/layout-21c5cbba278c1661.js"],""]
 6:I[5629,["326","static/chunks/326-6784f49434136418.js","185","static/chunks/app/layout-21c5cbba278c1661.js"],""]
@@ -8,14 +8,18 @@
 a:I[8326,["326","static/chunks/326-6784f49434136418.js","691","static/chunks/691-d72542b099e0bc41.js","605","static/chunks/app/post/%5Bslug%5D/page-8d1612d00a7872d1.js"],""]
 b:I[7708,["326","static/chunks/326-6784f49434136418.js","691","static/chunks/691-d72542b099e0bc41.js","605","static/chunks/app/post/%5Bslug%5D/page-8d1612d00a7872d1.js"],""]
 3:[["$","meta","0",{"charSet":"utf-8"}],["$","title","1",{"children":"WayneChoi.Dev"}],["$","meta","2",{"name":"description","content":"Wayne Choi blog"}],["$","meta","3",{"name":"viewport","content":"width=device-width, initial-scale=1"}],["$","link","4",{"rel":"icon","href":"/favicon.ico"}]]
-c:T6b61,
+c:T7025,
 <iframe width="560" height="315" src="https://www.youtube.com/embed/XrfiBfOx1LE?si=N0abz-D93HKovMzM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-I've implemented PBR rendering using OpenGL. Primarily, this project was developed with reference to the content available at [Learn OpenGL](https://learnopengl.com/). The ideas presented on that website served as inspiration for this implementation. Additionally, the code from [IBL Baker](https://www.derkreature.com/iblbaker) was also consulted for further enhancements. I'll focus more on implementation rather than delving into mathematical and physical theories on this post.
+[Web Sample](https://waynechoidev.github.io/web-pbr/)
+
+I've implemented PBR rendering using OpenGL, and WebGL. Primarily, this project was developed with reference to the content available at [Learn OpenGL](https://learnopengl.com/). The ideas presented on that website served as inspiration for this implementation. Additionally, the code from [IBL Baker](https://www.derkreature.com/iblbaker) was also consulted for further enhancements. I'll focus more on implementation rather than delving into mathematical and physical theories on this post.
 
 The following code snippets are intended to supplement the concepts explained as needed and may not represent exact implementations. The complete implementation can be found in the repository link below.
 
-[Repository](https://github.com/waynechoidev/pbr/)
+[OpenGL App Repo](https://github.com/waynechoidev/pbr)
+[IBL Maker Repo](https://github.com/waynechoidev/ibl-maker)
+[WebGL App Repo](https://github.com/waynechoidev/web-pbr)
 
 ## 1. PBR Textures
 
@@ -604,6 +608,34 @@ color = pow(color, vec3(1.0/2.2));
 ```
 
 ---
+
+## 5. WebGL
+
+I've migrated the code implemented in OpenGL to WebGL. However, dynamically implementing IBL textures like in the native environment was cumbersome, and there were difficulties in loading HDRI textures. So, I decided to first create a native texture generation app called "IBL Maker" to generate textures in advance. Then, I used those textures in WebGL to implement PBR.
+
+Since I saved the textures in JPG format, I had to pay attention to gamma correction when saving textures in OpenGL and loading textures in WebGL, unlike in the native environment.
+
+In the native code, tonemapping and gamma correction were done as follows:
+
+```glsl
+vec3 color = ...;
+
+// HDR tonemapping
+color = color / (color + vec3(1.0));
+
+// prevent clipping
+color = min(color, vec3(1.0));
+
+// gamma correct
+color = pow(color, vec3(1.0/2.2));
+```
+
+In WebGL, I performed gamma correction each time a texture was loaded to linearize it:
+
+```glsl
+vec3 envMap = pow(textureLod(envCubemap, R, roughness * MAX_REFLECTION_LOD).rgb, vec3(2.2));
+
+```
 
 ### References
 
