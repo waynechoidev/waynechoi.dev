@@ -1,5 +1,5 @@
 1:HL["/_next/static/css/baa01199c04a1a03.css","style",{"crossOrigin":""}]
-0:["4-gHBASLqKlJbikEg2OBO",[[["",{"children":["tag",{"children":[["tag","trackball","d"],{"children":["__PAGE__?{\"tag\":\"trackball\"}",{}]}]}]},"$undefined","$undefined",true],"$L2",[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/baa01199c04a1a03.css","precedence":"next","crossOrigin":""}]],"$L3"]]]]
+0:["XEynjT4yuND98pr4Bxhrr",[[["",{"children":["tag",{"children":[["tag","trackball","d"],{"children":["__PAGE__?{\"tag\":\"trackball\"}",{}]}]}]},"$undefined","$undefined",true],"$L2",[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/baa01199c04a1a03.css","precedence":"next","crossOrigin":""}]],"$L3"]]]]
 4:I[9194,["326","static/chunks/326-6784f49434136418.js","185","static/chunks/app/layout-21c5cbba278c1661.js"],""]
 5:I[5629,["326","static/chunks/326-6784f49434136418.js","185","static/chunks/app/layout-21c5cbba278c1661.js"],""]
 6:I[6954,[],""]
