@@ -14,9 +14,9 @@ I've implemented PBR rendering using OpenGL, and WebGL. Primarily, this project 
 
 The following code snippets are intended to supplement the concepts explained as needed and may not represent exact implementations. The complete implementation can be found in the repository link below.
 
-[OpenGL App Repo](https://github.com/waynechoidev/pbr)
-[IBL Maker Repo](https://github.com/waynechoidev/ibl-maker)
-[WebGL App Repo](https://github.com/waynechoidev/web-pbr)
+- [OpenGL App Repo](https://github.com/waynechoidev/pbr)
+- [IBL Maker Repo](https://github.com/waynechoidev/ibl-maker)
+- [WebGL App Repo](https://github.com/waynechoidev/web-pbr)
 
 ## 1. PBR Textures
 
