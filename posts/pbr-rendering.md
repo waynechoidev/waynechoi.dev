@@ -8,11 +8,15 @@ excerpt: "Implemented PBR rendering using OpenGL..."
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/XrfiBfOx1LE?si=N0abz-D93HKovMzM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-I've implemented PBR rendering using OpenGL. Primarily, this project was developed with reference to the content available at [Learn OpenGL](https://learnopengl.com/). The ideas presented on that website served as inspiration for this implementation. Additionally, the code from [IBL Baker](https://www.derkreature.com/iblbaker) was also consulted for further enhancements. I'll focus more on implementation rather than delving into mathematical and physical theories on this post.
+[Web Sample](https://waynechoidev.github.io/web-pbr/)
+
+I've implemented PBR rendering using OpenGL, and WebGL. Primarily, this project was developed with reference to the content available at [Learn OpenGL](https://learnopengl.com/). The ideas presented on that website served as inspiration for this implementation. Additionally, the code from [IBL Baker](https://www.derkreature.com/iblbaker) was also consulted for further enhancements. I'll focus more on implementation rather than delving into mathematical and physical theories on this post.
 
 The following code snippets are intended to supplement the concepts explained as needed and may not represent exact implementations. The complete implementation can be found in the repository link below.
 
-[Repository](https://github.com/waynechoidev/pbr/)
+[OpenGL App Repo](https://github.com/waynechoidev/pbr)
+[IBL Maker Repo](https://github.com/waynechoidev/ibl-maker)
+[WebGL App Repo](https://github.com/waynechoidev/web-pbr)
 
 ## 1. PBR Textures
 
@@ -601,6 +605,34 @@ color = pow(color, vec3(1.0/2.2));
 ```
 
 ---
+
+## 5. WebGL
+
+I've migrated the code implemented in OpenGL to WebGL. However, dynamically implementing IBL textures like in the native environment was cumbersome, and there were difficulties in loading HDRI textures. So, I decided to first create a native texture generation app called "IBL Maker" to generate textures in advance. Then, I used those textures in WebGL to implement PBR.
+
+Since I saved the textures in JPG format, I had to pay attention to gamma correction when saving textures in OpenGL and loading textures in WebGL, unlike in the native environment.
+
+In the native code, tonemapping and gamma correction were done as follows:
+
+```glsl
+vec3 color = ...;
+
+// HDR tonemapping
+color = color / (color + vec3(1.0));
+
+// prevent clipping
+color = min(color, vec3(1.0));
+
+// gamma correct
+color = pow(color, vec3(1.0/2.2));
+```
+
+In WebGL, I performed gamma correction each time a texture was loaded to linearize it:
+
+```glsl
+vec3 envMap = pow(textureLod(envCubemap, R, roughness * MAX_REFLECTION_LOD).rgb, vec3(2.2));
+
+```
 
 ### References
 
