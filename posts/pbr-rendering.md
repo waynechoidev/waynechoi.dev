@@ -8,7 +8,7 @@ excerpt: "Implemented PBR rendering using OpenGL..."
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/XrfiBfOx1LE?si=N0abz-D93HKovMzM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-I've implemented PBR rendering using OpenGL. Primarily, I based my implementation on the code from [Learn OpenGL](https://learnopengl.com/) and made modifications to align with my intentions. I'll focus more on implementation rather than delving into mathematical and physical theories.
+I've implemented PBR rendering using OpenGL. Primarily, this project was developed with reference to the content available at [Learn OpenGL](https://learnopengl.com/). The ideas presented on that website served as inspiration for this implementation. Additionally, the code from [IBL Baker](https://www.derkreature.com/iblbaker) was also consulted for further enhancements. I'll focus more on implementation rather than delving into mathematical and physical theories on this post.
 
 The following code snippets are intended to supplement the concepts explained as needed and may not represent exact implementations. The complete implementation can be found in the repository link below.
 
@@ -249,44 +249,149 @@ Environment Lighting is primarily implemented using the IBL (Image-Based Lightin
 
 Irradiance Map is used to model the lighting of the surrounding environment. It represents the incoming radiance at a specific point, typically captured and generated around the camera's surroundings. Irradiance Map is utilized to simulate indirect lighting on the surface of objects, thus determining their color and brightness.
 
-In [Learn OpenGL](https://learnopengl.com/), the environment map is sampled using point sampling in a spherical coordinate system. As the desired results weren't achieved with this method, I opted for importance sampling to sample the Irradiance Map from the environment map. This approach involves sampling the more important areas of the environment map more frequently to obtain a more accurate Irradiance value.
+In [Learn OpenGL](https://learnopengl.com/), the environment map is sampled using point sampling in a spherical coordinate system. As the desired results weren't achieved with this method, I opted for importance sampling to sample the Irradiance Map from the environment map. This approach involves sampling the more important areas of the environment map more frequently to obtain a more accurate Irradiance value. To implement this, I referred to the code of an open-source project called [IBL Baker](https://www.derkreature.com/iblbaker) extensively.
 
 ```glsl
 #version 420 core
+
 out vec4 FragColor;
+
 in vec3 WorldPos;
 
 uniform samplerCube envCubemap;
 
 const float PI = 3.14159265359;
-const int sampleCount = 512; // Sample count as a constant variable
 
-void main()
-{
-    vec3 N = normalize(WorldPos);
+const int ConvolutionSamplesOffset = 1;
+const int ConvolutionSampleCount = 256;
+const int ConvolutionMaxSamples = 512;
+const float ConvolutionRoughness = 0.2;
+const float ConvolutionMip = 3.0;
+const float EnvironmentScale = 3.0;
+const float IblMaxValue[3] = { 102.0, 85.0, 79.0 };
+const vec4 IBLCorrection = vec4(1.0);
 
-    const vec3 up = vec3(0.0, 1.0, 0.0);
-    const float invSampleCount = 1.0 / float(sampleCount); // Using the sampleCount variable
 
-    vec3 irradiance = vec3(0.0);
+vec3 rescaleHDR(vec3 hdrPixel) {
+    hdrPixel = hdrPixel / (hdrPixel + vec3(1.0));
 
-    // Sampling from the cubemap using importance sampling
-    for (int i = 0; i < sampleCount; ++i) {
-        // Sampling direction for importance sampling
-        vec3 sampleDir = normalize(texture(envCubemap, N).rgb * 2.0 - 1.0);
+    if (hdrPixel.x < 0.0)
+        hdrPixel.x = 0.0;
+    if (hdrPixel.y < 0.0)
+        hdrPixel.y = 0.0;
+    if (hdrPixel.z < 0.0)
+        hdrPixel.z = 0.0;
 
-        // Calculating the cosine of the angle between sampling direction and surface normal
-        float cosTheta = dot(sampleDir, N);
+    float intensity = dot(hdrPixel, vec3(0.299, 0.587, 0.114));
 
-        irradiance += texture(envCubemap, sampleDir).rgb * cosTheta * invSampleCount;
+    // Saturation adjustment
+    hdrPixel = mix(intensity.xxx, hdrPixel, IBLCorrection.y);
 
-        // Randomly rotating N direction for the next sampling direction
-        N = normalize(N * 0.9 + sampleDir * 0.1);
+    // Hue adjustment
+    vec3 root3 = vec3(0.57735, 0.57735, 0.57735);
+    float half_angle = 0.5 * radians(IBLCorrection.z);
+    vec4 rot_quat = vec4(root3 * sin(half_angle), cos(half_angle));
+    mat3 rot_Matrix = mat3(
+        vec3(1.0 - 2.0 * (rot_quat.y * rot_quat.y + rot_quat.z * rot_quat.z), 2.0 * (rot_quat.x * rot_quat.y - rot_quat.w * rot_quat.z), 2.0 * (rot_quat.x * rot_quat.z + rot_quat.w * rot_quat.y)),
+        vec3(2.0 * (rot_quat.x * rot_quat.y + rot_quat.w * rot_quat.z), 1.0 - 2.0 * (rot_quat.x * rot_quat.x + rot_quat.z * rot_quat.z), 2.0 * (rot_quat.y * rot_quat.z - rot_quat.w * rot_quat.x)),
+        vec3(2.0 * (rot_quat.x * rot_quat.z - rot_quat.w * rot_quat.y), 2.0 * (rot_quat.y * rot_quat.z + rot_quat.w * rot_quat.x), 1.0 - 2.0 * (rot_quat.x * rot_quat.x + rot_quat.y * rot_quat.y))
+    );
+    hdrPixel = mat3(rot_Matrix) * hdrPixel;
+
+    hdrPixel *= EnvironmentScale;
+    return hdrPixel;
+}
+
+vec2 Hammersley(uint i, uint N) {
+    uint bits = (i << 16u) | (i >> 16u);
+    bits = ((bits & 0x55555555u) << 1u) | ((bits & 0xAAAAAAAAu) >> 1u);
+    bits = ((bits & 0x33333333u) << 2u) | ((bits & 0xCCCCCCCCu) >> 2u);
+    bits = ((bits & 0x0F0F0F0Fu) << 4u) | ((bits & 0xF0F0F0F0u) >> 4u);
+    bits = ((bits & 0x00FF00FFu) << 8u) | ((bits & 0xFF00FF00u) >> 8u);
+    float rdi = float(bits) * 2.3283064365386963e-10;
+    return vec2(float(i) / float(N), rdi);
+}
+
+vec3 importanceSampleGGX(vec2 Xi, float roughness, vec3 N) {
+    float a = roughness * roughness;
+    float Phi = 2.0 * PI * Xi.x;
+    float CosTheta = sqrt((1.0 - Xi.y) / (1.0 + (a * a - 1.0) * Xi.y));
+    float SinTheta = sqrt(1.0 - CosTheta * CosTheta);
+    vec3 H;
+    H.x = SinTheta * cos(Phi);
+    H.y = SinTheta * sin(Phi);
+    H.z = CosTheta;
+    vec3 UpVector = abs(N.z) < 0.999 ? vec3(0, 0, 1) : vec3(1, 0, 0);
+    vec3 TangentX = normalize(cross(UpVector, N));
+    vec3 TangentY = cross(N, TangentX);
+    return TangentX * H.x + TangentY * H.y + N * H.z;
+}
+
+float specularD(float roughness, float NoH) {
+    float a2 = roughness * roughness;
+    float d = (NoH * a2 - NoH) * NoH + 1.0;
+    return a2 / (PI * d * d);
+}
+
+vec4 sumSpecular(vec3 spec, float NoL, vec4 result) {
+    result.xyz += spec;
+    result.w += NoL;
+    return result;
+}
+
+vec3 ImportanceSample(vec3 R) {
+    vec3 N = normalize(R);
+    vec3 V = normalize(R);
+    vec4 result = vec4(0.0);
+
+    float sampleStep = float(ConvolutionMaxSamples) / float(ConvolutionSampleCount);
+    uint sampleId = uint(ConvolutionSamplesOffset);
+
+    int cubeWidth = textureSize(envCubemap, 0).x;
+
+    for (int i = 0; i < ConvolutionSampleCount; i++) {
+        vec2 Xi = Hammersley(sampleId, uint(ConvolutionMaxSamples));
+
+        vec3 H = importanceSampleGGX(Xi, ConvolutionRoughness, N);
+        vec3 L = 2.0 * dot(V, H) * H - V;
+        float NoL = max(dot(N, L), 0.0);
+        float VoL = max(dot(V, L), 0.0);
+        float NoH = max(dot(N, H), 0.0);
+        float VoH = max(dot(V, H), 0.0);
+        if (NoL > 0.0) {
+            float Dh = specularD(ConvolutionRoughness, NoH);
+            float pdf = Dh * NoH / (4.0 * VoH);
+            float solidAngleTexel = 4.0 * PI / (6.0 * cubeWidth * cubeWidth);
+            float solidAngleSample = 1.0 / (ConvolutionSampleCount * pdf);
+            float lod = ConvolutionRoughness == 0.0 ? 0.0 : 0.5 * log2(solidAngleSample / solidAngleTexel);
+
+            vec3 hdrPixel = rescaleHDR(textureLod(envCubemap, L, lod).rgb);
+            // vec3 hdrPixel = textureLod(envCubemap, L, lod).rgb;
+            result = sumSpecular(hdrPixel, NoL, result);
+        }
+        sampleId += uint(sampleStep);
     }
 
-    irradiance = PI * irradiance;
+    if (result.w == 0.0)
+        return result.xyz;
+    else
+        return result.xyz / result.w;
+}
 
-    FragColor = vec4(irradiance, 1.0);
+void main() {
+    vec3 N = normalize(WorldPos);
+    vec3 color;
+
+    vec3 importanceSampled = ImportanceSample(N);
+
+    if (ConvolutionSamplesOffset >= 1) {
+        vec3 lastResult = textureLod(envCubemap, N, ConvolutionMip).rgb;
+        color = mix(lastResult, importanceSampled, 1.0 / float(ConvolutionSamplesOffset));
+    } else {
+        color = importanceSampled;
+    }
+
+    FragColor = vec4(color, 1.0);
 }
 ```
 
@@ -502,5 +607,6 @@ color = pow(color, vec3(1.0/2.2));
 - [Learn OpenGL](https://learnopengl.com/)
 - [Normal Transformation](https://paroj.github.io/gltut/Illumination/Tut09%20Normal%20Transformation.html)
 - [SIGGRAPH 2013 Course: Physically Based Shading in Theory and Practice](https://blog.selfshadow.com/publications/s2013-shading-course)
+- [IBL Baker](https://www.derkreature.com/iblbaker)
 - [Tonemapping - 64.github.io](https://64.github.io/tonemapping/)
 - [Introduction to Computer Graphics with DirectX 11 - Part 3. Rendering Techniques](https://honglab.co.kr/courses/graphicspt3)
