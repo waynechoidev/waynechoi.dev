@@ -9,7 +9,7 @@ export default function Comment({ issueTerm }: { issueTerm: string }) {
       const scriptEl = document.createElement("script");
       scriptEl.async = true;
       scriptEl.src = "https://utteranc.es/client.js";
-      scriptEl.setAttribute("repo", "sancy1003/chanstory-comments");
+      scriptEl.setAttribute("repo", "waynechoidev/waynechoi.dev");
       scriptEl.setAttribute("issue-term", issueTerm);
       scriptEl.setAttribute("theme", "github-light");
       scriptEl.setAttribute("crossorigin", "anonymous");
