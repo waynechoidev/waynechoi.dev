@@ -1,5 +1,5 @@
 ---
-title: "OpenGL is left-handed system"
+title: "OpenGL uses left-handed coordinates"
 date: "9 April, 2024"
 category: "graphics"
 tags: ["opengl", "coordinates", "ndc", "left-handed", "right-handed"]
