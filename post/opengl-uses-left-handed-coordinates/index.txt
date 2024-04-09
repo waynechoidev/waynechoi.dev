@@ -1,5 +1,5 @@
 1:HL["/_next/static/css/baa01199c04a1a03.css","style",{"crossOrigin":""}]
-0:["aqxnwij8molesiIkyFSsG",[[["",{"children":["post",{"children":[["slug","opengl-uses-left-handed-coordinates","d"],{"children":["__PAGE__?{\"slug\":\"opengl-uses-left-handed-coordinates\"}",{}]}]}]},"$undefined","$undefined",true],"$L2",[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/baa01199c04a1a03.css","precedence":"next","crossOrigin":""}]],"$L3"]]]]
+0:["7qZu5rEwcVsu0Wti37G-r",[[["",{"children":["post",{"children":[["slug","opengl-uses-left-handed-coordinates","d"],{"children":["__PAGE__?{\"slug\":\"opengl-uses-left-handed-coordinates\"}",{}]}]}]},"$undefined","$undefined",true],"$L2",[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/baa01199c04a1a03.css","precedence":"next","crossOrigin":""}]],"$L3"]]]]
 4:HL["/_next/static/css/602feae4669a507e.css","style",{"crossOrigin":""}]
 5:I[9194,["326","static/chunks/326-6784f49434136418.js","185","static/chunks/app/layout-21c5cbba278c1661.js"],""]
 6:I[5629,["326","static/chunks/326-6784f49434136418.js","185","static/chunks/app/layout-21c5cbba278c1661.js"],""]
@@ -9,7 +9,7 @@ a:I[8326,["326","static/chunks/326-6784f49434136418.js","691","static/chunks/691
 b:I[7708,["326","static/chunks/326-6784f49434136418.js","691","static/chunks/691-d72542b099e0bc41.js","605","static/chunks/app/post/%5Bslug%5D/page-c6220fba5b22e67b.js"],""]
 d:I[5631,["326","static/chunks/326-6784f49434136418.js","691","static/chunks/691-d72542b099e0bc41.js","605","static/chunks/app/post/%5Bslug%5D/page-c6220fba5b22e67b.js"],""]
 3:[["$","meta","0",{"charSet":"utf-8"}],["$","title","1",{"children":"WayneChoi.Dev"}],["$","meta","2",{"name":"description","content":"Wayne Choi blog"}],["$","meta","3",{"name":"viewport","content":"width=device-width, initial-scale=1"}],["$","link","4",{"rel":"icon","href":"/favicon.ico"}]]
-c:T144c,
+c:T1524,
 Starting with the conclusion, OpenGL coordinates use a left-handed system, just like DX. But GLM uses a right-handed coordinate system.
 
 Starting to handle new graphics APIs, I often found myself confused and lost due to different coordinate systems. I believe this is a common issue not only for myself but also for others. So, I aimed to precisely research and share about it this time. I began by seeking the official sources for two key facts I'm most clear about: OpenGL uses a right-handed coordinate system, while DX uses a left-handed one.
@@ -60,19 +60,31 @@ Now, below are the coordinate systems of each API that I initially set out to in
 
 ## 1. OpenGL / WebGL
 
-- NDC: +Y is up. Point(-1, -1) is at the bottom left corner
+- NDC
+  - +Y is up. Point(-1, -1) is at the bottom left corner
+  - -1.0 ≤ x ≤ 1.0
+  - -1.0 ≤ y ≤ 1.0
+  - -1.0 ≤ z ≤ 1.0
 - Framebuffer coordinate: +Y is up. Origin(0, 0) is at the bottom left corner
 - Texture Coordinates: +Y is up. Origin(0, 0) is at the bottom left corner
 
-## 2. WebGPU / D3D12 / Metal
+## 2. WebGPU / DirectX / Metal
 
-- NDC: +Y is up. Point(-1, -1) is at the bottom left corner
+- NDC
+  - +Y is up. Point(-1, -1) is at the bottom left corner
+  - -1.0 ≤ x ≤ 1.0
+  - -1.0 ≤ y ≤ 1.0
+  - 0.0 ≤ z ≤ 1.0
 - Framebuffer coordinate: +Y is down. Origin(0, 0) is at the top left corner
 - Texture coordinate: +Y is down. Origin(0, 0) is at the top left corner
 
 ## 3. Vulkan
 
-- NDC: +Y is down. Point(-1, -1) is at the top left corner
+- NDC
+  - +Y is down. Point(-1, -1) is at the top left corner
+  - -1.0 ≤ x ≤ 1.0
+  - -1.0 ≤ y ≤ 1.0
+  - 0.0 ≤ z ≤ 1.0
 - Framebuffer coordinate: +Y is down. Origin(0, 0) is at the top left corner
 - Texture coordinate: +Y is down. Origin(0, 0) is at the top left corner.
 
