@@ -2,6 +2,7 @@ import MarkdownRender from "@/components/MarkdownRender";
 import TagList from "@/components/TagList";
 import { getPostData, getPostList } from "@/lib/posts";
 import Link from "next/link";
+import Comment from "@/components/Comment";
 
 export default function Post({ params }: { params: { slug: string } }) {
   const { title, date, tags, content, category } = getPostData(params.slug);
@@ -21,6 +22,7 @@ export default function Post({ params }: { params: { slug: string } }) {
       <div className="mt-8">
         <MarkdownRender content={content} />
       </div>
+      <Comment issueTerm={title} />
     </div>
   );
 }
