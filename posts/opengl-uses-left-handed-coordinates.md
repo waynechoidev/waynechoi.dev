@@ -56,19 +56,31 @@ Now, below are the coordinate systems of each API that I initially set out to in
 
 ## 1. OpenGL / WebGL
 
-- NDC: +Y is up. Point(-1, -1) is at the bottom left corner
+- NDC
+  - +Y is up. Point(-1, -1) is at the bottom left corner
+  - -1.0 ≤ x ≤ 1.0
+  - -1.0 ≤ y ≤ 1.0
+  - -1.0 ≤ z ≤ 1.0
 - Framebuffer coordinate: +Y is up. Origin(0, 0) is at the bottom left corner
 - Texture Coordinates: +Y is up. Origin(0, 0) is at the bottom left corner
 
-## 2. WebGPU / D3D12 / Metal
+## 2. WebGPU / DirectX / Metal
 
-- NDC: +Y is up. Point(-1, -1) is at the bottom left corner
+- NDC
+  - +Y is up. Point(-1, -1) is at the bottom left corner
+  - -1.0 ≤ x ≤ 1.0
+  - -1.0 ≤ y ≤ 1.0
+  - 0.0 ≤ z ≤ 1.0
 - Framebuffer coordinate: +Y is down. Origin(0, 0) is at the top left corner
 - Texture coordinate: +Y is down. Origin(0, 0) is at the top left corner
 
 ## 3. Vulkan
 
-- NDC: +Y is down. Point(-1, -1) is at the top left corner
+- NDC
+  - +Y is down. Point(-1, -1) is at the top left corner
+  - -1.0 ≤ x ≤ 1.0
+  - -1.0 ≤ y ≤ 1.0
+  - 0.0 ≤ z ≤ 1.0
 - Framebuffer coordinate: +Y is down. Origin(0, 0) is at the top left corner
 - Texture coordinate: +Y is down. Origin(0, 0) is at the top left corner.
 
