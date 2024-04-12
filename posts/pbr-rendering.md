@@ -8,7 +8,8 @@ excerpt: "Implemented PBR rendering using OpenGL..."
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/XrfiBfOx1LE?si=N0abz-D93HKovMzM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-[Web Sample](https://waynechoidev.github.io/web-pbr/)
+- [WebGL Sample](https://waynechoidev.github.io/web-pbr/)
+- [WebGPU Sample](https://waynechoidev.github.io/webgpu-pbr/)
 
 I've implemented PBR rendering using OpenGL, and WebGL. Primarily, this project was developed with reference to the content available at [Learn OpenGL](https://learnopengl.com/). The ideas presented on that website served as inspiration for this implementation. Additionally, the code from [IBL Baker](https://www.derkreature.com/iblbaker) was also consulted for further enhancements. I'll focus more on implementation rather than delving into mathematical and physical theories on this post.
 
@@ -633,6 +634,12 @@ In WebGL, I performed gamma correction each time a texture was loaded to lineari
 vec3 envMap = pow(textureLod(envCubemap, R, roughness * MAX_REFLECTION_LOD).rgb, vec3(2.2));
 
 ```
+
+### P.S.
+
+While learning the WebGPU API, I rewrote this example using WebGPU. You can check out the process at the link below.
+
+[Introduce to WebGPU](/post/immutability_object_freeze_doesnt_always_freeze)
 
 ### References
 
