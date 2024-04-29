@@ -1,0 +1,77 @@
+1:HL["/_next/static/css/baa01199c04a1a03.css","style",{"crossOrigin":""}]
+0:["1m-WXX2klD5v2QtgzQrA-",[[["",{"children":["post",{"children":[["slug","n-body-problem","d"],{"children":["__PAGE__?{\"slug\":\"n-body-problem\"}",{}]}]}]},"$undefined","$undefined",true],"$L2",[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/baa01199c04a1a03.css","precedence":"next","crossOrigin":""}]],"$L3"]]]]
+4:HL["/_next/static/css/602feae4669a507e.css","style",{"crossOrigin":""}]
+5:I[9194,["326","static/chunks/326-6784f49434136418.js","185","static/chunks/app/layout-21c5cbba278c1661.js"],""]
+6:I[5629,["326","static/chunks/326-6784f49434136418.js","185","static/chunks/app/layout-21c5cbba278c1661.js"],""]
+7:I[6954,[],""]
+8:I[7264,[],""]
+a:I[8326,["326","static/chunks/326-6784f49434136418.js","691","static/chunks/691-d72542b099e0bc41.js","605","static/chunks/app/post/%5Bslug%5D/page-c6220fba5b22e67b.js"],""]
+b:I[7708,["326","static/chunks/326-6784f49434136418.js","691","static/chunks/691-d72542b099e0bc41.js","605","static/chunks/app/post/%5Bslug%5D/page-c6220fba5b22e67b.js"],""]
+d:I[5631,["326","static/chunks/326-6784f49434136418.js","691","static/chunks/691-d72542b099e0bc41.js","605","static/chunks/app/post/%5Bslug%5D/page-c6220fba5b22e67b.js"],""]
+3:[["$","meta","0",{"charSet":"utf-8"}],["$","title","1",{"children":"WayneChoi.Dev"}],["$","meta","2",{"name":"description","content":"Wayne Choi blog"}],["$","meta","3",{"name":"viewport","content":"width=device-width, initial-scale=1"}],["$","link","4",{"rel":"icon","href":"/favicon.ico"}]]
+c:Te7b,
+<img src="/img/n-body-problem.jpg" class="post-pic">
+
+[Sample](https://waynechoidev.github.io/n-body-problem/) / [Repository](https://github.com/waynechoidev/n-body-problem/)
+
+Recently, I heard that the Netflix series "3 Body Problem" is popular, so I decided to try implementing an N-body simulation using WebGPU.
+
+I found that the largest observed multiple star system to date consists of 7 stars, so I constructed the simulation as a 7-body problem. Since I compute accelerations for all objects considering their distances and masses using a compute shader, I could increase the number of bodies as long as the GPU performance allows it, but I didn't increase it further because it didn't look aesthetically pleasing with too many bodies.
+
+I followed Newton's equations as is but adjusted the gravitational constant to fit the screen size and speed. Collisions are not implemented separately, so stars can pass through each other.
+
+Initially, there was an issue where position coordinates became NaN on Android mobile devices, which was due to floating-point precision. To use the f16 data type in WebGPU, a separate extension is required, which is not yet supported in Chrome for Android. So, for mobile devices, f32 data type needs to be used, but due to hardware limitations, computations are done with precision even lower than f16.
+
+When the distance between objects became excessively close, on desktops, computations were precise enough to avoid such issues. However, on mobile devices, when that distance was recognized as 0, it caused problems in the formulas of the law of gravitation where the distance squared is divided and in normalizing distance vectors to obtain direction vectors, resulting in NaN values. So, I resolved this by clamping the distance values to small decimals recognizable on mobile devices to prevent them from reaching 0.
+
+Below is the compute shader code for calculating the positions of objects.
+
+```js
+struct Vertex {
+  @location(0) position: vec3f,
+  @location(1) velocity: vec3f,
+  @location(2) color: vec3f,
+  @location(3) texCoord: vec2f,
+  @location(4) radius: f32,
+  @location(5) mass: f32,
+};
+
+@group(0) @binding(0) var<storage, read_write> objects: array<Vertex>;
+@group(0) @binding(1) var<uniform> numOfObject: u32;
+@group(0) @binding(2) var<uniform> delta: f32;
+
+const MIN_DISTANCE: f32 = 0.0001;
+
+@compute @workgroup_size(256) fn computeSomething(
+    @builtin(global_invocation_id) global_invocation_id : vec3u,
+) {
+    let index = global_invocation_id.x;
+    var body : Vertex = objects[index];
+    var acceleration = vec3f(0.0, 0.0, 0.0);
+
+    for (var i = 0u; i < numOfObject; i++) {
+        if (i != index) {
+            let other : Vertex = objects[i];
+            let distance_vec = other.position - body.position;
+            var distance = length(distance_vec);
+            if (distance < MIN_DISTANCE) {
+                distance = MIN_DISTANCE;
+            }
+            let force = (0.0006673 * body.mass * other.mass) / distance * distance;
+            var direction = vec3(0.0, 0.0, 0.0);
+            if (distance > MIN_DISTANCE) {
+                direction = normalize(distance_vec);
+            }
+            acceleration += vec3(direction * force / body.mass);
+        }
+    }
+
+    body.velocity += acceleration;
+    body.position += body.velocity * delta;
+    objects[index] = body;
+}
+```
+
+For the graphics pipeline, I generated billboards from those positions in the compute shader, rotated them according to the camera direction, and then drew stars in the fragment shader. I referenced an [example made by "flight404" on ShaderToy](https://www.shadertoy.com/view/4dXGR4) for the fragment shader code but simplified it significantly.
+2:[null,["$","html",null,{"lang":"en","children":["$","body",null,{"className":"mx-auto my-0","children":[["$","nav",null,{"className":"max-w-default mx-auto px-5 py-3","children":["$","$L5",null,{}]}],["$","header",null,{"children":["$","$L6",null,{}]}],["$","div",null,{"className":"max-w-default mx-auto p-5","children":["$","$L7",null,{"parallelRouterKey":"children","segmentPath":["children"],"loading":"$undefined","loadingStyles":"$undefined","hasLoading":false,"error":"$undefined","errorStyles":"$undefined","template":["$","$L8",null,{}],"templateStyles":"$undefined","notFound":[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":"404"}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],"notFoundStyles":[],"childProp":{"current":["$","$L7",null,{"parallelRouterKey":"children","segmentPath":["children","post","children"],"loading":"$undefined","loadingStyles":"$undefined","hasLoading":false,"error":"$undefined","errorStyles":"$undefined","template":["$","$L8",null,{}],"templateStyles":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined","childProp":{"current":[null,["$","$L7",null,{"parallelRouterKey":"children","segmentPath":["children","post","children",["slug","n-body-problem","d"],"children"],"loading":"$undefined","loadingStyles":"$undefined","hasLoading":false,"error":"$undefined","errorStyles":"$undefined","template":["$","$L8",null,{}],"templateStyles":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined","childProp":{"current":["$L9",["$","div",null,{"children":[["$","$La",null,{"href":"/posts/graphics","className":"text-gray-600 text-md pl-1 hover:font-bold","children":"GRAPHICS"}],["$","h1",null,{"children":"N-body problem"}],["$","p",null,{"className":"text-gray-400 text-sm m-0 mt-1","children":"April 29, 2024"}],["$","div",null,{"className":"mt-1","children":["$","div",null,{"className":"whitespace-nowrap overflow-x-auto pb-3","children":[["$","$La","toyproject",{"href":"/tag/toyproject","className":"mr-2 text-gray-500 hover:font-bold","children":"#toyproject"}],["$","$La","webgpu",{"href":"/tag/webgpu","className":"mr-2 text-gray-500 hover:font-bold","children":"#webgpu"}],["$","$La","particles",{"href":"/tag/particles","className":"mr-2 text-gray-500 hover:font-bold","children":"#particles"}],["$","$La","collision",{"href":"/tag/collision","className":"mr-2 text-gray-500 hover:font-bold","children":"#collision"}]]}]}],["$","div",null,{"className":"mt-8","children":["$","$Lb",null,{"content":"$c"}]}],["$","$Ld",null,{"issueTerm":"N-body problem"}]]}],null],"segment":"__PAGE__?{\"slug\":\"n-body-problem\"}"},"styles":[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/602feae4669a507e.css","precedence":"next","crossOrigin":""}]]}],null],"segment":["slug","n-body-problem","d"]},"styles":[]}],"segment":"post"},"styles":[]}]}],["$","footer",null,{"className":"h-40 flex justify-center items-end","children":["$","p",null,{"className":"text-gray-500 text-sm","children":"(C) 2021. Wayne Choi. All rights reserved."}]}]]}]}],null]
+9:null
