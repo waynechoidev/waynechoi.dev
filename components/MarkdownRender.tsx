@@ -26,5 +26,5 @@ export default function MarkdownRender({ content }: MarkdownRenderProps) {
         link.id = "md-link";
       });
   }, [content]);
-  return <div ref={postRef}></div>;
+  return <div className="flex flex-col justify-center" ref={postRef}></div>;
 }
