@@ -8,7 +8,7 @@ excerpt: "simulated SPH water simulation with WebGPU compute shader..."
 
 <img src="/img/sph-water.jpg" class="post-pic">
 
-[Sample](https://waynechoidev.github.io/n-body-problem/) / [Repository](https://github.com/waynechoidev/n-body-problem/)
+[Sample](https://waynechoidev.github.io/sph-water/) / [Repository](https://github.com/waynechoidev/sph-water)
 
 Recently, I attempted to implement Smoothed Particle Hydrodynamics (SPH) particle simulation using WebGPU.
 
@@ -17,5 +17,3 @@ To cut to the chase, I wasn't satisfied with the results. On my laptop with an A
 I'm unsure if this is due to the performance limitations of the web browser platform or issues in my implementation. If the latter, I suspect it might be related to the logic for finding neighboring particles.
 
 For now, I don't plan to further refine this code here. Instead, I plan to implement it first in a native environment, not on the web. I've started learning Vulkan API for this purpose. I believe learning Vulkan will help me understand WebGPU, as both are low-level, modern APIs. Additionally, I'm a bit tired of the ambiguous OpenGL API, which relies on global state. Initially, as I become acquainted with Vulkan's API and gain proficiency through simpler tasks, it seems like revisiting the implementation of SPH will be postponed for quite some time.
-
-[Sample](https://waynechoidev.github.io/sph-water/) / [Repository](https://github.com/waynechoidev/sph-water)
