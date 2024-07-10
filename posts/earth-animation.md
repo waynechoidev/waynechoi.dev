@@ -3,7 +3,7 @@ title: "Earth animation"
 date: "Nov 6, 2023"
 category: "graphics"
 tags: ["toyproject", "webgl", "texture"]
-excerpt: "compared the speed of Gaussian blur implementation using canvas 2D and WebGL2..."
+excerpt: "tried implementing a Earth animation using WebGL with video textures..."
 ---
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/HBzNSw5VZJQ?si=DRgBviwTez3F0jac" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>

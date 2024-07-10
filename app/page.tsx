@@ -7,6 +7,7 @@ export default function Home() {
     "pbr-rendering",
     "introduce-to-webgpu",
     "from-1-year-of-development-to-launch",
+    "sph-water",
     "image-based-lighting",
     "sphere-texture-mapping",
     "earth-animation",
