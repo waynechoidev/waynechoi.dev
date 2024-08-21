@@ -37,13 +37,11 @@ iframe {
 .latex {
   max-width: 200px;
   width: 100%;
-  margin-left: 1rem;
 }
 
 .latex-long {
   max-width: 500px;
   width: 100%;
-  margin-left: 1rem;
 }
 
 h1 {
