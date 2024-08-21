@@ -1,0 +1,143 @@
+1:HL["/_next/static/css/0d7d5f6676468c9c.css","style",{"crossOrigin":""}]
+0:["P57JsrJwl86GTe17BlwTE",[[["",{"children":["post",{"children":[["slug","heat-equation","d"],{"children":["__PAGE__?{\"slug\":\"heat-equation\"}",{}]}]}]},"$undefined","$undefined",true],"$L2",[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/0d7d5f6676468c9c.css","precedence":"next","crossOrigin":""}]],"$L3"]]]]
+4:HL["/_next/static/css/602feae4669a507e.css","style",{"crossOrigin":""}]
+5:I[9194,["326","static/chunks/326-6784f49434136418.js","185","static/chunks/app/layout-ac79719e4e2bccb5.js"],""]
+6:I[5629,["326","static/chunks/326-6784f49434136418.js","185","static/chunks/app/layout-ac79719e4e2bccb5.js"],""]
+7:I[6954,[],""]
+8:I[7264,[],""]
+a:I[8326,["326","static/chunks/326-6784f49434136418.js","691","static/chunks/691-d72542b099e0bc41.js","605","static/chunks/app/post/%5Bslug%5D/page-e90f3bafd107b713.js"],""]
+b:I[7708,["326","static/chunks/326-6784f49434136418.js","691","static/chunks/691-d72542b099e0bc41.js","605","static/chunks/app/post/%5Bslug%5D/page-e90f3bafd107b713.js"],""]
+d:I[5631,["326","static/chunks/326-6784f49434136418.js","691","static/chunks/691-d72542b099e0bc41.js","605","static/chunks/app/post/%5Bslug%5D/page-e90f3bafd107b713.js"],""]
+3:[["$","meta","0",{"charSet":"utf-8"}],["$","title","1",{"children":"WayneChoi.Dev"}],["$","meta","2",{"name":"description","content":"Wayne Choi blog"}],["$","meta","3",{"name":"viewport","content":"width=device-width, initial-scale=1"}],["$","link","4",{"rel":"icon","href":"/favicon.ico"}]]
+c:T1e0b,
+[Sample](https://waynechoidev.github.io/heat_equation/) / [Repository](https://github.com/waynechoidev/heat_equation/)
+
+The Heat Equation is an important partial differential equation that models the phenomenon of heat conduction. I have implemented it using Compute Shaders in WebGPU. In this post, I will introduce the theoretical background of the Heat Equation, the method of solving it numerically, and how I implemented it in WGSL shader code.
+
+## Heat Equation
+
+The Heat Equation is a partial differential equation of the following form:
+
+<img src="/img/heat-equation-01.svg" class="latex"/>
+
+Here, u(i, j, t) represents the temperature distribution, and α is the thermal conductivity. This equation describes how the distribution of heat changes over time.
+
+## Gradient
+
+The gradient represents both the direction and magnitude of the rate of change of a vector field. In 2D, the gradient is defined as follows:
+
+<img src="/img/heat-equation-02.svg" class="latex"/>
+
+The gradient indicates the rate of change of the temperature distribution 𝑢 and provides the direction of the maximum temperature change at a specific point.
+
+## Divergence
+
+Divergence provides a scalar value that indicates the extent of expansion or contraction in a vector field. In 2D, divergence is defined as follows:
+
+<img src="/img/heat-equation-03.svg" class="latex"/>
+
+Here, F is the vector field. Divergence measures how much the vector field spreads out or converges at a given point.
+
+## Laplacian
+
+The Laplacian is defined as the divergence of the gradient and represents the curvature of a scalar field. In 2D, the Laplacian is defined as follows:
+
+<img src="/img/heat-equation-04.svg" class="latex"/>
+
+The Laplacian measures the rate of temperature change at a given point and is a crucial component of the Heat Equation.
+
+## Analytical Methods vs. Numerical Methods
+
+Analytical methods involve solving mathematical equations exactly. These methods can provide precise solutions for specific equations, but they may not be practical for complex or multidimensional problems. Partial differential equations, such as the Heat Equation, are often difficult to solve analytically, which is why numerical methods are used to obtain approximate solutions.
+
+Numerical methods involve using computers to approximate solutions to equations. This approach discretizes the equations and uses iterative calculations to find approximate solutions. The advantage of numerical methods is that they are practical and efficient for finding solutions to complex problems.
+
+## Finite Difference Method
+
+The Finite Difference Method is a prominent technique for numerically solving partial differential equations such as the Heat Equation. Here’s a general overview of the method:
+
+1. Grid Setup: Divide the problem domain into a grid. For a 2D space, this involves dividing the area into a lattice of square grid points where the temperature will be computed.
+
+2. Laplacian Calculation: Update the temperature values at each grid point. To approximate the Laplacian at each grid point, the method uses finite differences to estimate spatial changes in temperature. Below is a table showing the definitions of various differential operators used in mathematical analysis and their finite difference forms.
+
+|  Operator  |               Definition                |         Finite Difference Form          |
+| :--------: | :-------------------------------------: | :-------------------------------------: |
+|  Gradient  | <img src="/img/heat-equation-02.svg" /> | <img src="/img/heat-equation-05.svg" /> |
+| Divergence | <img src="/img/heat-equation-03.svg" /> | <img src="/img/heat-equation-06.svg" /> |
+| Laplacian  | <img src="/img/heat-equation-04.svg" /> | <img src="/img/heat-equation-07.svg" /> |
+
+Given that the values at neighboring grid points differ by 1 unit and the grid spacing Δx and Δ𝑦 are both 2, I simplified the finite difference formula accordingly. Here’s how I implemented it in WGSL:
+
+```js
+#include "common.wgsl"
+@group(0) @binding(0) var<storage, read_write> srcBuffer: array<f32>;
+@group(0) @binding(1) var<storage, read_write> divergence: array<f32>;
+
+@compute @workgroup_size(16, 16, 1)
+fn main(@builtin(global_invocation_id) id: vec3u) {
+    let x = id.x;
+    let y = id.y;
+    let idx = getIdx(id.xy);
+
+    let left = vec2u(clamp(x-1, 0, TEX_SIZE), y);
+    let right = vec2u(clamp(x+1, 0, TEX_SIZE), y);
+    let up = vec2u(x, clamp(y+1, 0, TEX_SIZE));
+    let down = vec2u(x, clamp(y-1, 0, TEX_SIZE));
+
+    divergence[idx] = (srcBuffer[getIdx(right)] + srcBuffer[getIdx(left)]
+    + srcBuffer[getIdx(up)] + srcBuffer[getIdx(down)] - 4 * srcBuffer[idx]) * 0.25;
+}
+```
+
+## Jacobi Method
+
+The Jacobi Method is an iterative technique used to solve systems of linear equations, and it is applied to solve the discretized Heat Equation through finite difference methods. This method typically produces smoother results for temperature distributions. The basic procedure for the Jacobi Method is as follows:
+
+1. Compute Divergence: Before updating temperatures, calculate the divergence (or Laplacian) of the temperature field. This step involves precomputing the divergence values which will be used in the temperature update formula.
+
+2. Update Formula: Use the precomputed divergence to iteratively update the temperature values at each grid point. Here's how it can be expressed in a simplified equation through the following derivation:
+
+<img src="/img/heat-equation-08.svg" class="latex-long"/>
+
+<img src="/img/heat-equation-09.svg" class="latex-long"/>
+
+<img src="/img/heat-equation-10.svg" class="latex-long"/>
+
+Here's how it was implemented in WGSL using the simplified formula. Two buffers were used and alternated for computation, and a small constant was applied to adjust the scale due to some error in the simulation.
+
+```js
+#include "common.wgsl"
+@group(0) @binding(0) var<storage, read_write> targetBuffer: array<f32>;
+@group(0) @binding(1) var<storage, read_write> tempBuffer: array<f32>;
+@group(0) @binding(2) var<storage, read_write> divergence: array<f32>;
+
+@compute @workgroup_size(16, 16, 1)
+fn main(@builtin(global_invocation_id) id: vec3u) {
+    let x = id.x;
+    let y = id.y;
+    let idx = getIdx(id.xy);
+
+    let left = vec2u(clamp(x-1, 0, TEX_SIZE), y);
+    let right = vec2u(clamp(x+1, 0, TEX_SIZE), y);
+    let up = vec2u(x, clamp(y+1, 0, TEX_SIZE));
+    let down = vec2u(x, clamp(y-1, 0, TEX_SIZE));
+
+    let divergetmzpdlfnceScale = 0.25;
+
+    targetBuffer[idx] = (tempBuffer[getIdx(right)] + tempBuffer[getIdx(left)]
+    + tempBuffer[getIdx(up)] + tempBuffer[getIdx(down)] - divergence[idx] * 4.0 * divergenceScale) * 0.25;
+}
+```
+
+## Conclusion
+
+The numerical approach to the Heat Equation is an effective method for solving complex problems where analytical solutions are difficult to obtain. By approximating spatial changes through finite difference methods and employing iterative techniques such as the Jacobi Method to solve linear equations, the Heat Equation can be approached practically. These numerical approaches can be applied not only to fluid simulations but also to various physical phenomena such as heat conduction and electric field calculations.
+
+### References
+
+- [Introduction to Computer Graphics with DirectX 11 - Part 4. Computer Animation](https://honglab.co.kr/courses/graphicspt4)
+- [GPU Gems](https://developer.nvidia.com/gpugems/gpugems/part-vi-beyond-triangles/chapter-38-fast-fluid-dynamics-simulation-gpu)
+- [Wikipedia](<https://en.wikipedia.org/wiki/Projection_method_(fluid_dynamics)>)
+- [Real-Time Fluid Dynamics for Games - Jos Stam](http://graphics.cs.cmu.edu/nsp/course/15-464/Fall09/papers/StamFluidforGames.pdf)
+2:[null,["$","html",null,{"lang":"en","children":["$","body",null,{"className":"mx-auto my-0","children":[["$","nav",null,{"className":"max-w-default mx-auto px-5 py-3","children":["$","$L5",null,{}]}],["$","header",null,{"children":["$","$L6",null,{}]}],["$","div",null,{"className":"max-w-default mx-auto p-5","children":["$","$L7",null,{"parallelRouterKey":"children","segmentPath":["children"],"loading":"$undefined","loadingStyles":"$undefined","hasLoading":false,"error":"$undefined","errorStyles":"$undefined","template":["$","$L8",null,{}],"templateStyles":"$undefined","notFound":[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":"404"}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],"notFoundStyles":[],"childProp":{"current":["$","$L7",null,{"parallelRouterKey":"children","segmentPath":["children","post","children"],"loading":"$undefined","loadingStyles":"$undefined","hasLoading":false,"error":"$undefined","errorStyles":"$undefined","template":["$","$L8",null,{}],"templateStyles":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined","childProp":{"current":[null,["$","$L7",null,{"parallelRouterKey":"children","segmentPath":["children","post","children",["slug","heat-equation","d"],"children"],"loading":"$undefined","loadingStyles":"$undefined","hasLoading":false,"error":"$undefined","errorStyles":"$undefined","template":["$","$L8",null,{}],"templateStyles":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined","childProp":{"current":["$L9",["$","div",null,{"children":[["$","$La",null,{"href":"/posts/graphics","className":"text-gray-600 text-md pl-1 hover:font-bold","children":"GRAPHICS"}],["$","h1",null,{"children":"Heat equation with WebGPU"}],["$","p",null,{"className":"text-gray-400 text-sm m-0 mt-1","children":"Aug 21, 2024"}],["$","div",null,{"className":"mt-1","children":["$","div",null,{"className":"whitespace-nowrap overflow-x-auto pb-3","children":[["$","$La","toyproject",{"href":"/tag/toyproject","className":"mr-2 text-gray-500 hover:font-bold","children":"#toyproject"}],["$","$La","webgpu",{"href":"/tag/webgpu","className":"mr-2 text-gray-500 hover:font-bold","children":"#webgpu"}],["$","$La","particles",{"href":"/tag/particles","className":"mr-2 text-gray-500 hover:font-bold","children":"#particles"}],["$","$La","collision",{"href":"/tag/collision","className":"mr-2 text-gray-500 hover:font-bold","children":"#collision"}]]}]}],["$","div",null,{"className":"mt-8","children":["$","$Lb",null,{"content":"$c"}]}],["$","$Ld",null,{"issueTerm":"Heat equation with WebGPU"}]]}],null],"segment":"__PAGE__?{\"slug\":\"heat-equation\"}"},"styles":[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/602feae4669a507e.css","precedence":"next","crossOrigin":""}]]}],null],"segment":["slug","heat-equation","d"]},"styles":[]}],"segment":"post"},"styles":[]}]}],["$","footer",null,{"className":"h-40 flex justify-center items-end","children":["$","p",null,{"className":"text-gray-500 text-sm","children":"(C) 2021. Wayne Choi. All rights reserved."}]}]]}]}],null]
+9:null
