@@ -6,6 +6,8 @@ tags: ["simulation", "webgpu", "math"]
 excerpt: "simulated heat equation with WebGPU compute shader..."
 ---
 
+<img src="/img/heat-equation-01.jpg" class="post-pic"/>
+
 [Sample](https://waynechoidev.github.io/heat_equation/) / [Repository](https://github.com/waynechoidev/heat_equation/)
 
 The Heat Equation is an important partial differential equation that models the phenomenon of heat conduction. I have implemented it using Compute Shaders in WebGPU. In this post, I will introduce the theoretical background of the Heat Equation, the method of solving it numerically, and how I implemented it in WGSL shader code.
