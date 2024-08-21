@@ -2,8 +2,8 @@
 title: "Heat equation with WebGPU"
 date: "Aug 21, 2024"
 category: "graphics"
-tags: ["toyproject", "webgpu", "particles", "collision"]
-excerpt: "simulated n-body problem with WebGPU compute shader..."
+tags: ["simulation", "webgpu", "math"]
+excerpt: "simulated heat equation with WebGPU compute shader..."
 ---
 
 [Sample](https://waynechoidev.github.io/heat_equation/) / [Repository](https://github.com/waynechoidev/heat_equation/)
