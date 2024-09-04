@@ -1,5 +1,5 @@
 1:HL["/_next/static/css/2e2a7597edf4d608.css","style",{"crossOrigin":""}]
-0:["FtjT8yeUE2o85ppFCMBfN",[[["",{"children":["post",{"children":[["slug","fast-fluid-dynamics-simulation","d"],{"children":["__PAGE__?{\"slug\":\"fast-fluid-dynamics-simulation\"}",{}]}]}]},"$undefined","$undefined",true],"$L2",[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/2e2a7597edf4d608.css","precedence":"next","crossOrigin":""}]],"$L3"]]]]
+0:["RE4Mo7A9A9aWm64uQv2d1",[[["",{"children":["post",{"children":[["slug","fast-fluid-dynamics-simulation","d"],{"children":["__PAGE__?{\"slug\":\"fast-fluid-dynamics-simulation\"}",{}]}]}]},"$undefined","$undefined",true],"$L2",[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/2e2a7597edf4d608.css","precedence":"next","crossOrigin":""}]],"$L3"]]]]
 4:HL["/_next/static/css/602feae4669a507e.css","style",{"crossOrigin":""}]
 5:I[9194,["326","static/chunks/326-6784f49434136418.js","185","static/chunks/app/layout-a7d9660fe841e21f.js"],""]
 6:I[5629,["326","static/chunks/326-6784f49434136418.js","185","static/chunks/app/layout-a7d9660fe841e21f.js"],""]
@@ -9,7 +9,7 @@ a:I[8326,["326","static/chunks/326-6784f49434136418.js","691","static/chunks/691
 b:I[7708,["326","static/chunks/326-6784f49434136418.js","691","static/chunks/691-d72542b099e0bc41.js","605","static/chunks/app/post/%5Bslug%5D/page-e90f3bafd107b713.js"],""]
 d:I[5631,["326","static/chunks/326-6784f49434136418.js","691","static/chunks/691-d72542b099e0bc41.js","605","static/chunks/app/post/%5Bslug%5D/page-e90f3bafd107b713.js"],""]
 3:[["$","meta","0",{"charSet":"utf-8"}],["$","title","1",{"children":"WayneChoi.Dev"}],["$","meta","2",{"name":"description","content":"Wayne Choi blog"}],["$","meta","3",{"name":"viewport","content":"width=device-width, initial-scale=1"}],["$","link","4",{"rel":"icon","href":"/favicon.ico"}]]
-c:T3978,
+c:T396c,
 <img src="/img/fast-fluid-dynamics-simulation-01.jpg" class="post-pic"/>
 
 [Sample](https://waynechoidev.github.io/stable-fluids/) / [Repository](https://github.com/waynechoidev/stable-fluids/)
@@ -42,8 +42,8 @@ To solve this, partial differential equations need to be numerically solved. The
 ```js
 @compute @workgroup_size(16, 16, 1)
 fn main(@builtin(global_invocation_id) id: vec3u) {
-    let x:f32 = f32(id.x) + 0.5;
-    let y:f32 = f32(id.y) + 0.5;
+    let x:f32 = f32(id.x);
+    let y:f32 = f32(id.y);
     let idx = getIdx(id.xy, size.width);
 
     if (constant.is_tracking == 1.0 ) {
