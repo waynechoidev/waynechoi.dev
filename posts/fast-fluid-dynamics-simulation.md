@@ -38,8 +38,8 @@ To solve this, partial differential equations need to be numerically solved. The
 ```js
 @compute @workgroup_size(16, 16, 1)
 fn main(@builtin(global_invocation_id) id: vec3u) {
-    let x:f32 = f32(id.x) + 0.5;
-    let y:f32 = f32(id.y) + 0.5;
+    let x:f32 = f32(id.x);
+    let y:f32 = f32(id.y);
     let idx = getIdx(id.xy, size.width);
 
     if (constant.is_tracking == 1.0 ) {
