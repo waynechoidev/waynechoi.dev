@@ -4,6 +4,7 @@ import Link from "next/link";
 
 export default function Home() {
   const posts = getPostListBySlugs([
+    "fast-fluid-dynamics-simulation",
     "pbr-rendering",
     "introduce-to-webgpu",
     "from-1-year-of-development-to-launch",
