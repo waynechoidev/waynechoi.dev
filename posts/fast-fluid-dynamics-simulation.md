@@ -8,7 +8,7 @@ excerpt: "implemented a fluid simulation by solving the Navier-Stokes equations 
 
 <img src="/img/fast-fluid-dynamics-simulation-01.jpg" class="post-pic"/>
 
-[Sample](https://waynechoidev.github.io/fast-fluids/) / [Repository](https://github.com/waynechoidev/fast-fluids/)
+[Sample](https://waynechoidev.github.io/stable-fluids/) / [Repository](https://github.com/waynechoidev/stable-fluids/)
 
 A fast fluid dynamics simulation based on [Jos Stam's Stable Fluids](http://graphics.cs.cmu.edu/nsp/course/15-464/Fall09/papers/StamFluidforGames.pdf) has been implemented using WebGPU. This post will briefly cover the mathematical aspects and primarily focus on the implementation. However, please note that all the code presented here has been simplified for explanation purposes, and the detailed implementation can be found in the repository linked above.
 
