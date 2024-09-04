@@ -156,7 +156,7 @@ Viscosity diffusion is applied to smooth out the fluid's velocity and simulate t
 
 ## 4. Post process
 
-While not directly related to solving the Navier-Stokes equations, applying viscosity diffusion plays a crucial role in making the simulation results more realistic and stable.
+While not directly related to solving the Navier-Stokes equations, it plays a crucial role in making the simulation results more realistic and stable.
 
 ### 4.1 Density diffusion
 
