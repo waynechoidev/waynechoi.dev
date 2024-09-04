@@ -1,5 +1,5 @@
 1:HL["/_next/static/css/2e2a7597edf4d608.css","style",{"crossOrigin":""}]
-0:["OTz1D5SnKRCW8w_iwEmE8",[[["",{"children":["post",{"children":[["slug","fast-fluid-dynamics-simulation","d"],{"children":["__PAGE__?{\"slug\":\"fast-fluid-dynamics-simulation\"}",{}]}]}]},"$undefined","$undefined",true],"$L2",[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/2e2a7597edf4d608.css","precedence":"next","crossOrigin":""}]],"$L3"]]]]
+0:["nob5MmrWBHQGHQKRHxhPg",[[["",{"children":["post",{"children":[["slug","fast-fluid-dynamics-simulation","d"],{"children":["__PAGE__?{\"slug\":\"fast-fluid-dynamics-simulation\"}",{}]}]}]},"$undefined","$undefined",true],"$L2",[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/2e2a7597edf4d608.css","precedence":"next","crossOrigin":""}]],"$L3"]]]]
 4:HL["/_next/static/css/602feae4669a507e.css","style",{"crossOrigin":""}]
 5:I[9194,["326","static/chunks/326-6784f49434136418.js","185","static/chunks/app/layout-a7d9660fe841e21f.js"],""]
 6:I[5629,["326","static/chunks/326-6784f49434136418.js","185","static/chunks/app/layout-a7d9660fe841e21f.js"],""]
@@ -9,12 +9,12 @@ a:I[8326,["326","static/chunks/326-6784f49434136418.js","691","static/chunks/691
 b:I[7708,["326","static/chunks/326-6784f49434136418.js","691","static/chunks/691-d72542b099e0bc41.js","605","static/chunks/app/post/%5Bslug%5D/page-e90f3bafd107b713.js"],""]
 d:I[5631,["326","static/chunks/326-6784f49434136418.js","691","static/chunks/691-d72542b099e0bc41.js","605","static/chunks/app/post/%5Bslug%5D/page-e90f3bafd107b713.js"],""]
 3:[["$","meta","0",{"charSet":"utf-8"}],["$","title","1",{"children":"WayneChoi.Dev"}],["$","meta","2",{"name":"description","content":"Wayne Choi blog"}],["$","meta","3",{"name":"viewport","content":"width=device-width, initial-scale=1"}],["$","link","4",{"rel":"icon","href":"/favicon.ico"}]]
-c:T3990,
+c:T3992,
 <img src="/img/fast-fluid-dynamics-simulation-01.jpg" class="post-pic"/>
 
 [Sample](https://waynechoidev.github.io/stable-fluids/) / [Repository](https://github.com/waynechoidev/stable-fluids/)
 
-A fast fluid dynamics simulation based on [Jos Stam's Stable Fluids](http://graphics.cs.cmu.edu/nsp/course/15-464/Fall09/papers/StamFluidforGames.pdf) has been implemented using WebGPU. This post will briefly cover the mathematical aspects and primarily focus on the implementation. However, please note that all the code presented here has been simplified for explanation purposes, and the detailed implementation can be found in the repository linked above.
+I implemented a fast fluid dynamics simulation based on [Jos Stam's Stable Fluids](http://graphics.cs.cmu.edu/nsp/course/15-464/Fall09/papers/StamFluidforGames.pdf) with using WebGPU api. This post will briefly cover the mathematical aspects and primarily focus on the implementation. However, please note that all the code presented here has been simplified for explanation purposes, and the detailed implementation can be found in the repository linked above.
 
 ## 0. Mathematics
 
