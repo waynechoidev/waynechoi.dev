@@ -9,7 +9,7 @@ excerpt: "Explain primitive and reference data type of JavaScript, and immutabil
 ### Immutability series
 
 1. **Object.freeze() doesn't always freeze**
-2. [Immutable.js, pros and cons](/post/immutability_immutable_js_pros_and_cons)
+2. [Immutable.js, pros and cons](/post/immutability-immutable-js-pros-and-cons)
 
 ---
 

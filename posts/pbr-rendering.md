@@ -639,7 +639,7 @@ vec3 envMap = pow(textureLod(envCubemap, R, roughness * MAX_REFLECTION_LOD).rgb,
 
 While learning the WebGPU API, I rewrote this example using WebGPU. You can check out the process at the link below.
 
-[Introduce to WebGPU](/post/immutability_object_freeze_doesnt_always_freeze)
+[Introduce to WebGPU](/post/introduce-to-webgpu)
 
 ### References
 

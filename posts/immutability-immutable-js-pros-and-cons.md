@@ -8,7 +8,7 @@ excerpt: "How Immutable.js works with persistent data structures, and its pros a
 
 ### Immutability series
 
-1. [Object.freeze() doesn't always freeze](/post/immutability_object_freeze_doesnt_always_freeze)
+1. [Object.freeze() doesn't always freeze](/post/immutability-object-freeze-doesnt-always-freeze)
 2. **Immutable.js, pros and cons**
 
 ---
