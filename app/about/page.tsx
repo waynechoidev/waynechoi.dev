@@ -3,12 +3,6 @@ import Image from "next/image";
 
 const linkList = [
   { img: "/icon/github.svg", src: "https://github.com/waynechoidev" },
-  {
-    img: "/icon/linkedin.svg",
-    src: "https://www.linkedin.com/in/wonjun-wayne-choi",
-  },
-  { img: "/icon/cv.svg", src: "/wayne_cv.pdf" },
-  { img: "/icon/gmail.svg", src: "mailto:wonjun92@gmail.com" },
 ];
 
 export default function About() {
