@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export default function Home() {
   const posts = getPostListBySlugs([
-    "why-modern-games-are-hard-to-optimize",
+    "n-body-problem",
     "terrain",
     "fast-fluid-dynamics-simulation",
     "pbr-rendering",
