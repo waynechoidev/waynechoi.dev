@@ -4,10 +4,14 @@ import React, { useRef, useEffect } from "react";
 import highlightJs from "highlight.js";
 import "highlight.js/styles/a11y-dark.css";
 import { marked } from "marked";
+import markedKatex from "marked-katex-extension";
+import "katex/dist/katex.min.css";
 
 interface MarkdownRenderProps {
   content: string;
 }
+
+marked.use(markedKatex({ throwOnError: false }));
 
 export default function MarkdownRender({ content }: MarkdownRenderProps) {
   const postRef = useRef<HTMLDivElement>(null);
@@ -26,5 +30,6 @@ export default function MarkdownRender({ content }: MarkdownRenderProps) {
         link.id = "md-link";
       });
   }, [content]);
+
   return <div className="flex flex-col justify-center" ref={postRef}></div>;
 }
