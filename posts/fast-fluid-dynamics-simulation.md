@@ -1,9 +1,10 @@
 ---
 title: "Fast fluid dynamics simulation"
-date: "Sep 4, 2024"
+date: "2024-09-04"
 category: "graphics"
 tags: ["simulation", "webgpu", "math"]
 excerpt: "implemented a fluid simulation by solving the Navier-Stokes equations using the Stable Fluids method..."
+featured: true
 ---
 
 <img src="/img/fast-fluid-dynamics-simulation-01.jpg" class="post-pic"/>

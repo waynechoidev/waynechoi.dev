@@ -18,8 +18,8 @@ export default function Comment({ issueTerm }: { issueTerm: string }) {
   }, [issueTerm]);
 
   return (
-    <div>
+    <section className="mt-16" aria-label="Comments">
       <div ref={commentsEl} />
-    </div>
+    </section>
   );
 }

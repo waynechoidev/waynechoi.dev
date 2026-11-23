@@ -1,4 +1,3 @@
-import { formatPascal } from "@/lib/utils";
 import Link from "next/link";
 import React from "react";
 
@@ -12,7 +11,7 @@ export default function CategoryBar({
   categoryList,
 }: CategoryBarProps) {
   return (
-    <div className="overflow-x-auto sm:overflow-x-hidden pb-3 sm:pb-0">
+    <nav className="overflow-x-auto sm:overflow-x-hidden pb-3 sm:pb-0" aria-label="Post categories">
       <CategoryItem category="all" highlight={!currentCategory} link="/posts" />
       {categoryList.map((category) => (
         <CategoryItem
@@ -22,7 +21,7 @@ export default function CategoryBar({
           link={`/posts/${category}`}
         />
       ))}
-    </div>
+    </nav>
   );
 }
 
@@ -36,7 +35,7 @@ function CategoryItem({
   link: string;
 }) {
   return (
-    <Link key={category} href={link}>
+    <Link key={category} href={link} aria-current={highlight ? "page" : undefined}>
       <span
         className={`hover:font-bold px-2 text-md sm:text-lg ${
           highlight ? "font-bold" : "font-normal"

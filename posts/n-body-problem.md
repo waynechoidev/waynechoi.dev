@@ -1,9 +1,10 @@
 ---
 title: "N-body problem"
-date: "April 29, 2024"
+date: "2024-04-29"
 category: "graphics"
 tags: ["toyproject", "webgpu", "particles", "collision"]
 excerpt: "simulated n-body problem with WebGPU compute shader..."
+featured: true
 ---
 
 <img src="/img/n-body-problem.jpg" class="post-pic">

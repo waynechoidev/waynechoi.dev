@@ -1,6 +1,6 @@
 ---
 title: "Why modern games are hard to optimize"
-date: "Dec 20, 2024"
+date: "2024-12-20"
 category: "story"
 tags: ["game", "gpu"]
 excerpt: "The complexity of GPU architectures and optimization challenges..."

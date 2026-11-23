@@ -1,6 +1,6 @@
 ---
 title: "Ray tracing on canvas"
-date: "Dec 14, 2022"
+date: "2022-12-14"
 category: "graphics"
 tags: ["toyproject", "webgl", "raytracing", "phongshading"]
 excerpt: "Implemented Phong shading with ray tracing in a web environment..."

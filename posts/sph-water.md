@@ -1,9 +1,10 @@
 ---
 title: "SPH Water"
-date: "June 28, 2024"
+date: "2024-06-28"
 category: "graphics"
 tags: ["toyproject", "webgpu", "particles", "sph"]
 excerpt: "simulated SPH water simulation with WebGPU compute shader..."
+featured: true
 ---
 
 <img src="/img/sph-water.jpg" class="post-pic">

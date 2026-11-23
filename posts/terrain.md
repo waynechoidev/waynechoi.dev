@@ -1,9 +1,10 @@
 ---
 title: "Terrain"
-date: "Sep 11, 2024"
+date: "2024-09-11"
 category: "graphics"
 tags: ["simulation", "webgpu", "noise"]
 excerpt: "Terrain Generation and Rendering Based on Perlin Noise Using WebGPU..."
+featured: true
 ---
 
 <img src="/img/terrain.jpg" class="post-pic"/>

@@ -1,9 +1,10 @@
 ---
 title: "From 1 Year of Development to Launch"
-date: "Nov 7, 2023"
+date: "2023-11-07"
 category: "story"
 tags: ["career", "web", "crm", "business"]
 excerpt: "Reflection on the Past Year of Developing and Launching a Web-Based CRM..."
+featured: true
 ---
 
 I've been working at a FinTech startup in New Zealand, joining the team from the very beginning of product development. It's incredible how a year has already passed, and we've successfully launched our service. As a software engineer, guiding a product through its entire lifecycle, from concept to release, has been a truly enriching journey. However, we're only halfway through the cycle, as there's still the post-launch phase to navigate. Going forward, I'm excited to share my insights and experiences from the past year.

@@ -8,6 +8,8 @@ export class MainAnimation {
   boat: Boat;
   stageWidth!: number;
   stageHeight!: number;
+  animationFrame?: number;
+  stopped = false;
 
   constructor(canvas: HTMLCanvasElement) {
     this.canvas = canvas;
@@ -17,7 +19,7 @@ export class MainAnimation {
     this.boat = new Boat();
 
     this.resize();
-    requestAnimationFrame(this.animate.bind(this));
+    this.animationFrame = requestAnimationFrame(this.animate);
   }
 
   resize() {
@@ -30,12 +32,18 @@ export class MainAnimation {
     this.boat.resize(this.stageWidth * 0.3, this.stageHeight * 0.3);
   }
 
-  animate() {
+  animate = () => {
+    if (this.stopped) return;
     this.ctx!.clearRect(0, 0, this.stageWidth, this.stageHeight);
 
     this.boat.draw(this.ctx!);
     this.waveGroup.draw(this.ctx!);
 
-    requestAnimationFrame(this.animate.bind(this));
+    this.animationFrame = requestAnimationFrame(this.animate);
+  };
+
+  stop() {
+    this.stopped = true;
+    if (this.animationFrame) cancelAnimationFrame(this.animationFrame);
   }
 }

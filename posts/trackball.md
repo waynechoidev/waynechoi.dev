@@ -1,6 +1,6 @@
 ---
 title: "Trackball"
-date: "Nov 10, 2023"
+date: "2023-11-10"
 category: "graphics"
 tags: ["opengl", "trackball", "picking", "raycasting"]
 excerpt: "implemented a trackball to rotate an object with ray casting..."

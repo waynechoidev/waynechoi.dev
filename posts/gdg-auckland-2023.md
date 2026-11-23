@@ -1,6 +1,6 @@
 ---
 title: "GDG Auckland 2023"
-date: "Nov 12, 2023"
+date: "2023-11-12"
 category: "story"
 tags: ["conference", "career"]
 excerpt: "I attended a developer conference for the first time ever..."

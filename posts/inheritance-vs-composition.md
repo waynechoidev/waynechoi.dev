@@ -1,6 +1,6 @@
 ---
 title: "Inheritance vs Composition: There's No Always Right Answer"
-date: "Nov 20, 2024"
+date: "2024-11-20"
 category: "cs"
 tags: ["software-design", "design-pattern", "inheritance", "composition"]
 excerpt: "compares inheritance and composition, emphasizing the importance of choosing the right approach based on the specific software design context."

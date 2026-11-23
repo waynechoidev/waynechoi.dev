@@ -1,6 +1,6 @@
 ---
 title: "Building a Persistent AI Development Control Plane"
-date: "Nov 23, 2026"
+date: "2026-11-23"
 category: "web"
 tags: ["architecture", "ai", "full-stack", "realtime", "voice"]
 excerpt: "How real-world failures led me to redesign a remote development control plane around explicit ownership, durable AI sessions, and observable runtime state."

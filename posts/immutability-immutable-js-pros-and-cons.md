@@ -1,6 +1,6 @@
 ---
 title: "Immutability (2) - Immutable.js, pros and cons"
-date: "Oct 14, 2021"
+date: "2021-10-14"
 category: "web"
 tags: ["javascript", "immutability"]
 excerpt: "How Immutable.js works with persistent data structures, and its pros and cons..."

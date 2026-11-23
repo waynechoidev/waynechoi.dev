@@ -1,6 +1,6 @@
 ---
 title: "Rim shader"
-date: "Oct 24, 2023"
+date: "2023-10-24"
 category: "graphics"
 tags: ["opengl", "shader", "cpp"]
 excerpt: "Texture mapping an Earth-like texture onto a sphere model using OpenGL..."

@@ -1,6 +1,6 @@
 ---
 title: "Gaussian blur on web"
-date: "Dec 12, 2022"
+date: "2022-12-12"
 category: "graphics"
 tags: ["toyproject", "webgl", "imagefilter"]
 excerpt: "compared the speed of Gaussian blur implementation using canvas 2D and WebGL2..."

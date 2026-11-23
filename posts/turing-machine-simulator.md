@@ -1,6 +1,6 @@
 ---
 title: "Turing machine simulator"
-date: "Aug 28, 2022"
+date: "2022-08-28"
 category: "cs"
 tags: ["toyproject", "turingmachine"]
 excerpt: "Implemented a turing machine simulator with typescript and react..."

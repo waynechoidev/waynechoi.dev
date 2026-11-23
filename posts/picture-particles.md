@@ -1,6 +1,6 @@
 ---
 title: "Picture particles"
-date: "Feb 16, 2024"
+date: "2024-02-16"
 category: "graphics"
 tags: ["toyproject", "webgl", "particles"]
 excerpt: "I implemented a particle shattering effect using WebGL..."

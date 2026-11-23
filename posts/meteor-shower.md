@@ -1,6 +1,6 @@
 ---
 title: "Meteor shower"
-date: "Nov 17, 2023"
+date: "2023-11-17"
 category: "graphics"
 tags: ["toyproject", "opengl", "transformfeedback", "geometryshader"]
 excerpt: "Implemented meteor shower with GPGPU via Transform Feedback in OpenGL..."

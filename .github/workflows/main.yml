@@ -1,29 +1,38 @@
-name: Build and Deploy
+name: Build and deploy
+
 on:
-  workflow_dispatch: {}
+  workflow_dispatch:
   push:
-    branches:
-      - main
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: pages-${{ github.ref }}
+  cancel-in-progress: true
 
 jobs:
-  build-and-deploy:
+  verify:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
-        uses: actions/checkout@v3
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
         with:
-          persist-credentials: false
-
-      - name: Install and Build
-        uses: actions/setup-node@v3
-      - run: npm install
+          node-version: 24
+          cache: npm
+      - run: npm ci
+      - run: npm run lint
+      - run: npm test
       - run: npm run build
-        env:
-          CI: true
-          DEPLOY_TARGET: gh-pages
-      - run: touch out/.nojekyll
+
+      - name: Prepare GitHub Pages artifact
+        if: github.event_name != 'pull_request'
+        run: touch out/.nojekyll
 
       - name: Deploy
+        if: github.event_name != 'pull_request'
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           token: ${{ secrets.GITHUB_TOKEN }}

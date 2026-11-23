@@ -1,6 +1,6 @@
 ---
 title: "Heat equation with WebGPU"
-date: "Aug 21, 2024"
+date: "2024-08-21"
 category: "graphics"
 tags: ["simulation", "webgpu", "math"]
 excerpt: "simulated heat equation with WebGPU compute shader..."

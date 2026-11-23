@@ -6,12 +6,25 @@ import React, { useEffect, useRef } from "react";
 export default function Header() {
   const canvas = useRef<HTMLCanvasElement>(null);
   useEffect(() => {
-    new MainAnimation(canvas.current!);
+    const element = canvas.current;
+    if (!element) return;
+
+    const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
+    if (reducedMotion.matches) return;
+
+    const animation = new MainAnimation(element);
+    const resize = () => animation.resize();
+    window.addEventListener("resize", resize);
+
+    return () => {
+      window.removeEventListener("resize", resize);
+      animation.stop();
+    };
   }, []);
 
   return (
     <div className="h-32 relative" id="sky">
-      <canvas className="w-full h-full" ref={canvas} />
+      <canvas className="w-full h-full" ref={canvas} aria-hidden="true" />
       <div className="absolute top-0 inset-x-auto w-full ">
         <div className="w-full max-w-default mx-auto">
           <h1 className="text-4xl font-semibold p-5 pt-0">

@@ -1,6 +1,6 @@
 ---
 title: "Web based deep learning"
-date: "Aug 11, 2023"
+date: "2023-08-11"
 category: "web"
 tags: ["toyproject", "deeplearning", "machinelearning"]
 excerpt: "Simulation of Linear Regression and Custom MLP Models using TypeScript..."

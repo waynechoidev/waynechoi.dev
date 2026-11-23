@@ -1,21 +1,26 @@
 import CategoryBar from "@/components/CategoryBar";
 import PostList from "@/components/PostList";
 import { categoryList, getPostListByCategory } from "@/lib/posts";
+import type { Metadata } from "next";
+import { notFound } from "next/navigation";
 
-export default function Post({ params }: { params: { category: string } }) {
-  const posts = getPostListByCategory(params.category);
+type Props = { params: Promise<{ category: string }> };
+
+export default async function CategoryPage({ params }: Props) {
+  const { category } = await params;
+  if (!categoryList.includes(category as (typeof categoryList)[number])) notFound();
 
   return (
     <>
-      <CategoryBar
-        categoryList={categoryList}
-        currentCategory={params.category}
-      />
-      <PostList list={posts} />
+      <CategoryBar categoryList={[...categoryList]} currentCategory={category} />
+      <PostList list={getPostListByCategory(category)} />
     </>
   );
 }
 
-export async function generateStaticParams() {
-  return categoryList.map((category) => ({ category: category }));
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const { category } = await params;
+  return { title: `${category.toUpperCase()} posts`, alternates: { canonical: `/posts/${category}/` } };
 }
+
+export const generateStaticParams = () => categoryList.map((category) => ({ category }));

@@ -1,6 +1,6 @@
 ---
 title: "Mouse picking with Frame Buffer"
-date: "Nov 2, 2023"
+date: "2023-11-02"
 category: "graphics"
 tags: ["opengl", "framebuffer", "picking", "cpp"]
 excerpt: "Implemented mouse picking using OpenGL Frame Buffer Object."

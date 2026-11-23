@@ -1,6 +1,6 @@
 ---
 title: "How Does YouTube Autoplay Their Videos?"
-date: "Feb 1, 2024"
+date: "2024-02-01"
 category: "web"
 tags: ["web", "html"]
 excerpt: "Understanding how YouTube tackles autoplay challenges and ensures a smooth viewing experience..."

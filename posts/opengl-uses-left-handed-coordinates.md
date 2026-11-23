@@ -1,6 +1,6 @@
 ---
 title: "OpenGL uses left-handed coordinates"
-date: "9 April, 2024"
+date: "2024-04-09"
 category: "graphics"
 tags: ["opengl", "coordinates", "ndc", "left-handed", "right-handed"]
 excerpt: "coordinate systems for various graphics APIs..."

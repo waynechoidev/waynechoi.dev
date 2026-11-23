@@ -6,7 +6,7 @@ export default function Posts() {
   const posts = getPostList();
   return (
     <>
-      <CategoryBar categoryList={categoryList} />
+      <CategoryBar categoryList={[...categoryList]} />
       <PostList list={posts} />
     </>
   );

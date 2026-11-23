@@ -1,6 +1,6 @@
 ---
 title: "Earth animation"
-date: "Nov 6, 2023"
+date: "2023-11-06"
 category: "graphics"
 tags: ["toyproject", "webgl", "texture"]
 excerpt: "tried implementing a Earth animation using WebGL with video textures..."

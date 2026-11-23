@@ -1,6 +1,6 @@
 ---
 title: "Galton board"
-date: "April 24, 2024"
+date: "2024-04-24"
 category: "graphics"
 tags: ["toyproject", "webgpu", "particles", "collision"]
 excerpt: "implemented a Galton Board using WebGPU..."

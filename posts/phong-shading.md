@@ -1,6 +1,6 @@
 ---
 title: "Phong shading"
-date: "Oct 9, 2023"
+date: "2023-10-09"
 category: "graphics"
 tags: ["opengl", "phongshading", "lighting", "cpp"]
 excerpt: "Implemented the phong shading with OpenGL..."

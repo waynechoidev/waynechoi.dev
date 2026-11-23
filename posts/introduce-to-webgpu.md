@@ -1,9 +1,10 @@
 ---
 title: "Introduce to WebGPU"
-date: "12 April, 2024"
+date: "2024-04-12"
 category: "graphics"
 tags: ["webgpu", "webgl", "typescript", "pbr"]
 excerpt: "Learn WebGPU, and reimplement PBR Renderer with it..."
+featured: true
 ---
 
 I recently had the opportunity to learn WebGPU and decided to reimplement the PBR renderer I had previously built with WebGL. I want to share my thoughts on encountering this new API and the insights I gained from implementing PBR.

@@ -1,9 +1,10 @@
 ---
 title: "Sphere texture mapping"
-date: "Oct 24, 2023"
+date: "2023-10-24"
 category: "graphics"
 tags: ["opengl", "texture", "cpp"]
 excerpt: "Texture mapping an Earth-like texture onto a sphere model using OpenGL..."
+featured: true
 ---
 
 > The code in this post is based on the lecture ,[Introduction to Computer Graphics with DirectX 11 - Part 2. Realtime Pipeline from Honglab](https://honglab.co.kr/courses/graphicspt2). I have adapted this example to OpenGL with some minor customizations in line with my own implementation approach.

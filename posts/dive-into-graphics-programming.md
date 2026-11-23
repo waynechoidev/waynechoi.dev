@@ -1,6 +1,6 @@
 ---
 title: "Dive into graphics programming"
-date: "Sep 7, 2023"
+date: "2023-09-07"
 category: "story"
 tags: ["study", "graphics"]
 excerpt: "Started diving deep into graphics programming..."

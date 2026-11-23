@@ -1,114 +1,74 @@
-import fs from "fs";
-import path from "path";
-import matter from "gray-matter";
+import fs from "node:fs";
+import path from "node:path";
+import { parse } from "yaml";
+import { z } from "zod";
 
-export type postListType = {
-  category: string;
-  slug: string;
-  title: string;
-  date: string;
-  tags: string[];
-  excerpt: string;
-};
+export const categoryList = ["graphics", "web", "cs", "story"] as const;
 
-export type postDataType = {
-  title: string;
-  date: string;
-  tags: string[];
-  content: string;
-  category: string;
-};
+const postMetadataSchema = z.object({
+  title: z.string().min(1),
+  date: z.iso.date(),
+  category: z.enum(categoryList),
+  tags: z.array(z.string().min(1)).min(1),
+  excerpt: z.string().min(1),
+  featured: z.boolean().optional().default(false),
+});
 
-export const categoryList = ["graphics", "web", "cs", "story"];
+type PostMetadata = z.infer<typeof postMetadataSchema>;
+export type PostListItem = PostMetadata & { slug: string };
+export type PostData = PostMetadata & { slug: string; content: string };
 
-export const getPostList = () => {
-  const files = fs.readdirSync(path.join("posts"));
+const postsDirectory = path.join(process.cwd(), "posts");
+const frontmatterPattern = /^---\r?\n([\s\S]*?)\r?\n---\r?\n/;
 
-  const posts: postListType[] = files
-    .map((filename) => {
-      const slug = filename.replace(".md", "");
+function readPostFile(slug: string): PostData {
+  const source = fs.readFileSync(path.join(postsDirectory, `${slug}.md`), "utf8");
+  const match = source.match(frontmatterPattern);
+  if (!match) throw new Error(`Missing frontmatter in posts/${slug}.md`);
 
-      const markdownWithMeta = fs.readFileSync(
-        path.join("posts", filename),
-        "utf-8"
-      );
-
-      const { data: frontMatter } = matter(markdownWithMeta);
-      const { category, title, date, excerpt }: { [key: string]: string } =
-        frontMatter;
-      const { tags }: { [eky: string]: string[] } = frontMatter;
-
-      return {
-        category,
-        slug,
-        title,
-        date,
-        tags,
-        excerpt,
-      };
-    })
-    .sort((a, b): number => {
-      return new Date(b.date!).getTime() - new Date(a.date!).getTime();
-    });
-
-  return posts;
-};
-
-export const getPostListByCategory = (category: string) => {
-  return getPostList().filter((post) => post.category === category);
-};
-
-export const getPostListBySlugs = (slugs: string[]) => {
-  const res: postListType[] = [];
-
-  slugs.forEach((slug) => {
-    const markdownWithMeta = fs.readFileSync(
-      path.join("posts", slug + ".md"),
-      "utf-8"
+  const result = postMetadataSchema.safeParse(parse(match[1]));
+  if (!result.success) {
+    throw new Error(
+      `Invalid frontmatter in posts/${slug}.md:\n${z.prettifyError(result.error)}`,
     );
+  }
 
-    const { data: frontMatter } = matter(markdownWithMeta);
-    const { title, date, tags, category, excerpt } = frontMatter;
-    res.push({
-      title,
-      date,
-      tags,
-      category,
-      slug,
-      excerpt,
-    });
-  });
+  return { ...result.data, slug, content: source.slice(match[0].length) };
+}
 
-  return res;
-};
+export function getPostList(): PostListItem[] {
+  return fs
+    .readdirSync(postsDirectory)
+    .filter((filename) => filename.endsWith(".md"))
+    .map((filename) => readPostFile(filename.slice(0, -3)))
+    .map((post) => ({
+      title: post.title,
+      date: post.date,
+      category: post.category,
+      tags: post.tags,
+      excerpt: post.excerpt,
+      featured: post.featured,
+      slug: post.slug,
+    }))
+    .sort((a, b) => b.date.localeCompare(a.date));
+}
 
-export const getPostData = (slug: string) => {
-  const markdownWithMeta = fs.readFileSync(
-    path.join("posts", slug + ".md"),
-    "utf-8"
-  );
+export const getFeaturedPosts = () => getPostList().filter((post) => post.featured);
+export const getPostListByCategory = (category: string) => getPostList().filter((post) => post.category === category);
 
-  const { data: frontMatter, content } = matter(markdownWithMeta);
-  const { title, date, tags, category } = frontMatter;
-  const res: postDataType = { title, date, tags, content, category };
-  return res;
-};
+export function getPostData(slug: string): PostData | undefined {
+  if (!/^[a-z0-9-]+$/.test(slug)) return undefined;
+  return fs.existsSync(path.join(postsDirectory, `${slug}.md`)) ? readPostFile(slug) : undefined;
+}
 
-export const getTags = () => {
-  const posts = getPostList();
-  const res: string[] = [];
+export const getTags = () => [...new Set(getPostList().flatMap((post) => post.tags))].sort();
+export const getPostListByTag = (tag: string) => getPostList().filter((post) => post.tags.includes(tag));
 
-  posts.forEach((post) => {
-    post.tags.forEach((tag) => {
-      if (!res.includes(tag)) {
-        res.push(tag);
-      }
-    });
-  });
-
-  return res;
-};
-
-export const getPostListByTag = (tag: string) => {
-  return getPostList().filter((post) => post.tags.includes(tag));
-};
+export function formatPostDate(date: string): string {
+  return new Intl.DateTimeFormat("en-NZ", {
+    day: "numeric",
+    month: "short",
+    year: "numeric",
+    timeZone: "UTC",
+  }).format(new Date(`${date}T00:00:00Z`));
+}

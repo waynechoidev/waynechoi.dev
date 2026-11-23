@@ -30,12 +30,12 @@ export default function About() {
         </p>
         <div className="flex flex-row space-x-3 mt-10">
           {linkList.map((link) => (
-            <Link key={link.img} href={link.src} target="_blank">
+            <Link key={link.img} href={link.src} target="_blank" rel="noopener noreferrer" aria-label="Wayne Choi on GitHub">
               <Image
                 src={link.img}
                 width={48}
                 height={48}
-                alt={link.src}
+                alt="GitHub"
                 className="hover:scale-105"
               />
             </Link>

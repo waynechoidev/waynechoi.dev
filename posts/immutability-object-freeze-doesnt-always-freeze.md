@@ -1,6 +1,6 @@
 ---
 title: "Immutability (1) - Object.freeze() doesn't always freeze"
-date: "Sep 23, 2021"
+date: "2021-09-23"
 category: "web"
 tags: ["javascript", "immutability"]
 excerpt: "Explain primitive and reference data type of JavaScript, and immutability of object..."

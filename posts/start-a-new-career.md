@@ -1,6 +1,6 @@
 ---
 title: "Start a new career"
-date: "Sep 5, 2022"
+date: "2022-09-05"
 category: "story"
 tags: ["career", "web", "interview"]
 excerpt: "I've started working as a frontend developer at a fintech startup..."

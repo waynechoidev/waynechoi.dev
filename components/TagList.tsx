@@ -7,12 +7,12 @@ interface TagListProps {
 
 export default function TagList({ tags }: TagListProps) {
   return (
-    <div className="whitespace-nowrap overflow-x-auto pb-3">
+    <div className="whitespace-nowrap overflow-x-auto pb-2" aria-label="Post tags">
       {tags.map((tag) => (
         <Link
           href={`/tag/${tag}`}
           key={tag}
-          className="mr-2 text-gray-500 hover:font-bold"
+          className="mr-2 text-gray-600 hover:text-blue-800 hover:underline"
         >
           {`#${tag}`}
         </Link>

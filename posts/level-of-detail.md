@@ -1,6 +1,6 @@
 ---
 title: "Level of detail"
-date: "March 10, 2024"
+date: "2024-03-10"
 category: "graphics"
 tags: ["opengl", "levelofdetail", "tessellation", "mipmap"]
 excerpt: "Various Approaches to Implementing LOD(level of detail) in OpenGL..."

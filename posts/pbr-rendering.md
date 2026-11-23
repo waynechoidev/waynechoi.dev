@@ -1,9 +1,10 @@
 ---
 title: "PBR Rendering"
-date: "1 April, 2024"
+date: "2024-04-01"
 category: "graphics"
 tags: ["opengl", "pbr", "glsl"]
 excerpt: "Implemented PBR rendering using OpenGL..."
+featured: true
 ---
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/XrfiBfOx1LE?si=N0abz-D93HKovMzM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
