@@ -16,7 +16,7 @@ describe("post content", () => {
   });
 
   it("keeps featured posts in frontmatter", () => {
-    expect(getFeaturedPosts()).toHaveLength(8);
+    expect(getFeaturedPosts()).toHaveLength(9);
   });
 
   it("rejects unsafe or missing slugs", () => {

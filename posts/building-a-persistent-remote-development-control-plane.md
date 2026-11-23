@@ -4,6 +4,7 @@ date: "2026-11-23"
 category: "web"
 tags: ["architecture", "ai", "full-stack", "realtime", "voice"]
 excerpt: "How real-world failures led me to redesign a remote development control plane around explicit ownership, durable AI sessions, and observable runtime state."
+featured: true
 ---
 
 I built a web-based control plane for managing a development server on a private network. It keeps repositories, worktrees, long-running processes, development tools, and AI agent sessions accessible from desktop and mobile browsers while the actual work remains on a server I control.
