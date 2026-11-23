@@ -1,0 +1,247 @@
+1:"$Sreact.fragment"
+2:"/_next/static/chunks/07ixqnujfllo2.js"
+3:I[47689,["$2"],"default"]
+4:I[70119,["$2"],"default"]
+5:"/_next/static/chunks/3qfy96eoyh-ek.js"
+6:I[39756,["$5"],"default"]
+7:I[37457,["$5"],"default"]
+d:I[97367,["$5"],"OutletBoundary"]
+e:"$Sreact.suspense"
+10:"ViewportBoundary"
+11:I[97367,["$5"],"$10"]
+13:"MetadataBoundary"
+14:I[97367,["$5"],"$13"]
+16:I[68027,["$2"],"default",1]
+:HL["/_next/static/chunks/2e79geki6z2_c.css","style"]
+:HC["/",""]
+9:X
+b:[["children",{"s":"__PAGE__","h":512,"d":{"r":["$","$1","c",{"children":["$Lc",[["$","script","script-0",{"src":"/_next/static/chunks/0288roqreptti.js","async":true,"nonce":"$undefined"}]],["$","$Ld",null,{"children":["$","$e",null,{"name":"Next.MetadataOutlet","children":"$@f"}]}]]}],"p":false,"v":null}}]]
+a:[["children",{"s":{"n":"slug","t":"d","k":"meteor-shower","s":[]},"h":512,"d":{"r":["$","$1","c",{"children":[null,["$","$L6",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L7",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],"p":false,"v":null},"c":"$Qb"}]]
+8:[["children",{"s":"post","h":512,"d":{"r":["$","$1","c",{"children":[null,["$","$L6",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L7",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],"p":false,"v":"$9"},"c":"$Qa"}]]
+0:{"P":null,"c":["","post","meteor-shower",""],"q":"","i":false,"t":{"t":{"s":"","h":528,"d":{"r":["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/2e79geki6z2_c.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],["$","script","script-0",{"src":"/_next/static/chunks/07ixqnujfllo2.js","async":true,"nonce":"$undefined"}]],["$","html",null,{"lang":"en","children":["$","body",null,{"className":"mx-auto my-0","children":[["$","a",null,{"href":"#main-content","className":"skip-link","children":"Skip to content"}],["$","nav",null,{"className":"max-w-default mx-auto px-5 py-3","aria-label":"Primary navigation","children":["$","$L3",null,{}]}],["$","header",null,{"children":["$","$L4",null,{}]}],["$","main",null,{"id":"main-content","className":"max-w-default mx-auto p-5","children":["$","$L6",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L7",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}],["$","footer",null,{"className":"h-40 flex justify-center items-end","children":["$","p",null,{"className":"text-gray-500 text-sm","children":["© 2021–",2026," Wayne Choi. All rights reserved."]}]}]]}]}]]}],"p":false,"v":null},"c":"$Q8"},"h":{"r":["$","$1","h",{"children":[null,["$","$L11",null,{"children":"$L12"}],["$","$L14",null,{"children":[["$","div",null,{"hidden":true,"children":["$","$e",null,{"name":"Next.Metadata","children":"$L15"}]}],null]}],null]}],"p":false,"v":null}},"m":"$undefined","G":["$16",[["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/2e79geki6z2_c.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]]],"S":true,"r":"$undefined","s":"$undefined","a":"$undefined","l":"$undefined","p":"$undefined","d":"$undefined","b":"MYLL76Di7kZHpNQU1HIFd"}
+17:"/_next/static/chunks/0288roqreptti.js"
+18:I[22016,["$2","$17"],""]
+9:C
+19:T4d8b,<iframe width="560" height="315" src="https://www.youtube.com/embed/L4oEm8MGUyg?si=FID0zEP2dFe5tnCv" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading="lazy"></iframe><p>This post provides an overview of the overall concept and key implementation points behind creating a meteor shower simulation using OpenGL. It highlights important concepts and crucial implementation details without providing a step-by-step tutorial. So it might be challenging to reconstruct this project with the provided code. The complete code can be found at the repository link provided at the end.</p>
+<hr />
+<h2>GPGPU with Transform Feedback</h2>
+<p>Transform Feedback is a feature in OpenGL that allows retrieving computed data from the GPU back into buffers. This enables updating vertex positions or computing other data and writing it to buffers. By swapping buffers, the GPU computes the data and writes it into a buffer without retrieving it to the CPU.</p>
+<p>In this context, rather than fetching buffer data to the CPU, the approach involves swapping between two buffers. Within a single frame, one buffer undergoes GPGPU operations, updating vertex positions via the vertex shader, utilizing transform feedback to update that buffer. Meanwhile, the other buffer handles rendering those updated vertices onto the screen.</p>
+<hr />
+<p>First, I created Vertex Buffer Objects (VBOs) and Vertex Array Objects (VAOs), initializing both VBOs with the same initial values. The position vertices included here represent individual entities, using points as the primitive type. I bound the respective VBOs to the VAO according to their indices. In reality, there are more STATIC_DRAW VBOs required for computations or rendering. However, for brevity, I omitted them in this explanation.</p>
+<pre><code class="hljs language-c++"><span class="hljs-comment">// std::vector&lt;GLfloat&gt; positions...</span>
+
+<span class="hljs-comment">// Generate VBOs</span>
+GLuint positionVBO[<span class="hljs-number">2</span>];
+<span class="hljs-built_in">glGenBuffers</span>(<span class="hljs-number">2</span>, positionVBO);
+<span class="hljs-keyword">for</span> (GLint i = <span class="hljs-number">0</span>; i &lt; <span class="hljs-number">2</span>; ++i)
+{
+	<span class="hljs-built_in">glBindBuffer</span>(GL_ARRAY_BUFFER, positionVBO[i]);
+	<span class="hljs-built_in">glBufferData</span>(GL_ARRAY_BUFFER, <span class="hljs-keyword">sizeof</span>(GLfloat) * positions.<span class="hljs-built_in">size</span>(), positions.<span class="hljs-built_in">data</span>(), GL_DYNAMIC_DRAW);
+
+	<span class="hljs-built_in">glBindBuffer</span>(GL_ARRAY_BUFFER, <span class="hljs-number">0</span>);
+}
+
+<span class="hljs-comment">// Generate VAOs</span>
+GLuint drawPositionVAO[<span class="hljs-number">2</span>];
+<span class="hljs-built_in">glGenVertexArrays</span>(<span class="hljs-number">2</span>, drawPositionVAO);
+<span class="hljs-keyword">for</span> (GLint i = <span class="hljs-number">0</span>; i &lt; <span class="hljs-number">2</span>; ++i) {
+	<span class="hljs-built_in">glBindVertexArray</span>(drawPositionVAO[i]);
+
+	<span class="hljs-built_in">glBindBuffer</span>(GL_ARRAY_BUFFER, positionVBO[i]);
+	<span class="hljs-built_in">glEnableVertexAttribArray</span>(<span class="hljs-number">0</span>);
+	<span class="hljs-built_in">glVertexAttribPointer</span>(<span class="hljs-number">0</span>, <span class="hljs-number">2</span>, GL_FLOAT, GL_FALSE, <span class="hljs-number">2</span> * <span class="hljs-keyword">sizeof</span>(GLfloat), (GLvoid*)<span class="hljs-number">0</span>);
+
+	<span class="hljs-built_in">glBindVertexArray</span>(<span class="hljs-number">0</span>);
+}
+
+GLuint computePositionVAO[<span class="hljs-number">2</span>];
+<span class="hljs-built_in">glGenVertexArrays</span>(<span class="hljs-number">2</span>, computePositionVAO);
+<span class="hljs-keyword">for</span> (GLint i = <span class="hljs-number">0</span>; i &lt; <span class="hljs-number">2</span>; ++i) {
+	<span class="hljs-built_in">glBindVertexArray</span>(computePositionVAO[i]);
+
+	<span class="hljs-built_in">glBindBuffer</span>(GL_ARRAY_BUFFER, positionVBO[i]);
+	<span class="hljs-built_in">glEnableVertexAttribArray</span>(<span class="hljs-number">0</span>);
+	<span class="hljs-built_in">glVertexAttribPointer</span>(<span class="hljs-number">0</span>, <span class="hljs-number">2</span>, GL_FLOAT, GL_FALSE, <span class="hljs-number">2</span> * <span class="hljs-keyword">sizeof</span>(GLfloat), (GLvoid*)<span class="hljs-number">0</span>);
+
+	<span class="hljs-built_in">glBindVertexArray</span>(<span class="hljs-number">0</span>);
+}</code></pre><hr />
+<p>This section sets up and generates Transform Feedback. Unlike WebGL, in OpenGL, it's necessary to explicitly specify which variables from the shader will be recorded in the Transform Feedback. Here, we're using the "newPosition" variable. Then, we generate objects for Transform Feedback and bind buffers (previously created VBOs) to these objects to enable recording data into them.</p>
+<pre><code class="hljs language-c++"><span class="hljs-comment">// GLuint ProgramID...</span>
+<span class="hljs-type">const</span> GLchar* feedbackVaryings[] = { <span class="hljs-string">"newPosition"</span> };
+<span class="hljs-built_in">glTransformFeedbackVaryings</span>(programID, <span class="hljs-number">1</span>, feedbackVaryings, GL_INTERLEAVED_ATTRIBS);
+<span class="hljs-built_in">glLinkProgram</span>(programID);
+
+<span class="hljs-comment">// Generate Transform feedbacks</span>
+GLuint transformFeedback[<span class="hljs-number">2</span>];
+<span class="hljs-built_in">glGenTransformFeedbacks</span>(<span class="hljs-number">2</span>, transformFeedback);
+<span class="hljs-keyword">for</span> (<span class="hljs-type">int</span> i = <span class="hljs-number">0</span>; i &lt; <span class="hljs-number">2</span>; ++i) {
+	<span class="hljs-built_in">glBindTransformFeedback</span>(GL_TRANSFORM_FEEDBACK, transformFeedback[i]);
+	<span class="hljs-built_in">glBindBufferBase</span>(GL_TRANSFORM_FEEDBACK_BUFFER, <span class="hljs-number">0</span>, positionVBO[i]);
+}</code></pre><hr />
+<p>In the main loop, two steps are executed. In the 'Compute Position' step, the position is calculated and stored via Transform Feedback. During this process, rasterization is turned off (for Transform Feedback), and the results are recorded into the corresponding buffer. Then, in the 'Draw' step, the updated positions are retrieved from another buffer and displayed on the screen. To achieve this, the flag variable is toggled every loop iteration to swap the buffers used for updating and rendering.</p>
+<pre><code class="hljs language-c++">GLint swapFlag = <span class="hljs-number">0</span>;
+<span class="hljs-keyword">while</span> (!mainWindow.<span class="hljs-built_in">getShouldClose</span>())
+{
+	swapFlag = swapFlag ? <span class="hljs-number">0</span> : <span class="hljs-number">1</span>;
+
+	<span class="hljs-comment">// Compute position</span>
+	computeProgram.<span class="hljs-built_in">use</span>();
+	<span class="hljs-built_in">glUniform1f</span>(deltaTimeLoc, deltaTime);
+
+	<span class="hljs-built_in">glBindVertexArray</span>(computePositionVAO[swapFlag ? <span class="hljs-number">0</span> : <span class="hljs-number">1</span>]);
+	<span class="hljs-built_in">glEnable</span>(GL_RASTERIZER_DISCARD);
+
+	<span class="hljs-built_in">glBindTransformFeedback</span>(GL_TRANSFORM_FEEDBACK, transformFeedback[swapFlag]);
+	<span class="hljs-built_in">glBeginTransformFeedback</span>(GL_POINTS);
+	<span class="hljs-built_in">glDrawArrays</span>(GL_POINTS, <span class="hljs-number">0</span>, NUM_OF_PARTICLES);
+	<span class="hljs-built_in">glEndTransformFeedback</span>();
+
+	<span class="hljs-built_in">glDisable</span>(GL_RASTERIZER_DISCARD);
+	<span class="hljs-built_in">glBindTransformFeedback</span>(GL_TRANSFORM_FEEDBACK, <span class="hljs-number">0</span>);
+
+	<span class="hljs-comment">// Draw</span>
+	drawProgram.<span class="hljs-built_in">use</span>();
+	<span class="hljs-built_in">glUniform1f</span>(currentTimeLoc, currentFrameTime);
+
+	<span class="hljs-built_in">glBindVertexArray</span>(drawPositionVAO[swapFlag]);
+	<span class="hljs-built_in">glDrawArrays</span>(GL_POINTS, <span class="hljs-number">0</span>, NUM_OF_PARTICLES);
+	<span class="hljs-built_in">glBindVertexArray</span>(<span class="hljs-number">0</span>);
+}</code></pre><hr />
+<p>The following code is a vertex shader responsible for computing updates to vertices. It takes a scalar value for speed instead of vector, and forcing vertices to move unilaterally at a 45-degree angle towards the bottom left. When vertices exceed the screen boundaries, they reset to their original positions. While currently displayed as points, their rendering generates length, thus requiring the screen width to be expanded to accommodate this effect.</p>
+<pre><code class="hljs language-glsl"><span class="hljs-meta">#version 420</span>
+
+<span class="hljs-keyword">in</span> <span class="hljs-type">vec2</span> position;
+<span class="hljs-keyword">in</span> <span class="hljs-type">float</span> speed;
+
+<span class="hljs-keyword">uniform</span> <span class="hljs-type">float</span> deltaTime;
+<span class="hljs-keyword">uniform</span> <span class="hljs-type">vec2</span> windowSize;
+
+<span class="hljs-keyword">out</span> <span class="hljs-type">vec2</span> newPosition;
+
+<span class="hljs-type">void</span> main()
+{
+    <span class="hljs-type">float</span> expansionRatio = <span class="hljs-number">1.2</span>;
+
+    <span class="hljs-type">vec2</span> newPositionTemp = position + <span class="hljs-type">vec2</span>(-speed) * deltaTime;
+
+    <span class="hljs-type">vec2</span> expandedWindowSize = windowSize * expansionRatio;
+    <span class="hljs-type">vec2</span> adjustedPosition = <span class="hljs-built_in">mod</span>(newPositionTemp, expandedWindowSize);
+
+    <span class="hljs-comment">// Wrap around if position is outside the window bounds</span>
+    adjustedPosition = <span class="hljs-built_in">mix</span>(adjustedPosition, adjustedPosition - expandedWindowSize, <span class="hljs-built_in">step</span>(windowSize, adjustedPosition));
+
+    newPosition = adjustedPosition;
+}</code></pre><hr />
+<h2>Geometry Shader</h2>
+<p>I decided to handle operations using points for convenience and delegate details for drawing to the geometry shader. Initially, I intended to draw lines for simplicity, but that seemed too uniform. Consequently, I opted to draw billboards in the geometry shader and manage intricate details in the fragment shader.</p>
+<p>Similar to before, I didn't take directional input but received a scalar float value named 'distance.' Based on this, I decided to draw smaller billboards as the distance increased. However, to maintain compatibility with the movement at a 45-degree angle, regardless of the screen's aspect ratio, I received the resolution as a uniform to adjust the proportions and draw billboards as perfect squares.</p>
+<pre><code class="hljs language-glsl"><span class="hljs-meta">#version 420</span>
+
+<span class="hljs-keyword">layout</span>(<span class="hljs-keyword">points</span>) <span class="hljs-keyword">in</span>;
+<span class="hljs-keyword">layout</span>(<span class="hljs-keyword">triangle_strip</span>, <span class="hljs-keyword">max_vertices</span> = <span class="hljs-number">4</span>) <span class="hljs-keyword">out</span>;
+
+<span class="hljs-keyword">in</span> <span class="hljs-type">float</span> distanceVal[];
+<span class="hljs-keyword">in</span> <span class="hljs-type">vec3</span> color[];
+
+<span class="hljs-keyword">out</span> <span class="hljs-type">vec2</span> texCoord;
+<span class="hljs-keyword">out</span> <span class="hljs-type">vec3</span> colorValue;
+<span class="hljs-keyword">out</span> <span class="hljs-type">float</span> distanceValue;
+
+<span class="hljs-keyword">uniform</span> <span class="hljs-type">vec2</span> resolution;
+
+<span class="hljs-type">void</span> main() {
+    <span class="hljs-type">vec4</span> bottomLeftVertex = <span class="hljs-built_in">gl_in</span>[<span class="hljs-number">0</span>].<span class="hljs-built_in">gl_Position</span>;;
+    <span class="hljs-type">vec4</span> topRightVertex = bottomLeftVertex + <span class="hljs-type">vec4</span>(<span class="hljs-number">-1.0</span> * resolution.y / resolution.x, <span class="hljs-number">-1.0</span>, <span class="hljs-number">0.0</span>, <span class="hljs-number">0.0</span>) * distanceVal[<span class="hljs-number">0</span>];
+
+    <span class="hljs-comment">// Bottom Left</span>
+    <span class="hljs-built_in">gl_Position</span> = bottomLeftVertex;
+    texCoord = <span class="hljs-type">vec2</span>(<span class="hljs-number">0.0</span>,<span class="hljs-number">0.0</span>);
+    colorValue = color[<span class="hljs-number">0</span>];
+    distanceValue = distanceVal[<span class="hljs-number">0</span>];
+    <span class="hljs-built_in">EmitVertex</span>();
+
+    <span class="hljs-comment">// Bottom Right</span>
+    <span class="hljs-built_in">gl_Position</span> = <span class="hljs-type">vec4</span>(topRightVertex.x, bottomLeftVertex.y, <span class="hljs-number">0.0</span>, <span class="hljs-number">1.0</span>);
+    texCoord = <span class="hljs-type">vec2</span>(<span class="hljs-number">1.0</span>,<span class="hljs-number">0.0</span>);
+    colorValue = color[<span class="hljs-number">0</span>];
+    distanceValue = distanceVal[<span class="hljs-number">0</span>];
+    <span class="hljs-built_in">EmitVertex</span>();
+
+    <span class="hljs-comment">// Top Left</span>
+    <span class="hljs-built_in">gl_Position</span> = <span class="hljs-type">vec4</span>(bottomLeftVertex.x, topRightVertex.y, <span class="hljs-number">0.0</span>, <span class="hljs-number">1.0</span>);
+    texCoord = <span class="hljs-type">vec2</span>(<span class="hljs-number">0.0</span>,<span class="hljs-number">1.0</span>);
+    colorValue = color[<span class="hljs-number">0</span>];
+    distanceValue = distanceVal[<span class="hljs-number">0</span>];
+    <span class="hljs-built_in">EmitVertex</span>();
+
+    <span class="hljs-comment">// Top Right</span>
+    <span class="hljs-built_in">gl_Position</span> = topRightVertex;
+    texCoord = <span class="hljs-type">vec2</span>(<span class="hljs-number">1.0</span>,<span class="hljs-number">1.0</span>);
+    colorValue = color[<span class="hljs-number">0</span>];
+    distanceValue = distanceVal[<span class="hljs-number">0</span>];
+    <span class="hljs-built_in">EmitVertex</span>();
+
+    <span class="hljs-built_in">EndPrimitive</span>();
+}</code></pre><hr />
+<h2>Fragment Shader</h2>
+<p>In the fragment shader, I implemented the rendering of meteors with distinct components: the central meteor, its glow, and the tail. I didn't just receive positions but also randomly generated color values to create a variety of colored meteors. To achieve a flickering effect, I used the time value as a uniform and applied a sine function to modulate brightness. However, I encountered uniform flickering across all meteors, which seemed odd. To address this, I applied the sine function to the distance variable as well, introducing variation and diversifying the flickering effect.</p>
+<pre><code class="hljs language-glsl"><span class="hljs-meta">#version 420</span>
+
+<span class="hljs-keyword">in</span> <span class="hljs-type">vec3</span> colorValue;
+<span class="hljs-keyword">in</span> <span class="hljs-type">vec2</span> texCoord;
+<span class="hljs-keyword">in</span> <span class="hljs-type">float</span> distanceValue;
+
+<span class="hljs-keyword">uniform</span> <span class="hljs-type">float</span> currentTime;
+<span class="hljs-keyword">uniform</span> <span class="hljs-type">vec2</span> resolution;
+
+<span class="hljs-keyword">out</span> <span class="hljs-type">vec4</span> color;
+
+<span class="hljs-type">float</span> circle(<span class="hljs-type">vec2</span> st, <span class="hljs-type">vec2</span> center, <span class="hljs-type">float</span> radius) {
+    <span class="hljs-type">float</span> <span class="hljs-built_in">distance</span> = <span class="hljs-built_in">length</span>(st - center);
+
+    <span class="hljs-keyword">if</span> (<span class="hljs-built_in">distance</span> &gt; radius*<span class="hljs-number">0.9</span>) <span class="hljs-keyword">return</span> <span class="hljs-number">0.0</span>;
+
+    <span class="hljs-keyword">return</span> <span class="hljs-number">1.0</span>;
+}
+
+<span class="hljs-type">float</span> glow(<span class="hljs-type">vec2</span> st, <span class="hljs-type">vec2</span> center, <span class="hljs-type">float</span> radius) {
+    <span class="hljs-type">float</span> <span class="hljs-built_in">distance</span> = <span class="hljs-built_in">length</span>(st - center);
+    <span class="hljs-keyword">return</span> <span class="hljs-number">1.0</span> - <span class="hljs-built_in">smoothstep</span>(radius * <span class="hljs-number">0.5</span>, radius * <span class="hljs-number">3.0</span>, <span class="hljs-built_in">distance</span>);
+}
+
+<span class="hljs-type">float</span> tail(<span class="hljs-type">vec2</span> st, <span class="hljs-type">vec2</span> center, <span class="hljs-type">float</span> radius) {
+    <span class="hljs-keyword">if</span> (st.x + st.y &lt; center.x + center.y) <span class="hljs-keyword">return</span> <span class="hljs-number">0.0</span>;
+    <span class="hljs-keyword">return</span> <span class="hljs-built_in">smoothstep</span>(radius * <span class="hljs-number">0.5</span>, <span class="hljs-number">0.0</span>, <span class="hljs-built_in">abs</span>(st.y - st.x) * (st.x + radius * <span class="hljs-number">10.0</span>));
+}
+
+<span class="hljs-type">void</span> main() {
+	<span class="hljs-type">vec2</span> st = texCoord;
+    st.x = <span class="hljs-number">1.0</span> - st.x;
+    st.y = <span class="hljs-number">1.0</span> - st.y;
+
+    <span class="hljs-type">vec2</span> center = <span class="hljs-type">vec2</span>(<span class="hljs-number">0.05</span>, <span class="hljs-number">0.05</span>);
+    <span class="hljs-type">float</span> radius = <span class="hljs-number">0.02</span>;
+
+    <span class="hljs-type">float</span> pct = circle(st, center, radius) + glow(st, center, radius) + tail(st, center, radius);
+    <span class="hljs-type">float</span> brightness = <span class="hljs-number">0.7</span> + <span class="hljs-number">0.3</span> * <span class="hljs-built_in">sin</span>(currentTime * distanceValue * <span class="hljs-number">10.0</span>);
+
+    color = <span class="hljs-type">vec4</span>(pct * colorValue * brightness, <span class="hljs-number">1.0</span>);
+
+    <span class="hljs-keyword">if</span> (<span class="hljs-built_in">dot</span>(color.rgb, <span class="hljs-type">vec3</span>(<span class="hljs-number">1.0</span>)) - <span class="hljs-number">0.1</span> &lt; <span class="hljs-number">0.0</span>) {
+    <span class="hljs-keyword">discard</span>;
+    }
+
+}</code></pre><hr />
+<h2>Conclusion</h2>
+<p>I've had an experience implementing transform feedback in WebGL, but its API usage differs significantly. Moreover, finding examples using transform feedback was challenging, possibly due to the prevalence of compute shaders. During the initial setup, I struggled a bit due to the scarcity of examples.</p>
+<p>Often, I found myself amazed by the incredible implementations showcased on <a href="https://www.shadertoy.com/" class="md-link" target="_blank" rel="noopener noreferrer">Shadertoy</a>. Observing those mesmerizing examples, I couldn't help but wonder how they achieved such effects. Finally, getting the chance to implement something simple on my own felt rewarding.</p>
+<hr />
+<p><a href="https://github.com/waynechoidev/meteor-shower/" class="md-link" target="_blank" rel="noopener noreferrer">Repository</a></p>
+c:["$","article",null,{"children":[["$","script",null,{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"{\"@context\":\"https://schema.org\",\"@type\":\"BlogPosting\",\"headline\":\"Meteor shower\",\"description\":\"Implemented meteor shower with GPGPU via Transform Feedback in OpenGL...\",\"datePublished\":\"2023-11-17\",\"author\":{\"@type\":\"Person\",\"name\":\"Wayne Choi\"},\"mainEntityOfPage\":\"https://waynechoi.dev/post/meteor-shower/\"}"}}],["$","$L18",null,{"href":"/posts/graphics","className":"text-gray-600 hover:text-blue-800 hover:underline","children":"GRAPHICS"}],["$","h1",null,{"children":"Meteor shower"}],["$","time",null,{"dateTime":"2023-11-17","className":"text-gray-500 text-sm","children":"17 Nov 2023"}],["$","div",null,{"className":"mt-2","children":["$","div",null,{"className":"whitespace-nowrap overflow-x-auto pb-2","aria-label":"Post tags","children":[["$","$L18","toyproject",{"href":"/tag/toyproject","className":"mr-2 text-gray-600 hover:text-blue-800 hover:underline","children":"#toyproject"}],["$","$L18","opengl",{"href":"/tag/opengl","className":"mr-2 text-gray-600 hover:text-blue-800 hover:underline","children":"#opengl"}],["$","$L18","transformfeedback",{"href":"/tag/transformfeedback","className":"mr-2 text-gray-600 hover:text-blue-800 hover:underline","children":"#transformfeedback"}],["$","$L18","geometryshader",{"href":"/tag/geometryshader","className":"mr-2 text-gray-600 hover:text-blue-800 hover:underline","children":"#geometryshader"}]]}]}],["$","div",null,{"className":"mt-8","children":["$","div",null,{"className":"post-content","dangerouslySetInnerHTML":{"__html":"$19"}}]}],"$L1a"]}]
+1b:I[32948,["$2","$17"],"default"]
+1a:["$","$L1b",null,{"issueTerm":"Meteor shower"}]
+12:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+1c:I[27201,["$5"],"IconMark"]
+f:null
+15:[["$","title","0",{"children":"Meteor shower | WayneChoi.dev"}],["$","meta","1",{"name":"description","content":"Implemented meteor shower with GPGPU via Transform Feedback in OpenGL..."}],["$","link","2",{"rel":"canonical","href":"https://waynechoi.dev/post/meteor-shower/"}],["$","meta","3",{"property":"og:title","content":"Meteor shower"}],["$","meta","4",{"property":"og:description","content":"Implemented meteor shower with GPGPU via Transform Feedback in OpenGL..."}],["$","meta","5",{"property":"og:url","content":"https://waynechoi.dev/post/meteor-shower/"}],["$","meta","6",{"property":"og:image","content":"https://waynechoi.dev/opengraph-image"}],["$","meta","7",{"property":"og:image:alt","content":"WayneChoi.dev"}],["$","meta","8",{"property":"og:type","content":"article"}],["$","meta","9",{"property":"article:published_time","content":"2023-11-17"}],["$","meta","10",{"property":"article:tag","content":"toyproject"}],["$","meta","11",{"property":"article:tag","content":"opengl"}],["$","meta","12",{"property":"article:tag","content":"transformfeedback"}],["$","meta","13",{"property":"article:tag","content":"geometryshader"}],["$","meta","14",{"name":"twitter:card","content":"summary_large_image"}],["$","meta","15",{"name":"twitter:title","content":"Meteor shower"}],["$","meta","16",{"name":"twitter:description","content":"Implemented meteor shower with GPGPU via Transform Feedback in OpenGL..."}],["$","meta","17",{"name":"twitter:image","content":"https://waynechoi.dev/twitter-image"}],["$","link","18",{"rel":"icon","href":"/favicon.ico"}],["$","$L1c","19",{}]]

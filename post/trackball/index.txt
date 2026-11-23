@@ -1,187 +1,152 @@
-1:HL["/_next/static/css/3864b451a61e4546.css","style",{"crossOrigin":""}]
-2:HL["/_next/static/css/2e2a7597edf4d608.css","style",{"crossOrigin":""}]
-0:["d1tlILPvfFQtQusXyx6Vm",[[["",{"children":["post",{"children":[["slug","trackball","d"],{"children":["__PAGE__?{\"slug\":\"trackball\"}",{}]}]}]},"$undefined","$undefined",true],"$L3",[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/3864b451a61e4546.css","precedence":"next","crossOrigin":""}],["$","link","1",{"rel":"stylesheet","href":"/_next/static/css/2e2a7597edf4d608.css","precedence":"next","crossOrigin":""}]],"$L4"]]]]
-5:HL["/_next/static/css/602feae4669a507e.css","style",{"crossOrigin":""}]
-6:I[9194,["326","static/chunks/326-6784f49434136418.js","185","static/chunks/app/layout-02f93a462dd22bde.js"],""]
-7:I[5629,["326","static/chunks/326-6784f49434136418.js","185","static/chunks/app/layout-02f93a462dd22bde.js"],""]
-8:I[6954,[],""]
-9:I[7264,[],""]
-b:I[8326,["954","static/chunks/d3ac728e-9e72e1d80e89da72.js","326","static/chunks/326-6784f49434136418.js","149","static/chunks/149-9f0c9c044d28f14f.js","605","static/chunks/app/post/%5Bslug%5D/page-dd1bc4deae325122.js"],""]
-c:I[7708,["954","static/chunks/d3ac728e-9e72e1d80e89da72.js","326","static/chunks/326-6784f49434136418.js","149","static/chunks/149-9f0c9c044d28f14f.js","605","static/chunks/app/post/%5Bslug%5D/page-dd1bc4deae325122.js"],""]
-e:I[5631,["954","static/chunks/d3ac728e-9e72e1d80e89da72.js","326","static/chunks/326-6784f49434136418.js","149","static/chunks/149-9f0c9c044d28f14f.js","605","static/chunks/app/post/%5Bslug%5D/page-dd1bc4deae325122.js"],""]
-4:[["$","meta","0",{"charSet":"utf-8"}],["$","title","1",{"children":"WayneChoi.Dev"}],["$","meta","2",{"name":"description","content":"Wayne Choi blog"}],["$","meta","3",{"name":"viewport","content":"width=device-width, initial-scale=1"}],["$","link","4",{"rel":"icon","href":"/favicon.ico"}]]
-d:T2308,
-<iframe width="560" height="315" src="https://www.youtube.com/embed/KQhOrAeFm8A?si=n0SRJXAz3kiEg2eL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-
-I have implemented a trackball feature using OpenGL. A trackball enables users to interactively rotate objects within a 3D space, offering an intuitive and engaging user experience. This feature enhances the overall interactivity of the application, allowing for dynamic and visually appealing manipulation of 3D objects.
-
----
-
-## Picking with ray casting
-
-Before delving into trackball implementation, it is essential to select the object using the mouse. This process involves detecting collisions between the mouse and the object through ray tracing and determining the point of collision. The initial step is to calculate the ray cast originating from the mouse in world coordinates. To achieve this, I employ ray casting to identify collisions between the mouse and the object, ultimately obtaining the intersection point. The crucial starting point is determining the ray cast originating from the mouse in world coordinates.
-
----
-
-Transformed the mouse cursor's position from screen space coordinates to normalized device coordinates.
-
-```cpp
-// screen space (viewport coordinates)
+1:"$Sreact.fragment"
+2:"/_next/static/chunks/07ixqnujfllo2.js"
+3:I[47689,["$2"],"default"]
+4:I[70119,["$2"],"default"]
+5:"/_next/static/chunks/3qfy96eoyh-ek.js"
+6:I[39756,["$5"],"default"]
+7:I[37457,["$5"],"default"]
+d:I[97367,["$5"],"OutletBoundary"]
+e:"$Sreact.suspense"
+10:"ViewportBoundary"
+11:I[97367,["$5"],"$10"]
+13:"MetadataBoundary"
+14:I[97367,["$5"],"$13"]
+16:I[68027,["$2"],"default",1]
+:HL["/_next/static/chunks/2e79geki6z2_c.css","style"]
+:HC["/",""]
+9:X
+b:[["children",{"s":"__PAGE__","h":512,"d":{"r":["$","$1","c",{"children":["$Lc",[["$","script","script-0",{"src":"/_next/static/chunks/0288roqreptti.js","async":true,"nonce":"$undefined"}]],["$","$Ld",null,{"children":["$","$e",null,{"name":"Next.MetadataOutlet","children":"$@f"}]}]]}],"p":false,"v":null}}]]
+a:[["children",{"s":{"n":"slug","t":"d","k":"trackball","s":[]},"h":512,"d":{"r":["$","$1","c",{"children":[null,["$","$L6",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L7",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],"p":false,"v":null},"c":"$Qb"}]]
+8:[["children",{"s":"post","h":512,"d":{"r":["$","$1","c",{"children":[null,["$","$L6",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L7",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],"p":false,"v":"$9"},"c":"$Qa"}]]
+0:{"P":null,"c":["","post","trackball",""],"q":"","i":false,"t":{"t":{"s":"","h":528,"d":{"r":["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/2e79geki6z2_c.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],["$","script","script-0",{"src":"/_next/static/chunks/07ixqnujfllo2.js","async":true,"nonce":"$undefined"}]],["$","html",null,{"lang":"en","children":["$","body",null,{"className":"mx-auto my-0","children":[["$","a",null,{"href":"#main-content","className":"skip-link","children":"Skip to content"}],["$","nav",null,{"className":"max-w-default mx-auto px-5 py-3","aria-label":"Primary navigation","children":["$","$L3",null,{}]}],["$","header",null,{"children":["$","$L4",null,{}]}],["$","main",null,{"id":"main-content","className":"max-w-default mx-auto p-5","children":["$","$L6",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L7",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}],["$","footer",null,{"className":"h-40 flex justify-center items-end","children":["$","p",null,{"className":"text-gray-500 text-sm","children":["© 2021–",2026," Wayne Choi. All rights reserved."]}]}]]}]}]]}],"p":false,"v":null},"c":"$Q8"},"h":{"r":["$","$1","h",{"children":[null,["$","$L11",null,{"children":"$L12"}],["$","$L14",null,{"children":[["$","div",null,{"hidden":true,"children":["$","$e",null,{"name":"Next.Metadata","children":"$L15"}]}],null]}],null]}],"p":false,"v":null}},"m":"$undefined","G":["$16",[["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/2e79geki6z2_c.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]]],"S":true,"r":"$undefined","s":"$undefined","a":"$undefined","l":"$undefined","p":"$undefined","d":"$undefined","b":"MYLL76Di7kZHpNQU1HIFd"}
+17:"/_next/static/chunks/0288roqreptti.js"
+18:I[22016,["$2","$17"],""]
+9:C
+19:T3427,<iframe width="560" height="315" src="https://www.youtube.com/embed/KQhOrAeFm8A?si=n0SRJXAz3kiEg2eL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading="lazy"></iframe><p>I have implemented a trackball feature using OpenGL. A trackball enables users to interactively rotate objects within a 3D space, offering an intuitive and engaging user experience. This feature enhances the overall interactivity of the application, allowing for dynamic and visually appealing manipulation of 3D objects.</p>
+<hr />
+<h2>Picking with ray casting</h2>
+<p>Before delving into trackball implementation, it is essential to select the object using the mouse. This process involves detecting collisions between the mouse and the object through ray tracing and determining the point of collision. The initial step is to calculate the ray cast originating from the mouse in world coordinates. To achieve this, I employ ray casting to identify collisions between the mouse and the object, ultimately obtaining the intersection point. The crucial starting point is determining the ray cast originating from the mouse in world coordinates.</p>
+<hr />
+<p>Transformed the mouse cursor's position from screen space coordinates to normalized device coordinates.</p>
+<pre><code class="hljs language-cpp"><span class="hljs-comment">// screen space (viewport coordinates)</span>
 glm::vec2 cursor...
 
-// normalised device space
-GLfloat x = cursor.x * 2.0f / WIDTH - 1.0f;
-GLfloat y = 1.0f - cursor.y * 2.0f / HEIGHT;
-GLfloat z = 1.0f;
-glm::vec3 ray_nds = glm::vec3(x, y, z);
-```
-
----
-
-Transformed a ray from clip space to eye space. The ray_clip vector is constructed with adjusted z and w components to ensure the ray points into the screen. The transformation to ray_eye involves multiplying by the inverse of the projection matrix. The resulting vector is then modified to fit the eye space representation. Overall, this process prepares the ray for subsequent rendering pipeline stages.
-
-```cpp
-// clip space
-glm::vec4 ray_clip = glm::vec4(ray_nds[0], ray_nds[1], -1.0, 1.0);
-// eye space
-glm::vec4 ray_eye = glm::inverse(projection) * ray_clip;
-ray_eye = glm::vec4(ray_eye[0], ray_eye[1], -1.0, 0.0);
-```
-
----
-
-Transformed the ray from eye space to world space. The ray_eye vector is multiplied by the inverse of the view matrix to achieve this transformation. The resulting vector, ray_wor, represents the ray in world space coordinates. Finally, the vector is normalized to ensure accurate directional information.
-
-```cpp
-// world space
-glm::vec3 ray_wor = glm::vec3(inverse(view) * ray_eye);
-ray_wor = glm::normalize(ray_wor);
-```
-
----
-
-This function performs a collision test between a ray and an object, referencing code from [https://antongerdelan.net/](https://antongerdelan.net/). The original function returned a boolean indicating collision, but I modified the code to return the intersection point for later use in implementing a trackball. To achieve this, the intersection boolean is now passed by reference, allowing the function to modify its value based on whether a collision occurs. The function is designed to return the intersection point if a collision is detected, facilitating further implementation for trackball functionality.
-
-```cpp
-bool intersection = false;
-glm::vec3 pickPoint = ray_sphere(camera.getPosition(), ray_wor, translation, SPHERE_SCALE, intersection);
-```
-
-```cpp
-// https://github.com/capnramses/antons_opengl_tutorials_book/blob/master/07_ray_picking/main.cpp
-glm::vec3 ray_sphere(glm::vec3 ray_origin_wor, glm::vec3 ray_direction_wor, glm::vec3 sphere_centre_wor, GLfloat sphere_radius, bool& intersection) {
-	// work out components of quadratic
+<span class="hljs-comment">// normalised device space</span>
+GLfloat x = cursor.x * <span class="hljs-number">2.0f</span> / WIDTH - <span class="hljs-number">1.0f</span>;
+GLfloat y = <span class="hljs-number">1.0f</span> - cursor.y * <span class="hljs-number">2.0f</span> / HEIGHT;
+GLfloat z = <span class="hljs-number">1.0f</span>;
+glm::vec3 ray_nds = glm::<span class="hljs-built_in">vec3</span>(x, y, z);</code></pre><hr />
+<p>Transformed a ray from clip space to eye space. The ray_clip vector is constructed with adjusted z and w components to ensure the ray points into the screen. The transformation to ray_eye involves multiplying by the inverse of the projection matrix. The resulting vector is then modified to fit the eye space representation. Overall, this process prepares the ray for subsequent rendering pipeline stages.</p>
+<pre><code class="hljs language-cpp"><span class="hljs-comment">// clip space</span>
+glm::vec4 ray_clip = glm::<span class="hljs-built_in">vec4</span>(ray_nds[<span class="hljs-number">0</span>], ray_nds[<span class="hljs-number">1</span>], <span class="hljs-number">-1.0</span>, <span class="hljs-number">1.0</span>);
+<span class="hljs-comment">// eye space</span>
+glm::vec4 ray_eye = glm::<span class="hljs-built_in">inverse</span>(projection) * ray_clip;
+ray_eye = glm::<span class="hljs-built_in">vec4</span>(ray_eye[<span class="hljs-number">0</span>], ray_eye[<span class="hljs-number">1</span>], <span class="hljs-number">-1.0</span>, <span class="hljs-number">0.0</span>);</code></pre><hr />
+<p>Transformed the ray from eye space to world space. The ray_eye vector is multiplied by the inverse of the view matrix to achieve this transformation. The resulting vector, ray_wor, represents the ray in world space coordinates. Finally, the vector is normalized to ensure accurate directional information.</p>
+<pre><code class="hljs language-cpp"><span class="hljs-comment">// world space</span>
+glm::vec3 ray_wor = glm::<span class="hljs-built_in">vec3</span>(<span class="hljs-built_in">inverse</span>(view) * ray_eye);
+ray_wor = glm::<span class="hljs-built_in">normalize</span>(ray_wor);</code></pre><hr />
+<p>This function performs a collision test between a ray and an object, referencing code from <a href="https://antongerdelan.net/" class="md-link" target="_blank" rel="noopener noreferrer">https://antongerdelan.net/</a>. The original function returned a boolean indicating collision, but I modified the code to return the intersection point for later use in implementing a trackball. To achieve this, the intersection boolean is now passed by reference, allowing the function to modify its value based on whether a collision occurs. The function is designed to return the intersection point if a collision is detected, facilitating further implementation for trackball functionality.</p>
+<pre><code class="hljs language-cpp"><span class="hljs-type">bool</span> intersection = <span class="hljs-literal">false</span>;
+glm::vec3 pickPoint = <span class="hljs-built_in">ray_sphere</span>(camera.<span class="hljs-built_in">getPosition</span>(), ray_wor, translation, SPHERE_SCALE, intersection);</code></pre><pre><code class="hljs language-cpp"><span class="hljs-comment">// https://github.com/capnramses/antons_opengl_tutorials_book/blob/master/07_ray_picking/main.cpp</span>
+<span class="hljs-function">glm::vec3 <span class="hljs-title">ray_sphere</span><span class="hljs-params">(glm::vec3 ray_origin_wor, glm::vec3 ray_direction_wor, glm::vec3 sphere_centre_wor, GLfloat sphere_radius, <span class="hljs-type">bool</span>&amp; intersection)</span> </span>{
+	<span class="hljs-comment">// work out components of quadratic</span>
 	glm::vec3 dist_to_sphere = ray_origin_wor - sphere_centre_wor;
 	GLfloat b = glm::dot(ray_direction_wor, dist_to_sphere);
 	GLfloat c = glm::dot(dist_to_sphere, dist_to_sphere) - sphere_radius * sphere_radius;
 	GLfloat b_squared_minus_c = b * b - c;
 
-	// check for "imaginary" answer. == ray completely misses sphere
-	if (b_squared_minus_c < 0.0f) {
-		intersection = false;
-		return glm::vec3(0.0f);
+	<span class="hljs-comment">// check for "imaginary" answer. == ray completely misses sphere</span>
+	<span class="hljs-keyword">if</span> (b_squared_minus_c &lt; <span class="hljs-number">0.0f</span>) {
+		intersection = <span class="hljs-literal">false</span>;
+		<span class="hljs-keyword">return</span> glm::<span class="hljs-built_in">vec3</span>(<span class="hljs-number">0.0f</span>);
 	}
 
-	// check for ray hitting twice (in and out of the sphere)
-	if (b_squared_minus_c > 0.0f) {
-		// get the 2 intersection distances along ray
-		GLfloat t_a = -b + sqrt(b_squared_minus_c);
-		GLfloat t_b = -b - sqrt(b_squared_minus_c);
+	<span class="hljs-comment">// check for ray hitting twice (in and out of the sphere)</span>
+	<span class="hljs-keyword">if</span> (b_squared_minus_c &gt; <span class="hljs-number">0.0f</span>) {
+		<span class="hljs-comment">// get the 2 intersection distances along ray</span>
+		GLfloat t_a = -b + <span class="hljs-built_in">sqrt</span>(b_squared_minus_c);
+		GLfloat t_b = -b - <span class="hljs-built_in">sqrt</span>(b_squared_minus_c);
 
-		// if behind viewer, throw one or both away
-		if (t_a < 0.0) {
-			if (t_b < 0.0) {
-				intersection = false;
-				return glm::vec3(0.0f);
+		<span class="hljs-comment">// if behind viewer, throw one or both away</span>
+		<span class="hljs-keyword">if</span> (t_a &lt; <span class="hljs-number">0.0</span>) {
+			<span class="hljs-keyword">if</span> (t_b &lt; <span class="hljs-number">0.0</span>) {
+				intersection = <span class="hljs-literal">false</span>;
+				<span class="hljs-keyword">return</span> glm::<span class="hljs-built_in">vec3</span>(<span class="hljs-number">0.0f</span>);
 			}
 		}
-		else if (t_b < 0.0) {
-			return ray_origin_wor + ray_direction_wor * t_a;
+		<span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (t_b &lt; <span class="hljs-number">0.0</span>) {
+			<span class="hljs-keyword">return</span> ray_origin_wor + ray_direction_wor * t_a;
 		}
-		else {
-			intersection = true;
-			return ray_origin_wor + ray_direction_wor * t_b;
+		<span class="hljs-keyword">else</span> {
+			intersection = <span class="hljs-literal">true</span>;
+			<span class="hljs-keyword">return</span> ray_origin_wor + ray_direction_wor * t_b;
 		}
 	}
 
-	// check for ray hitting once (skimming the surface)
-	if (b_squared_minus_c == 0.0f) {
-		// if behind viewer, throw away
-		GLfloat t = -b + sqrt(b_squared_minus_c);
-		if (t < 0.0f) {
-			intersection = false;
-			return glm::vec3(0.0f);
+	<span class="hljs-comment">// check for ray hitting once (skimming the surface)</span>
+	<span class="hljs-keyword">if</span> (b_squared_minus_c == <span class="hljs-number">0.0f</span>) {
+		<span class="hljs-comment">// if behind viewer, throw away</span>
+		GLfloat t = -b + <span class="hljs-built_in">sqrt</span>(b_squared_minus_c);
+		<span class="hljs-keyword">if</span> (t &lt; <span class="hljs-number">0.0f</span>) {
+			intersection = <span class="hljs-literal">false</span>;
+			<span class="hljs-keyword">return</span> glm::<span class="hljs-built_in">vec3</span>(<span class="hljs-number">0.0f</span>);
 		}
-		intersection = true;
-		return ray_origin_wor + ray_direction_wor * t;
+		intersection = <span class="hljs-literal">true</span>;
+		<span class="hljs-keyword">return</span> ray_origin_wor + ray_direction_wor * t;
 	}
 
-	// note: could also check if ray origin is inside sphere radius
-	intersection = false;
-	return glm::vec3(0.0f);
-}
-```
-
----
-
-## Rotation
-
-Now, I'm going to implement a trackball using the picked point obtained through ray casting. Before delving into that, I've opted to use quaternions for rotation instead of Euler angles. There are several reasons for this choice. Firstly, Euler angles involve multiple rotations around each axis, which can be cumbersome. Additionally, they are sensitive to rotation order. On the contrary, quaternions overcome these issues. Moreover, quaternions are more efficient and mathematically stable for representing rotations compared to Euler angles.
-
----
-
-They also address certain problems associated with rotation representations, such as gimbal lock. Gimbal lock is a phenomenon where a loss of Degrees of Freedom occurs when the y-axis rotation angle approaches π/180 (approximately 1.57). This results in a noticeable occurrence, as demonstrated in the accompanying video. In the flowing video, you can observe the x-axis and z-axis rotations producing the same outcome when the y-axis rotation angle reaches the specified value.
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/IVYbnSeXclE?si=S3ndvwE02ofkB0eK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-
----
-
-The following code represents a rough implementation of rotating a 3D object through mouse input. Specific implementation details can be found in the repository linked below. The rotation is achieved using quaternions to represent the orientation of the object, and it gets updated based on mouse movements. The code detects mouse input to rotate the 3D object, calculates the rotation angle, and updates the quaternion, thereby achieving smooth and intuitive rotation while avoiding issues associated with Euler angles.
-
-In particular, the glm::normalize(pickPoint - translation) part signifies the process of normalizing the vector obtained by subtracting the current object's position (translation) from the intersection point (pickPoint) where the ray intersects with the sphere. This vector, when normalized, becomes a unit vector pointing from the object's center to the intersection point and is used as the axis of rotation. The resulting rotation axis and angle are then used to calculate the quaternion, accurately representing the object's rotation.
-
-```cpp
-bool intersection = false;
-if (mainWindow.getMouseLeft())
+	<span class="hljs-comment">// note: could also check if ray origin is inside sphere radius</span>
+	intersection = <span class="hljs-literal">false</span>;
+	<span class="hljs-keyword">return</span> glm::<span class="hljs-built_in">vec3</span>(<span class="hljs-number">0.0f</span>);
+}</code></pre><hr />
+<h2>Rotation</h2>
+<p>Now, I'm going to implement a trackball using the picked point obtained through ray casting. Before delving into that, I've opted to use quaternions for rotation instead of Euler angles. There are several reasons for this choice. Firstly, Euler angles involve multiple rotations around each axis, which can be cumbersome. Additionally, they are sensitive to rotation order. On the contrary, quaternions overcome these issues. Moreover, quaternions are more efficient and mathematically stable for representing rotations compared to Euler angles.</p>
+<hr />
+<p>They also address certain problems associated with rotation representations, such as gimbal lock. Gimbal lock is a phenomenon where a loss of Degrees of Freedom occurs when the y-axis rotation angle approaches π/180 (approximately 1.57). This results in a noticeable occurrence, as demonstrated in the accompanying video. In the flowing video, you can observe the x-axis and z-axis rotations producing the same outcome when the y-axis rotation angle reaches the specified value.</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/IVYbnSeXclE?si=S3ndvwE02ofkB0eK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading="lazy"></iframe><hr />
+<p>The following code represents a rough implementation of rotating a 3D object through mouse input. Specific implementation details can be found in the repository linked below. The rotation is achieved using quaternions to represent the orientation of the object, and it gets updated based on mouse movements. The code detects mouse input to rotate the 3D object, calculates the rotation angle, and updates the quaternion, thereby achieving smooth and intuitive rotation while avoiding issues associated with Euler angles.</p>
+<p>In particular, the glm::normalize(pickPoint - translation) part signifies the process of normalizing the vector obtained by subtracting the current object's position (translation) from the intersection point (pickPoint) where the ray intersects with the sphere. This vector, when normalized, becomes a unit vector pointing from the object's center to the intersection point and is used as the axis of rotation. The resulting rotation axis and angle are then used to calculate the quaternion, accurately representing the object's rotation.</p>
+<pre><code class="hljs language-cpp"><span class="hljs-type">bool</span> intersection = <span class="hljs-literal">false</span>;
+<span class="hljs-keyword">if</span> (mainWindow.<span class="hljs-built_in">getMouseLeft</span>())
 {
-	glm::vec3 ray_wor = get_ray_from_mouse(mainWindow.getCursor(), projection, camera.calculateViewMatrix());
-	glm::vec3 pickPoint = ray_sphere(camera.getPosition(), ray_wor, translation, SPHERE_SCALE, intersection);
-	if (intersection)
+	glm::vec3 ray_wor = <span class="hljs-built_in">get_ray_from_mouse</span>(mainWindow.<span class="hljs-built_in">getCursor</span>(), projection, camera.<span class="hljs-built_in">calculateViewMatrix</span>());
+	glm::vec3 pickPoint = <span class="hljs-built_in">ray_sphere</span>(camera.<span class="hljs-built_in">getPosition</span>(), ray_wor, translation, SPHERE_SCALE, intersection);
+	<span class="hljs-keyword">if</span> (intersection)
 	{
-		if (dragStartFlag) {
-			dragStartFlag = false;
-			prevMouseRayVector = glm::normalize(pickPoint - translation);
+		<span class="hljs-keyword">if</span> (dragStartFlag) {
+			dragStartFlag = <span class="hljs-literal">false</span>;
+			prevMouseRayVector = glm::<span class="hljs-built_in">normalize</span>(pickPoint - translation);
 		}
-		else {
-			glm::vec3 currentMouseRayVector = glm::normalize(pickPoint - translation);
-			float theta = glm::acos(glm::dot(prevMouseRayVector, currentMouseRayVector));
-			if (theta > 0.001f)
+		<span class="hljs-keyword">else</span> {
+			glm::vec3 currentMouseRayVector = glm::<span class="hljs-built_in">normalize</span>(pickPoint - translation);
+			<span class="hljs-type">float</span> theta = glm::<span class="hljs-built_in">acos</span>(glm::dot(prevMouseRayVector, currentMouseRayVector));
+			<span class="hljs-keyword">if</span> (theta &gt; <span class="hljs-number">0.001f</span>)
 			{
-				glm::vec3 axis = glm::normalize(glm::cross(prevMouseRayVector, currentMouseRayVector));
-				modelQuaternions = glm::angleAxis(theta, axis) * modelQuaternions;
-				prevMouseRayVector = glm::normalize(pickPoint - translation);
+				glm::vec3 axis = glm::<span class="hljs-built_in">normalize</span>(glm::<span class="hljs-built_in">cross</span>(prevMouseRayVector, currentMouseRayVector));
+				modelQuaternions = glm::<span class="hljs-built_in">angleAxis</span>(theta, axis) * modelQuaternions;
+				prevMouseRayVector = glm::<span class="hljs-built_in">normalize</span>(pickPoint - translation);
 			}
 		}
 	}
 }
-else
+<span class="hljs-keyword">else</span>
 {
-	dragStartFlag = true;
-}
-```
-
----
-
-For detailed implementation, please refer to the following link.
-
-[Source code](https://github.com/waynechoidev/mouse-picking-ray-tracing)
-
----
-
-### References
-
-- [https://github.com/capnramses/antons_opengl_tutorials_book/blob/master/07_ray_picking/main.cpp](https://github.com/capnramses/antons_opengl_tutorials_book/blob/master/07_ray_picking/main.cpp)
-- [https://antongerdelan.net/opengl/raycasting.html](https://antongerdelan.net/opengl/raycasting.html)
-- [Introduction to Computer Graphics with DirectX 11 - Part 3. Rendering Techniques](https://honglab.co.kr/courses/graphicspt3)
-3:[null,["$","html",null,{"lang":"en","children":["$","body",null,{"className":"mx-auto my-0","children":[["$","nav",null,{"className":"max-w-default mx-auto px-5 py-3","children":["$","$L6",null,{}]}],["$","header",null,{"children":["$","$L7",null,{}]}],["$","div",null,{"className":"max-w-default mx-auto p-5","children":["$","$L8",null,{"parallelRouterKey":"children","segmentPath":["children"],"loading":"$undefined","loadingStyles":"$undefined","hasLoading":false,"error":"$undefined","errorStyles":"$undefined","template":["$","$L9",null,{}],"templateStyles":"$undefined","notFound":[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":"404"}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],"notFoundStyles":[],"childProp":{"current":["$","$L8",null,{"parallelRouterKey":"children","segmentPath":["children","post","children"],"loading":"$undefined","loadingStyles":"$undefined","hasLoading":false,"error":"$undefined","errorStyles":"$undefined","template":["$","$L9",null,{}],"templateStyles":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined","childProp":{"current":[null,["$","$L8",null,{"parallelRouterKey":"children","segmentPath":["children","post","children",["slug","trackball","d"],"children"],"loading":"$undefined","loadingStyles":"$undefined","hasLoading":false,"error":"$undefined","errorStyles":"$undefined","template":["$","$L9",null,{}],"templateStyles":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined","childProp":{"current":["$La",["$","div",null,{"children":[["$","$Lb",null,{"href":"/posts/graphics","className":"text-gray-600 text-md pl-1 hover:font-bold","children":"GRAPHICS"}],["$","h1",null,{"children":"Trackball"}],["$","p",null,{"className":"text-gray-400 text-sm m-0 mt-1","children":"Nov 10, 2023"}],["$","div",null,{"className":"mt-1","children":["$","div",null,{"className":"whitespace-nowrap overflow-x-auto pb-3","children":[["$","$Lb","opengl",{"href":"/tag/opengl","className":"mr-2 text-gray-500 hover:font-bold","children":"#opengl"}],["$","$Lb","trackball",{"href":"/tag/trackball","className":"mr-2 text-gray-500 hover:font-bold","children":"#trackball"}],["$","$Lb","picking",{"href":"/tag/picking","className":"mr-2 text-gray-500 hover:font-bold","children":"#picking"}],["$","$Lb","raycasting",{"href":"/tag/raycasting","className":"mr-2 text-gray-500 hover:font-bold","children":"#raycasting"}]]}]}],["$","div",null,{"className":"mt-8","children":["$","$Lc",null,{"content":"$d"}]}],["$","$Le",null,{"issueTerm":"Trackball"}]]}],null],"segment":"__PAGE__?{\"slug\":\"trackball\"}"},"styles":[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/602feae4669a507e.css","precedence":"next","crossOrigin":""}]]}],null],"segment":["slug","trackball","d"]},"styles":[]}],"segment":"post"},"styles":[]}]}],["$","footer",null,{"className":"h-40 flex justify-center items-end","children":["$","p",null,{"className":"text-gray-500 text-sm","children":"(C) 2021. Wayne Choi. All rights reserved."}]}]]}]}],null]
-a:null
+	dragStartFlag = <span class="hljs-literal">true</span>;
+}</code></pre><hr />
+<p>For detailed implementation, please refer to the following link.</p>
+<p><a href="https://github.com/waynechoidev/mouse-picking-ray-tracing" class="md-link" target="_blank" rel="noopener noreferrer">Source code</a></p>
+<hr />
+<h3>References</h3>
+<ul>
+<li><a href="https://github.com/capnramses/antons_opengl_tutorials_book/blob/master/07_ray_picking/main.cpp" class="md-link" target="_blank" rel="noopener noreferrer">https://github.com/capnramses/antons_opengl_tutorials_book/blob/master/07_ray_picking/main.cpp</a></li>
+<li><a href="https://antongerdelan.net/opengl/raycasting.html" class="md-link" target="_blank" rel="noopener noreferrer">https://antongerdelan.net/opengl/raycasting.html</a></li>
+<li><a href="https://honglab.co.kr/courses/graphicspt3" class="md-link" target="_blank" rel="noopener noreferrer">Introduction to Computer Graphics with DirectX 11 - Part 3. Rendering Techniques</a></li>
+</ul>
+c:["$","article",null,{"children":[["$","script",null,{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"{\"@context\":\"https://schema.org\",\"@type\":\"BlogPosting\",\"headline\":\"Trackball\",\"description\":\"implemented a trackball to rotate an object with ray casting...\",\"datePublished\":\"2023-11-10\",\"author\":{\"@type\":\"Person\",\"name\":\"Wayne Choi\"},\"mainEntityOfPage\":\"https://waynechoi.dev/post/trackball/\"}"}}],["$","$L18",null,{"href":"/posts/graphics","className":"text-gray-600 hover:text-blue-800 hover:underline","children":"GRAPHICS"}],["$","h1",null,{"children":"Trackball"}],["$","time",null,{"dateTime":"2023-11-10","className":"text-gray-500 text-sm","children":"10 Nov 2023"}],["$","div",null,{"className":"mt-2","children":["$","div",null,{"className":"whitespace-nowrap overflow-x-auto pb-2","aria-label":"Post tags","children":[["$","$L18","opengl",{"href":"/tag/opengl","className":"mr-2 text-gray-600 hover:text-blue-800 hover:underline","children":"#opengl"}],["$","$L18","trackball",{"href":"/tag/trackball","className":"mr-2 text-gray-600 hover:text-blue-800 hover:underline","children":"#trackball"}],["$","$L18","picking",{"href":"/tag/picking","className":"mr-2 text-gray-600 hover:text-blue-800 hover:underline","children":"#picking"}],["$","$L18","raycasting",{"href":"/tag/raycasting","className":"mr-2 text-gray-600 hover:text-blue-800 hover:underline","children":"#raycasting"}]]}]}],["$","div",null,{"className":"mt-8","children":["$","div",null,{"className":"post-content","dangerouslySetInnerHTML":{"__html":"$19"}}]}],"$L1a"]}]
+1b:I[32948,["$2","$17"],"default"]
+1a:["$","$L1b",null,{"issueTerm":"Trackball"}]
+12:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+1c:I[27201,["$5"],"IconMark"]
+f:null
+15:[["$","title","0",{"children":"Trackball | WayneChoi.dev"}],["$","meta","1",{"name":"description","content":"implemented a trackball to rotate an object with ray casting..."}],["$","link","2",{"rel":"canonical","href":"https://waynechoi.dev/post/trackball/"}],["$","meta","3",{"property":"og:title","content":"Trackball"}],["$","meta","4",{"property":"og:description","content":"implemented a trackball to rotate an object with ray casting..."}],["$","meta","5",{"property":"og:url","content":"https://waynechoi.dev/post/trackball/"}],["$","meta","6",{"property":"og:image","content":"https://waynechoi.dev/opengraph-image"}],["$","meta","7",{"property":"og:image:alt","content":"WayneChoi.dev"}],["$","meta","8",{"property":"og:type","content":"article"}],["$","meta","9",{"property":"article:published_time","content":"2023-11-10"}],["$","meta","10",{"property":"article:tag","content":"opengl"}],["$","meta","11",{"property":"article:tag","content":"trackball"}],["$","meta","12",{"property":"article:tag","content":"picking"}],["$","meta","13",{"property":"article:tag","content":"raycasting"}],["$","meta","14",{"name":"twitter:card","content":"summary_large_image"}],["$","meta","15",{"name":"twitter:title","content":"Trackball"}],["$","meta","16",{"name":"twitter:description","content":"implemented a trackball to rotate an object with ray casting..."}],["$","meta","17",{"name":"twitter:image","content":"https://waynechoi.dev/twitter-image"}],["$","link","18",{"rel":"icon","href":"/favicon.ico"}],["$","$L1c","19",{}]]

@@ -1,332 +1,255 @@
-1:HL["/_next/static/css/3864b451a61e4546.css","style",{"crossOrigin":""}]
-2:HL["/_next/static/css/2e2a7597edf4d608.css","style",{"crossOrigin":""}]
-0:["d1tlILPvfFQtQusXyx6Vm",[[["",{"children":["post",{"children":[["slug","fast-fluid-dynamics-simulation","d"],{"children":["__PAGE__?{\"slug\":\"fast-fluid-dynamics-simulation\"}",{}]}]}]},"$undefined","$undefined",true],"$L3",[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/3864b451a61e4546.css","precedence":"next","crossOrigin":""}],["$","link","1",{"rel":"stylesheet","href":"/_next/static/css/2e2a7597edf4d608.css","precedence":"next","crossOrigin":""}]],"$L4"]]]]
-5:HL["/_next/static/css/602feae4669a507e.css","style",{"crossOrigin":""}]
-6:I[9194,["326","static/chunks/326-6784f49434136418.js","185","static/chunks/app/layout-02f93a462dd22bde.js"],""]
-7:I[5629,["326","static/chunks/326-6784f49434136418.js","185","static/chunks/app/layout-02f93a462dd22bde.js"],""]
-8:I[6954,[],""]
-9:I[7264,[],""]
-b:I[8326,["954","static/chunks/d3ac728e-9e72e1d80e89da72.js","326","static/chunks/326-6784f49434136418.js","149","static/chunks/149-9f0c9c044d28f14f.js","605","static/chunks/app/post/%5Bslug%5D/page-dd1bc4deae325122.js"],""]
-c:I[7708,["954","static/chunks/d3ac728e-9e72e1d80e89da72.js","326","static/chunks/326-6784f49434136418.js","149","static/chunks/149-9f0c9c044d28f14f.js","605","static/chunks/app/post/%5Bslug%5D/page-dd1bc4deae325122.js"],""]
-e:I[5631,["954","static/chunks/d3ac728e-9e72e1d80e89da72.js","326","static/chunks/326-6784f49434136418.js","149","static/chunks/149-9f0c9c044d28f14f.js","605","static/chunks/app/post/%5Bslug%5D/page-dd1bc4deae325122.js"],""]
-4:[["$","meta","0",{"charSet":"utf-8"}],["$","title","1",{"children":"WayneChoi.Dev"}],["$","meta","2",{"name":"description","content":"Wayne Choi blog"}],["$","meta","3",{"name":"viewport","content":"width=device-width, initial-scale=1"}],["$","link","4",{"rel":"icon","href":"/favicon.ico"}]]
-d:T396c,
-<img src="/img/fast-fluid-dynamics-simulation-01.jpg" class="post-pic"/>
+1:"$Sreact.fragment"
+2:"/_next/static/chunks/07ixqnujfllo2.js"
+3:I[47689,["$2"],"default"]
+4:I[70119,["$2"],"default"]
+5:"/_next/static/chunks/3qfy96eoyh-ek.js"
+6:I[39756,["$5"],"default"]
+7:I[37457,["$5"],"default"]
+d:I[97367,["$5"],"OutletBoundary"]
+e:"$Sreact.suspense"
+10:"ViewportBoundary"
+11:I[97367,["$5"],"$10"]
+13:"MetadataBoundary"
+14:I[97367,["$5"],"$13"]
+16:I[68027,["$2"],"default",1]
+:HL["/_next/static/chunks/2e79geki6z2_c.css","style"]
+:HC["/",""]
+9:X
+b:[["children",{"s":"__PAGE__","h":512,"d":{"r":["$","$1","c",{"children":["$Lc",[["$","script","script-0",{"src":"/_next/static/chunks/0288roqreptti.js","async":true,"nonce":"$undefined"}]],["$","$Ld",null,{"children":["$","$e",null,{"name":"Next.MetadataOutlet","children":"$@f"}]}]]}],"p":false,"v":null}}]]
+a:[["children",{"s":{"n":"slug","t":"d","k":"fast-fluid-dynamics-simulation","s":[]},"h":512,"d":{"r":["$","$1","c",{"children":[null,["$","$L6",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L7",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],"p":false,"v":null},"c":"$Qb"}]]
+8:[["children",{"s":"post","h":512,"d":{"r":["$","$1","c",{"children":[null,["$","$L6",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L7",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],"p":false,"v":"$9"},"c":"$Qa"}]]
+0:{"P":null,"c":["","post","fast-fluid-dynamics-simulation",""],"q":"","i":false,"t":{"t":{"s":"","h":528,"d":{"r":["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/2e79geki6z2_c.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],["$","script","script-0",{"src":"/_next/static/chunks/07ixqnujfllo2.js","async":true,"nonce":"$undefined"}]],["$","html",null,{"lang":"en","children":["$","body",null,{"className":"mx-auto my-0","children":[["$","a",null,{"href":"#main-content","className":"skip-link","children":"Skip to content"}],["$","nav",null,{"className":"max-w-default mx-auto px-5 py-3","aria-label":"Primary navigation","children":["$","$L3",null,{}]}],["$","header",null,{"children":["$","$L4",null,{}]}],["$","main",null,{"id":"main-content","className":"max-w-default mx-auto p-5","children":["$","$L6",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L7",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}],["$","footer",null,{"className":"h-40 flex justify-center items-end","children":["$","p",null,{"className":"text-gray-500 text-sm","children":["© 2021–",2026," Wayne Choi. All rights reserved."]}]}]]}]}]]}],"p":false,"v":null},"c":"$Q8"},"h":{"r":["$","$1","h",{"children":[null,["$","$L11",null,{"children":"$L12"}],["$","$L14",null,{"children":[["$","div",null,{"hidden":true,"children":["$","$e",null,{"name":"Next.Metadata","children":"$L15"}]}],null]}],null]}],"p":false,"v":null}},"m":"$undefined","G":["$16",[["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/2e79geki6z2_c.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]]],"S":true,"r":"$undefined","s":"$undefined","a":"$undefined","l":"$undefined","p":"$undefined","d":"$undefined","b":"MYLL76Di7kZHpNQU1HIFd"}
+17:"/_next/static/chunks/0288roqreptti.js"
+18:I[22016,["$2","$17"],""]
+9:C
+19:T7b14,<img src="/img/fast-fluid-dynamics-simulation-01.jpg" class="post-pic" loading="lazy" /><p><a href="https://waynechoidev.github.io/stable-fluids/" class="md-link" target="_blank" rel="noopener noreferrer">Sample</a> / <a href="https://github.com/waynechoidev/stable-fluids/" class="md-link" target="_blank" rel="noopener noreferrer">Repository</a></p>
+<p>I implemented a fast fluid dynamics simulation based on <a href="http://graphics.cs.cmu.edu/nsp/course/15-464/Fall09/papers/StamFluidforGames.pdf" class="md-link" target="_blank" rel="noopener noreferrer">Jos Stam's Stable Fluids</a> with using WebGPU api. This post will briefly cover the mathematical aspects and primarily focus on the implementation. However, please note that all the code presented here has been simplified for explanation purposes, and the detailed implementation can be found in the repository linked above.</p>
+<h2>0. Mathematics</h2>
+<p>Before diving into the implementation of fluid simulation, it's important to briefly explore the mathematical foundations that underpin fluid dynamics. The primary equation that governs the motion of fluids is the Navier-Stokes equation.</p>
+<h3>Navier-Stokes Equation</h3>
+<p>The Navier-Stokes equation is a partial differential equation that describes the conservation of momentum for fluid flow. In the case of incompressible fluids, it can be expressed as:</p>
+<img src="/img/fast-fluid-dynamics-simulation-01.svg" class="latex-long" loading="lazy" /><ul>
+<li><strong>𝑢</strong> represents the velocity field of the fluid.</li>
+<li><strong>𝑡</strong> represents time.</li>
+<li><strong>𝜌</strong> is the density of the fluid.</li>
+<li><strong>𝑝</strong> represents pressure.</li>
+<li><strong>𝜈</strong> is the kinematic viscosity (a measure of the fluid's resistance to flow).</li>
+<li><strong>F</strong> represents external forces (such as gravity).</li>
+</ul>
+<p>In this context, the term <strong>𝑓</strong> representing external forces is included in the equation but will be omitted in the subsequent discussion for simplicity. This equation serves as the core mathematical tool for describing the motion and behavior of fluids. By solving the Navier-Stokes equation, we can compute the fluid's velocity, pressure, and other properties, which are then used to simulate fluid motion.</p>
+<p>To solve this, partial differential equations need to be numerically solved. The methods for this were explained in <a href="https://waynechoi.dev/post/heat-equation/" class="md-link" target="_blank" rel="noopener noreferrer">a previous post</a> where the heat equation was implemented, which can be reviewed for more details.</p>
+<h2>1. Add impulse</h2>
+<pre><code class="hljs language-js">@compute @<span class="hljs-title function_">workgroup_size</span>(<span class="hljs-number">16</span>, <span class="hljs-number">16</span>, <span class="hljs-number">1</span>)
+fn <span class="hljs-title function_">main</span>(<span class="hljs-params">@builtin(global_invocation_id) id: vec3u</span>) {
+    <span class="hljs-keyword">let</span> <span class="hljs-attr">x</span>:f32 = <span class="hljs-title function_">f32</span>(id.<span class="hljs-property">x</span>);
+    <span class="hljs-keyword">let</span> <span class="hljs-attr">y</span>:f32 = <span class="hljs-title function_">f32</span>(id.<span class="hljs-property">y</span>);
+    <span class="hljs-keyword">let</span> idx = <span class="hljs-title function_">getIdx</span>(id.<span class="hljs-property">xy</span>, size.<span class="hljs-property">width</span>);
 
-[Sample](https://waynechoidev.github.io/stable-fluids/) / [Repository](https://github.com/waynechoidev/stable-fluids/)
+    <span class="hljs-keyword">if</span> (constant.<span class="hljs-property">is_tracking</span> == <span class="hljs-number">1.0</span> ) {
+        <span class="hljs-keyword">let</span> dist = <span class="hljs-title function_">length</span>(<span class="hljs-title function_">vec2f</span>(<span class="hljs-title function_">f32</span>(x), <span class="hljs-title function_">f32</span>(y)) - constant.<span class="hljs-property">pos</span>) / <span class="hljs-variable constant_">SRC_RADIUS</span>;
+        <span class="hljs-keyword">let</span> scale = <span class="hljs-title function_">smootherstep</span>(<span class="hljs-number">1.0</span> - dist, <span class="hljs-number">0.0</span>, <span class="hljs-number">1.0</span>);
 
-I implemented a fast fluid dynamics simulation based on [Jos Stam's Stable Fluids](http://graphics.cs.cmu.edu/nsp/course/15-464/Fall09/papers/StamFluidforGames.pdf) with using WebGPU api. This post will briefly cover the mathematical aspects and primarily focus on the implementation. However, please note that all the code presented here has been simplified for explanation purposes, and the detailed implementation can be found in the repository linked above.
+        <span class="hljs-keyword">let</span> velocity = velocity_buffer[idx] + constant.<span class="hljs-property">velocity</span> * scale;
+        <span class="hljs-keyword">let</span> density = density_buffer[idx] + constant.<span class="hljs-property">density</span> * scale;
 
-## 0. Mathematics
-
-Before diving into the implementation of fluid simulation, it's important to briefly explore the mathematical foundations that underpin fluid dynamics. The primary equation that governs the motion of fluids is the Navier-Stokes equation.
-
-### Navier-Stokes Equation
-
-The Navier-Stokes equation is a partial differential equation that describes the conservation of momentum for fluid flow. In the case of incompressible fluids, it can be expressed as:
-
-<img src="/img/fast-fluid-dynamics-simulation-01.svg" class="latex-long"/>
-
-- **𝑢** represents the velocity field of the fluid.
-- **𝑡** represents time.
-- **𝜌** is the density of the fluid.
-- **𝑝** represents pressure.
-- **𝜈** is the kinematic viscosity (a measure of the fluid's resistance to flow).
-- **F** represents external forces (such as gravity).
-
-In this context, the term **𝑓** representing external forces is included in the equation but will be omitted in the subsequent discussion for simplicity. This equation serves as the core mathematical tool for describing the motion and behavior of fluids. By solving the Navier-Stokes equation, we can compute the fluid's velocity, pressure, and other properties, which are then used to simulate fluid motion.
-
-To solve this, partial differential equations need to be numerically solved. The methods for this were explained in [a previous post](https://waynechoi.dev/post/heat-equation/) where the heat equation was implemented, which can be reviewed for more details.
-
-## 1. Add impulse
-
-```js
-@compute @workgroup_size(16, 16, 1)
-fn main(@builtin(global_invocation_id) id: vec3u) {
-    let x:f32 = f32(id.x);
-    let y:f32 = f32(id.y);
-    let idx = getIdx(id.xy, size.width);
-
-    if (constant.is_tracking == 1.0 ) {
-        let dist = length(vec2f(f32(x), f32(y)) - constant.pos) / SRC_RADIUS;
-        let scale = smootherstep(1.0 - dist, 0.0, 1.0);
-
-        let velocity = velocity_buffer[idx] + constant.velocity * scale;
-        let density = density_buffer[idx] + constant.density * scale;
-
-        velocity_buffer[idx] = clampVelocity(velocity);
+        velocity_buffer[idx] = <span class="hljs-title function_">clampVelocity</span>(velocity);
         density_buffer[idx] = density;
     }
-}
-```
+}</code></pre><p>Define the starting point and initial conditions for the fluid. Set the initial state of the fluid to establish the starting point of the simulation. At this stage, a smootherstep function was used to provide a more natural impulse.</p>
+<h2>2. Solve Navier-Stokes</h2>
+<h3>2.1 Projection</h3>
+<p>The projection step involves calculating the pressure field and adjusting the velocity field to ensure the fluid flow is accurately simulated. This process aims to make the divergence of the velocity zero and uses the Poisson equation and Jacobi iteration to iteratively update the pressure field.</p>
+<h4>2.1.1 Divergence</h4>
+<pre><code class="hljs language-js">@compute @<span class="hljs-title function_">workgroup_size</span>(<span class="hljs-number">16</span>, <span class="hljs-number">16</span>, <span class="hljs-number">1</span>)
+fn <span class="hljs-title function_">main</span>(<span class="hljs-params">@builtin(global_invocation_id) id: vec3u</span>) {
+    <span class="hljs-keyword">let</span> x = id.<span class="hljs-property">x</span>;
+    <span class="hljs-keyword">let</span> y = id.<span class="hljs-property">y</span>;
+    <span class="hljs-keyword">let</span> idx = <span class="hljs-title function_">getIdx</span>(id.<span class="hljs-property">xy</span>, size.<span class="hljs-property">width</span>);
 
-Define the starting point and initial conditions for the fluid. Set the initial state of the fluid to establish the starting point of the simulation. At this stage, a smootherstep function was used to provide a more natural impulse.
+    <span class="hljs-keyword">let</span> <span class="hljs-attr">N</span>:<span class="hljs-title class_">Neighbors</span> = <span class="hljs-title function_">getNeighbors</span>(x, y, size);
 
-## 2. Solve Navier-Stokes
+    divergence_buffer[idx] = <span class="hljs-number">0.25</span> *
+    (velocity_buffer[<span class="hljs-title function_">getIdx</span>(N.<span class="hljs-property">right</span>, size.<span class="hljs-property">width</span>)].<span class="hljs-property">x</span> - velocity_buffer[<span class="hljs-title function_">getIdx</span>(N.<span class="hljs-property">left</span>, size.<span class="hljs-property">width</span>)].<span class="hljs-property">x</span> +
+    velocity_buffer[<span class="hljs-title function_">getIdx</span>(N.<span class="hljs-property">up</span>, size.<span class="hljs-property">width</span>)].<span class="hljs-property">y</span> - velocity_buffer[<span class="hljs-title function_">getIdx</span>(N.<span class="hljs-property">down</span>, size.<span class="hljs-property">width</span>)].<span class="hljs-property">y</span>);
 
-### 2.1 Projection
+    pressure_buffer[idx] = <span class="hljs-number">0</span>;
+    temp_pressure_buffer[idx] = <span class="hljs-number">0</span>;
+}</code></pre><p>Calculating the divergence of the velocity field is a crucial step for pressure calculation. If there is divergence, the velocity field may not converge or may exhibit divergence, which requires pressure to correct.</p>
+<p>In this case, since we are calculating the divergence on the vector field of velocity, the formula differs from that used in the heat equation. In the heat equation, the divergence was calculated from the vector field of pressure, which required the use of the Laplacian. However, since we are dealing with a vector field (velocity) that is already in gradient form, we can directly calculate the divergence without needing the Laplacian.</p>
+<p>To prepare for the next step, the pressure buffers were initialized here.</p>
+<h4>2.1.2 pressure disturbance</h4>
+<pre><code class="hljs language-js">@compute @<span class="hljs-title function_">workgroup_size</span>(<span class="hljs-number">16</span>, <span class="hljs-number">16</span>, <span class="hljs-number">1</span>)
+fn <span class="hljs-title function_">main</span>(<span class="hljs-params">@builtin(global_invocation_id) id: vec3u</span>) {
+    <span class="hljs-keyword">let</span> x = id.<span class="hljs-property">x</span>;
+    <span class="hljs-keyword">let</span> y = id.<span class="hljs-property">y</span>;
+    <span class="hljs-keyword">let</span> idx = <span class="hljs-title function_">getIdx</span>(id.<span class="hljs-property">xy</span>, size.<span class="hljs-property">width</span>);
 
-The projection step involves calculating the pressure field and adjusting the velocity field to ensure the fluid flow is accurately simulated. This process aims to make the divergence of the velocity zero and uses the Poisson equation and Jacobi iteration to iteratively update the pressure field.
+    <span class="hljs-keyword">let</span> <span class="hljs-attr">N</span>:<span class="hljs-title class_">Neighbors</span> = <span class="hljs-title function_">getNeighbors</span>(x, y, size);
 
-#### 2.1.1 Divergence
+    pressure_output[idx] = (pressure_input[<span class="hljs-title function_">getIdx</span>(N.<span class="hljs-property">right</span>, size.<span class="hljs-property">width</span>)] + pressure_input[<span class="hljs-title function_">getIdx</span>(N.<span class="hljs-property">left</span>, size.<span class="hljs-property">width</span>)]
+    + pressure_input[<span class="hljs-title function_">getIdx</span>(N.<span class="hljs-property">up</span>, size.<span class="hljs-property">width</span>)] + pressure_input[<span class="hljs-title function_">getIdx</span>(N.<span class="hljs-property">down</span>, size.<span class="hljs-property">width</span>)] - divergence[idx] * <span class="hljs-number">4.0</span>) * <span class="hljs-number">0.25</span>;
+}</code></pre><p>Pressure disturbance refers to small fluctuations or imbalances in the pressure field within fluid simulations. These disturbances can arise from changes in fluid velocity or external forces. To address pressure imbalances, the Poisson equation is used and numerically solved through Jacobi iteration. Jacobi iteration repeatedly updates the pressure field to minimize pressure disturbances, thereby adjusting the velocity field to accurately simulate the fluid's flow.</p>
+<h4>2.1.3 Apply Pressure</h4>
+<pre><code class="hljs language-js">@compute @<span class="hljs-title function_">workgroup_size</span>(<span class="hljs-number">16</span>, <span class="hljs-number">16</span>, <span class="hljs-number">1</span>)
+fn <span class="hljs-title function_">main</span>(<span class="hljs-params">@builtin(global_invocation_id) id: vec3u</span>) {
+    <span class="hljs-keyword">let</span> x = id.<span class="hljs-property">x</span>;
+    <span class="hljs-keyword">let</span> y = id.<span class="hljs-property">y</span>;
+    <span class="hljs-keyword">let</span> idx = <span class="hljs-title function_">getIdx</span>(id.<span class="hljs-property">xy</span>, size.<span class="hljs-property">width</span>);
 
-```js
-@compute @workgroup_size(16, 16, 1)
-fn main(@builtin(global_invocation_id) id: vec3u) {
-    let x = id.x;
-    let y = id.y;
-    let idx = getIdx(id.xy, size.width);
+    <span class="hljs-keyword">let</span> <span class="hljs-attr">N</span>:<span class="hljs-title class_">Neighbors</span> = <span class="hljs-title function_">getNeighbors</span>(x, y, size);
 
-    let N:Neighbors = getNeighbors(x, y, size);
+    <span class="hljs-keyword">let</span> <span class="hljs-attr">gradient</span>:vec2f = <span class="hljs-title function_">vec2f</span>(
+    (pressure_buffer[<span class="hljs-title function_">getIdx</span>(N.<span class="hljs-property">right</span>, size.<span class="hljs-property">width</span>)] - pressure_buffer[<span class="hljs-title function_">getIdx</span>(N.<span class="hljs-property">left</span>, size.<span class="hljs-property">width</span>)]),
+    (pressure_buffer[<span class="hljs-title function_">getIdx</span>(N.<span class="hljs-property">up</span>, size.<span class="hljs-property">width</span>)] - pressure_buffer[<span class="hljs-title function_">getIdx</span>(N.<span class="hljs-property">down</span>, size.<span class="hljs-property">width</span>)])
+    ) * <span class="hljs-number">0.25</span>;
 
-    divergence_buffer[idx] = 0.25 *
-    (velocity_buffer[getIdx(N.right, size.width)].x - velocity_buffer[getIdx(N.left, size.width)].x +
-    velocity_buffer[getIdx(N.up, size.width)].y - velocity_buffer[getIdx(N.down, size.width)].y);
+    <span class="hljs-keyword">let</span> velocity = velocity_buffer[idx] - gradient;
 
-    pressure_buffer[idx] = 0;
-    temp_pressure_buffer[idx] = 0;
-}
-```
+    velocity_buffer[idx] = <span class="hljs-title function_">clampVelocity</span>(velocity);
+}</code></pre><p>The calculated pressure field is used to adjust the velocity field. In this process, the velocity field is modified according to the pressure differences, allowing the fluid flow to converge and the pressure distribution to be appropriately applied.</p>
+<h2>3. Viscous Diffusion</h2>
+<pre><code class="hljs language-js">@compute @<span class="hljs-title function_">workgroup_size</span>(<span class="hljs-number">16</span>, <span class="hljs-number">16</span>, <span class="hljs-number">1</span>)
+fn <span class="hljs-title function_">main</span>(<span class="hljs-params">@builtin(global_invocation_id) id: vec3u</span>) {
+    <span class="hljs-keyword">let</span> x = id.<span class="hljs-property">x</span>;
+    <span class="hljs-keyword">let</span> y = id.<span class="hljs-property">y</span>;
+    <span class="hljs-keyword">let</span> idx = <span class="hljs-title function_">getIdx</span>(id.<span class="hljs-property">xy</span>, size.<span class="hljs-property">width</span>);
 
-Calculating the divergence of the velocity field is a crucial step for pressure calculation. If there is divergence, the velocity field may not converge or may exhibit divergence, which requires pressure to correct.
+    <span class="hljs-keyword">let</span> <span class="hljs-attr">N</span>:<span class="hljs-title class_">Neighbors</span> = <span class="hljs-title function_">getNeighbors</span>(x, y, size);
 
-In this case, since we are calculating the divergence on the vector field of velocity, the formula differs from that used in the heat equation. In the heat equation, the divergence was calculated from the vector field of pressure, which required the use of the Laplacian. However, since we are dealing with a vector field (velocity) that is already in gradient form, we can directly calculate the divergence without needing the Laplacian.
+    <span class="hljs-keyword">let</span> velocity = (velocity_input[idx]
+    + constant.<span class="hljs-property">viscosity</span> * constant.<span class="hljs-property">dt</span> * (
+    velocity_input[<span class="hljs-title function_">getIdx</span>(N.<span class="hljs-property">right</span>, size.<span class="hljs-property">width</span>)] + velocity_input[<span class="hljs-title function_">getIdx</span>(N.<span class="hljs-property">left</span>, size.<span class="hljs-property">width</span>)]
+    + velocity_input[<span class="hljs-title function_">getIdx</span>(N.<span class="hljs-property">up</span>, size.<span class="hljs-property">width</span>)] + velocity_input[<span class="hljs-title function_">getIdx</span>(N.<span class="hljs-property">down</span>, size.<span class="hljs-property">width</span>)]
+    )) / (<span class="hljs-number">1.0</span> + <span class="hljs-number">4</span> * constant.<span class="hljs-property">viscosity</span> * constant.<span class="hljs-property">dt</span>);
 
-To prepare for the next step, the pressure buffers were initialized here.
+    velocity_output[idx] = <span class="hljs-title function_">clampVelocity</span>(velocity);
+}</code></pre><p>Viscosity diffusion is applied to smooth out the fluid's velocity and simulate the effects of viscosity. This step models the viscous term in the Navier-Stokes equation.</p>
+<h2>4. Post process</h2>
+<p>While not directly related to solving the Navier-Stokes equations, it plays a crucial role in making the simulation results more realistic and stable.</p>
+<h3>4.1 Density diffusion</h3>
+<pre><code class="hljs language-js">@compute @<span class="hljs-title function_">workgroup_size</span>(<span class="hljs-number">16</span>, <span class="hljs-number">16</span>, <span class="hljs-number">1</span>)
+fn <span class="hljs-title function_">main</span>(<span class="hljs-params">@builtin(global_invocation_id) id: vec3u</span>) {
+    <span class="hljs-keyword">let</span> x = id.<span class="hljs-property">x</span>;
+    <span class="hljs-keyword">let</span> y = id.<span class="hljs-property">y</span>;
+    <span class="hljs-keyword">let</span> idx = <span class="hljs-title function_">getIdx</span>(id.<span class="hljs-property">xy</span>, size.<span class="hljs-property">width</span>);
 
-#### 2.1.2 pressure disturbance
+    <span class="hljs-keyword">let</span> <span class="hljs-attr">N</span>:<span class="hljs-title class_">Neighbors</span> = <span class="hljs-title function_">getNeighbors</span>(x, y, size);
 
-```js
-@compute @workgroup_size(16, 16, 1)
-fn main(@builtin(global_invocation_id) id: vec3u) {
-    let x = id.x;
-    let y = id.y;
-    let idx = getIdx(id.xy, size.width);
-
-    let N:Neighbors = getNeighbors(x, y, size);
-
-    pressure_output[idx] = (pressure_input[getIdx(N.right, size.width)] + pressure_input[getIdx(N.left, size.width)]
-    + pressure_input[getIdx(N.up, size.width)] + pressure_input[getIdx(N.down, size.width)] - divergence[idx] * 4.0) * 0.25;
-}
-```
-
-Pressure disturbance refers to small fluctuations or imbalances in the pressure field within fluid simulations. These disturbances can arise from changes in fluid velocity or external forces. To address pressure imbalances, the Poisson equation is used and numerically solved through Jacobi iteration. Jacobi iteration repeatedly updates the pressure field to minimize pressure disturbances, thereby adjusting the velocity field to accurately simulate the fluid's flow.
-
-#### 2.1.3 Apply Pressure
-
-```js
-@compute @workgroup_size(16, 16, 1)
-fn main(@builtin(global_invocation_id) id: vec3u) {
-    let x = id.x;
-    let y = id.y;
-    let idx = getIdx(id.xy, size.width);
-
-    let N:Neighbors = getNeighbors(x, y, size);
-
-    let gradient:vec2f = vec2f(
-    (pressure_buffer[getIdx(N.right, size.width)] - pressure_buffer[getIdx(N.left, size.width)]),
-    (pressure_buffer[getIdx(N.up, size.width)] - pressure_buffer[getIdx(N.down, size.width)])
-    ) * 0.25;
-
-    let velocity = velocity_buffer[idx] - gradient;
-
-    velocity_buffer[idx] = clampVelocity(velocity);
-}
-```
-
-The calculated pressure field is used to adjust the velocity field. In this process, the velocity field is modified according to the pressure differences, allowing the fluid flow to converge and the pressure distribution to be appropriately applied.
-
-## 3. Viscous Diffusion
-
-```js
-@compute @workgroup_size(16, 16, 1)
-fn main(@builtin(global_invocation_id) id: vec3u) {
-    let x = id.x;
-    let y = id.y;
-    let idx = getIdx(id.xy, size.width);
-
-    let N:Neighbors = getNeighbors(x, y, size);
-
-    let velocity = (velocity_input[idx]
-    + constant.viscosity * constant.dt * (
-    velocity_input[getIdx(N.right, size.width)] + velocity_input[getIdx(N.left, size.width)]
-    + velocity_input[getIdx(N.up, size.width)] + velocity_input[getIdx(N.down, size.width)]
-    )) / (1.0 + 4 * constant.viscosity * constant.dt);
-
-    velocity_output[idx] = clampVelocity(velocity);
-}
-```
-
-Viscosity diffusion is applied to smooth out the fluid's velocity and simulate the effects of viscosity. This step models the viscous term in the Navier-Stokes equation.
-
-## 4. Post process
-
-While not directly related to solving the Navier-Stokes equations, it plays a crucial role in making the simulation results more realistic and stable.
-
-### 4.1 Density diffusion
-
-```js
-@compute @workgroup_size(16, 16, 1)
-fn main(@builtin(global_invocation_id) id: vec3u) {
-    let x = id.x;
-    let y = id.y;
-    let idx = getIdx(id.xy, size.width);
-
-    let N:Neighbors = getNeighbors(x, y, size);
-
-    let density = (density_input[idx]
-    + constant.viscosity * constant.dt * (
-    density_input[getIdx(N.right, size.width)] + density_input[getIdx(N.left, size.width)]
-    + density_input[getIdx(N.up, size.width)] + density_input[getIdx(N.down, size.width)]
-    )) / (1.0 + 4 * constant.viscosity * constant.dt);
+    <span class="hljs-keyword">let</span> density = (density_input[idx]
+    + constant.<span class="hljs-property">viscosity</span> * constant.<span class="hljs-property">dt</span> * (
+    density_input[<span class="hljs-title function_">getIdx</span>(N.<span class="hljs-property">right</span>, size.<span class="hljs-property">width</span>)] + density_input[<span class="hljs-title function_">getIdx</span>(N.<span class="hljs-property">left</span>, size.<span class="hljs-property">width</span>)]
+    + density_input[<span class="hljs-title function_">getIdx</span>(N.<span class="hljs-property">up</span>, size.<span class="hljs-property">width</span>)] + density_input[<span class="hljs-title function_">getIdx</span>(N.<span class="hljs-property">down</span>, size.<span class="hljs-property">width</span>)]
+    )) / (<span class="hljs-number">1.0</span> + <span class="hljs-number">4</span> * constant.<span class="hljs-property">viscosity</span> * constant.<span class="hljs-property">dt</span>);
 
     density_output[idx] = density;
-}
-```
+}</code></pre><p>Density diffusion is the process of smoothing out density variations in fluid simulation to enhance both stability and realism. By gradually adjusting density changes, it helps prevent instability in the simulation. For computational efficiency, it was implemented in the same shader program used for viscous diffusion.</p>
+<h3>4.2 Vorticity</h3>
+<p>Calculate the vorticity of the fluid to achieve a more realistic flow. By adding the rotation (or vortices) of the fluid, the physical accuracy of the simulation is enhanced.</p>
+<h4>4.2.1 Compute vorticity</h4>
+<pre><code class="hljs language-js">@compute @<span class="hljs-title function_">workgroup_size</span>(<span class="hljs-number">16</span>, <span class="hljs-number">16</span>, <span class="hljs-number">1</span>)
+fn <span class="hljs-title function_">main</span>(<span class="hljs-params">@builtin(global_invocation_id) id: vec3u</span>) {
+    <span class="hljs-keyword">let</span> x = id.<span class="hljs-property">x</span>;
+    <span class="hljs-keyword">let</span> y = id.<span class="hljs-property">y</span>;
+    <span class="hljs-keyword">let</span> idx = <span class="hljs-title function_">getIdx</span>(id.<span class="hljs-property">xy</span>, size.<span class="hljs-property">width</span>);
 
-Density diffusion is the process of smoothing out density variations in fluid simulation to enhance both stability and realism. By gradually adjusting density changes, it helps prevent instability in the simulation. For computational efficiency, it was implemented in the same shader program used for viscous diffusion.
+    <span class="hljs-keyword">let</span> <span class="hljs-attr">N</span>:<span class="hljs-title class_">Neighbors</span> = <span class="hljs-title function_">getNeighbors</span>(x, y, size);
 
-### 4.2 Vorticity
+    vorticity_buffer[idx] = <span class="hljs-number">0.25</span> *
+    (velocity_buffer[<span class="hljs-title function_">getIdx</span>(N.<span class="hljs-property">right</span>, size.<span class="hljs-property">width</span>)].<span class="hljs-property">x</span> - velocity_buffer[<span class="hljs-title function_">getIdx</span>(N.<span class="hljs-property">left</span>, size.<span class="hljs-property">width</span>)].<span class="hljs-property">x</span> +
+    velocity_buffer[<span class="hljs-title function_">getIdx</span>(N.<span class="hljs-property">up</span>, size.<span class="hljs-property">width</span>)].<span class="hljs-property">y</span> - velocity_buffer[<span class="hljs-title function_">getIdx</span>(N.<span class="hljs-property">down</span>, size.<span class="hljs-property">width</span>)].<span class="hljs-property">y</span>);
+}</code></pre><h4>4.2.2 Confine vorticity</h4>
+<pre><code class="hljs language-js">@compute @<span class="hljs-title function_">workgroup_size</span>(<span class="hljs-number">16</span>, <span class="hljs-number">16</span>, <span class="hljs-number">1</span>)
+fn <span class="hljs-title function_">main</span>(<span class="hljs-params">@builtin(global_invocation_id) id: vec3u</span>) {
+    <span class="hljs-keyword">let</span> x = id.<span class="hljs-property">x</span>;
+    <span class="hljs-keyword">let</span> y = id.<span class="hljs-property">y</span>;
+    <span class="hljs-keyword">let</span> idx = <span class="hljs-title function_">getIdx</span>(id.<span class="hljs-property">xy</span>, size.<span class="hljs-property">width</span>);
 
-Calculate the vorticity of the fluid to achieve a more realistic flow. By adding the rotation (or vortices) of the fluid, the physical accuracy of the simulation is enhanced.
+    <span class="hljs-keyword">let</span> <span class="hljs-attr">N</span>:<span class="hljs-title class_">Neighbors</span> = <span class="hljs-title function_">getNeighbors</span>(x, y, size);
 
-#### 4.2.1 Compute vorticity
+    <span class="hljs-keyword">let</span> dx = <span class="hljs-title function_">vec2f</span>(<span class="hljs-number">1.0</span> / <span class="hljs-title function_">f32</span>(size.<span class="hljs-property">width</span>), <span class="hljs-number">1.0</span> / <span class="hljs-title function_">f32</span>(size.<span class="hljs-property">height</span>));
 
-```js
-@compute @workgroup_size(16, 16, 1)
-fn main(@builtin(global_invocation_id) id: vec3u) {
-    let x = id.x;
-    let y = id.y;
-    let idx = getIdx(id.xy, size.width);
+    <span class="hljs-keyword">let</span> eta = <span class="hljs-title function_">vec2f</span>((<span class="hljs-title function_">abs</span>(vorticity_buffer[<span class="hljs-title function_">getIdx</span>(N.<span class="hljs-property">right</span>, size.<span class="hljs-property">width</span>)]) - <span class="hljs-title function_">abs</span>(vorticity_buffer[<span class="hljs-title function_">getIdx</span>(N.<span class="hljs-property">left</span>, size.<span class="hljs-property">width</span>)])) / (<span class="hljs-number">2.0</span> * <span class="hljs-title function_">f32</span>(x)),
+                    (<span class="hljs-title function_">abs</span>(vorticity_buffer[<span class="hljs-title function_">getIdx</span>(N.<span class="hljs-property">up</span>, size.<span class="hljs-property">width</span>)]) - <span class="hljs-title function_">abs</span>(vorticity_buffer[<span class="hljs-title function_">getIdx</span>(N.<span class="hljs-property">down</span>, size.<span class="hljs-property">width</span>)])) / (<span class="hljs-number">2.0</span> * <span class="hljs-title function_">f32</span>(y)));
 
-    let N:Neighbors = getNeighbors(x, y, size);
-
-    vorticity_buffer[idx] = 0.25 *
-    (velocity_buffer[getIdx(N.right, size.width)].x - velocity_buffer[getIdx(N.left, size.width)].x +
-    velocity_buffer[getIdx(N.up, size.width)].y - velocity_buffer[getIdx(N.down, size.width)].y);
-}
-```
-
-#### 4.2.2 Confine vorticity
-
-```js
-@compute @workgroup_size(16, 16, 1)
-fn main(@builtin(global_invocation_id) id: vec3u) {
-    let x = id.x;
-    let y = id.y;
-    let idx = getIdx(id.xy, size.width);
-
-    let N:Neighbors = getNeighbors(x, y, size);
-
-    let dx = vec2f(1.0 / f32(size.width), 1.0 / f32(size.height));
-
-    let eta = vec2f((abs(vorticity_buffer[getIdx(N.right, size.width)]) - abs(vorticity_buffer[getIdx(N.left, size.width)])) / (2.0 * f32(x)),
-                    (abs(vorticity_buffer[getIdx(N.up, size.width)]) - abs(vorticity_buffer[getIdx(N.down, size.width)])) / (2.0 * f32(y)));
-
-    if (length(eta) < 1e-5){
-        return;
+    <span class="hljs-keyword">if</span> (<span class="hljs-title function_">length</span>(eta) &lt; <span class="hljs-number">1e-5</span>){
+        <span class="hljs-keyword">return</span>;
     }
 
-    let psi = vec3f(normalize(eta).xy, 0.0);
-    let omega = vec3f(0, 0, vorticity_buffer[idx]);
+    <span class="hljs-keyword">let</span> psi = <span class="hljs-title function_">vec3f</span>(<span class="hljs-title function_">normalize</span>(eta).<span class="hljs-property">xy</span>, <span class="hljs-number">0.0</span>);
+    <span class="hljs-keyword">let</span> omega = <span class="hljs-title function_">vec3f</span>(<span class="hljs-number">0</span>, <span class="hljs-number">0</span>, vorticity_buffer[idx]);
 
-    let velocity = velocity_buffer[idx] + 0.2 * cross(psi, omega).xy * dx;
+    <span class="hljs-keyword">let</span> velocity = velocity_buffer[idx] + <span class="hljs-number">0.2</span> * <span class="hljs-title function_">cross</span>(psi, omega).<span class="hljs-property">xy</span> * dx;
 
-    velocity_buffer[idx] = clampVelocity(velocity);
-}
-```
+    velocity_buffer[idx] = <span class="hljs-title function_">clampVelocity</span>(velocity);
+}</code></pre><h3>4.3 Density dissipation</h3>
+<pre><code class="hljs language-js">density_buffer[idx] = <span class="hljs-title function_">max</span>(
+  density_buffer[idx] - <span class="hljs-title function_">vec4f</span>(<span class="hljs-variable constant_">DISSIPATION_FACTOR</span>),
+  <span class="hljs-title function_">vec4f</span>(<span class="hljs-number">0.0</span>)
+);</code></pre><p>Energy dissipation is applied to maintain simulation stability and ensure physical accuracy. This process involves adding artificial dissipation of density, which creates the effect of the fluid gradually disappearing naturally, and was applied when adding impulses.</p>
+<h2>5. Textures</h2>
+<pre><code class="hljs language-js">@compute @<span class="hljs-title function_">workgroup_size</span>(<span class="hljs-number">16</span>, <span class="hljs-number">16</span>, <span class="hljs-number">1</span>)
+fn <span class="hljs-title function_">main</span>(<span class="hljs-params">@builtin(global_invocation_id) id: vec3u</span>) {
+    <span class="hljs-keyword">let</span> x = id.<span class="hljs-property">x</span>;
+    <span class="hljs-keyword">let</span> y = id.<span class="hljs-property">y</span>;
+    <span class="hljs-keyword">let</span> idx = <span class="hljs-title function_">getIdx</span>(id.<span class="hljs-property">xy</span>, size.<span class="hljs-property">width</span>);
 
-### 4.3 Density dissipation
+    <span class="hljs-keyword">let</span> <span class="hljs-attr">velocity</span>:vec2f = velocity_buffer[idx];
+    <span class="hljs-keyword">let</span> <span class="hljs-attr">density</span>:vec4f = density_buffer[idx];
 
-```js
-density_buffer[idx] = max(
-  density_buffer[idx] - vec4f(DISSIPATION_FACTOR),
-  vec4f(0.0)
-);
-```
-
-Energy dissipation is applied to maintain simulation stability and ensure physical accuracy. This process involves adding artificial dissipation of density, which creates the effect of the fluid gradually disappearing naturally, and was applied when adding impulses.
-
-## 5. Textures
-
-```js
-@compute @workgroup_size(16, 16, 1)
-fn main(@builtin(global_invocation_id) id: vec3u) {
-    let x = id.x;
-    let y = id.y;
-    let idx = getIdx(id.xy, size.width);
-
-    let velocity:vec2f = velocity_buffer[idx];
-    let density:vec4f = density_buffer[idx];
-
-    textureStore(velocity_texture, vec2<i32>(i32(x), i32(y)), encodeVelocity(velocity));
-    textureStore(density_texture, vec2<i32>(i32(x), i32(y)), density);
-}
-```
-
-Before performing advection, it is necessary to transfer the density buffer and velocity buffer to textures. This is because when advection is performed using a sampler, interpolation is applied, which allows for efficient extraction of density and velocity values from the textures and leads to more accurate fluid flow simulation. If advection is performed directly on storage buffers without interpolation, irregular results such as the staircasing effect shown in the image below may occur.
-
-<img src="/img/fast-fluid-dynamics-simulation-02.jpg" class="post-pic"/>
-
-One additional point to note is that when storing velocity in a texture, it must be normalized to the 0–1 range to handle negative values. Otherwise, due to the texture's limitation in storing negative values, the velocity would always point only to the right or upwards. For more stable encoding and decoding, the velocity is always clamped to the range of -1 to 1. The following set of functions is used for these tasks.
-
-```js
-// clamp velocity between -1 and 1
-fn clampVelocity(v: vec2f) -> vec2f {
-    return clamp(v, vec2f(-1.0), vec2f(1.0));
+    <span class="hljs-title function_">textureStore</span>(velocity_texture, vec2&lt;i32&gt;(<span class="hljs-title function_">i32</span>(x), <span class="hljs-title function_">i32</span>(y)), <span class="hljs-title function_">encodeVelocity</span>(velocity));
+    <span class="hljs-title function_">textureStore</span>(density_texture, vec2&lt;i32&gt;(<span class="hljs-title function_">i32</span>(x), <span class="hljs-title function_">i32</span>(y)), density);
+}</code></pre><p>Before performing advection, it is necessary to transfer the density buffer and velocity buffer to textures. This is because when advection is performed using a sampler, interpolation is applied, which allows for efficient extraction of density and velocity values from the textures and leads to more accurate fluid flow simulation. If advection is performed directly on storage buffers without interpolation, irregular results such as the staircasing effect shown in the image below may occur.</p>
+<img src="/img/fast-fluid-dynamics-simulation-02.jpg" class="post-pic" loading="lazy" /><p>One additional point to note is that when storing velocity in a texture, it must be normalized to the 0–1 range to handle negative values. Otherwise, due to the texture's limitation in storing negative values, the velocity would always point only to the right or upwards. For more stable encoding and decoding, the velocity is always clamped to the range of -1 to 1. The following set of functions is used for these tasks.</p>
+<pre><code class="hljs language-js"><span class="hljs-comment">// clamp velocity between -1 and 1</span>
+fn <span class="hljs-title function_">clampVelocity</span>(<span class="hljs-attr">v</span>: vec2f) -&gt; vec2f {
+    <span class="hljs-keyword">return</span> <span class="hljs-title function_">clamp</span>(v, <span class="hljs-title function_">vec2f</span>(-<span class="hljs-number">1.0</span>), <span class="hljs-title function_">vec2f</span>(<span class="hljs-number">1.0</span>));
 }
 
-// encode velocity with -1..1 range to texture with 0..1 range
-fn encodeVelocity(v: vec2f) -> vec4f {
-    return vec4f(v * 0.5 + 0.5, 0, 0);
+<span class="hljs-comment">// encode velocity with -1..1 range to texture with 0..1 range</span>
+fn <span class="hljs-title function_">encodeVelocity</span>(<span class="hljs-attr">v</span>: vec2f) -&gt; vec4f {
+    <span class="hljs-keyword">return</span> <span class="hljs-title function_">vec4f</span>(v * <span class="hljs-number">0.5</span> + <span class="hljs-number">0.5</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0</span>);
 }
 
-// decode texture with 0..1 range to velocity with -1..1 range
-fn decodeVelocity(v: vec4f) -> vec2f {
-    return v.xy * 2.0 - 1.0;
-}
-```
+<span class="hljs-comment">// decode texture with 0..1 range to velocity with -1..1 range</span>
+fn <span class="hljs-title function_">decodeVelocity</span>(<span class="hljs-attr">v</span>: vec4f) -&gt; vec2f {
+    <span class="hljs-keyword">return</span> v.<span class="hljs-property">xy</span> * <span class="hljs-number">2.0</span> - <span class="hljs-number">1.0</span>;
+}</code></pre><h2>6. Advection</h2>
+<pre><code class="hljs language-js">@compute @<span class="hljs-title function_">workgroup_size</span>(<span class="hljs-number">16</span>, <span class="hljs-number">16</span>, <span class="hljs-number">1</span>)
+fn <span class="hljs-title function_">main</span>(<span class="hljs-params">@builtin(global_invocation_id) id: vec3u</span>) {
+    <span class="hljs-keyword">let</span> x = <span class="hljs-title function_">f32</span>(id.<span class="hljs-property">x</span>);
+    <span class="hljs-keyword">let</span> y = <span class="hljs-title function_">f32</span>(id.<span class="hljs-property">y</span>);
+    <span class="hljs-keyword">let</span> idx = <span class="hljs-title function_">getIdx</span>(id.<span class="hljs-property">xy</span>, size.<span class="hljs-property">width</span>);
+    <span class="hljs-keyword">let</span> pos = vec2&lt;f32&gt;((x + <span class="hljs-number">0.5</span>)/<span class="hljs-title function_">f32</span>(size.<span class="hljs-property">width</span>), (y + <span class="hljs-number">0.5</span>)/<span class="hljs-title function_">f32</span>(size.<span class="hljs-property">height</span>));
 
-## 6. Advection
+    <span class="hljs-keyword">let</span> velocity = velocity_buffer[idx];
 
-```js
-@compute @workgroup_size(16, 16, 1)
-fn main(@builtin(global_invocation_id) id: vec3u) {
-    let x = f32(id.x);
-    let y = f32(id.y);
-    let idx = getIdx(id.xy, size.width);
-    let pos = vec2<f32>((x + 0.5)/f32(size.width), (y + 0.5)/f32(size.height));
+    <span class="hljs-keyword">let</span> dt = constant.<span class="hljs-property">dt</span> * <span class="hljs-number">0.0001</span>;
+    <span class="hljs-keyword">let</span> pos_back = pos - velocity * dt;
 
-    let velocity = velocity_buffer[idx];
+    <span class="hljs-keyword">var</span> <span class="hljs-attr">back_velocity</span>:vec2f = <span class="hljs-title function_">decodeVelocity</span>(<span class="hljs-title function_">textureSampleLevel</span>(temp_velocity_texture, my_sampler, pos_back, <span class="hljs-number">0</span>));
+    back_velocity = <span class="hljs-title function_">clampVelocity</span>(back_velocity);
+    <span class="hljs-keyword">let</span> <span class="hljs-attr">back_density</span>:vec4f = <span class="hljs-title function_">textureSampleLevel</span>(temp_density_texture, my_sampler, pos_back, <span class="hljs-number">0</span>);
 
-    let dt = constant.dt * 0.0001;
-    let pos_back = pos - velocity * dt;
+    <span class="hljs-title function_">textureStore</span>(velocity_texture, vec2&lt;i32&gt;(<span class="hljs-title function_">i32</span>(x), <span class="hljs-title function_">i32</span>(y)), <span class="hljs-title function_">encodeVelocity</span>(back_velocity));
+    <span class="hljs-title function_">textureStore</span>(density_texture, vec2&lt;i32&gt;(<span class="hljs-title function_">i32</span>(x), <span class="hljs-title function_">i32</span>(y)), back_density);
 
-    var back_velocity:vec2f = decodeVelocity(textureSampleLevel(temp_velocity_texture, my_sampler, pos_back, 0));
-    back_velocity = clampVelocity(back_velocity);
-    let back_density:vec4f = textureSampleLevel(temp_density_texture, my_sampler, pos_back, 0);
-
-    textureStore(velocity_texture, vec2<i32>(i32(x), i32(y)), encodeVelocity(back_velocity));
-    textureStore(density_texture, vec2<i32>(i32(x), i32(y)), back_density);
-
-    velocity_buffer[idx] = clampVelocity(back_velocity);
+    velocity_buffer[idx] = <span class="hljs-title function_">clampVelocity</span>(back_velocity);
     density_buffer[idx] = back_density;
-}
-```
-
-Advection describes the process by which fluids or other physical quantities move according to their velocity. Simply put, it deals with how substances move with the flow of the fluid. Here, the Semi-Lagrangian method was used to numerically solve advection. This method involves tracking the movement of material particles according to the velocity field and calculating their values at new positions.
-
-In this process, to handle the movement of the material, the position was adjusted by adding 0.5 to each axis, starting from the center of the grid. Finally, to render the results, the target texture and the velocity and density buffers for the next frame's calculations are updated. To prevent data race conditions, the density texture and render target texture are kept separate.
-
-## Conclusion
-
-By following this sequence in fluid simulation, you can effectively model the physical properties and flow of the fluid. Each step enhances the accuracy of the simulation and helps to accurately represent the dynamic characteristics of the fluid.
-
-### References
-
-- [Introduction to Computer Graphics with DirectX 11 - Part 4. Computer Animation](https://honglab.co.kr/courses/graphicspt4)
-- [GPU Gems](https://developer.nvidia.com/gpugems/gpugems/part-vi-beyond-triangles/chapter-38-fast-fluid-dynamics-simulation-gpu)
-- [Wikipedia](<https://en.wikipedia.org/wiki/Projection_method_(fluid_dynamics)>)
-- [Real-Time Fluid Dynamics for Games - Jos Stam](http://graphics.cs.cmu.edu/nsp/course/15-464/Fall09/papers/StamFluidforGames.pdf)
-3:[null,["$","html",null,{"lang":"en","children":["$","body",null,{"className":"mx-auto my-0","children":[["$","nav",null,{"className":"max-w-default mx-auto px-5 py-3","children":["$","$L6",null,{}]}],["$","header",null,{"children":["$","$L7",null,{}]}],["$","div",null,{"className":"max-w-default mx-auto p-5","children":["$","$L8",null,{"parallelRouterKey":"children","segmentPath":["children"],"loading":"$undefined","loadingStyles":"$undefined","hasLoading":false,"error":"$undefined","errorStyles":"$undefined","template":["$","$L9",null,{}],"templateStyles":"$undefined","notFound":[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":"404"}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],"notFoundStyles":[],"childProp":{"current":["$","$L8",null,{"parallelRouterKey":"children","segmentPath":["children","post","children"],"loading":"$undefined","loadingStyles":"$undefined","hasLoading":false,"error":"$undefined","errorStyles":"$undefined","template":["$","$L9",null,{}],"templateStyles":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined","childProp":{"current":[null,["$","$L8",null,{"parallelRouterKey":"children","segmentPath":["children","post","children",["slug","fast-fluid-dynamics-simulation","d"],"children"],"loading":"$undefined","loadingStyles":"$undefined","hasLoading":false,"error":"$undefined","errorStyles":"$undefined","template":["$","$L9",null,{}],"templateStyles":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined","childProp":{"current":["$La",["$","div",null,{"children":[["$","$Lb",null,{"href":"/posts/graphics","className":"text-gray-600 text-md pl-1 hover:font-bold","children":"GRAPHICS"}],["$","h1",null,{"children":"Fast fluid dynamics simulation"}],["$","p",null,{"className":"text-gray-400 text-sm m-0 mt-1","children":"Sep 4, 2024"}],["$","div",null,{"className":"mt-1","children":["$","div",null,{"className":"whitespace-nowrap overflow-x-auto pb-3","children":[["$","$Lb","simulation",{"href":"/tag/simulation","className":"mr-2 text-gray-500 hover:font-bold","children":"#simulation"}],["$","$Lb","webgpu",{"href":"/tag/webgpu","className":"mr-2 text-gray-500 hover:font-bold","children":"#webgpu"}],["$","$Lb","math",{"href":"/tag/math","className":"mr-2 text-gray-500 hover:font-bold","children":"#math"}]]}]}],["$","div",null,{"className":"mt-8","children":["$","$Lc",null,{"content":"$d"}]}],["$","$Le",null,{"issueTerm":"Fast fluid dynamics simulation"}]]}],null],"segment":"__PAGE__?{\"slug\":\"fast-fluid-dynamics-simulation\"}"},"styles":[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/602feae4669a507e.css","precedence":"next","crossOrigin":""}]]}],null],"segment":["slug","fast-fluid-dynamics-simulation","d"]},"styles":[]}],"segment":"post"},"styles":[]}]}],["$","footer",null,{"className":"h-40 flex justify-center items-end","children":["$","p",null,{"className":"text-gray-500 text-sm","children":"(C) 2021. Wayne Choi. All rights reserved."}]}]]}]}],null]
-a:null
+}</code></pre><p>Advection describes the process by which fluids or other physical quantities move according to their velocity. Simply put, it deals with how substances move with the flow of the fluid. Here, the Semi-Lagrangian method was used to numerically solve advection. This method involves tracking the movement of material particles according to the velocity field and calculating their values at new positions.</p>
+<p>In this process, to handle the movement of the material, the position was adjusted by adding 0.5 to each axis, starting from the center of the grid. Finally, to render the results, the target texture and the velocity and density buffers for the next frame's calculations are updated. To prevent data race conditions, the density texture and render target texture are kept separate.</p>
+<h2>Conclusion</h2>
+<p>By following this sequence in fluid simulation, you can effectively model the physical properties and flow of the fluid. Each step enhances the accuracy of the simulation and helps to accurately represent the dynamic characteristics of the fluid.</p>
+<h3>References</h3>
+<ul>
+<li><a href="https://honglab.co.kr/courses/graphicspt4" class="md-link" target="_blank" rel="noopener noreferrer">Introduction to Computer Graphics with DirectX 11 - Part 4. Computer Animation</a></li>
+<li><a href="https://developer.nvidia.com/gpugems/gpugems/part-vi-beyond-triangles/chapter-38-fast-fluid-dynamics-simulation-gpu" class="md-link" target="_blank" rel="noopener noreferrer">GPU Gems</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Projection_method_(fluid_dynamics)" class="md-link" target="_blank" rel="noopener noreferrer">Wikipedia</a></li>
+<li><a href="http://graphics.cs.cmu.edu/nsp/course/15-464/Fall09/papers/StamFluidforGames.pdf" class="md-link" target="_blank" rel="noopener noreferrer">Real-Time Fluid Dynamics for Games - Jos Stam</a></li>
+</ul>
+c:["$","article",null,{"children":[["$","script",null,{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"{\"@context\":\"https://schema.org\",\"@type\":\"BlogPosting\",\"headline\":\"Fast fluid dynamics simulation\",\"description\":\"implemented a fluid simulation by solving the Navier-Stokes equations using the Stable Fluids method...\",\"datePublished\":\"2024-09-04\",\"author\":{\"@type\":\"Person\",\"name\":\"Wayne Choi\"},\"mainEntityOfPage\":\"https://waynechoi.dev/post/fast-fluid-dynamics-simulation/\"}"}}],["$","$L18",null,{"href":"/posts/graphics","className":"text-gray-600 hover:text-blue-800 hover:underline","children":"GRAPHICS"}],["$","h1",null,{"children":"Fast fluid dynamics simulation"}],["$","time",null,{"dateTime":"2024-09-04","className":"text-gray-500 text-sm","children":"4 Sept 2024"}],["$","div",null,{"className":"mt-2","children":["$","div",null,{"className":"whitespace-nowrap overflow-x-auto pb-2","aria-label":"Post tags","children":[["$","$L18","simulation",{"href":"/tag/simulation","className":"mr-2 text-gray-600 hover:text-blue-800 hover:underline","children":"#simulation"}],["$","$L18","webgpu",{"href":"/tag/webgpu","className":"mr-2 text-gray-600 hover:text-blue-800 hover:underline","children":"#webgpu"}],["$","$L18","math",{"href":"/tag/math","className":"mr-2 text-gray-600 hover:text-blue-800 hover:underline","children":"#math"}]]}]}],["$","div",null,{"className":"mt-8","children":["$","div",null,{"className":"post-content","dangerouslySetInnerHTML":{"__html":"$19"}}]}],"$L1a"]}]
+1b:I[32948,["$2","$17"],"default"]
+1a:["$","$L1b",null,{"issueTerm":"Fast fluid dynamics simulation"}]
+12:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+1c:I[27201,["$5"],"IconMark"]
+f:null
+15:[["$","title","0",{"children":"Fast fluid dynamics simulation | WayneChoi.dev"}],["$","meta","1",{"name":"description","content":"implemented a fluid simulation by solving the Navier-Stokes equations using the Stable Fluids method..."}],["$","link","2",{"rel":"canonical","href":"https://waynechoi.dev/post/fast-fluid-dynamics-simulation/"}],["$","meta","3",{"property":"og:title","content":"Fast fluid dynamics simulation"}],["$","meta","4",{"property":"og:description","content":"implemented a fluid simulation by solving the Navier-Stokes equations using the Stable Fluids method..."}],["$","meta","5",{"property":"og:url","content":"https://waynechoi.dev/post/fast-fluid-dynamics-simulation/"}],["$","meta","6",{"property":"og:image","content":"https://waynechoi.dev/opengraph-image"}],["$","meta","7",{"property":"og:image:alt","content":"WayneChoi.dev"}],["$","meta","8",{"property":"og:type","content":"article"}],["$","meta","9",{"property":"article:published_time","content":"2024-09-04"}],["$","meta","10",{"property":"article:tag","content":"simulation"}],["$","meta","11",{"property":"article:tag","content":"webgpu"}],["$","meta","12",{"property":"article:tag","content":"math"}],["$","meta","13",{"name":"twitter:card","content":"summary_large_image"}],["$","meta","14",{"name":"twitter:title","content":"Fast fluid dynamics simulation"}],["$","meta","15",{"name":"twitter:description","content":"implemented a fluid simulation by solving the Navier-Stokes equations using the Stable Fluids method..."}],["$","meta","16",{"name":"twitter:image","content":"https://waynechoi.dev/twitter-image"}],["$","link","17",{"rel":"icon","href":"/favicon.ico"}],["$","$L1c","18",{}]]

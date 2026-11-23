@@ -1,0 +1,96 @@
+1:"$Sreact.fragment"
+2:"/_next/static/chunks/07ixqnujfllo2.js"
+3:I[47689,["$2"],"default"]
+4:I[70119,["$2"],"default"]
+5:"/_next/static/chunks/3qfy96eoyh-ek.js"
+6:I[39756,["$5"],"default"]
+7:I[37457,["$5"],"default"]
+d:I[97367,["$5"],"OutletBoundary"]
+e:"$Sreact.suspense"
+10:"ViewportBoundary"
+11:I[97367,["$5"],"$10"]
+13:"MetadataBoundary"
+14:I[97367,["$5"],"$13"]
+16:I[68027,["$2"],"default",1]
+:HL["/_next/static/chunks/2e79geki6z2_c.css","style"]
+:HC["/",""]
+9:X
+b:[["children",{"s":"__PAGE__","h":512,"d":{"r":["$","$1","c",{"children":["$Lc",[["$","script","script-0",{"src":"/_next/static/chunks/0288roqreptti.js","async":true,"nonce":"$undefined"}]],["$","$Ld",null,{"children":["$","$e",null,{"name":"Next.MetadataOutlet","children":"$@f"}]}]]}],"p":false,"v":null}}]]
+a:[["children",{"s":{"n":"slug","t":"d","k":"immutability-immutable-js-pros-and-cons","s":[]},"h":512,"d":{"r":["$","$1","c",{"children":[null,["$","$L6",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L7",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],"p":false,"v":null},"c":"$Qb"}]]
+8:[["children",{"s":"post","h":512,"d":{"r":["$","$1","c",{"children":[null,["$","$L6",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L7",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],"p":false,"v":"$9"},"c":"$Qa"}]]
+0:{"P":null,"c":["","post","immutability-immutable-js-pros-and-cons",""],"q":"","i":false,"t":{"t":{"s":"","h":528,"d":{"r":["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/2e79geki6z2_c.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],["$","script","script-0",{"src":"/_next/static/chunks/07ixqnujfllo2.js","async":true,"nonce":"$undefined"}]],["$","html",null,{"lang":"en","children":["$","body",null,{"className":"mx-auto my-0","children":[["$","a",null,{"href":"#main-content","className":"skip-link","children":"Skip to content"}],["$","nav",null,{"className":"max-w-default mx-auto px-5 py-3","aria-label":"Primary navigation","children":["$","$L3",null,{}]}],["$","header",null,{"children":["$","$L4",null,{}]}],["$","main",null,{"id":"main-content","className":"max-w-default mx-auto p-5","children":["$","$L6",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L7",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}],["$","footer",null,{"className":"h-40 flex justify-center items-end","children":["$","p",null,{"className":"text-gray-500 text-sm","children":["© 2021–",2026," Wayne Choi. All rights reserved."]}]}]]}]}]]}],"p":false,"v":null},"c":"$Q8"},"h":{"r":["$","$1","h",{"children":[null,["$","$L11",null,{"children":"$L12"}],["$","$L14",null,{"children":[["$","div",null,{"hidden":true,"children":["$","$e",null,{"name":"Next.Metadata","children":"$L15"}]}],null]}],null]}],"p":false,"v":null}},"m":"$undefined","G":["$16",[["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/2e79geki6z2_c.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]]],"S":true,"r":"$undefined","s":"$undefined","a":"$undefined","l":"$undefined","p":"$undefined","d":"$undefined","b":"MYLL76Di7kZHpNQU1HIFd"}
+17:"/_next/static/chunks/0288roqreptti.js"
+18:I[22016,["$2","$17"],""]
+9:C
+19:T1f7e,<h3>Immutability series</h3>
+<ol>
+<li><a href="/post/immutability-object-freeze-doesnt-always-freeze" class="md-link">Object.freeze() doesn't always freeze</a></li>
+<li><strong>Immutable.js, pros and cons</strong></li>
+</ol>
+<hr />
+<p>We need to keep original data to avoid side effects. If it is primitive data type, there is nothing to care about. If it is an object, we normally copy and manipulate it to keep the original data immutable. In this way, we might get problem when we deal with large data.</p>
+<p>To keep the original object, we need to deep copy it. It means we need to allocate the space in memory for the entire object, even all of the stuff that didn't change. The both time and space complexity will be so bad. The code runs slow.</p>
+<p>There are many of libraries to solve this problem, and I picked Immutable.js. It is a library to support immutable data structure, supported by Facebook. I would explain how it deal with immutability efficiently, and its disadvantages.</p>
+<hr />
+<h2>How Immutable.js works</h2>
+<pre><code class="hljs language-js"><span class="hljs-keyword">const</span> { <span class="hljs-title class_">Map</span> } = <span class="hljs-built_in">require</span>(<span class="hljs-string">"immutable"</span>);
+
+<span class="hljs-keyword">const</span> map1 = <span class="hljs-title class_">Map</span>({ <span class="hljs-attr">a</span>: <span class="hljs-number">1</span>, <span class="hljs-attr">b</span>: <span class="hljs-number">2</span>, <span class="hljs-attr">c</span>: <span class="hljs-number">3</span> });
+<span class="hljs-keyword">const</span> map2 = map1.<span class="hljs-title function_">set</span>(<span class="hljs-string">"b"</span>, <span class="hljs-number">50</span>);
+
+<span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(map1.<span class="hljs-title function_">get</span>(<span class="hljs-string">"b"</span>)); <span class="hljs-comment">// 2</span>
+<span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(map2.<span class="hljs-title function_">get</span>(<span class="hljs-string">"b"</span>)); <span class="hljs-comment">// 50</span>
+<span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(map1 == map2); <span class="hljs-comment">// false</span></code></pre><p>I made map1 object, then executed map1.set to change a value with key "b". It did not change a value of key "b" in map1, but returned new object, map2, with new value of key "b".</p>
+<p>It looks like copying whole object and change one value, but worked totally different inside. Map1 and map2 objects are sharing values just except the changed value to minimize consuming memory. It is implemented by persistent data structures.</p>
+<hr />
+<pre><code class="hljs language-js"><span class="hljs-keyword">const</span> { fromJS } = <span class="hljs-built_in">require</span>(<span class="hljs-string">"immutable"</span>);
+
+<span class="hljs-keyword">const</span> nested = <span class="hljs-title function_">fromJS</span>({ <span class="hljs-attr">a</span>: { <span class="hljs-attr">b</span>: { <span class="hljs-attr">c</span>: [<span class="hljs-number">3</span>, <span class="hljs-number">4</span>, <span class="hljs-number">5</span>] } } });
+<span class="hljs-keyword">const</span> nested2 = nested.<span class="hljs-title function_">mergeDeep</span>({ <span class="hljs-attr">a</span>: { <span class="hljs-attr">b</span>: { <span class="hljs-attr">d</span>: <span class="hljs-number">6</span> } } });
+<span class="hljs-comment">// Map { a: Map { b: Map { c: List [ 3, 4, 5 ], d: 6 } } }</span>
+
+<span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(nested);
+<span class="hljs-comment">// Map { a: Map { b: Map { c: List [ 3, 4, 5 ] } } }</span>
+<span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(nested2);
+<span class="hljs-comment">// Map { a: Map { b: Map { c: List [ 3, 4, 5 ], d: 6 } } }</span>
+<span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(nested == nested2); <span class="hljs-comment">// false</span></code></pre><p>The collections in Immutable.js are intended to be nested, allowing for deep trees of data, similar to JSON.</p>
+<hr />
+<h2>Persistent data structures</h2>
+<p>In computing, a persistent data structure is a data structure that always preserves the previous version of itself when it is modified. Such data structures are effectively immutable, as their operations do not (visibly) update the structure in-place, but instead always yield a new updated structure.</p>
+<p>It is commonly used in functional programming to enforce immutability. Many of languages with functional programming paradigm has implementations of persistent data structures, but JavaScript does not. Immutable.js is a library to support this to JavaScript.</p>
+<p>It is optimized with trie data structure. I will provide an example below to understand easily.</p>
+<hr />
+<pre><code class="hljs language-js"><span class="hljs-keyword">const</span> data = {
+  <span class="hljs-attr">to</span>: <span class="hljs-number">7</span>,
+  <span class="hljs-attr">tea</span>: <span class="hljs-number">3</span>,
+  <span class="hljs-attr">ted</span>: <span class="hljs-number">4</span>,
+  <span class="hljs-attr">ten</span>: <span class="hljs-number">12</span>,
+  <span class="hljs-attr">A</span>: <span class="hljs-number">15</span>,
+  <span class="hljs-attr">i</span>: <span class="hljs-number">11</span>,
+  <span class="hljs-attr">in</span>: <span class="hljs-number">5</span>,
+  <span class="hljs-attr">inn</span>: <span class="hljs-number">9</span>,
+};</code></pre><img src="/img/immutability_immutable_js_pros_and_cons-1.png" class="post-pic" loading="lazy" /><p>I made an JS object, and created a trie with same keys and values. A trie is a type of tree where the leaves hold the values, and the paths from the root to the values represent the keys. So I can access a value by traversing the tree to get one letter at a time.</p>
+<hr />
+<img src="/img/immutability_immutable_js_pros_and_cons-2.png" class="post-pic" loading="lazy" /><p>For example, if I want to get a value with a key, 'ted', I can start from root, and follow the paths represented 't', 'e', and 'd'. I arrived at a node that contains 4.</p>
+<hr />
+<img src="/img/immutability_immutable_js_pros_and_cons-3.png" class="post-pic" loading="lazy" /><p>I changed the value at the key 'ted' from 4 to 8. Other nodes are still used. With this structures, only few nodes are recreated when we change a single item,</p>
+<hr />
+<h2>Disadvantages of Immutable.js</h2>
+<p>All the data structure implemented with Immutable.js are custom object. It means it is not JSON format. JSON is widely used format to communicate. If we use custom objects like data structures of Immutable.js, we need to convert them to JSON format first. It consumes time and memory, and it is a huge consumption when data is large.</p>
+<p>In addition, we cannot use methods of Object and Array object in Immutable.js data structures. It raises the running curve, and dependency to a specific library.</p>
+<hr />
+<h3>References</h3>
+<ul>
+<li><a href="https://youtu.be/Wo0qiGPSV-s" class="md-link" target="_blank" rel="noopener noreferrer">Anjana Vakil: Immutable data structures for functional JS | JSConf EU</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Persistent_data_structure#Trees" class="md-link" target="_blank" rel="noopener noreferrer">Wikipedia</a></li>
+<li><a href="https://immutable-js.com/" class="md-link" target="_blank" rel="noopener noreferrer">Immutable.js</a></li>
+<li><a href="https://hackernoon.com/how-immutable-data-structures-e-g-immutable-js-are-optimized-using-structural-sharing-e4424a866d56" class="md-link" target="_blank" rel="noopener noreferrer">How Immutable Data Structures (E.g. Immutable.js) are Optimized</a></li>
+<li>함수형 자바스크립트 프로그래밍 - 유인동</li>
+</ul>
+c:["$","article",null,{"children":[["$","script",null,{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"{\"@context\":\"https://schema.org\",\"@type\":\"BlogPosting\",\"headline\":\"Immutability (2) - Immutable.js, pros and cons\",\"description\":\"How Immutable.js works with persistent data structures, and its pros and cons...\",\"datePublished\":\"2021-10-14\",\"author\":{\"@type\":\"Person\",\"name\":\"Wayne Choi\"},\"mainEntityOfPage\":\"https://waynechoi.dev/post/immutability-immutable-js-pros-and-cons/\"}"}}],["$","$L18",null,{"href":"/posts/web","className":"text-gray-600 hover:text-blue-800 hover:underline","children":"WEB"}],["$","h1",null,{"children":"Immutability (2) - Immutable.js, pros and cons"}],["$","time",null,{"dateTime":"2021-10-14","className":"text-gray-500 text-sm","children":"14 Oct 2021"}],["$","div",null,{"className":"mt-2","children":["$","div",null,{"className":"whitespace-nowrap overflow-x-auto pb-2","aria-label":"Post tags","children":[["$","$L18","javascript",{"href":"/tag/javascript","className":"mr-2 text-gray-600 hover:text-blue-800 hover:underline","children":"#javascript"}],["$","$L18","immutability",{"href":"/tag/immutability","className":"mr-2 text-gray-600 hover:text-blue-800 hover:underline","children":"#immutability"}]]}]}],["$","div",null,{"className":"mt-8","children":["$","div",null,{"className":"post-content","dangerouslySetInnerHTML":{"__html":"$19"}}]}],"$L1a"]}]
+1b:I[32948,["$2","$17"],"default"]
+1a:["$","$L1b",null,{"issueTerm":"Immutability (2) - Immutable.js, pros and cons"}]
+12:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+1c:I[27201,["$5"],"IconMark"]
+f:null
+15:[["$","title","0",{"children":"Immutability (2) - Immutable.js, pros and cons | WayneChoi.dev"}],["$","meta","1",{"name":"description","content":"How Immutable.js works with persistent data structures, and its pros and cons..."}],["$","link","2",{"rel":"canonical","href":"https://waynechoi.dev/post/immutability-immutable-js-pros-and-cons/"}],["$","meta","3",{"property":"og:title","content":"Immutability (2) - Immutable.js, pros and cons"}],["$","meta","4",{"property":"og:description","content":"How Immutable.js works with persistent data structures, and its pros and cons..."}],["$","meta","5",{"property":"og:url","content":"https://waynechoi.dev/post/immutability-immutable-js-pros-and-cons/"}],["$","meta","6",{"property":"og:image","content":"https://waynechoi.dev/opengraph-image"}],["$","meta","7",{"property":"og:image:alt","content":"WayneChoi.dev"}],["$","meta","8",{"property":"og:type","content":"article"}],["$","meta","9",{"property":"article:published_time","content":"2021-10-14"}],["$","meta","10",{"property":"article:tag","content":"javascript"}],["$","meta","11",{"property":"article:tag","content":"immutability"}],["$","meta","12",{"name":"twitter:card","content":"summary_large_image"}],["$","meta","13",{"name":"twitter:title","content":"Immutability (2) - Immutable.js, pros and cons"}],["$","meta","14",{"name":"twitter:description","content":"How Immutable.js works with persistent data structures, and its pros and cons..."}],["$","meta","15",{"name":"twitter:image","content":"https://waynechoi.dev/twitter-image"}],["$","link","16",{"rel":"icon","href":"/favicon.ico"}],["$","$L1c","17",{}]]

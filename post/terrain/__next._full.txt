@@ -1,0 +1,212 @@
+1:"$Sreact.fragment"
+2:"/_next/static/chunks/07ixqnujfllo2.js"
+3:I[47689,["$2"],"default"]
+4:I[70119,["$2"],"default"]
+5:"/_next/static/chunks/3qfy96eoyh-ek.js"
+6:I[39756,["$5"],"default"]
+7:I[37457,["$5"],"default"]
+d:I[97367,["$5"],"OutletBoundary"]
+e:"$Sreact.suspense"
+10:"ViewportBoundary"
+11:I[97367,["$5"],"$10"]
+13:"MetadataBoundary"
+14:I[97367,["$5"],"$13"]
+16:I[68027,["$2"],"default",1]
+:HL["/_next/static/chunks/2e79geki6z2_c.css","style"]
+:HC["/",""]
+9:X
+b:[["children",{"s":"__PAGE__","h":512,"d":{"r":["$","$1","c",{"children":["$Lc",[["$","script","script-0",{"src":"/_next/static/chunks/0288roqreptti.js","async":true,"nonce":"$undefined"}]],["$","$Ld",null,{"children":["$","$e",null,{"name":"Next.MetadataOutlet","children":"$@f"}]}]]}],"p":false,"v":null}}]]
+a:[["children",{"s":{"n":"slug","t":"d","k":"terrain","s":[]},"h":512,"d":{"r":["$","$1","c",{"children":[null,["$","$L6",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L7",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],"p":false,"v":null},"c":"$Qb"}]]
+8:[["children",{"s":"post","h":512,"d":{"r":["$","$1","c",{"children":[null,["$","$L6",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L7",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],"p":false,"v":"$9"},"c":"$Qa"}]]
+0:{"P":null,"c":["","post","terrain",""],"q":"","i":false,"t":{"t":{"s":"","h":528,"d":{"r":["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/2e79geki6z2_c.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],["$","script","script-0",{"src":"/_next/static/chunks/07ixqnujfllo2.js","async":true,"nonce":"$undefined"}]],["$","html",null,{"lang":"en","children":["$","body",null,{"className":"mx-auto my-0","children":[["$","a",null,{"href":"#main-content","className":"skip-link","children":"Skip to content"}],["$","nav",null,{"className":"max-w-default mx-auto px-5 py-3","aria-label":"Primary navigation","children":["$","$L3",null,{}]}],["$","header",null,{"children":["$","$L4",null,{}]}],["$","main",null,{"id":"main-content","className":"max-w-default mx-auto p-5","children":["$","$L6",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L7",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}],["$","footer",null,{"className":"h-40 flex justify-center items-end","children":["$","p",null,{"className":"text-gray-500 text-sm","children":["© 2021–",2026," Wayne Choi. All rights reserved."]}]}]]}]}]]}],"p":false,"v":null},"c":"$Q8"},"h":{"r":["$","$1","h",{"children":[null,["$","$L11",null,{"children":"$L12"}],["$","$L14",null,{"children":[["$","div",null,{"hidden":true,"children":["$","$e",null,{"name":"Next.Metadata","children":"$L15"}]}],null]}],null]}],"p":false,"v":null}},"m":"$undefined","G":["$16",[["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/2e79geki6z2_c.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]]],"S":true,"r":"$undefined","s":"$undefined","a":"$undefined","l":"$undefined","p":"$undefined","d":"$undefined","b":"MYLL76Di7kZHpNQU1HIFd"}
+17:"/_next/static/chunks/0288roqreptti.js"
+18:I[22016,["$2","$17"],""]
+9:C
+19:T56a1,<img src="/img/terrain.jpg" class="post-pic" loading="lazy" /><p><a href="https://waynechoidev.github.io/terrain/" class="md-link" target="_blank" rel="noopener noreferrer">Sample</a> / <a href="https://github.com/waynechoidev/terrain/" class="md-link" target="_blank" rel="noopener noreferrer">Repository</a></p>
+<p>I implemented terrain generation based on Perlin noise using WebGPU. Additionally, I added diverse effects such as shadows to enhance the visual richness, and I'll briefly explain the process.</p>
+<h2>1. Perlin noise</h2>
+<pre><code class="hljs language-js">fn <span class="hljs-title function_">main</span>(<span class="hljs-params">@builtin(global_invocation_id) id: vec3u</span>) {
+    <span class="hljs-keyword">let</span> x = id.<span class="hljs-property">x</span>;
+    <span class="hljs-keyword">let</span> y = id.<span class="hljs-property">y</span>;
+    <span class="hljs-keyword">let</span> idx = <span class="hljs-title function_">getIdx</span>(id.<span class="hljs-property">xy</span>);
+
+    <span class="hljs-keyword">let</span> uv = vec2&lt;f32&gt;(<span class="hljs-title function_">f32</span>(x) / <span class="hljs-title function_">f32</span>(<span class="hljs-variable constant_">TEX_SIZE</span>) + uni.<span class="hljs-property">progress</span>, <span class="hljs-title function_">f32</span>(y) / <span class="hljs-title function_">f32</span>(<span class="hljs-variable constant_">TEX_SIZE</span>));
+
+    <span class="hljs-keyword">var</span> height = <span class="hljs-title function_">noise_sum</span>(uv, mat2x2&lt;f32&gt;(<span class="hljs-number">231.1</span>, <span class="hljs-number">283.7</span>, <span class="hljs-number">143.8</span>, <span class="hljs-number">113.3</span>), <span class="hljs-number">14232.34234</span>);
+    height = (height + <span class="hljs-number">1.0</span>) * <span class="hljs-number">0.5</span>;
+
+    <span class="hljs-keyword">var</span> color = <span class="hljs-title function_">noise_sum</span>(uv, mat2x2&lt;f32&gt;(<span class="hljs-number">423.5</span>, <span class="hljs-number">342.3</span>, <span class="hljs-number">153.7</span>, <span class="hljs-number">342.5</span>), <span class="hljs-number">18473.58352</span>);
+    color = (color + <span class="hljs-number">1.0</span>) * <span class="hljs-number">0.5</span>;
+
+    <span class="hljs-title function_">textureStore</span>(noise_texture, vec2&lt;i32&gt;(<span class="hljs-title function_">i32</span>(x), <span class="hljs-title function_">i32</span>(y)), vec4&lt;f32&gt;(height, color, <span class="hljs-number">0</span>, <span class="hljs-number">255</span>));
+}
+
+fn <span class="hljs-title function_">hash22</span>(<span class="hljs-attr">p</span>: vec2&lt;f32&gt;, <span class="hljs-attr">mat</span>: mat2x2&lt;f32&gt;, <span class="hljs-attr">scale</span>: f32) -&gt; vec2&lt;f32&gt; {
+    <span class="hljs-keyword">let</span> temp_p = p * mat;
+    <span class="hljs-keyword">let</span> p_transformed = -<span class="hljs-number">1.0</span> + <span class="hljs-number">2.0</span> * <span class="hljs-title function_">fract</span>(<span class="hljs-title function_">sin</span>(temp_p) * scale);
+    <span class="hljs-keyword">return</span> <span class="hljs-title function_">sin</span>(p_transformed * <span class="hljs-number">6.283</span>);
+}
+
+fn <span class="hljs-title function_">perlin_noise</span>(<span class="hljs-attr">p</span>: vec2&lt;f32&gt;, <span class="hljs-attr">mat</span>: mat2x2&lt;f32&gt;, <span class="hljs-attr">scale</span>: f32) -&gt; f32 {
+    <span class="hljs-keyword">let</span> pi = <span class="hljs-title function_">floor</span>(p);
+    <span class="hljs-keyword">let</span> pf = p - pi;
+    <span class="hljs-keyword">let</span> w = pf * pf * (<span class="hljs-number">3.0</span> - <span class="hljs-number">2.0</span> * pf);
+
+    <span class="hljs-keyword">let</span> f00 = <span class="hljs-title function_">dot</span>(<span class="hljs-title function_">hash22</span>(pi + vec2&lt;f32&gt;(<span class="hljs-number">0.0</span>, <span class="hljs-number">0.0</span>), mat, scale), pf - vec2&lt;f32&gt;(<span class="hljs-number">0.0</span>, <span class="hljs-number">0.0</span>));
+    <span class="hljs-keyword">let</span> f01 = <span class="hljs-title function_">dot</span>(<span class="hljs-title function_">hash22</span>(pi + vec2&lt;f32&gt;(<span class="hljs-number">0.0</span>, <span class="hljs-number">1.0</span>), mat, scale), pf - vec2&lt;f32&gt;(<span class="hljs-number">0.0</span>, <span class="hljs-number">1.0</span>));
+    <span class="hljs-keyword">let</span> f10 = <span class="hljs-title function_">dot</span>(<span class="hljs-title function_">hash22</span>(pi + vec2&lt;f32&gt;(<span class="hljs-number">1.0</span>, <span class="hljs-number">0.0</span>), mat, scale), pf - vec2&lt;f32&gt;(<span class="hljs-number">1.0</span>, <span class="hljs-number">0.0</span>));
+    <span class="hljs-keyword">let</span> f11 = <span class="hljs-title function_">dot</span>(<span class="hljs-title function_">hash22</span>(pi + vec2&lt;f32&gt;(<span class="hljs-number">1.0</span>, <span class="hljs-number">1.0</span>), mat, scale), pf - vec2&lt;f32&gt;(<span class="hljs-number">1.0</span>, <span class="hljs-number">1.0</span>));
+
+    <span class="hljs-keyword">let</span> xm1 = <span class="hljs-title function_">mix</span>(f00, f10, w.<span class="hljs-property">x</span>);
+    <span class="hljs-keyword">let</span> xm2 = <span class="hljs-title function_">mix</span>(f01, f11, w.<span class="hljs-property">x</span>);
+    <span class="hljs-keyword">let</span> ym = <span class="hljs-title function_">mix</span>(xm1, xm2, w.<span class="hljs-property">y</span>);
+
+    <span class="hljs-keyword">return</span> ym;
+}
+
+fn <span class="hljs-title function_">noise_sum</span>(<span class="hljs-attr">p</span>: vec2&lt;f32&gt;, <span class="hljs-attr">mat</span>: mat2x2&lt;f32&gt;, <span class="hljs-attr">scale</span>: f32) -&gt; f32 {
+    <span class="hljs-keyword">var</span> p_scaled = p * <span class="hljs-number">4.0</span>;
+    <span class="hljs-keyword">var</span> a = <span class="hljs-number">1.0</span>;
+    <span class="hljs-keyword">var</span> r = <span class="hljs-number">0.0</span>;
+    <span class="hljs-keyword">var</span> s = <span class="hljs-number">0.0</span>;
+
+    <span class="hljs-keyword">for</span> (<span class="hljs-keyword">var</span> i = <span class="hljs-number">0</span>; i &lt; <span class="hljs-number">5</span>; i = i + <span class="hljs-number">1</span>) {
+        r = r + a * <span class="hljs-title function_">perlin_noise</span>(p_scaled, mat, scale);
+        s = s + a;
+        p_scaled = p_scaled * <span class="hljs-number">2.0</span>;
+        a = a * <span class="hljs-number">0.5</span>;
+    }
+
+    <span class="hljs-keyword">return</span> r / s;
+}</code></pre><p>Perlin noise is a noise function designed to model randomness as seen in nature. Unlike simple random values, it uses gradient vectors at each point in space to create continuous and smooth noise patterns. This approach allows for more natural and consistent randomness.</p>
+<p>In this code, two channels of Perlin noise are generated and stored in a single texture. These channels are used to create the terrain's height and color. By using different constants, the intention is to achieve a more diverse result.</p>
+<p>The random function used here is not truly random but pseudorandom. By adding a uniform "progress" value based on the UV coordinates over time, it creates a more natural flow.</p>
+<h2>2. Normal vector generation based on heightmap</h2>
+<pre><code class="hljs language-js">fn <span class="hljs-title function_">main</span>(<span class="hljs-params">@builtin(global_invocation_id) id: vec3u</span>) {
+    <span class="hljs-keyword">let</span> x = <span class="hljs-title function_">f32</span>(id.<span class="hljs-property">x</span>);
+    <span class="hljs-keyword">let</span> y = <span class="hljs-title function_">f32</span>(id.<span class="hljs-property">y</span>);
+
+    <span class="hljs-keyword">let</span> size = <span class="hljs-title function_">f32</span>(<span class="hljs-variable constant_">TEX_SIZE</span>);
+
+    <span class="hljs-comment">// Define neighboring coordinates with wrap-around logic</span>
+    <span class="hljs-keyword">var</span> left = <span class="hljs-title function_">vec2f</span>((x - <span class="hljs-number">1.0</span>) / size, y / size);
+    <span class="hljs-keyword">var</span> right = <span class="hljs-title function_">vec2f</span>((x + <span class="hljs-number">1.0</span>) / size, y / size);
+    <span class="hljs-keyword">var</span> down = <span class="hljs-title function_">vec2f</span>(x / size, (y - <span class="hljs-number">1.0</span>) / size);
+    <span class="hljs-keyword">var</span> up = <span class="hljs-title function_">vec2f</span>(x / size, (y + <span class="hljs-number">1.0</span>) / size);
+
+    <span class="hljs-comment">// Wrap around edges to handle boundary conditions</span>
+    <span class="hljs-keyword">if</span> (x == <span class="hljs-number">0.0</span>) {
+        left.<span class="hljs-property">x</span> = (size - <span class="hljs-number">1.0</span>) / size;
+    }
+    <span class="hljs-keyword">if</span> (x == size - <span class="hljs-number">1.0</span>) {
+        right.<span class="hljs-property">x</span> = <span class="hljs-number">0.0</span>;
+    }
+    <span class="hljs-keyword">if</span> (y == size - <span class="hljs-number">1.0</span>) {
+        up.<span class="hljs-property">y</span> = <span class="hljs-number">0.0</span>;
+    }
+    <span class="hljs-keyword">if</span> (y == <span class="hljs-number">0.0</span>) {
+        down.<span class="hljs-property">y</span> = (size - <span class="hljs-number">1.0</span>) / size;
+    }
+
+    <span class="hljs-comment">// Sample height values from the texture</span>
+    <span class="hljs-keyword">let</span> <span class="hljs-attr">left_val</span>:f32 = <span class="hljs-title function_">textureSampleLevel</span>(noise_texture, my_sampler, left, <span class="hljs-number">0</span>).<span class="hljs-property">r</span>;
+    <span class="hljs-keyword">let</span> <span class="hljs-attr">right_val</span>:f32 = <span class="hljs-title function_">textureSampleLevel</span>(noise_texture, my_sampler, right, <span class="hljs-number">0</span>).<span class="hljs-property">r</span>;
+    <span class="hljs-keyword">let</span> <span class="hljs-attr">up_val</span>:f32 = <span class="hljs-title function_">textureSampleLevel</span>(noise_texture, my_sampler, up, <span class="hljs-number">0</span>).<span class="hljs-property">r</span>;
+    <span class="hljs-keyword">let</span> <span class="hljs-attr">down_val</span>:f32 = <span class="hljs-title function_">textureSampleLevel</span>(noise_texture, my_sampler, down, <span class="hljs-number">0</span>).<span class="hljs-property">r</span>;
+
+    <span class="hljs-comment">// Compute gradient vectors</span>
+    <span class="hljs-keyword">let</span> dx = <span class="hljs-title function_">vec3f</span>(<span class="hljs-number">2.0</span> / size, <span class="hljs-number">0.0</span>, (right_val - left_val) * uni.<span class="hljs-property">height_scale</span>);
+    <span class="hljs-keyword">let</span> dy = <span class="hljs-title function_">vec3f</span>(<span class="hljs-number">0.0</span>, <span class="hljs-number">2.0</span> / size, (up_val - down_val) * uni.<span class="hljs-property">height_scale</span>);
+
+    <span class="hljs-comment">// Calculate normal vector using cross product</span>
+    <span class="hljs-keyword">let</span> normal = <span class="hljs-title function_">normalize</span>(<span class="hljs-title function_">cross</span>(dx, dy));
+
+    <span class="hljs-comment">// Store the computed normal vector in the normal texture</span>
+    <span class="hljs-title function_">textureStore</span>(normal_texture, vec2&lt;i32&gt;(<span class="hljs-title function_">i32</span>(x), <span class="hljs-title function_">i32</span>(y)), <span class="hljs-title function_">vec4f</span>(normal, <span class="hljs-number">0.0</span>));
+}
+
+<span class="hljs-comment">// Cross product function for vec3f</span>
+fn <span class="hljs-title function_">cross</span>(<span class="hljs-attr">a</span>: vec3f, <span class="hljs-attr">b</span>: vec3f) -&gt; vec3f {
+    <span class="hljs-keyword">return</span> <span class="hljs-title function_">vec3f</span>(
+        a.<span class="hljs-property">y</span> * b.<span class="hljs-property">z</span> - a.<span class="hljs-property">z</span> * b.<span class="hljs-property">y</span>,
+        a.<span class="hljs-property">z</span> * b.<span class="hljs-property">x</span> - a.<span class="hljs-property">x</span> * b.<span class="hljs-property">z</span>,
+        a.<span class="hljs-property">x</span> * b.<span class="hljs-property">y</span> - a.<span class="hljs-property">y</span> * b.<span class="hljs-property">x</span>
+    );
+}</code></pre><p>I calculated the normal vectors using height information from the heightmap. First, I computed the gradient vectors dx and dy through partial derivatives based on the neighboring grid information in the up, down, left, and right directions. Then, I calculated the normal vector by taking the cross product of these two gradient vectors and stored the result in a separate texture.</p>
+<h2>3. Vertex shader: Sampling and Transforming Normals, Height, and Color from Textures</h2>
+<pre><code class="hljs language-js">@vertex fn <span class="hljs-title function_">vs</span>(
+  <span class="hljs-attr">input</span>: <span class="hljs-title class_">Vertex</span>,
+) -&gt; <span class="hljs-title class_">VSOutput</span> {
+  <span class="hljs-keyword">var</span> <span class="hljs-attr">output</span>: <span class="hljs-title class_">VSOutput</span>;
+
+  <span class="hljs-keyword">let</span> normal = <span class="hljs-title function_">textureSampleLevel</span>(normal_map, my_sampler, input.<span class="hljs-property">tex_coord</span>, <span class="hljs-number">0</span>);
+
+  <span class="hljs-keyword">let</span> noise = <span class="hljs-title function_">textureSampleLevel</span>(noise_map, my_sampler, input.<span class="hljs-property">tex_coord</span>, <span class="hljs-number">0</span>);
+  <span class="hljs-keyword">let</span> height = noise.<span class="hljs-property">r</span>;
+  <span class="hljs-keyword">let</span> color = noise.<span class="hljs-property">g</span>;
+
+  <span class="hljs-keyword">var</span> position = input.<span class="hljs-property">position</span>;
+  position.<span class="hljs-property">z</span> = <span class="hljs-title function_">scale_to_range</span>(height, <span class="hljs-number">0</span>, uni.<span class="hljs-property">height_scale</span>);
+
+  output.<span class="hljs-property">position</span> = matrix_uni.<span class="hljs-property">projection</span> * matrix_uni.<span class="hljs-property">view</span> * matrix_uni.<span class="hljs-property">model</span> * <span class="hljs-title function_">vec4f</span>(position, <span class="hljs-number">1.0</span>);
+  output.<span class="hljs-property">pos_world</span> = (matrix_uni.<span class="hljs-property">model</span> * <span class="hljs-title function_">vec4f</span>(position, <span class="hljs-number">1.0</span>)).<span class="hljs-property">xyz</span>;
+  output.<span class="hljs-property">normal_world</span> = <span class="hljs-title function_">normalize</span>(matrix_uni.<span class="hljs-property">inv_transposed_model</span> * normal).<span class="hljs-property">xyz</span>;
+  output.<span class="hljs-property">height</span> = height;
+  output.<span class="hljs-property">color</span> = color;
+
+  <span class="hljs-keyword">return</span> output;
+}</code></pre><p>In the vertex shader, I sample the normal vector and height from the normal_map and noise_map textures, respectively. The normal vector is transformed using the inverse transposed model matrix to obtain the world-space normal vector, which is then passed to the fragment shader. The height value is used to adjust the z coordinate of the vertex, thereby modifying the terrain's elevation. Additionally, the color extracted from the noise_map is passed along to the fragment shader for surface coloring.</p>
+<h2>4. Fragment shader: Visual Effects</h2>
+<pre><code class="hljs language-js">@fragment fn <span class="hljs-title function_">fs</span>(<span class="hljs-attr">input</span>: <span class="hljs-title class_">VSOutput</span>) -&gt; @<span class="hljs-title function_">location</span>(<span class="hljs-number">0</span>) vec4f {
+    <span class="hljs-keyword">var</span> albedo = <span class="hljs-title function_">mix</span>(uni.<span class="hljs-property">color_1</span>, uni.<span class="hljs-property">color_2</span>, <span class="hljs-title function_">vec3f</span>(input.<span class="hljs-property">color</span>));
+
+    <span class="hljs-comment">// snow</span>
+    <span class="hljs-keyword">if</span>(input.<span class="hljs-property">height</span> &gt; uni.<span class="hljs-property">snow_height</span>) {
+        albedo = <span class="hljs-title function_">vec3f</span>(<span class="hljs-number">1.0</span>);
+    }
+
+    <span class="hljs-keyword">let</span> ambient_occlusion = <span class="hljs-title function_">pow</span>(<span class="hljs-title function_">vec3f</span>(input.<span class="hljs-property">height</span>), <span class="hljs-title function_">vec3f</span>(<span class="hljs-number">3.0</span>));
+
+    <span class="hljs-keyword">var</span> <span class="hljs-attr">material</span>:<span class="hljs-title class_">Material</span>;
+    material.<span class="hljs-property">ambient</span> = <span class="hljs-number">0.1</span>;
+    material.<span class="hljs-property">shininess</span> = <span class="hljs-number">1.0</span>;
+    material.<span class="hljs-property">diffuse</span> = <span class="hljs-number">1.0</span>;
+    material.<span class="hljs-property">specular</span> = <span class="hljs-number">1.0</span>;
+
+    <span class="hljs-keyword">var</span> <span class="hljs-attr">light</span>:<span class="hljs-title class_">Light</span>;
+    light.<span class="hljs-property">direction</span> = <span class="hljs-title function_">normalize</span>(<span class="hljs-title function_">vec3f</span>(-<span class="hljs-number">0.5</span>, -<span class="hljs-number">0.5</span>, -<span class="hljs-number">1.0</span>));
+    light.<span class="hljs-property">strength</span> = <span class="hljs-number">3.0</span>;
+
+    <span class="hljs-keyword">let</span> <span class="hljs-attr">cam_pos</span>:vec3f = <span class="hljs-title function_">vec3f</span>(<span class="hljs-number">0.0</span>, <span class="hljs-number">0.0</span>, <span class="hljs-number">2.5</span>);
+    <span class="hljs-keyword">let</span> <span class="hljs-attr">to_eye</span>:vec3f = <span class="hljs-title function_">normalize</span>(cam_pos - input.<span class="hljs-property">pos_world</span>);
+    <span class="hljs-keyword">let</span> global_light = <span class="hljs-title function_">computeDirectionalLight</span>(light, material, input.<span class="hljs-property">normal_world</span>, to_eye);
+
+    <span class="hljs-keyword">let</span> color = albedo * ambient_occlusion * global_light;
+
+    <span class="hljs-keyword">return</span> <span class="hljs-title function_">vec4f</span>(color, <span class="hljs-number">1.0</span>);
+}
+
+
+fn <span class="hljs-title function_">blinnPhong</span>(<span class="hljs-attr">material</span>:<span class="hljs-title class_">Material</span>, <span class="hljs-attr">light_strength</span>: vec3&lt;f32&gt;, <span class="hljs-attr">light_vec</span>: vec3&lt;f32&gt;, <span class="hljs-attr">normal</span>: vec3&lt;f32&gt;, <span class="hljs-attr">to_eye</span>: vec3&lt;f32&gt;) -&gt; vec3&lt;f32&gt; {
+    <span class="hljs-keyword">let</span> halfway = <span class="hljs-title function_">normalize</span>(to_eye + light_vec);
+    <span class="hljs-keyword">let</span> hdotn = <span class="hljs-title function_">dot</span>(halfway, normal);
+    <span class="hljs-keyword">let</span> specular = material.<span class="hljs-property">specular</span> * <span class="hljs-title function_">pow</span>(<span class="hljs-title function_">max</span>(hdotn, <span class="hljs-number">0.0</span>), material.<span class="hljs-property">shininess</span>);
+    <span class="hljs-keyword">return</span> material.<span class="hljs-property">ambient</span> + (material.<span class="hljs-property">diffuse</span> + specular) * light_strength;
+}
+
+fn <span class="hljs-title function_">computeDirectionalLight</span>(<span class="hljs-attr">light</span>:<span class="hljs-title class_">Light</span>, <span class="hljs-attr">material</span>:<span class="hljs-title class_">Material</span>, <span class="hljs-attr">normal</span>: vec3&lt;f32&gt;, <span class="hljs-attr">to_eye</span>: vec3&lt;f32&gt;) -&gt; vec3&lt;f32&gt; {
+    <span class="hljs-keyword">let</span> light_vec = -light.<span class="hljs-property">direction</span>;
+    <span class="hljs-keyword">let</span> ndotl = <span class="hljs-title function_">max</span>(<span class="hljs-title function_">dot</span>(light_vec, normal), <span class="hljs-number">0.0</span>);
+    <span class="hljs-keyword">let</span> light_strength = <span class="hljs-title function_">vec3f</span>(light.<span class="hljs-property">strength</span>) * ndotl;
+
+    <span class="hljs-keyword">return</span> <span class="hljs-title function_">blinnPhong</span>(material, light_strength, light_vec, normal, to_eye);
+}</code></pre><p>Color noise was used to blend two colors, creating a more natural texture. In the Vertex Shader, world-space normals were utilized to add shading with Blinn-Phong shading. Additionally, to account for the fact that lower heights in the terrain indicate valleys where light is less likely to reach, the height value was raised to a power and used for ambient occlusion.</p>
+<h2>Conclusion</h2>
+<p>Through this project, I learned how to generate terrain based on Perlin noise and render it visually appealingly using WebGPU. By utilizing normal vectors and ambient occlusion, I was able to realistically depict the terrain's depth and lighting effects. The powerful performance of WebGPU enabled high-resolution rendering.</p>
+c:["$","article",null,{"children":[["$","script",null,{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"{\"@context\":\"https://schema.org\",\"@type\":\"BlogPosting\",\"headline\":\"Terrain\",\"description\":\"Terrain Generation and Rendering Based on Perlin Noise Using WebGPU...\",\"datePublished\":\"2024-09-11\",\"author\":{\"@type\":\"Person\",\"name\":\"Wayne Choi\"},\"mainEntityOfPage\":\"https://waynechoi.dev/post/terrain/\"}"}}],["$","$L18",null,{"href":"/posts/graphics","className":"text-gray-600 hover:text-blue-800 hover:underline","children":"GRAPHICS"}],["$","h1",null,{"children":"Terrain"}],["$","time",null,{"dateTime":"2024-09-11","className":"text-gray-500 text-sm","children":"11 Sept 2024"}],["$","div",null,{"className":"mt-2","children":["$","div",null,{"className":"whitespace-nowrap overflow-x-auto pb-2","aria-label":"Post tags","children":[["$","$L18","simulation",{"href":"/tag/simulation","className":"mr-2 text-gray-600 hover:text-blue-800 hover:underline","children":"#simulation"}],["$","$L18","webgpu",{"href":"/tag/webgpu","className":"mr-2 text-gray-600 hover:text-blue-800 hover:underline","children":"#webgpu"}],["$","$L18","noise",{"href":"/tag/noise","className":"mr-2 text-gray-600 hover:text-blue-800 hover:underline","children":"#noise"}]]}]}],["$","div",null,{"className":"mt-8","children":["$","div",null,{"className":"post-content","dangerouslySetInnerHTML":{"__html":"$19"}}]}],"$L1a"]}]
+1b:I[32948,["$2","$17"],"default"]
+1a:["$","$L1b",null,{"issueTerm":"Terrain"}]
+12:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+1c:I[27201,["$5"],"IconMark"]
+f:null
+15:[["$","title","0",{"children":"Terrain | WayneChoi.dev"}],["$","meta","1",{"name":"description","content":"Terrain Generation and Rendering Based on Perlin Noise Using WebGPU..."}],["$","link","2",{"rel":"canonical","href":"https://waynechoi.dev/post/terrain/"}],["$","meta","3",{"property":"og:title","content":"Terrain"}],["$","meta","4",{"property":"og:description","content":"Terrain Generation and Rendering Based on Perlin Noise Using WebGPU..."}],["$","meta","5",{"property":"og:url","content":"https://waynechoi.dev/post/terrain/"}],["$","meta","6",{"property":"og:image","content":"https://waynechoi.dev/opengraph-image"}],["$","meta","7",{"property":"og:image:alt","content":"WayneChoi.dev"}],["$","meta","8",{"property":"og:type","content":"article"}],["$","meta","9",{"property":"article:published_time","content":"2024-09-11"}],["$","meta","10",{"property":"article:tag","content":"simulation"}],["$","meta","11",{"property":"article:tag","content":"webgpu"}],["$","meta","12",{"property":"article:tag","content":"noise"}],["$","meta","13",{"name":"twitter:card","content":"summary_large_image"}],["$","meta","14",{"name":"twitter:title","content":"Terrain"}],["$","meta","15",{"name":"twitter:description","content":"Terrain Generation and Rendering Based on Perlin Noise Using WebGPU..."}],["$","meta","16",{"name":"twitter:image","content":"https://waynechoi.dev/twitter-image"}],["$","link","17",{"rel":"icon","href":"/favicon.ico"}],["$","$L1c","18",{}]]

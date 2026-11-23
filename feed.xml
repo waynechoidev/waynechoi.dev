@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0"><channel>
+  <title>WayneChoi.dev</title>
+  <link>https://waynechoi.dev/</link>
+  <description>Graphics programming, web development, and software engineering.</description>
+  <language>en-nz</language>
+    <item>
+      <title>Building a Persistent AI Development Control Plane</title>
+      <link>https://waynechoi.dev/post/building-a-persistent-remote-development-control-plane/</link>
+      <guid isPermaLink="true">https://waynechoi.dev/post/building-a-persistent-remote-development-control-plane/</guid>
+      <pubDate>Mon, 23 Nov 2026 00:00:00 GMT</pubDate>
+      <description>How real-world failures led me to redesign a remote development control plane around explicit ownership, durable AI sessions, and observable runtime state.</description>
+    </item>
+    <item>
+      <title>Why modern games are hard to optimize</title>
+      <link>https://waynechoi.dev/post/why-modern-games-are-hard-to-optimize/</link>
+      <guid isPermaLink="true">https://waynechoi.dev/post/why-modern-games-are-hard-to-optimize/</guid>
+      <pubDate>Fri, 20 Dec 2024 00:00:00 GMT</pubDate>
+      <description>The complexity of GPU architectures and optimization challenges...</description>
+    </item>
+    <item>
+      <title>Inheritance vs Composition: There&apos;s No Always Right Answer</title>
+      <link>https://waynechoi.dev/post/inheritance-vs-composition/</link>
+      <guid isPermaLink="true">https://waynechoi.dev/post/inheritance-vs-composition/</guid>
+      <pubDate>Wed, 20 Nov 2024 00:00:00 GMT</pubDate>
+      <description>compares inheritance and composition, emphasizing the importance of choosing the right approach based on the specific software design context.</description>
+    </item>
+    <item>
+      <title>Terrain</title>
+      <link>https://waynechoi.dev/post/terrain/</link>
+      <guid isPermaLink="true">https://waynechoi.dev/post/terrain/</guid>
+      <pubDate>Wed, 11 Sep 2024 00:00:00 GMT</pubDate>
+      <description>Terrain Generation and Rendering Based on Perlin Noise Using WebGPU...</description>
+    </item>
+    <item>
+      <title>Fast fluid dynamics simulation</title>
+      <link>https://waynechoi.dev/post/fast-fluid-dynamics-simulation/</link>
+      <guid isPermaLink="true">https://waynechoi.dev/post/fast-fluid-dynamics-simulation/</guid>
+      <pubDate>Wed, 04 Sep 2024 00:00:00 GMT</pubDate>
+      <description>implemented a fluid simulation by solving the Navier-Stokes equations using the Stable Fluids method...</description>
+    </item>
+    <item>
+      <title>Heat equation with WebGPU</title>
+      <link>https://waynechoi.dev/post/heat-equation/</link>
+      <guid isPermaLink="true">https://waynechoi.dev/post/heat-equation/</guid>
+      <pubDate>Wed, 21 Aug 2024 00:00:00 GMT</pubDate>
+      <description>simulated heat equation with WebGPU compute shader...</description>
+    </item>
+    <item>
+      <title>SPH Water</title>
+      <link>https://waynechoi.dev/post/sph-water/</link>
+      <guid isPermaLink="true">https://waynechoi.dev/post/sph-water/</guid>
+      <pubDate>Fri, 28 Jun 2024 00:00:00 GMT</pubDate>
+      <description>simulated SPH water simulation with WebGPU compute shader...</description>
+    </item>
+    <item>
+      <title>N-body problem</title>
+      <link>https://waynechoi.dev/post/n-body-problem/</link>
+      <guid isPermaLink="true">https://waynechoi.dev/post/n-body-problem/</guid>
+      <pubDate>Mon, 29 Apr 2024 00:00:00 GMT</pubDate>
+      <description>simulated n-body problem with WebGPU compute shader...</description>
+    </item>
+    <item>
+      <title>Galton board</title>
+      <link>https://waynechoi.dev/post/galton-board/</link>
+      <guid isPermaLink="true">https://waynechoi.dev/post/galton-board/</guid>
+      <pubDate>Wed, 24 Apr 2024 00:00:00 GMT</pubDate>
+      <description>implemented a Galton Board using WebGPU...</description>
+    </item>
+    <item>
+      <title>Introduce to WebGPU</title>
+      <link>https://waynechoi.dev/post/introduce-to-webgpu/</link>
+      <guid isPermaLink="true">https://waynechoi.dev/post/introduce-to-webgpu/</guid>
+      <pubDate>Fri, 12 Apr 2024 00:00:00 GMT</pubDate>
+      <description>Learn WebGPU, and reimplement PBR Renderer with it...</description>
+    </item>
+    <item>
+      <title>OpenGL uses left-handed coordinates</title>
+      <link>https://waynechoi.dev/post/opengl-uses-left-handed-coordinates/</link>
+      <guid isPermaLink="true">https://waynechoi.dev/post/opengl-uses-left-handed-coordinates/</guid>
+      <pubDate>Tue, 09 Apr 2024 00:00:00 GMT</pubDate>
+      <description>coordinate systems for various graphics APIs...</description>
+    </item>
+    <item>
+      <title>PBR Rendering</title>
+      <link>https://waynechoi.dev/post/pbr-rendering/</link>
+      <guid isPermaLink="true">https://waynechoi.dev/post/pbr-rendering/</guid>
+      <pubDate>Mon, 01 Apr 2024 00:00:00 GMT</pubDate>
+      <description>Implemented PBR rendering using OpenGL...</description>
+    </item>
+    <item>
+      <title>Level of detail</title>
+      <link>https://waynechoi.dev/post/level-of-detail/</link>
+      <guid isPermaLink="true">https://waynechoi.dev/post/level-of-detail/</guid>
+      <pubDate>Sun, 10 Mar 2024 00:00:00 GMT</pubDate>
+      <description>Various Approaches to Implementing LOD(level of detail) in OpenGL...</description>
+    </item>
+    <item>
+      <title>Picture particles</title>
+      <link>https://waynechoi.dev/post/picture-particles/</link>
+      <guid isPermaLink="true">https://waynechoi.dev/post/picture-particles/</guid>
+      <pubDate>Fri, 16 Feb 2024 00:00:00 GMT</pubDate>
+      <description>I implemented a particle shattering effect using WebGL...</description>
+    </item>
+    <item>
+      <title>How Does YouTube Autoplay Their Videos?</title>
+      <link>https://waynechoi.dev/post/how-does-youtube-autoplay-their-videos/</link>
+      <guid isPermaLink="true">https://waynechoi.dev/post/how-does-youtube-autoplay-their-videos/</guid>
+      <pubDate>Thu, 01 Feb 2024 00:00:00 GMT</pubDate>
+      <description>Understanding how YouTube tackles autoplay challenges and ensures a smooth viewing experience...</description>
+    </item>
+    <item>
+      <title>Meteor shower</title>
+      <link>https://waynechoi.dev/post/meteor-shower/</link>
+      <guid isPermaLink="true">https://waynechoi.dev/post/meteor-shower/</guid>
+      <pubDate>Fri, 17 Nov 2023 00:00:00 GMT</pubDate>
+      <description>Implemented meteor shower with GPGPU via Transform Feedback in OpenGL...</description>
+    </item>
+    <item>
+      <title>GDG Auckland 2023</title>
+      <link>https://waynechoi.dev/post/gdg-auckland-2023/</link>
+      <guid isPermaLink="true">https://waynechoi.dev/post/gdg-auckland-2023/</guid>
+      <pubDate>Sun, 12 Nov 2023 00:00:00 GMT</pubDate>
+      <description>I attended a developer conference for the first time ever...</description>
+    </item>
+    <item>
+      <title>Trackball</title>
+      <link>https://waynechoi.dev/post/trackball/</link>
+      <guid isPermaLink="true">https://waynechoi.dev/post/trackball/</guid>
+      <pubDate>Fri, 10 Nov 2023 00:00:00 GMT</pubDate>
+      <description>implemented a trackball to rotate an object with ray casting...</description>
+    </item>
+    <item>
+      <title>From 1 Year of Development to Launch</title>
+      <link>https://waynechoi.dev/post/from-1-year-of-development-to-launch/</link>
+      <guid isPermaLink="true">https://waynechoi.dev/post/from-1-year-of-development-to-launch/</guid>
+      <pubDate>Tue, 07 Nov 2023 00:00:00 GMT</pubDate>
+      <description>Reflection on the Past Year of Developing and Launching a Web-Based CRM...</description>
+    </item>
+    <item>
+      <title>Earth animation</title>
+      <link>https://waynechoi.dev/post/earth-animation/</link>
+      <guid isPermaLink="true">https://waynechoi.dev/post/earth-animation/</guid>
+      <pubDate>Mon, 06 Nov 2023 00:00:00 GMT</pubDate>
+      <description>tried implementing a Earth animation using WebGL with video textures...</description>
+    </item>
+    <item>
+      <title>Mouse picking with Frame Buffer</title>
+      <link>https://waynechoi.dev/post/mouse-picking-with-frame-buffer/</link>
+      <guid isPermaLink="true">https://waynechoi.dev/post/mouse-picking-with-frame-buffer/</guid>
+      <pubDate>Thu, 02 Nov 2023 00:00:00 GMT</pubDate>
+      <description>Implemented mouse picking using OpenGL Frame Buffer Object.</description>
+    </item>
+    <item>
+      <title>Image based lighting</title>
+      <link>https://waynechoi.dev/post/image-based-lighting/</link>
+      <guid isPermaLink="true">https://waynechoi.dev/post/image-based-lighting/</guid>
+      <pubDate>Mon, 30 Oct 2023 00:00:00 GMT</pubDate>
+      <description>Implemented a simple Image-Based Lighting (IBL) technique...</description>
+    </item>
+    <item>
+      <title>Rim shader</title>
+      <link>https://waynechoi.dev/post/rim-shader/</link>
+      <guid isPermaLink="true">https://waynechoi.dev/post/rim-shader/</guid>
+      <pubDate>Tue, 24 Oct 2023 00:00:00 GMT</pubDate>
+      <description>Texture mapping an Earth-like texture onto a sphere model using OpenGL...</description>
+    </item>
+    <item>
+      <title>Sphere texture mapping</title>
+      <link>https://waynechoi.dev/post/sphere-texture-mapping/</link>
+      <guid isPermaLink="true">https://waynechoi.dev/post/sphere-texture-mapping/</guid>
+      <pubDate>Tue, 24 Oct 2023 00:00:00 GMT</pubDate>
+      <description>Texture mapping an Earth-like texture onto a sphere model using OpenGL...</description>
+    </item>
+    <item>
+      <title>Phong shading</title>
+      <link>https://waynechoi.dev/post/phong-shading/</link>
+      <guid isPermaLink="true">https://waynechoi.dev/post/phong-shading/</guid>
+      <pubDate>Mon, 09 Oct 2023 00:00:00 GMT</pubDate>
+      <description>Implemented the phong shading with OpenGL...</description>
+    </item>
+    <item>
+      <title>Dive into graphics programming</title>
+      <link>https://waynechoi.dev/post/dive-into-graphics-programming/</link>
+      <guid isPermaLink="true">https://waynechoi.dev/post/dive-into-graphics-programming/</guid>
+      <pubDate>Thu, 07 Sep 2023 00:00:00 GMT</pubDate>
+      <description>Started diving deep into graphics programming...</description>
+    </item>
+    <item>
+      <title>Webgl particles</title>
+      <link>https://waynechoi.dev/post/webgl-particles/</link>
+      <guid isPermaLink="true">https://waynechoi.dev/post/webgl-particles/</guid>
+      <pubDate>Fri, 25 Aug 2023 00:00:00 GMT</pubDate>
+      <description>Simple particle system using a web-based approach...</description>
+    </item>
+    <item>
+      <title>Web based deep learning</title>
+      <link>https://waynechoi.dev/post/web-based-deep-learning/</link>
+      <guid isPermaLink="true">https://waynechoi.dev/post/web-based-deep-learning/</guid>
+      <pubDate>Fri, 11 Aug 2023 00:00:00 GMT</pubDate>
+      <description>Simulation of Linear Regression and Custom MLP Models using TypeScript...</description>
+    </item>
+    <item>
+      <title>Ray tracing on canvas</title>
+      <link>https://waynechoi.dev/post/ray-tracing-on-canvas/</link>
+      <guid isPermaLink="true">https://waynechoi.dev/post/ray-tracing-on-canvas/</guid>
+      <pubDate>Wed, 14 Dec 2022 00:00:00 GMT</pubDate>
+      <description>Implemented Phong shading with ray tracing in a web environment...</description>
+    </item>
+    <item>
+      <title>Gaussian blur on web</title>
+      <link>https://waynechoi.dev/post/gaussian-blur-on-web/</link>
+      <guid isPermaLink="true">https://waynechoi.dev/post/gaussian-blur-on-web/</guid>
+      <pubDate>Mon, 12 Dec 2022 00:00:00 GMT</pubDate>
+      <description>compared the speed of Gaussian blur implementation using canvas 2D and WebGL2...</description>
+    </item>
+    <item>
+      <title>Start a new career</title>
+      <link>https://waynechoi.dev/post/start-a-new-career/</link>
+      <guid isPermaLink="true">https://waynechoi.dev/post/start-a-new-career/</guid>
+      <pubDate>Mon, 05 Sep 2022 00:00:00 GMT</pubDate>
+      <description>I&apos;ve started working as a frontend developer at a fintech startup...</description>
+    </item>
+    <item>
+      <title>Turing machine simulator</title>
+      <link>https://waynechoi.dev/post/turing-machine-simulator/</link>
+      <guid isPermaLink="true">https://waynechoi.dev/post/turing-machine-simulator/</guid>
+      <pubDate>Sun, 28 Aug 2022 00:00:00 GMT</pubDate>
+      <description>Implemented a turing machine simulator with typescript and react...</description>
+    </item>
+    <item>
+      <title>Immutability (2) - Immutable.js, pros and cons</title>
+      <link>https://waynechoi.dev/post/immutability-immutable-js-pros-and-cons/</link>
+      <guid isPermaLink="true">https://waynechoi.dev/post/immutability-immutable-js-pros-and-cons/</guid>
+      <pubDate>Thu, 14 Oct 2021 00:00:00 GMT</pubDate>
+      <description>How Immutable.js works with persistent data structures, and its pros and cons...</description>
+    </item>
+    <item>
+      <title>Immutability (1) - Object.freeze() doesn&apos;t always freeze</title>
+      <link>https://waynechoi.dev/post/immutability-object-freeze-doesnt-always-freeze/</link>
+      <guid isPermaLink="true">https://waynechoi.dev/post/immutability-object-freeze-doesnt-always-freeze/</guid>
+      <pubDate>Thu, 23 Sep 2021 00:00:00 GMT</pubDate>
+      <description>Explain primitive and reference data type of JavaScript, and immutability of object...</description>
+    </item>
+</channel></rss>

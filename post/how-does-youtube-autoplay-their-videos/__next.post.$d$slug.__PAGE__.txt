@@ -1,0 +1,60 @@
+1:"$Sreact.fragment"
+2:"/_next/static/chunks/07ixqnujfllo2.js"
+3:I[47689,["$2"],"default"]
+4:I[70119,["$2"],"default"]
+5:"/_next/static/chunks/3qfy96eoyh-ek.js"
+6:I[39756,["$5"],"default"]
+7:I[37457,["$5"],"default"]
+10:"/_next/static/chunks/0288roqreptti.js"
+11:I[22016,["$2","$10"],""]
+17:"ViewportBoundary"
+18:I[97367,["$5"],"$17"]
+19:"MetadataBoundary"
+1a:I[97367,["$5"],"$19"]
+1b:"$Sreact.suspense"
+1c:I[27201,["$5"],"IconMark"]
+:HL["/_next/static/chunks/2e79geki6z2_c.css","style"]
+9:X
+c:X
+c:C
+12:Tee8,<h2>Introduction</h2>
+<p>When it comes to web browsers, making videos play automatically faces certain limitations due to concerns about user experience and data consumption. Unexpected sounds accompanying the automatic loading of a page can lead to confusion and discomfort, especially on mobile devices where such playback might be considered inappropriate based on the user's current context or location. Additionally, autoplayed videos consuming user data could result in unexpected charges, particularly on mobile networks, prompting users to desire control over such data-heavy autoplay features.</p>
+<p>Despite these challenges, autoplaying videos can significantly enhance user interaction. YouTube employs various strategies to implement this feature smoothly, providing users with a seamless viewing experience. Let's explore some of the methods used to achieve autoplay, even when faced with browser restrictions.</p>
+<h2>Muted Playback</h2>
+<p>Most browsers generally allow autoplay with muted content to avoid surprising users with unexpected sound. Muting the content by default is a common practice to prevent disruptive audio experiences. Below is an example code snippet illustrating muted autoplay:</p>
+<pre><code class="hljs language-html"><span class="hljs-tag">&lt;<span class="hljs-name">video</span> <span class="hljs-attr">width</span>=<span class="hljs-string">"640"</span> <span class="hljs-attr">height</span>=<span class="hljs-string">"360"</span> <span class="hljs-attr">autoplay</span> <span class="hljs-attr">muted</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">source</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"video.mp4"</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"video/mp4"</span> /&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">video</span>&gt;</span></code></pre><p><strong>However, YouTube autoplays videos with sound.</strong></p>
+<h2>Whitelisting</h2>
+<p>YouTube employs a whitelist system to circumvent default restrictions on autoplay. This grants YouTube special permission to autoplay videos with sound, even in situations where other websites might face limitations. The whitelist includes domains or conditions that, when met, allow for autoplay with sound.</p>
+<h2>Media Engagement Index (MEI)</h2>
+<p>In the case of Chrome, there's the concept of the Media Engagement Index (MEI), measuring an individual's tendency to consume media on a site. Chrome calculates this index based on significant media playback events relative to site visits. If the MEI is high enough, media can autoplay on desktop.</p>
+<p><strong>However, YouTube supports autoplay with sound even on mobile devices.</strong></p>
+<h2>Collaboration and Negotiation</h2>
+<p>YouTube collaborates with various browser vendors to support and optimize autoplay functionality. This collaboration ensures that YouTube's service remains smooth and adaptive, adhering to changing browser policies and user preferences. Given YouTube's significant scale and influence, it maintains a strong position to build and sustain robust collaboration with browser manufacturers. This suggests that YouTube may enjoy special privileges or exceptions.</p>
+<h2>Conclusion</h2>
+<p>If you are developing a large-scale application with a significant impact, comparable to YouTube, you can collaborate with vendors to provide such functionalities.</p>
+<h3>References</h3>
+<ul>
+<li><a href="https://developer.chrome.com/blog/autoplay" class="md-link" target="_blank" rel="noopener noreferrer">Google blog - Autoplay policy in Chrome </a></li>
+<li><a href="https://blog.google/products/chrome/improving-autoplay-chrome/" class="md-link" target="_blank" rel="noopener noreferrer">Google blog - Improving Autoplay in Chrome</a></li>
+</ul>
+f:[["children",{"s":"__PAGE__","h":160,"d":{"r":["$","$1","c",{"children":[["$","article",null,{"children":[["$","script",null,{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"{\"@context\":\"https://schema.org\",\"@type\":\"BlogPosting\",\"headline\":\"How Does YouTube Autoplay Their Videos?\",\"description\":\"Understanding how YouTube tackles autoplay challenges and ensures a smooth viewing experience...\",\"datePublished\":\"2024-02-01\",\"author\":{\"@type\":\"Person\",\"name\":\"Wayne Choi\"},\"mainEntityOfPage\":\"https://waynechoi.dev/post/how-does-youtube-autoplay-their-videos/\"}"}}],["$","$L11",null,{"href":"/posts/web","className":"text-gray-600 hover:text-blue-800 hover:underline","children":"WEB"}],["$","h1",null,{"children":"How Does YouTube Autoplay Their Videos?"}],["$","time",null,{"dateTime":"2024-02-01","className":"text-gray-500 text-sm","children":"1 Feb 2024"}],["$","div",null,{"className":"mt-2","children":["$","div",null,{"className":"whitespace-nowrap overflow-x-auto pb-2","aria-label":"Post tags","children":[["$","$L11","web",{"href":"/tag/web","className":"mr-2 text-gray-600 hover:text-blue-800 hover:underline","children":"#web"}],["$","$L11","html",{"href":"/tag/html","className":"mr-2 text-gray-600 hover:text-blue-800 hover:underline","children":"#html"}]]}]}],["$","div",null,{"className":"mt-8","children":["$","div",null,{"className":"post-content","dangerouslySetInnerHTML":{"__html":"$12"}}]}],"$L13"]}],["$L14"],"$L15"]}],"p":"$@16","v":null,"s":"$9"}}]]
+d:[["children",{"s":{"n":"slug","t":"d","k":"how-does-youtube-autoplay-their-videos","s":[]},"h":96,"d":{"r":["$","$1","c",{"children":[null,["$","$L6",null,{"parallelRouterKey":"children","template":["$","$L7",null,{}]}]]}],"p":"$@e","v":null,"s":"$9"},"c":"$Qf"}]]
+a:[["children",{"s":"post","h":96,"d":{"r":["$","$1","c",{"children":[null,["$","$L6",null,{"parallelRouterKey":"children","template":["$","$L7",null,{}]}]]}],"p":"$@b","v":"$c","s":"$9"},"c":"$Qd"}]]
+0:{"t":{"t":{"s":"","h":80,"d":{"r":["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/2e79geki6z2_c.css","precedence":"next"}],["$","script","script-0",{"src":"/_next/static/chunks/07ixqnujfllo2.js","async":true}]],["$","html",null,{"lang":"en","children":["$","body",null,{"className":"mx-auto my-0","children":[["$","a",null,{"href":"#main-content","className":"skip-link","children":"Skip to content"}],["$","nav",null,{"className":"max-w-default mx-auto px-5 py-3","aria-label":"Primary navigation","children":["$","$L3",null,{}]}],["$","header",null,{"children":["$","$L4",null,{}]}],["$","main",null,{"id":"main-content","className":"max-w-default mx-auto p-5","children":["$","$L6",null,{"parallelRouterKey":"children","template":["$","$L7",null,{}],"notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]]}]}],["$","footer",null,{"className":"h-40 flex justify-center items-end","children":["$","p",null,{"className":"text-gray-500 text-sm","children":["© 2021–",2026," Wayne Choi. All rights reserved."]}]}]]}]}]]}],"p":"$@8","v":null,"s":"$9"},"c":"$Qa"},"h":{"r":["$","$1","h",{"children":[null,["$","$L18",null,{"children":[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]}],["$","$L1a",null,{"children":[["$","div",null,{"hidden":true,"children":["$","$1b",null,{"name":"Next.Metadata","children":[["$","title","0",{"children":"How Does YouTube Autoplay Their Videos? | WayneChoi.dev"}],["$","meta","1",{"name":"description","content":"Understanding how YouTube tackles autoplay challenges and ensures a smooth viewing experience..."}],["$","link","2",{"rel":"canonical","href":"https://waynechoi.dev/post/how-does-youtube-autoplay-their-videos/"}],["$","meta","3",{"property":"og:title","content":"How Does YouTube Autoplay Their Videos?"}],["$","meta","4",{"property":"og:description","content":"Understanding how YouTube tackles autoplay challenges and ensures a smooth viewing experience..."}],["$","meta","5",{"property":"og:url","content":"https://waynechoi.dev/post/how-does-youtube-autoplay-their-videos/"}],["$","meta","6",{"property":"og:image","content":"https://waynechoi.dev/opengraph-image"}],["$","meta","7",{"property":"og:image:alt","content":"WayneChoi.dev"}],["$","meta","8",{"property":"og:type","content":"article"}],["$","meta","9",{"property":"article:published_time","content":"2024-02-01"}],["$","meta","10",{"property":"article:tag","content":"web"}],["$","meta","11",{"property":"article:tag","content":"html"}],["$","meta","12",{"name":"twitter:card","content":"summary_large_image"}],["$","meta","13",{"name":"twitter:title","content":"How Does YouTube Autoplay Their Videos?"}],["$","meta","14",{"name":"twitter:description","content":"Understanding how YouTube tackles autoplay challenges and ensures a smooth viewing experience..."}],["$","meta","15",{"name":"twitter:image","content":"https://waynechoi.dev/twitter-image"}],["$","link","16",{"rel":"icon","href":"/favicon.ico"}],["$","$L1c","17",{}]]}]}],null]}],null]}],"p":"$@1d","v":null,"s":"$9"}},"a":"$@1e","u":"$@1f","b":"MYLL76Di7kZHpNQU1HIFd"}
+20:I[32948,["$2","$10"],"default"]
+21:I[97367,["$5"],"OutletBoundary"]
+13:["$","$L20",null,{"issueTerm":"How Does YouTube Autoplay Their Videos?"}]
+14:["$","script","script-0",{"src":"/_next/static/chunks/0288roqreptti.js","async":true}]
+15:["$","$L21",null,{"children":["$","$1b",null,{"name":"Next.MetadataOutlet","children":"$@22"}]}]
+9:300
+22:null
+1f:true
+9:C
+1e:0
+e:"$undefined"
+b:"$undefined"
+8:"$undefined"
+1d:"$undefined"
+16:"$undefined"

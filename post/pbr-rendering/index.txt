@@ -1,658 +1,537 @@
-1:HL["/_next/static/css/3864b451a61e4546.css","style",{"crossOrigin":""}]
-2:HL["/_next/static/css/2e2a7597edf4d608.css","style",{"crossOrigin":""}]
-0:["d1tlILPvfFQtQusXyx6Vm",[[["",{"children":["post",{"children":[["slug","pbr-rendering","d"],{"children":["__PAGE__?{\"slug\":\"pbr-rendering\"}",{}]}]}]},"$undefined","$undefined",true],"$L3",[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/3864b451a61e4546.css","precedence":"next","crossOrigin":""}],["$","link","1",{"rel":"stylesheet","href":"/_next/static/css/2e2a7597edf4d608.css","precedence":"next","crossOrigin":""}]],"$L4"]]]]
-5:HL["/_next/static/css/602feae4669a507e.css","style",{"crossOrigin":""}]
-6:I[9194,["326","static/chunks/326-6784f49434136418.js","185","static/chunks/app/layout-02f93a462dd22bde.js"],""]
-7:I[5629,["326","static/chunks/326-6784f49434136418.js","185","static/chunks/app/layout-02f93a462dd22bde.js"],""]
-8:I[6954,[],""]
-9:I[7264,[],""]
-b:I[8326,["954","static/chunks/d3ac728e-9e72e1d80e89da72.js","326","static/chunks/326-6784f49434136418.js","149","static/chunks/149-9f0c9c044d28f14f.js","605","static/chunks/app/post/%5Bslug%5D/page-dd1bc4deae325122.js"],""]
-c:I[7708,["954","static/chunks/d3ac728e-9e72e1d80e89da72.js","326","static/chunks/326-6784f49434136418.js","149","static/chunks/149-9f0c9c044d28f14f.js","605","static/chunks/app/post/%5Bslug%5D/page-dd1bc4deae325122.js"],""]
-e:I[5631,["954","static/chunks/d3ac728e-9e72e1d80e89da72.js","326","static/chunks/326-6784f49434136418.js","149","static/chunks/149-9f0c9c044d28f14f.js","605","static/chunks/app/post/%5Bslug%5D/page-dd1bc4deae325122.js"],""]
-4:[["$","meta","0",{"charSet":"utf-8"}],["$","title","1",{"children":"WayneChoi.Dev"}],["$","meta","2",{"name":"description","content":"Wayne Choi blog"}],["$","meta","3",{"name":"viewport","content":"width=device-width, initial-scale=1"}],["$","link","4",{"rel":"icon","href":"/favicon.ico"}]]
-d:T711f,
-<iframe width="560" height="315" src="https://www.youtube.com/embed/XrfiBfOx1LE?si=N0abz-D93HKovMzM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+1:"$Sreact.fragment"
+2:"/_next/static/chunks/07ixqnujfllo2.js"
+3:I[47689,["$2"],"default"]
+4:I[70119,["$2"],"default"]
+5:"/_next/static/chunks/3qfy96eoyh-ek.js"
+6:I[39756,["$5"],"default"]
+7:I[37457,["$5"],"default"]
+d:I[97367,["$5"],"OutletBoundary"]
+e:"$Sreact.suspense"
+10:"ViewportBoundary"
+11:I[97367,["$5"],"$10"]
+13:"MetadataBoundary"
+14:I[97367,["$5"],"$13"]
+16:I[68027,["$2"],"default",1]
+:HL["/_next/static/chunks/2e79geki6z2_c.css","style"]
+:HC["/",""]
+9:X
+b:[["children",{"s":"__PAGE__","h":512,"d":{"r":["$","$1","c",{"children":["$Lc",[["$","script","script-0",{"src":"/_next/static/chunks/0288roqreptti.js","async":true,"nonce":"$undefined"}]],["$","$Ld",null,{"children":["$","$e",null,{"name":"Next.MetadataOutlet","children":"$@f"}]}]]}],"p":false,"v":null}}]]
+a:[["children",{"s":{"n":"slug","t":"d","k":"pbr-rendering","s":[]},"h":512,"d":{"r":["$","$1","c",{"children":[null,["$","$L6",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L7",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],"p":false,"v":null},"c":"$Qb"}]]
+8:[["children",{"s":"post","h":512,"d":{"r":["$","$1","c",{"children":[null,["$","$L6",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L7",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],"p":false,"v":"$9"},"c":"$Qa"}]]
+0:{"P":null,"c":["","post","pbr-rendering",""],"q":"","i":false,"t":{"t":{"s":"","h":528,"d":{"r":["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/2e79geki6z2_c.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],["$","script","script-0",{"src":"/_next/static/chunks/07ixqnujfllo2.js","async":true,"nonce":"$undefined"}]],["$","html",null,{"lang":"en","children":["$","body",null,{"className":"mx-auto my-0","children":[["$","a",null,{"href":"#main-content","className":"skip-link","children":"Skip to content"}],["$","nav",null,{"className":"max-w-default mx-auto px-5 py-3","aria-label":"Primary navigation","children":["$","$L3",null,{}]}],["$","header",null,{"children":["$","$L4",null,{}]}],["$","main",null,{"id":"main-content","className":"max-w-default mx-auto p-5","children":["$","$L6",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L7",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}],["$","footer",null,{"className":"h-40 flex justify-center items-end","children":["$","p",null,{"className":"text-gray-500 text-sm","children":["© 2021–",2026," Wayne Choi. All rights reserved."]}]}]]}]}]]}],"p":false,"v":null},"c":"$Q8"},"h":{"r":["$","$1","h",{"children":[null,["$","$L11",null,{"children":"$L12"}],["$","$L14",null,{"children":[["$","div",null,{"hidden":true,"children":["$","$e",null,{"name":"Next.Metadata","children":"$L15"}]}],null]}],null]}],"p":false,"v":null}},"m":"$undefined","G":["$16",[["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/2e79geki6z2_c.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]]],"S":true,"r":"$undefined","s":"$undefined","a":"$undefined","l":"$undefined","p":"$undefined","d":"$undefined","b":"MYLL76Di7kZHpNQU1HIFd"}
+17:"/_next/static/chunks/0288roqreptti.js"
+18:I[22016,["$2","$17"],""]
+9:C
+19:Tcea1,<iframe width="560" height="315" src="https://www.youtube.com/embed/XrfiBfOx1LE?si=N0abz-D93HKovMzM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy"></iframe><ul>
+<li><a href="https://waynechoidev.github.io/web-pbr/" class="md-link" target="_blank" rel="noopener noreferrer">WebGL Sample</a></li>
+<li><a href="https://waynechoidev.github.io/webgpu-pbr/" class="md-link" target="_blank" rel="noopener noreferrer">WebGPU Sample</a></li>
+</ul>
+<p>I've implemented PBR rendering using OpenGL, and WebGL. Primarily, this project was developed with reference to the content available at <a href="https://learnopengl.com/" class="md-link" target="_blank" rel="noopener noreferrer">Learn OpenGL</a>. The ideas presented on that website served as inspiration for this implementation. Additionally, the code from <a href="https://www.derkreature.com/iblbaker" class="md-link" target="_blank" rel="noopener noreferrer">IBL Baker</a> was also consulted for further enhancements. I'll focus more on implementation rather than delving into mathematical and physical theories on this post.</p>
+<p>The following code snippets are intended to supplement the concepts explained as needed and may not represent exact implementations. The complete implementation can be found in the repository link below.</p>
+<ul>
+<li><a href="https://github.com/waynechoidev/pbr" class="md-link" target="_blank" rel="noopener noreferrer">OpenGL App Repo</a></li>
+<li><a href="https://github.com/waynechoidev/ibl-maker" class="md-link" target="_blank" rel="noopener noreferrer">IBL Maker Repo</a></li>
+<li><a href="https://github.com/waynechoidev/web-pbr" class="md-link" target="_blank" rel="noopener noreferrer">WebGL App Repo</a></li>
+</ul>
+<h2>1. PBR Textures</h2>
+<p>PBR (Physically Based Rendering) textures are used to describe the physical properties of materials. Typically, a combination of various texture maps is used to compose a single PBR material. There are several types of textures commonly used, primarily including:</p>
+<ul>
+<li><p>Albedo Map</p>
+<p>It represents the base color of the surface, indicating the material's actual color.</p>
+</li>
+<li><p>Normal Map</p>
+<p>It manipulates the surface's normal vectors to add three-dimensional detail, simulating irregular shapes or textures.</p>
+</li>
+<li><p>Metallic Map</p>
+<p>It indicates whether the surface is metallic or non-metallic. It ranges from black (non-metallic) to white (metallic).</p>
+</li>
+<li><p>Roughness Map</p>
+<p>It represents the roughness or smoothness of the surface. It ranges from black (smooth) to white (rough).</p>
+</li>
+<li><p>Ambient Occlusion Map (AO Map)</p>
+<p>It simulates indirect lighting by considering occlusion of the surface. Darker areas in the texture typically represent surface occlusion or concavities.</p>
+</li>
+<li><p>Height Map</p>
+<p>It represents the three-dimensional detail of a surface. It is mainly employed to provide finer details on the surface of objects. Although not covered in <a href="https://learnopengl.com/" class="md-link" target="_blank" rel="noopener noreferrer">Learn OpenGL</a> (presumably because it is unrelated to lighting), it is included in most PBR textures.</p>
+</li>
+</ul>
+<p>To use these textures, a normal vector is required. The normal vector indicates the direction of the surface and plays a crucial role in determining the surface's lighting reflection properties based on the lighting and viewpoint between the light source and observer.</p>
+<p>Normal vectors are primarily represented through normal maps, with each pixel of the texture representing the local direction of the surface. This information is used in lighting models considering the directions of the light source and observer. For instance, normal vectors provide the angle between the surface and light, allowing for the simulation of highlights and shadows.</p>
+<p>Normal maps are commonly used in tangent space. Tangent space defines the local coordinate space of the surface, with basis vectors representing the normal, tangent, and binormal at each point on the surface. Normal maps are stored in this tangent space, facilitating the easy transformation of normals from texture space.</p>
+<p>Therefore, to use a normal map, tangent vectors and normal vectors associated with the surface's local coordinate space are required. This information enables the mapping of normals stored in the normal map to the actual normals of the surface.</p>
+<p>While the LearnOpenGL example attempted to calculate tangent vectors using gradients of WorldPos and TexCoords, this method is an inaccurate estimation. Typically, tangent vectors are provided along with the model, so I passed tangent vectors from the CPU to the vertices.</p>
+<pre><code class="hljs language-glsl"><span class="hljs-comment">// the code used in [Learn OpenGL](https://learnopengl.com/) to calculate tangents</span>
 
-- [WebGL Sample](https://waynechoidev.github.io/web-pbr/)
-- [WebGPU Sample](https://waynechoidev.github.io/webgpu-pbr/)
+<span class="hljs-type">vec3</span> Q1  = <span class="hljs-built_in">dFdx</span>(WorldPos);
+<span class="hljs-type">vec3</span> Q2  = <span class="hljs-built_in">dFdy</span>(WorldPos);
+<span class="hljs-type">vec2</span> st1 = <span class="hljs-built_in">dFdx</span>(TexCoords);
+<span class="hljs-type">vec2</span> st2 = <span class="hljs-built_in">dFdy</span>(TexCoords);
 
-I've implemented PBR rendering using OpenGL, and WebGL. Primarily, this project was developed with reference to the content available at [Learn OpenGL](https://learnopengl.com/). The ideas presented on that website served as inspiration for this implementation. Additionally, the code from [IBL Baker](https://www.derkreature.com/iblbaker) was also consulted for further enhancements. I'll focus more on implementation rather than delving into mathematical and physical theories on this post.
+<span class="hljs-type">vec3</span> T  = <span class="hljs-built_in">normalize</span>(Q1*st2.t - Q2*st1.t);</code></pre><p>The normal and tangent vectors calculated in the vertex shader exist in the local coordinate space of the model. When passing these vectors to the fragment shader, they need to be transformed into world coordinates. To achieve this, the vectors should be transformed using the model transformation matrix to convert them into world coordinates.</p>
+<p>Typically, the transformation of the tangent vector involves only the model transformation matrix. However, for the normal vector, relying solely on the model transformation may not yield correct results when the normal is defined in a non-standard texture coordinate space. This is because the normal vector represents direction, and transformation matrices only preserve length and rotation, not direction.</p>
+<p>Therefore, for the normal vector, it's necessary to use the transpose and inverse of the model transformation matrix for the correct transformation into world coordinates. This ensures that the normal vector is accurately transformed into world coordinates. The reason for using transpose and inverse is to ensure preservation of direction during the transformation, as these operations are used to perform transformations that preserve direction. You can find more detailed explanations at this <a href="https://paroj.github.io/gltut/Illumination/Tut09%20Normal%20Transformation.html" class="md-link" target="_blank" rel="noopener noreferrer">link</a>.</p>
+<pre><code class="hljs language-glsl"><span class="hljs-comment">// the code for calculating the normal world and tangent world vectors in the vertex shader</span>
 
-The following code snippets are intended to supplement the concepts explained as needed and may not represent exact implementations. The complete implementation can be found in the repository link below.
+<span class="hljs-type">vec3</span> normalWorld = <span class="hljs-built_in">normalize</span>(<span class="hljs-type">mat3</span>(<span class="hljs-built_in">transpose</span>(<span class="hljs-built_in">inverse</span>(model))) * norm);
+<span class="hljs-type">vec3</span> tangentWorld = <span class="hljs-built_in">normalize</span>(model * <span class="hljs-type">vec4</span>(tangent, <span class="hljs-number">1.0</span>)).xyz;</code></pre><p>First, we apply the height map in the Vertex shader. This texture directly manipulates texture coordinates to implement the three-dimensional shape of the surface, rather than affecting lighting or shadows.</p>
+<pre><code class="hljs language-glsl"><span class="hljs-keyword">uniform</span> <span class="hljs-type">sampler2D</span> heightTex;
 
-- [OpenGL App Repo](https://github.com/waynechoidev/pbr)
-- [IBL Maker Repo](https://github.com/waynechoidev/ibl-maker)
-- [WebGL App Repo](https://github.com/waynechoidev/web-pbr)
+<span class="hljs-type">float</span> height = <span class="hljs-built_in">texture</span>(heightTex, tex).r;
+height = height * <span class="hljs-number">2.0</span> - <span class="hljs-number">1.0</span>; <span class="hljs-comment">// 0~1 -&gt; -1~1</span>
+<span class="hljs-type">vec3</span> newPos = position + <span class="hljs-type">vec3</span>(normalWorld * height);</code></pre><p>All remaining textures are related to lighting, and we'll cover them from the next chapter onward.</p>
+<hr />
+<h2>2. Direct Lighting</h2>
+<p>Direct Lighting is one of the crucial concepts in Physically Based Rendering (PBR). It deals with scenarios where light directly reflects off an object's surface. In other words, it models the process where light travels in a straight line from the light source to the object, determining aspects like the object's color and shadows. Typically, the Bidirectional Reflectance Distribution Function (BRDF) is used for these calculations. Here, we'll implement it using the widely adopted Cook-Torrance model. This model considers the microstructure of the object's surface and the angle of incidence of light to provide realistic lighting effects. In this explanation, rather than delving into the microfacet theory that deals with fine surface structures, we'll focus on implementing the function. You can find more detailed theoretical information on this topic in this <a href="https://blog.selfshadow.com/publications/s2013-shading-course/hoffman/s2013_pbs_physics_math_slides.pdf" class="md-link" target="_blank" rel="noopener noreferrer">link</a>.</p>
+<blockquote>
+<h4>Microfacet BRDF</h4>
+<p>f(l,v) = F(l, h) G(l, v, h) D(h) / 4(n · l)(n · v)</p>
+</blockquote>
+<p>The equation represents the general form of the BRDF (Bidirectional Reflectance Distribution Function). I'll provide explanations and implementations for each component.</p>
+<h3>F (Fresnel Reflectance)</h3>
+<blockquote>
+<p>F(Cspec, l, h) = Cspec + (1 - Cspec)(1 - (l · h)) ^ 5</p>
+</blockquote>
+<p>Fresnel Reflectance represents the optical properties when light reaches and reflects off the surface.</p>
+<pre><code class="hljs language-glsl"><span class="hljs-keyword">uniform</span> <span class="hljs-type">sampler2D</span> albedoMap;
+<span class="hljs-keyword">uniform</span> <span class="hljs-type">sampler2D</span> metallicMap;
 
-## 1. PBR Textures
+<span class="hljs-comment">// Apply gamma correction to the sampled albedo texture to convert it from sRGB space to linear space</span>
+<span class="hljs-type">vec3</span> albedo = <span class="hljs-built_in">pow</span>(<span class="hljs-built_in">texture</span>(albedoMap, TexCoord).rgb, <span class="hljs-type">vec3</span>(<span class="hljs-number">2.2</span>));
+<span class="hljs-type">float</span> metallic  = <span class="hljs-built_in">texture</span>(metallicMap, TexCoord).r;
 
-PBR (Physically Based Rendering) textures are used to describe the physical properties of materials. Typically, a combination of various texture maps is used to compose a single PBR material. There are several types of textures commonly used, primarily including:
-
-- Albedo Map
-
-  It represents the base color of the surface, indicating the material's actual color.
-
-- Normal Map
-
-  It manipulates the surface's normal vectors to add three-dimensional detail, simulating irregular shapes or textures.
-
-- Metallic Map
-
-  It indicates whether the surface is metallic or non-metallic. It ranges from black (non-metallic) to white (metallic).
-
-- Roughness Map
-
-  It represents the roughness or smoothness of the surface. It ranges from black (smooth) to white (rough).
-
-- Ambient Occlusion Map (AO Map)
-
-  It simulates indirect lighting by considering occlusion of the surface. Darker areas in the texture typically represent surface occlusion or concavities.
-
-- Height Map
-
-  It represents the three-dimensional detail of a surface. It is mainly employed to provide finer details on the surface of objects. Although not covered in [Learn OpenGL](https://learnopengl.com/) (presumably because it is unrelated to lighting), it is included in most PBR textures.
-
-To use these textures, a normal vector is required. The normal vector indicates the direction of the surface and plays a crucial role in determining the surface's lighting reflection properties based on the lighting and viewpoint between the light source and observer.
-
-Normal vectors are primarily represented through normal maps, with each pixel of the texture representing the local direction of the surface. This information is used in lighting models considering the directions of the light source and observer. For instance, normal vectors provide the angle between the surface and light, allowing for the simulation of highlights and shadows.
-
-Normal maps are commonly used in tangent space. Tangent space defines the local coordinate space of the surface, with basis vectors representing the normal, tangent, and binormal at each point on the surface. Normal maps are stored in this tangent space, facilitating the easy transformation of normals from texture space.
-
-Therefore, to use a normal map, tangent vectors and normal vectors associated with the surface's local coordinate space are required. This information enables the mapping of normals stored in the normal map to the actual normals of the surface.
-
-While the LearnOpenGL example attempted to calculate tangent vectors using gradients of WorldPos and TexCoords, this method is an inaccurate estimation. Typically, tangent vectors are provided along with the model, so I passed tangent vectors from the CPU to the vertices.
-
-```glsl
-// the code used in [Learn OpenGL](https://learnopengl.com/) to calculate tangents
-
-vec3 Q1  = dFdx(WorldPos);
-vec3 Q2  = dFdy(WorldPos);
-vec2 st1 = dFdx(TexCoords);
-vec2 st2 = dFdy(TexCoords);
-
-vec3 T  = normalize(Q1*st2.t - Q2*st1.t);
-```
-
-The normal and tangent vectors calculated in the vertex shader exist in the local coordinate space of the model. When passing these vectors to the fragment shader, they need to be transformed into world coordinates. To achieve this, the vectors should be transformed using the model transformation matrix to convert them into world coordinates.
-
-Typically, the transformation of the tangent vector involves only the model transformation matrix. However, for the normal vector, relying solely on the model transformation may not yield correct results when the normal is defined in a non-standard texture coordinate space. This is because the normal vector represents direction, and transformation matrices only preserve length and rotation, not direction.
-
-Therefore, for the normal vector, it's necessary to use the transpose and inverse of the model transformation matrix for the correct transformation into world coordinates. This ensures that the normal vector is accurately transformed into world coordinates. The reason for using transpose and inverse is to ensure preservation of direction during the transformation, as these operations are used to perform transformations that preserve direction. You can find more detailed explanations at this [link](https://paroj.github.io/gltut/Illumination/Tut09%20Normal%20Transformation.html).
-
-```glsl
-// the code for calculating the normal world and tangent world vectors in the vertex shader
-
-vec3 normalWorld = normalize(mat3(transpose(inverse(model))) * norm);
-vec3 tangentWorld = normalize(model * vec4(tangent, 1.0)).xyz;
-```
-
-First, we apply the height map in the Vertex shader. This texture directly manipulates texture coordinates to implement the three-dimensional shape of the surface, rather than affecting lighting or shadows.
-
-```glsl
-uniform sampler2D heightTex;
-
-float height = texture(heightTex, tex).r;
-height = height * 2.0 - 1.0; // 0~1 -> -1~1
-vec3 newPos = position + vec3(normalWorld * height);
-```
-
-All remaining textures are related to lighting, and we'll cover them from the next chapter onward.
-
----
-
-## 2. Direct Lighting
-
-Direct Lighting is one of the crucial concepts in Physically Based Rendering (PBR). It deals with scenarios where light directly reflects off an object's surface. In other words, it models the process where light travels in a straight line from the light source to the object, determining aspects like the object's color and shadows. Typically, the Bidirectional Reflectance Distribution Function (BRDF) is used for these calculations. Here, we'll implement it using the widely adopted Cook-Torrance model. This model considers the microstructure of the object's surface and the angle of incidence of light to provide realistic lighting effects. In this explanation, rather than delving into the microfacet theory that deals with fine surface structures, we'll focus on implementing the function. You can find more detailed theoretical information on this topic in this [link](https://blog.selfshadow.com/publications/s2013-shading-course/hoffman/s2013_pbs_physics_math_slides.pdf).
-
-> #### Microfacet BRDF
->
-> f(l,v) = F(l, h) G(l, v, h) D(h) / 4(n · l)(n · v)
-
-The equation represents the general form of the BRDF (Bidirectional Reflectance Distribution Function). I'll provide explanations and implementations for each component.
-
-### F (Fresnel Reflectance)
-
-> F(Cspec, l, h) = Cspec + (1 - Cspec)(1 - (l · h)) ^ 5
-
-Fresnel Reflectance represents the optical properties when light reaches and reflects off the surface.
-
-```glsl
-uniform sampler2D albedoMap;
-uniform sampler2D metallicMap;
-
-// Apply gamma correction to the sampled albedo texture to convert it from sRGB space to linear space
-vec3 albedo = pow(texture(albedoMap, TexCoord).rgb, vec3(2.2));
-float metallic  = texture(metallicMap, TexCoord).r;
-
-vec3 fresnelSchlick(float cosTheta, vec3 F0)
+<span class="hljs-type">vec3</span> fresnelSchlick(<span class="hljs-type">float</span> cosTheta, <span class="hljs-type">vec3</span> F0)
 {
-    return F0 + (1.0 - F0) * pow(clamp(1.0 - cosTheta, 0.0, 1.0), 5.0);
+    <span class="hljs-keyword">return</span> F0 + (<span class="hljs-number">1.0</span> - F0) * <span class="hljs-built_in">pow</span>(<span class="hljs-built_in">clamp</span>(<span class="hljs-number">1.0</span> - cosTheta, <span class="hljs-number">0.0</span>, <span class="hljs-number">1.0</span>), <span class="hljs-number">5.0</span>);
 }
 
-// Initialize the surface reflectance coefficient F0 with a default value
-vec3 F0 = vec3(0.04);
+<span class="hljs-comment">// Initialize the surface reflectance coefficient F0 with a default value</span>
+<span class="hljs-type">vec3</span> F0 = <span class="hljs-type">vec3</span>(<span class="hljs-number">0.04</span>);
 
-// Linearly interpolate between the surface reflectance coefficient F0 and the albedo (surface color) based on metallic value
-F0 = mix(F0, albedo, metallic);
+<span class="hljs-comment">// Linearly interpolate between the surface reflectance coefficient F0 and the albedo (surface color) based on metallic value</span>
+F0 = <span class="hljs-built_in">mix</span>(F0, albedo, metallic);
 
-vec3 F = fresnelSchlick(max(dot(H, V), 0.0), F0);
-```
+<span class="hljs-type">vec3</span> F = fresnelSchlick(<span class="hljs-built_in">max</span>(<span class="hljs-built_in">dot</span>(H, V), <span class="hljs-number">0.0</span>), F0);</code></pre><h3>G (Geometry Factor)</h3>
+<blockquote>
+<p>GSchlickGGX(n, v, k) = n ⋅ v ( n ⋅ v) (1 − k) + k</p>
+<p>G(l, v, h) = Gs1(l, h) Gs2(v, h)</p>
+</blockquote>
+<p>Geometry Factor indicates the portions occluded between the light and the observer, modeling effects such as occluded shadows. it takes a material's roughness parameter as input with rougher surfaces having a higher probability of overshadowing microfacets. The geometry function we will use is a combination of the GGX and Schlick-Beckmann approximation known as Schlick-GGX.</p>
+<pre><code class="hljs language-glsl"><span class="hljs-keyword">uniform</span> <span class="hljs-type">sampler2D</span> roughnessMap;
+<span class="hljs-keyword">uniform</span> <span class="hljs-type">sampler2D</span> normalMap;
 
-### G (Geometry Factor)
+<span class="hljs-keyword">uniform</span> <span class="hljs-type">vec3</span> camPos;
 
-> GSchlickGGX(n, v, k) = n ⋅ v ( n ⋅ v) (1 − k) + k
->
-> G(l, v, h) = Gs1(l, h) Gs2(v, h)
+<span class="hljs-type">float</span> roughness = <span class="hljs-built_in">texture</span>(roughnessMap, TexCoord).r;
 
-Geometry Factor indicates the portions occluded between the light and the observer, modeling effects such as occluded shadows. it takes a material's roughness parameter as input with rougher surfaces having a higher probability of overshadowing microfacets. The geometry function we will use is a combination of the GGX and Schlick-Beckmann approximation known as Schlick-GGX.
+<span class="hljs-type">vec3</span> N = <span class="hljs-built_in">normalize</span>(normalWorld);
+<span class="hljs-comment">// Adjust the tangent vector to ensure it is perpendicular to the surface</span>
+<span class="hljs-comment">// by removing the component parallel to the normal vector.</span>
+<span class="hljs-type">vec3</span> T = <span class="hljs-built_in">normalize</span>(tangentWorld - <span class="hljs-built_in">dot</span>(tangentWorld, N) * N);
+<span class="hljs-type">vec3</span> B = <span class="hljs-built_in">cross</span>(N, T);
 
-```glsl
-uniform sampler2D roughnessMap;
-uniform sampler2D normalMap;
+<span class="hljs-comment">// Create a TBN matrix containing the tangent, binormal, and normal vectors.</span>
+<span class="hljs-type">mat3</span> TBN = <span class="hljs-type">mat3</span>(T, B, N);
 
-uniform vec3 camPos;
+<span class="hljs-comment">// Sample the normal map from the texture and map it to the [-1, 1] range to update the normal vector.</span>
+N = <span class="hljs-built_in">normalize</span>(TBN * (<span class="hljs-built_in">texture</span>(normalMap, TexCoord).xyz * <span class="hljs-number">2.0</span> - <span class="hljs-number">1.0</span>));
 
-float roughness = texture(roughnessMap, TexCoord).r;
+<span class="hljs-comment">// Compute the view vector.</span>
+<span class="hljs-type">vec3</span> V = <span class="hljs-built_in">normalize</span>(camPos - posWorld);
 
-vec3 N = normalize(normalWorld);
-// Adjust the tangent vector to ensure it is perpendicular to the surface
-// by removing the component parallel to the normal vector.
-vec3 T = normalize(tangentWorld - dot(tangentWorld, N) * N);
-vec3 B = cross(N, T);
+<span class="hljs-comment">// Compute the light direction vector</span>
+<span class="hljs-type">vec3</span> L = <span class="hljs-built_in">normalize</span>(lightPos - posWorld);
 
-// Create a TBN matrix containing the tangent, binormal, and normal vectors.
-mat3 TBN = mat3(T, B, N);
-
-// Sample the normal map from the texture and map it to the [-1, 1] range to update the normal vector.
-N = normalize(TBN * (texture(normalMap, TexCoord).xyz * 2.0 - 1.0));
-
-// Compute the view vector.
-vec3 V = normalize(camPos - posWorld);
-
-// Compute the light direction vector
-vec3 L = normalize(lightPos - posWorld);
-
-float GeometrySchlickGGX(float NdotV, float roughness)
+<span class="hljs-type">float</span> GeometrySchlickGGX(<span class="hljs-type">float</span> NdotV, <span class="hljs-type">float</span> roughness)
 {
-    float r = (roughness + 1.0);
-    float k = (r * r) / 8.0;
+    <span class="hljs-type">float</span> r = (roughness + <span class="hljs-number">1.0</span>);
+    <span class="hljs-type">float</span> k = (r * r) / <span class="hljs-number">8.0</span>;
 
-    float nom   = NdotV;
-    float denom = NdotV * (1.0 - k) + k;
+    <span class="hljs-type">float</span> nom   = NdotV;
+    <span class="hljs-type">float</span> denom = NdotV * (<span class="hljs-number">1.0</span> - k) + k;
 
-    return nom / denom;
+    <span class="hljs-keyword">return</span> nom / denom;
 }
 
-float GeometrySmith(vec3 N, vec3 V, vec3 L, float roughness)
+<span class="hljs-type">float</span> GeometrySmith(<span class="hljs-type">vec3</span> N, <span class="hljs-type">vec3</span> V, <span class="hljs-type">vec3</span> L, <span class="hljs-type">float</span> roughness)
 {
-    float NdotV = max(dot(N, V), 0.0);
-    float NdotL = max(dot(N, L), 0.0);
-    float ggx2 = GeometrySchlickGGX(NdotV, roughness);
-    float ggx1 = GeometrySchlickGGX(NdotL, roughness);
+    <span class="hljs-type">float</span> NdotV = <span class="hljs-built_in">max</span>(<span class="hljs-built_in">dot</span>(N, V), <span class="hljs-number">0.0</span>);
+    <span class="hljs-type">float</span> NdotL = <span class="hljs-built_in">max</span>(<span class="hljs-built_in">dot</span>(N, L), <span class="hljs-number">0.0</span>);
+    <span class="hljs-type">float</span> ggx2 = GeometrySchlickGGX(NdotV, roughness);
+    <span class="hljs-type">float</span> ggx1 = GeometrySchlickGGX(NdotL, roughness);
 
-    return ggx1 * ggx2;
+    <span class="hljs-keyword">return</span> ggx1 * ggx2;
 }
 
-float G = GeometrySmith(N, V, L, roughness);
-```
-
-### D (Normal Distribution Function)
-
-> NDF(n, h, α) = α ^ 2 / π((n ⋅ h) ^ 2 (α ^ 2 − 1) + 1) ^ 2
-
-Normal Distribution Function denotes the reflection direction due to the microstructure of the surface, considering surface roughness or fine surface characteristics. The NDF function we'll be using is known as the Trowbridge-Reitz GGX.
-
-```glsl
-float DistributionGGX(vec3 N, vec3 H, float roughness)
+<span class="hljs-type">float</span> G = GeometrySmith(N, V, L, roughness);</code></pre><h3>D (Normal Distribution Function)</h3>
+<blockquote>
+<p>NDF(n, h, α) = α ^ 2 / π((n ⋅ h) ^ 2 (α ^ 2 − 1) + 1) ^ 2</p>
+</blockquote>
+<p>Normal Distribution Function denotes the reflection direction due to the microstructure of the surface, considering surface roughness or fine surface characteristics. The NDF function we'll be using is known as the Trowbridge-Reitz GGX.</p>
+<pre><code class="hljs language-glsl"><span class="hljs-type">float</span> DistributionGGX(<span class="hljs-type">vec3</span> N, <span class="hljs-type">vec3</span> H, <span class="hljs-type">float</span> roughness)
 {
-    float a = roughness*roughness;
-    float a2 = a*a;
-    float NdotH = max(dot(N, H), 0.0);
-    float NdotH2 = NdotH*NdotH;
+    <span class="hljs-type">float</span> a = roughness*roughness;
+    <span class="hljs-type">float</span> a2 = a*a;
+    <span class="hljs-type">float</span> NdotH = <span class="hljs-built_in">max</span>(<span class="hljs-built_in">dot</span>(N, H), <span class="hljs-number">0.0</span>);
+    <span class="hljs-type">float</span> NdotH2 = NdotH*NdotH;
 
-    float nom   = a2;
-    float denom = (NdotH2 * (a2 - 1.0) + 1.0);
+    <span class="hljs-type">float</span> nom   = a2;
+    <span class="hljs-type">float</span> denom = (NdotH2 * (a2 - <span class="hljs-number">1.0</span>) + <span class="hljs-number">1.0</span>);
     denom = PI * denom * denom;
 
-    return nom / denom;
+    <span class="hljs-keyword">return</span> nom / denom;
 }
 
-float NDF = DistributionGGX(N, H, roughness);
-```
+<span class="hljs-type">float</span> NDF = DistributionGGX(N, H, roughness);</code></pre><h3>BRDF</h3>
+<pre><code class="hljs language-glsl"><span class="hljs-type">vec3</span> numerator = NDF * G * F;
+<span class="hljs-comment">// + 0.0001 to prevent divide by zero</span>
+<span class="hljs-type">float</span> denominator = <span class="hljs-number">4.0</span> * <span class="hljs-built_in">max</span>(<span class="hljs-built_in">dot</span>(N, V), <span class="hljs-number">0.0</span>) * <span class="hljs-built_in">max</span>(<span class="hljs-built_in">dot</span>(N, L), <span class="hljs-number">0.0</span>) + <span class="hljs-number">0.0001</span>;
 
-### BRDF
+<span class="hljs-type">vec3</span> BRDF = numerator / denominator;</code></pre><p>Now we can finally calculate this direct light's contribution to the reflectance equation.</p>
+<p>In the <a href="https://learnopengl.com/" class="md-link" target="_blank" rel="noopener noreferrer">Learn OpenGL</a> example, they used point lights coming from four directions, but I only used one point light.</p>
+<pre><code class="hljs language-glsl"><span class="hljs-comment">// Calculate the specular reflection coefficient.</span>
+<span class="hljs-type">vec3</span> kS = F;
 
-```glsl
-vec3 numerator = NDF * G * F;
-// + 0.0001 to prevent divide by zero
-float denominator = 4.0 * max(dot(N, V), 0.0) * max(dot(N, L), 0.0) + 0.0001;
+<span class="hljs-comment">// Calculate the diffuse reflection coefficient.</span>
+<span class="hljs-type">vec3</span> kD = <span class="hljs-type">vec3</span>(<span class="hljs-number">1.0</span>) - kS;
+kD *= <span class="hljs-number">1.0</span> - metallic;
 
-vec3 BRDF = numerator / denominator;
-```
+<span class="hljs-comment">// Scale the light intensity by the cosine of the angle between the normal vector and the light direction.</span>
+<span class="hljs-type">float</span> NdotL = <span class="hljs-built_in">max</span>(<span class="hljs-built_in">dot</span>(N, L), <span class="hljs-number">0.0</span>);
 
-Now we can finally calculate this direct light's contribution to the reflectance equation.
+<span class="hljs-comment">// Calculate the direct lighting contribution, combining diffuse and specular reflections.</span>
+<span class="hljs-type">vec3</span> directLight = (kD * albedo / PI + BRDF) * radiance * NdotL;</code></pre><hr />
+<h2>3. Environment Lighting</h2>
+<p>Environment Lighting is primarily implemented using the IBL (Image-Based Lighting) technique. This method involves representing the surrounding environment with appropriate maps and using these maps to calculate lighting for objects. To implement Environment Lighting for PBR (Physically Based Rendering), three main textures are required: the Irradiance Map, Specular Map, and BRDF Texture.</p>
+<h3>Irradiance Map</h3>
+<p>Irradiance Map is used to model the lighting of the surrounding environment. It represents the incoming radiance at a specific point, typically captured and generated around the camera's surroundings. Irradiance Map is utilized to simulate indirect lighting on the surface of objects, thus determining their color and brightness.</p>
+<p>In <a href="https://learnopengl.com/" class="md-link" target="_blank" rel="noopener noreferrer">Learn OpenGL</a>, the environment map is sampled using point sampling in a spherical coordinate system. As the desired results weren't achieved with this method, I opted for importance sampling to sample the Irradiance Map from the environment map. This approach involves sampling the more important areas of the environment map more frequently to obtain a more accurate Irradiance value. To implement this, I referred to the code of an open-source project called <a href="https://www.derkreature.com/iblbaker" class="md-link" target="_blank" rel="noopener noreferrer">IBL Baker</a> extensively.</p>
+<pre><code class="hljs language-glsl"><span class="hljs-meta">#version 420 core</span>
 
-In the [Learn OpenGL](https://learnopengl.com/) example, they used point lights coming from four directions, but I only used one point light.
+<span class="hljs-keyword">out</span> <span class="hljs-type">vec4</span> FragColor;
 
-```glsl
-// Calculate the specular reflection coefficient.
-vec3 kS = F;
+<span class="hljs-keyword">in</span> <span class="hljs-type">vec3</span> WorldPos;
 
-// Calculate the diffuse reflection coefficient.
-vec3 kD = vec3(1.0) - kS;
-kD *= 1.0 - metallic;
+<span class="hljs-keyword">uniform</span> <span class="hljs-type">samplerCube</span> envCubemap;
 
-// Scale the light intensity by the cosine of the angle between the normal vector and the light direction.
-float NdotL = max(dot(N, L), 0.0);
+<span class="hljs-keyword">const</span> <span class="hljs-type">float</span> PI = <span class="hljs-number">3.14159265359</span>;
 
-// Calculate the direct lighting contribution, combining diffuse and specular reflections.
-vec3 directLight = (kD * albedo / PI + BRDF) * radiance * NdotL;
-```
-
----
-
-## 3. Environment Lighting
-
-Environment Lighting is primarily implemented using the IBL (Image-Based Lighting) technique. This method involves representing the surrounding environment with appropriate maps and using these maps to calculate lighting for objects. To implement Environment Lighting for PBR (Physically Based Rendering), three main textures are required: the Irradiance Map, Specular Map, and BRDF Texture.
-
-### Irradiance Map
-
-Irradiance Map is used to model the lighting of the surrounding environment. It represents the incoming radiance at a specific point, typically captured and generated around the camera's surroundings. Irradiance Map is utilized to simulate indirect lighting on the surface of objects, thus determining their color and brightness.
-
-In [Learn OpenGL](https://learnopengl.com/), the environment map is sampled using point sampling in a spherical coordinate system. As the desired results weren't achieved with this method, I opted for importance sampling to sample the Irradiance Map from the environment map. This approach involves sampling the more important areas of the environment map more frequently to obtain a more accurate Irradiance value. To implement this, I referred to the code of an open-source project called [IBL Baker](https://www.derkreature.com/iblbaker) extensively.
-
-```glsl
-#version 420 core
-
-out vec4 FragColor;
-
-in vec3 WorldPos;
-
-uniform samplerCube envCubemap;
-
-const float PI = 3.14159265359;
-
-const int ConvolutionSamplesOffset = 1;
-const int ConvolutionSampleCount = 256;
-const int ConvolutionMaxSamples = 512;
-const float ConvolutionRoughness = 0.2;
-const float ConvolutionMip = 3.0;
-const float EnvironmentScale = 3.0;
-const float IblMaxValue[3] = { 102.0, 85.0, 79.0 };
-const vec4 IBLCorrection = vec4(1.0);
+<span class="hljs-keyword">const</span> <span class="hljs-type">int</span> ConvolutionSamplesOffset = <span class="hljs-number">1</span>;
+<span class="hljs-keyword">const</span> <span class="hljs-type">int</span> ConvolutionSampleCount = <span class="hljs-number">256</span>;
+<span class="hljs-keyword">const</span> <span class="hljs-type">int</span> ConvolutionMaxSamples = <span class="hljs-number">512</span>;
+<span class="hljs-keyword">const</span> <span class="hljs-type">float</span> ConvolutionRoughness = <span class="hljs-number">0.2</span>;
+<span class="hljs-keyword">const</span> <span class="hljs-type">float</span> ConvolutionMip = <span class="hljs-number">3.0</span>;
+<span class="hljs-keyword">const</span> <span class="hljs-type">float</span> EnvironmentScale = <span class="hljs-number">3.0</span>;
+<span class="hljs-keyword">const</span> <span class="hljs-type">float</span> IblMaxValue[<span class="hljs-number">3</span>] = { <span class="hljs-number">102.0</span>, <span class="hljs-number">85.0</span>, <span class="hljs-number">79.0</span> };
+<span class="hljs-keyword">const</span> <span class="hljs-type">vec4</span> IBLCorrection = <span class="hljs-type">vec4</span>(<span class="hljs-number">1.0</span>);
 
 
-vec3 rescaleHDR(vec3 hdrPixel) {
-    hdrPixel = hdrPixel / (hdrPixel + vec3(1.0));
+<span class="hljs-type">vec3</span> rescaleHDR(<span class="hljs-type">vec3</span> hdrPixel) {
+    hdrPixel = hdrPixel / (hdrPixel + <span class="hljs-type">vec3</span>(<span class="hljs-number">1.0</span>));
 
-    if (hdrPixel.x < 0.0)
-        hdrPixel.x = 0.0;
-    if (hdrPixel.y < 0.0)
-        hdrPixel.y = 0.0;
-    if (hdrPixel.z < 0.0)
-        hdrPixel.z = 0.0;
+    <span class="hljs-keyword">if</span> (hdrPixel.x &lt; <span class="hljs-number">0.0</span>)
+        hdrPixel.x = <span class="hljs-number">0.0</span>;
+    <span class="hljs-keyword">if</span> (hdrPixel.y &lt; <span class="hljs-number">0.0</span>)
+        hdrPixel.y = <span class="hljs-number">0.0</span>;
+    <span class="hljs-keyword">if</span> (hdrPixel.z &lt; <span class="hljs-number">0.0</span>)
+        hdrPixel.z = <span class="hljs-number">0.0</span>;
 
-    float intensity = dot(hdrPixel, vec3(0.299, 0.587, 0.114));
+    <span class="hljs-type">float</span> intensity = <span class="hljs-built_in">dot</span>(hdrPixel, <span class="hljs-type">vec3</span>(<span class="hljs-number">0.299</span>, <span class="hljs-number">0.587</span>, <span class="hljs-number">0.114</span>));
 
-    // Saturation adjustment
-    hdrPixel = mix(intensity.xxx, hdrPixel, IBLCorrection.y);
+    <span class="hljs-comment">// Saturation adjustment</span>
+    hdrPixel = <span class="hljs-built_in">mix</span>(intensity.xxx, hdrPixel, IBLCorrection.y);
 
-    // Hue adjustment
-    vec3 root3 = vec3(0.57735, 0.57735, 0.57735);
-    float half_angle = 0.5 * radians(IBLCorrection.z);
-    vec4 rot_quat = vec4(root3 * sin(half_angle), cos(half_angle));
-    mat3 rot_Matrix = mat3(
-        vec3(1.0 - 2.0 * (rot_quat.y * rot_quat.y + rot_quat.z * rot_quat.z), 2.0 * (rot_quat.x * rot_quat.y - rot_quat.w * rot_quat.z), 2.0 * (rot_quat.x * rot_quat.z + rot_quat.w * rot_quat.y)),
-        vec3(2.0 * (rot_quat.x * rot_quat.y + rot_quat.w * rot_quat.z), 1.0 - 2.0 * (rot_quat.x * rot_quat.x + rot_quat.z * rot_quat.z), 2.0 * (rot_quat.y * rot_quat.z - rot_quat.w * rot_quat.x)),
-        vec3(2.0 * (rot_quat.x * rot_quat.z - rot_quat.w * rot_quat.y), 2.0 * (rot_quat.y * rot_quat.z + rot_quat.w * rot_quat.x), 1.0 - 2.0 * (rot_quat.x * rot_quat.x + rot_quat.y * rot_quat.y))
+    <span class="hljs-comment">// Hue adjustment</span>
+    <span class="hljs-type">vec3</span> root3 = <span class="hljs-type">vec3</span>(<span class="hljs-number">0.57735</span>, <span class="hljs-number">0.57735</span>, <span class="hljs-number">0.57735</span>);
+    <span class="hljs-type">float</span> half_angle = <span class="hljs-number">0.5</span> * <span class="hljs-built_in">radians</span>(IBLCorrection.z);
+    <span class="hljs-type">vec4</span> rot_quat = <span class="hljs-type">vec4</span>(root3 * <span class="hljs-built_in">sin</span>(half_angle), <span class="hljs-built_in">cos</span>(half_angle));
+    <span class="hljs-type">mat3</span> rot_Matrix = <span class="hljs-type">mat3</span>(
+        <span class="hljs-type">vec3</span>(<span class="hljs-number">1.0</span> - <span class="hljs-number">2.0</span> * (rot_quat.y * rot_quat.y + rot_quat.z * rot_quat.z), <span class="hljs-number">2.0</span> * (rot_quat.x * rot_quat.y - rot_quat.w * rot_quat.z), <span class="hljs-number">2.0</span> * (rot_quat.x * rot_quat.z + rot_quat.w * rot_quat.y)),
+        <span class="hljs-type">vec3</span>(<span class="hljs-number">2.0</span> * (rot_quat.x * rot_quat.y + rot_quat.w * rot_quat.z), <span class="hljs-number">1.0</span> - <span class="hljs-number">2.0</span> * (rot_quat.x * rot_quat.x + rot_quat.z * rot_quat.z), <span class="hljs-number">2.0</span> * (rot_quat.y * rot_quat.z - rot_quat.w * rot_quat.x)),
+        <span class="hljs-type">vec3</span>(<span class="hljs-number">2.0</span> * (rot_quat.x * rot_quat.z - rot_quat.w * rot_quat.y), <span class="hljs-number">2.0</span> * (rot_quat.y * rot_quat.z + rot_quat.w * rot_quat.x), <span class="hljs-number">1.0</span> - <span class="hljs-number">2.0</span> * (rot_quat.x * rot_quat.x + rot_quat.y * rot_quat.y))
     );
-    hdrPixel = mat3(rot_Matrix) * hdrPixel;
+    hdrPixel = <span class="hljs-type">mat3</span>(rot_Matrix) * hdrPixel;
 
     hdrPixel *= EnvironmentScale;
-    return hdrPixel;
+    <span class="hljs-keyword">return</span> hdrPixel;
 }
 
-vec2 Hammersley(uint i, uint N) {
-    uint bits = (i << 16u) | (i >> 16u);
-    bits = ((bits & 0x55555555u) << 1u) | ((bits & 0xAAAAAAAAu) >> 1u);
-    bits = ((bits & 0x33333333u) << 2u) | ((bits & 0xCCCCCCCCu) >> 2u);
-    bits = ((bits & 0x0F0F0F0Fu) << 4u) | ((bits & 0xF0F0F0F0u) >> 4u);
-    bits = ((bits & 0x00FF00FFu) << 8u) | ((bits & 0xFF00FF00u) >> 8u);
-    float rdi = float(bits) * 2.3283064365386963e-10;
-    return vec2(float(i) / float(N), rdi);
+<span class="hljs-type">vec2</span> Hammersley(<span class="hljs-type">uint</span> i, <span class="hljs-type">uint</span> N) {
+    <span class="hljs-type">uint</span> bits = (i &lt;&lt; <span class="hljs-number">16</span>u) | (i &gt;&gt; <span class="hljs-number">16</span>u);
+    bits = ((bits &amp; <span class="hljs-number">0x55555555</span>u) &lt;&lt; <span class="hljs-number">1</span>u) | ((bits &amp; <span class="hljs-number">0xAAAAAAAA</span>u) &gt;&gt; <span class="hljs-number">1</span>u);
+    bits = ((bits &amp; <span class="hljs-number">0x33333333</span>u) &lt;&lt; <span class="hljs-number">2</span>u) | ((bits &amp; <span class="hljs-number">0xCCCCCCCC</span>u) &gt;&gt; <span class="hljs-number">2</span>u);
+    bits = ((bits &amp; <span class="hljs-number">0x0F0F0F0F</span>u) &lt;&lt; <span class="hljs-number">4</span>u) | ((bits &amp; <span class="hljs-number">0xF0F0F0F0</span>u) &gt;&gt; <span class="hljs-number">4</span>u);
+    bits = ((bits &amp; <span class="hljs-number">0x00FF00FF</span>u) &lt;&lt; <span class="hljs-number">8</span>u) | ((bits &amp; <span class="hljs-number">0xFF00FF00</span>u) &gt;&gt; <span class="hljs-number">8</span>u);
+    <span class="hljs-type">float</span> rdi = <span class="hljs-type">float</span>(bits) * <span class="hljs-number">2.3283064365386963e-10</span>;
+    <span class="hljs-keyword">return</span> <span class="hljs-type">vec2</span>(<span class="hljs-type">float</span>(i) / <span class="hljs-type">float</span>(N), rdi);
 }
 
-vec3 importanceSampleGGX(vec2 Xi, float roughness, vec3 N) {
-    float a = roughness * roughness;
-    float Phi = 2.0 * PI * Xi.x;
-    float CosTheta = sqrt((1.0 - Xi.y) / (1.0 + (a * a - 1.0) * Xi.y));
-    float SinTheta = sqrt(1.0 - CosTheta * CosTheta);
-    vec3 H;
-    H.x = SinTheta * cos(Phi);
-    H.y = SinTheta * sin(Phi);
+<span class="hljs-type">vec3</span> importanceSampleGGX(<span class="hljs-type">vec2</span> Xi, <span class="hljs-type">float</span> roughness, <span class="hljs-type">vec3</span> N) {
+    <span class="hljs-type">float</span> a = roughness * roughness;
+    <span class="hljs-type">float</span> Phi = <span class="hljs-number">2.0</span> * PI * Xi.x;
+    <span class="hljs-type">float</span> CosTheta = <span class="hljs-built_in">sqrt</span>((<span class="hljs-number">1.0</span> - Xi.y) / (<span class="hljs-number">1.0</span> + (a * a - <span class="hljs-number">1.0</span>) * Xi.y));
+    <span class="hljs-type">float</span> SinTheta = <span class="hljs-built_in">sqrt</span>(<span class="hljs-number">1.0</span> - CosTheta * CosTheta);
+    <span class="hljs-type">vec3</span> H;
+    H.x = SinTheta * <span class="hljs-built_in">cos</span>(Phi);
+    H.y = SinTheta * <span class="hljs-built_in">sin</span>(Phi);
     H.z = CosTheta;
-    vec3 UpVector = abs(N.z) < 0.999 ? vec3(0, 0, 1) : vec3(1, 0, 0);
-    vec3 TangentX = normalize(cross(UpVector, N));
-    vec3 TangentY = cross(N, TangentX);
-    return TangentX * H.x + TangentY * H.y + N * H.z;
+    <span class="hljs-type">vec3</span> UpVector = <span class="hljs-built_in">abs</span>(N.z) &lt; <span class="hljs-number">0.999</span> ? <span class="hljs-type">vec3</span>(<span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">1</span>) : <span class="hljs-type">vec3</span>(<span class="hljs-number">1</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0</span>);
+    <span class="hljs-type">vec3</span> TangentX = <span class="hljs-built_in">normalize</span>(<span class="hljs-built_in">cross</span>(UpVector, N));
+    <span class="hljs-type">vec3</span> TangentY = <span class="hljs-built_in">cross</span>(N, TangentX);
+    <span class="hljs-keyword">return</span> TangentX * H.x + TangentY * H.y + N * H.z;
 }
 
-float specularD(float roughness, float NoH) {
-    float a2 = roughness * roughness;
-    float d = (NoH * a2 - NoH) * NoH + 1.0;
-    return a2 / (PI * d * d);
+<span class="hljs-type">float</span> specularD(<span class="hljs-type">float</span> roughness, <span class="hljs-type">float</span> NoH) {
+    <span class="hljs-type">float</span> a2 = roughness * roughness;
+    <span class="hljs-type">float</span> d = (NoH * a2 - NoH) * NoH + <span class="hljs-number">1.0</span>;
+    <span class="hljs-keyword">return</span> a2 / (PI * d * d);
 }
 
-vec4 sumSpecular(vec3 spec, float NoL, vec4 result) {
+<span class="hljs-type">vec4</span> sumSpecular(<span class="hljs-type">vec3</span> spec, <span class="hljs-type">float</span> NoL, <span class="hljs-type">vec4</span> result) {
     result.xyz += spec;
     result.w += NoL;
-    return result;
+    <span class="hljs-keyword">return</span> result;
 }
 
-vec3 ImportanceSample(vec3 R) {
-    vec3 N = normalize(R);
-    vec3 V = normalize(R);
-    vec4 result = vec4(0.0);
+<span class="hljs-type">vec3</span> ImportanceSample(<span class="hljs-type">vec3</span> R) {
+    <span class="hljs-type">vec3</span> N = <span class="hljs-built_in">normalize</span>(R);
+    <span class="hljs-type">vec3</span> V = <span class="hljs-built_in">normalize</span>(R);
+    <span class="hljs-type">vec4</span> result = <span class="hljs-type">vec4</span>(<span class="hljs-number">0.0</span>);
 
-    float sampleStep = float(ConvolutionMaxSamples) / float(ConvolutionSampleCount);
-    uint sampleId = uint(ConvolutionSamplesOffset);
+    <span class="hljs-type">float</span> sampleStep = <span class="hljs-type">float</span>(ConvolutionMaxSamples) / <span class="hljs-type">float</span>(ConvolutionSampleCount);
+    <span class="hljs-type">uint</span> sampleId = <span class="hljs-type">uint</span>(ConvolutionSamplesOffset);
 
-    int cubeWidth = textureSize(envCubemap, 0).x;
+    <span class="hljs-type">int</span> cubeWidth = <span class="hljs-built_in">textureSize</span>(envCubemap, <span class="hljs-number">0</span>).x;
 
-    for (int i = 0; i < ConvolutionSampleCount; i++) {
-        vec2 Xi = Hammersley(sampleId, uint(ConvolutionMaxSamples));
+    <span class="hljs-keyword">for</span> (<span class="hljs-type">int</span> i = <span class="hljs-number">0</span>; i &lt; ConvolutionSampleCount; i++) {
+        <span class="hljs-type">vec2</span> Xi = Hammersley(sampleId, <span class="hljs-type">uint</span>(ConvolutionMaxSamples));
 
-        vec3 H = importanceSampleGGX(Xi, ConvolutionRoughness, N);
-        vec3 L = 2.0 * dot(V, H) * H - V;
-        float NoL = max(dot(N, L), 0.0);
-        float VoL = max(dot(V, L), 0.0);
-        float NoH = max(dot(N, H), 0.0);
-        float VoH = max(dot(V, H), 0.0);
-        if (NoL > 0.0) {
-            float Dh = specularD(ConvolutionRoughness, NoH);
-            float pdf = Dh * NoH / (4.0 * VoH);
-            float solidAngleTexel = 4.0 * PI / (6.0 * cubeWidth * cubeWidth);
-            float solidAngleSample = 1.0 / (ConvolutionSampleCount * pdf);
-            float lod = ConvolutionRoughness == 0.0 ? 0.0 : 0.5 * log2(solidAngleSample / solidAngleTexel);
+        <span class="hljs-type">vec3</span> H = importanceSampleGGX(Xi, ConvolutionRoughness, N);
+        <span class="hljs-type">vec3</span> L = <span class="hljs-number">2.0</span> * <span class="hljs-built_in">dot</span>(V, H) * H - V;
+        <span class="hljs-type">float</span> NoL = <span class="hljs-built_in">max</span>(<span class="hljs-built_in">dot</span>(N, L), <span class="hljs-number">0.0</span>);
+        <span class="hljs-type">float</span> VoL = <span class="hljs-built_in">max</span>(<span class="hljs-built_in">dot</span>(V, L), <span class="hljs-number">0.0</span>);
+        <span class="hljs-type">float</span> NoH = <span class="hljs-built_in">max</span>(<span class="hljs-built_in">dot</span>(N, H), <span class="hljs-number">0.0</span>);
+        <span class="hljs-type">float</span> VoH = <span class="hljs-built_in">max</span>(<span class="hljs-built_in">dot</span>(V, H), <span class="hljs-number">0.0</span>);
+        <span class="hljs-keyword">if</span> (NoL &gt; <span class="hljs-number">0.0</span>) {
+            <span class="hljs-type">float</span> Dh = specularD(ConvolutionRoughness, NoH);
+            <span class="hljs-type">float</span> pdf = Dh * NoH / (<span class="hljs-number">4.0</span> * VoH);
+            <span class="hljs-type">float</span> solidAngleTexel = <span class="hljs-number">4.0</span> * PI / (<span class="hljs-number">6.0</span> * cubeWidth * cubeWidth);
+            <span class="hljs-type">float</span> solidAngleSample = <span class="hljs-number">1.0</span> / (ConvolutionSampleCount * pdf);
+            <span class="hljs-type">float</span> lod = ConvolutionRoughness == <span class="hljs-number">0.0</span> ? <span class="hljs-number">0.0</span> : <span class="hljs-number">0.5</span> * <span class="hljs-built_in">log2</span>(solidAngleSample / solidAngleTexel);
 
-            vec3 hdrPixel = rescaleHDR(textureLod(envCubemap, L, lod).rgb);
-            // vec3 hdrPixel = textureLod(envCubemap, L, lod).rgb;
+            <span class="hljs-type">vec3</span> hdrPixel = rescaleHDR(<span class="hljs-built_in">textureLod</span>(envCubemap, L, lod).rgb);
+            <span class="hljs-comment">// vec3 hdrPixel = textureLod(envCubemap, L, lod).rgb;</span>
             result = sumSpecular(hdrPixel, NoL, result);
         }
-        sampleId += uint(sampleStep);
+        sampleId += <span class="hljs-type">uint</span>(sampleStep);
     }
 
-    if (result.w == 0.0)
-        return result.xyz;
-    else
-        return result.xyz / result.w;
+    <span class="hljs-keyword">if</span> (result.w == <span class="hljs-number">0.0</span>)
+        <span class="hljs-keyword">return</span> result.xyz;
+    <span class="hljs-keyword">else</span>
+        <span class="hljs-keyword">return</span> result.xyz / result.w;
 }
 
-void main() {
-    vec3 N = normalize(WorldPos);
-    vec3 color;
+<span class="hljs-type">void</span> main() {
+    <span class="hljs-type">vec3</span> N = <span class="hljs-built_in">normalize</span>(WorldPos);
+    <span class="hljs-type">vec3</span> color;
 
-    vec3 importanceSampled = ImportanceSample(N);
+    <span class="hljs-type">vec3</span> importanceSampled = ImportanceSample(N);
 
-    if (ConvolutionSamplesOffset >= 1) {
-        vec3 lastResult = textureLod(envCubemap, N, ConvolutionMip).rgb;
-        color = mix(lastResult, importanceSampled, 1.0 / float(ConvolutionSamplesOffset));
-    } else {
+    <span class="hljs-keyword">if</span> (ConvolutionSamplesOffset &gt;= <span class="hljs-number">1</span>) {
+        <span class="hljs-type">vec3</span> lastResult = <span class="hljs-built_in">textureLod</span>(envCubemap, N, ConvolutionMip).rgb;
+        color = <span class="hljs-built_in">mix</span>(lastResult, importanceSampled, <span class="hljs-number">1.0</span> / <span class="hljs-type">float</span>(ConvolutionSamplesOffset));
+    } <span class="hljs-keyword">else</span> {
         color = importanceSampled;
     }
 
-    FragColor = vec4(color, 1.0);
-}
-```
+    FragColor = <span class="hljs-type">vec4</span>(color, <span class="hljs-number">1.0</span>);
+}</code></pre><h3>Specular Map</h3>
+<p>I decided to just use the environment map as it is. This is because the results from directly applying pre-filtered environment maps to mipmaps, as demonstrated in LearnOpenGL, didn't show significant differences compared to the mipmaps provided by OpenGL.</p>
+<p>We are going to implement specular using an environment map, a BRDF texture, and mipmaps.</p>
+<h3>BRDF Texture</h3>
+<p>The BRDF (Bidirectional Reflectance Distribution Function) texture is used to define the surface properties of an object. This texture is composed of a function that represents how light is reflected from the surface of the object, indicating the direction and amount of reflection. In other words, it determines how light coming from a certain direction is reflected in various directions from the surface. The BRDF texture is used to define properties such as surface roughness, glossiness, and reflection characteristics.</p>
+<p>In environment lighting, the BRDF texture is primarily used to model the interaction of light reflection on the surface of an object. This texture determines how light is reflected from the surface of the object depending on its properties when the light reaches the surface, thus making the appearance of the object more realistic.</p>
+<p>For example, when the surface of an object is rough and lacks glossiness, the BRDF texture can accurately model how light is reflected from the surface of the object. This allows for a more accurate simulation of how light generated from environment lighting is reflected from the surface of the object.</p>
+<p>Here, the code for generating the BRDF texture from the Environment Map was directly borrowed from <a href="https://learnopengl.com/" class="md-link" target="_blank" rel="noopener noreferrer">Learn OpenGL</a>.</p>
+<pre><code class="hljs language-glsl"><span class="hljs-meta">#version 420 core</span>
+<span class="hljs-keyword">out</span> <span class="hljs-type">vec2</span> FragColor;
+<span class="hljs-keyword">in</span> <span class="hljs-type">vec2</span> TexCoords;
 
-### Specular Map
+<span class="hljs-keyword">const</span> <span class="hljs-type">float</span> PI = <span class="hljs-number">3.14159265359</span>;
 
-I decided to just use the environment map as it is. This is because the results from directly applying pre-filtered environment maps to mipmaps, as demonstrated in LearnOpenGL, didn't show significant differences compared to the mipmaps provided by OpenGL.
-
-We are going to implement specular using an environment map, a BRDF texture, and mipmaps.
-
-### BRDF Texture
-
-The BRDF (Bidirectional Reflectance Distribution Function) texture is used to define the surface properties of an object. This texture is composed of a function that represents how light is reflected from the surface of the object, indicating the direction and amount of reflection. In other words, it determines how light coming from a certain direction is reflected in various directions from the surface. The BRDF texture is used to define properties such as surface roughness, glossiness, and reflection characteristics.
-
-In environment lighting, the BRDF texture is primarily used to model the interaction of light reflection on the surface of an object. This texture determines how light is reflected from the surface of the object depending on its properties when the light reaches the surface, thus making the appearance of the object more realistic.
-
-For example, when the surface of an object is rough and lacks glossiness, the BRDF texture can accurately model how light is reflected from the surface of the object. This allows for a more accurate simulation of how light generated from environment lighting is reflected from the surface of the object.
-
-Here, the code for generating the BRDF texture from the Environment Map was directly borrowed from [Learn OpenGL](https://learnopengl.com/).
-
-```glsl
-#version 420 core
-out vec2 FragColor;
-in vec2 TexCoords;
-
-const float PI = 3.14159265359;
-
-// http://holger.dammertz.org/stuff/notes_HammersleyOnHemisphere.html
-// efficient VanDerCorpus calculation.
-float RadicalInverse_VdC(uint bits)
+<span class="hljs-comment">// http://holger.dammertz.org/stuff/notes_HammersleyOnHemisphere.html</span>
+<span class="hljs-comment">// efficient VanDerCorpus calculation.</span>
+<span class="hljs-type">float</span> RadicalInverse_VdC(<span class="hljs-type">uint</span> bits)
 {
-     bits = (bits << 16u) | (bits >> 16u);
-     bits = ((bits & 0x55555555u) << 1u) | ((bits & 0xAAAAAAAAu) >> 1u);
-     bits = ((bits & 0x33333333u) << 2u) | ((bits & 0xCCCCCCCCu) >> 2u);
-     bits = ((bits & 0x0F0F0F0Fu) << 4u) | ((bits & 0xF0F0F0F0u) >> 4u);
-     bits = ((bits & 0x00FF00FFu) << 8u) | ((bits & 0xFF00FF00u) >> 8u);
-     return float(bits) * 2.3283064365386963e-10; // / 0x100000000
+     bits = (bits &lt;&lt; <span class="hljs-number">16</span>u) | (bits &gt;&gt; <span class="hljs-number">16</span>u);
+     bits = ((bits &amp; <span class="hljs-number">0x55555555</span>u) &lt;&lt; <span class="hljs-number">1</span>u) | ((bits &amp; <span class="hljs-number">0xAAAAAAAA</span>u) &gt;&gt; <span class="hljs-number">1</span>u);
+     bits = ((bits &amp; <span class="hljs-number">0x33333333</span>u) &lt;&lt; <span class="hljs-number">2</span>u) | ((bits &amp; <span class="hljs-number">0xCCCCCCCC</span>u) &gt;&gt; <span class="hljs-number">2</span>u);
+     bits = ((bits &amp; <span class="hljs-number">0x0F0F0F0F</span>u) &lt;&lt; <span class="hljs-number">4</span>u) | ((bits &amp; <span class="hljs-number">0xF0F0F0F0</span>u) &gt;&gt; <span class="hljs-number">4</span>u);
+     bits = ((bits &amp; <span class="hljs-number">0x00FF00FF</span>u) &lt;&lt; <span class="hljs-number">8</span>u) | ((bits &amp; <span class="hljs-number">0xFF00FF00</span>u) &gt;&gt; <span class="hljs-number">8</span>u);
+     <span class="hljs-keyword">return</span> <span class="hljs-type">float</span>(bits) * <span class="hljs-number">2.3283064365386963e-10</span>; <span class="hljs-comment">// / 0x100000000</span>
 }
 
-vec2 Hammersley(uint i, uint N)
+<span class="hljs-type">vec2</span> Hammersley(<span class="hljs-type">uint</span> i, <span class="hljs-type">uint</span> N)
 {
-	return vec2(float(i)/float(N), RadicalInverse_VdC(i));
+	<span class="hljs-keyword">return</span> <span class="hljs-type">vec2</span>(<span class="hljs-type">float</span>(i)/<span class="hljs-type">float</span>(N), RadicalInverse_VdC(i));
 }
 
-vec3 ImportanceSampleGGX(vec2 Xi, vec3 N, float roughness)
+<span class="hljs-type">vec3</span> ImportanceSampleGGX(<span class="hljs-type">vec2</span> Xi, <span class="hljs-type">vec3</span> N, <span class="hljs-type">float</span> roughness)
 {
-	float a = roughness*roughness;
+	<span class="hljs-type">float</span> a = roughness*roughness;
 
-	float phi = 2.0 * PI * Xi.x;
-	float cosTheta = sqrt((1.0 - Xi.y) / (1.0 + (a*a - 1.0) * Xi.y));
-	float sinTheta = sqrt(1.0 - cosTheta*cosTheta);
+	<span class="hljs-type">float</span> phi = <span class="hljs-number">2.0</span> * PI * Xi.x;
+	<span class="hljs-type">float</span> cosTheta = <span class="hljs-built_in">sqrt</span>((<span class="hljs-number">1.0</span> - Xi.y) / (<span class="hljs-number">1.0</span> + (a*a - <span class="hljs-number">1.0</span>) * Xi.y));
+	<span class="hljs-type">float</span> sinTheta = <span class="hljs-built_in">sqrt</span>(<span class="hljs-number">1.0</span> - cosTheta*cosTheta);
 
-	// from spherical coordinates to cartesian coordinates - halfway vector
-	vec3 H;
-	H.x = cos(phi) * sinTheta;
-	H.y = sin(phi) * sinTheta;
+	<span class="hljs-comment">// from spherical coordinates to cartesian coordinates - halfway vector</span>
+	<span class="hljs-type">vec3</span> H;
+	H.x = <span class="hljs-built_in">cos</span>(phi) * sinTheta;
+	H.y = <span class="hljs-built_in">sin</span>(phi) * sinTheta;
 	H.z = cosTheta;
 
-	// from tangent-space H vector to world-space sample vector
-	vec3 up          = abs(N.z) < 0.999 ? vec3(0.0, 0.0, 1.0) : vec3(1.0, 0.0, 0.0);
-	vec3 tangent   = normalize(cross(up, N));
-	vec3 bitangent = cross(N, tangent);
+	<span class="hljs-comment">// from tangent-space H vector to world-space sample vector</span>
+	<span class="hljs-type">vec3</span> up          = <span class="hljs-built_in">abs</span>(N.z) &lt; <span class="hljs-number">0.999</span> ? <span class="hljs-type">vec3</span>(<span class="hljs-number">0.0</span>, <span class="hljs-number">0.0</span>, <span class="hljs-number">1.0</span>) : <span class="hljs-type">vec3</span>(<span class="hljs-number">1.0</span>, <span class="hljs-number">0.0</span>, <span class="hljs-number">0.0</span>);
+	<span class="hljs-type">vec3</span> tangent   = <span class="hljs-built_in">normalize</span>(<span class="hljs-built_in">cross</span>(up, N));
+	<span class="hljs-type">vec3</span> bitangent = <span class="hljs-built_in">cross</span>(N, tangent);
 
-	vec3 sampleVec = tangent * H.x + bitangent * H.y + N * H.z;
-	return normalize(sampleVec);
+	<span class="hljs-type">vec3</span> sampleVec = tangent * H.x + bitangent * H.y + N * H.z;
+	<span class="hljs-keyword">return</span> <span class="hljs-built_in">normalize</span>(sampleVec);
 }
 
-float GeometrySchlickGGX(float NdotV, float roughness)
+<span class="hljs-type">float</span> GeometrySchlickGGX(<span class="hljs-type">float</span> NdotV, <span class="hljs-type">float</span> roughness)
 {
-    // note that we use a different k for IBL
-    float a = roughness;
-    float k = (a * a) / 2.0;
+    <span class="hljs-comment">// note that we use a different k for IBL</span>
+    <span class="hljs-type">float</span> a = roughness;
+    <span class="hljs-type">float</span> k = (a * a) / <span class="hljs-number">2.0</span>;
 
-    float nom   = NdotV;
-    float denom = NdotV * (1.0 - k) + k;
+    <span class="hljs-type">float</span> nom   = NdotV;
+    <span class="hljs-type">float</span> denom = NdotV * (<span class="hljs-number">1.0</span> - k) + k;
 
-    return nom / denom;
+    <span class="hljs-keyword">return</span> nom / denom;
 }
 
-float GeometrySmith(vec3 N, vec3 V, vec3 L, float roughness)
+<span class="hljs-type">float</span> GeometrySmith(<span class="hljs-type">vec3</span> N, <span class="hljs-type">vec3</span> V, <span class="hljs-type">vec3</span> L, <span class="hljs-type">float</span> roughness)
 {
-    float NdotV = max(dot(N, V), 0.0);
-    float NdotL = max(dot(N, L), 0.0);
-    float ggx2 = GeometrySchlickGGX(NdotV, roughness);
-    float ggx1 = GeometrySchlickGGX(NdotL, roughness);
+    <span class="hljs-type">float</span> NdotV = <span class="hljs-built_in">max</span>(<span class="hljs-built_in">dot</span>(N, V), <span class="hljs-number">0.0</span>);
+    <span class="hljs-type">float</span> NdotL = <span class="hljs-built_in">max</span>(<span class="hljs-built_in">dot</span>(N, L), <span class="hljs-number">0.0</span>);
+    <span class="hljs-type">float</span> ggx2 = GeometrySchlickGGX(NdotV, roughness);
+    <span class="hljs-type">float</span> ggx1 = GeometrySchlickGGX(NdotL, roughness);
 
-    return ggx1 * ggx2;
+    <span class="hljs-keyword">return</span> ggx1 * ggx2;
 }
 
-vec2 IntegrateBRDF(float NdotV, float roughness)
+<span class="hljs-type">vec2</span> IntegrateBRDF(<span class="hljs-type">float</span> NdotV, <span class="hljs-type">float</span> roughness)
 {
-    vec3 V;
-    V.x = sqrt(1.0 - NdotV*NdotV);
-    V.y = 0.0;
+    <span class="hljs-type">vec3</span> V;
+    V.x = <span class="hljs-built_in">sqrt</span>(<span class="hljs-number">1.0</span> - NdotV*NdotV);
+    V.y = <span class="hljs-number">0.0</span>;
     V.z = NdotV;
 
-    float A = 0.0;
-    float B = 0.0;
+    <span class="hljs-type">float</span> A = <span class="hljs-number">0.0</span>;
+    <span class="hljs-type">float</span> B = <span class="hljs-number">0.0</span>;
 
-    vec3 N = vec3(0.0, 0.0, 1.0);
+    <span class="hljs-type">vec3</span> N = <span class="hljs-type">vec3</span>(<span class="hljs-number">0.0</span>, <span class="hljs-number">0.0</span>, <span class="hljs-number">1.0</span>);
 
-    const uint SAMPLE_COUNT = 1024u;
-    for(uint i = 0u; i < SAMPLE_COUNT; ++i)
+    <span class="hljs-keyword">const</span> <span class="hljs-type">uint</span> SAMPLE_COUNT = <span class="hljs-number">1024</span>u;
+    <span class="hljs-keyword">for</span>(<span class="hljs-type">uint</span> i = <span class="hljs-number">0</span>u; i &lt; SAMPLE_COUNT; ++i)
     {
-        // generates a sample vector that's biased towards the
-        // preferred alignment direction (importance sampling).
-        vec2 Xi = Hammersley(i, SAMPLE_COUNT);
-        vec3 H = ImportanceSampleGGX(Xi, N, roughness);
-        vec3 L = normalize(2.0 * dot(V, H) * H - V);
+        <span class="hljs-comment">// generates a sample vector that's biased towards the</span>
+        <span class="hljs-comment">// preferred alignment direction (importance sampling).</span>
+        <span class="hljs-type">vec2</span> Xi = Hammersley(i, SAMPLE_COUNT);
+        <span class="hljs-type">vec3</span> H = ImportanceSampleGGX(Xi, N, roughness);
+        <span class="hljs-type">vec3</span> L = <span class="hljs-built_in">normalize</span>(<span class="hljs-number">2.0</span> * <span class="hljs-built_in">dot</span>(V, H) * H - V);
 
-        float NdotL = max(L.z, 0.0);
-        float NdotH = max(H.z, 0.0);
-        float VdotH = max(dot(V, H), 0.0);
+        <span class="hljs-type">float</span> NdotL = <span class="hljs-built_in">max</span>(L.z, <span class="hljs-number">0.0</span>);
+        <span class="hljs-type">float</span> NdotH = <span class="hljs-built_in">max</span>(H.z, <span class="hljs-number">0.0</span>);
+        <span class="hljs-type">float</span> VdotH = <span class="hljs-built_in">max</span>(<span class="hljs-built_in">dot</span>(V, H), <span class="hljs-number">0.0</span>);
 
-        if(NdotL > 0.0)
+        <span class="hljs-keyword">if</span>(NdotL &gt; <span class="hljs-number">0.0</span>)
         {
-            float G = GeometrySmith(N, V, L, roughness);
-            float G_Vis = (G * VdotH) / (NdotH * NdotV);
-            float Fc = pow(1.0 - VdotH, 5.0);
+            <span class="hljs-type">float</span> G = GeometrySmith(N, V, L, roughness);
+            <span class="hljs-type">float</span> G_Vis = (G * VdotH) / (NdotH * NdotV);
+            <span class="hljs-type">float</span> Fc = <span class="hljs-built_in">pow</span>(<span class="hljs-number">1.0</span> - VdotH, <span class="hljs-number">5.0</span>);
 
-            A += (1.0 - Fc) * G_Vis;
+            A += (<span class="hljs-number">1.0</span> - Fc) * G_Vis;
             B += Fc * G_Vis;
         }
     }
-    A /= float(SAMPLE_COUNT);
-    B /= float(SAMPLE_COUNT);
-    return vec2(A, B);
+    A /= <span class="hljs-type">float</span>(SAMPLE_COUNT);
+    B /= <span class="hljs-type">float</span>(SAMPLE_COUNT);
+    <span class="hljs-keyword">return</span> <span class="hljs-type">vec2</span>(A, B);
 }
 
-void main()
+<span class="hljs-type">void</span> main()
 {
-    vec2 integratedBRDF = IntegrateBRDF(TexCoords.x, TexCoords.y);
+    <span class="hljs-type">vec2</span> integratedBRDF = IntegrateBRDF(TexCoords.x, TexCoords.y);
     FragColor = integratedBRDF;
-}
-```
-
-### Ambient Lighting
-
-Now we calculate indirect lighting using the given textures. Here, we use Image-Based Lighting (IBL) for this purpose.
-
-First, we compute the Fresnel reflection coefficient on the surface. This coefficient determines the ratio of incident light to reflected light and is used in conjunction with the surface roughness.
-
-```glsl
-vec3 fresnelSchlickRoughness(float cosTheta, vec3 F0, float roughness)
+}</code></pre><h3>Ambient Lighting</h3>
+<p>Now we calculate indirect lighting using the given textures. Here, we use Image-Based Lighting (IBL) for this purpose.</p>
+<p>First, we compute the Fresnel reflection coefficient on the surface. This coefficient determines the ratio of incident light to reflected light and is used in conjunction with the surface roughness.</p>
+<pre><code class="hljs language-glsl"><span class="hljs-type">vec3</span> fresnelSchlickRoughness(<span class="hljs-type">float</span> cosTheta, <span class="hljs-type">vec3</span> F0, <span class="hljs-type">float</span> roughness)
 {
-    return F0 + (max(vec3(1.0 - roughness), F0) - F0) * pow(clamp(1.0 - cosTheta, 0.0, 1.0), 5.0);
+    <span class="hljs-keyword">return</span> F0 + (<span class="hljs-built_in">max</span>(<span class="hljs-type">vec3</span>(<span class="hljs-number">1.0</span> - roughness), F0) - F0) * <span class="hljs-built_in">pow</span>(<span class="hljs-built_in">clamp</span>(<span class="hljs-number">1.0</span> - cosTheta, <span class="hljs-number">0.0</span>, <span class="hljs-number">1.0</span>), <span class="hljs-number">5.0</span>);
 }
 
-// ambient lighting (we now use IBL as the ambient term)
-vec3 F = fresnelSchlickRoughness(max(dot(N, V), 0.0), F0, roughness);
-```
+<span class="hljs-comment">// ambient lighting (we now use IBL as the ambient term)</span>
+<span class="hljs-type">vec3</span> F = fresnelSchlickRoughness(<span class="hljs-built_in">max</span>(<span class="hljs-built_in">dot</span>(N, V), <span class="hljs-number">0.0</span>), F0, roughness);</code></pre><p>Based on the Fresnel coefficient, we calculate the Specular and Diffuse coefficients. kS represents the Specular coefficient, while KD represents the Diffuse coefficient. These coefficients are determined based on the surface's metallic property.</p>
+<pre><code class="hljs language-glsl"><span class="hljs-type">vec3</span> kS = F;
+<span class="hljs-type">vec3</span> kD = <span class="hljs-number">1.0</span> - kS;
+kD \*= <span class="hljs-number">1.0</span> - metallic;</code></pre><p>We calculate the surface's environmental lighting using the Irradiance Cubemap. By sampling the Irradiance Cubemap with the surface's normal vector (N), we obtain the diffuse component by multiplying the result with the surface's albedo.</p>
+<pre><code class="hljs language-glsl"><span class="hljs-type">vec3</span> irradiance = <span class="hljs-built_in">texture</span>(irradianceCubemap, N).rgb;
+<span class="hljs-type">vec3</span> diffuse = irradiance \* albedo;</code></pre><p>We compute the specular component using the Pre-filtered Environment Map and the BRDF Look-Up Table (LUT). The Pre-filtered Environment Map represents the level of reflected environment map details based on the surface's roughness. The BRDF LUT is a precomputed table of BRDF values based on the angle and roughness between the surface's normal vector and the view vector. By combining these, we obtain the specular component.</p>
+<pre><code class="hljs language-glsl"><span class="hljs-comment">// sample both the pre-filter map and the BRDF lut and combine them together as per the Split-Sum approximation to get the IBL specular part.</span>
+<span class="hljs-keyword">const</span> <span class="hljs-type">float</span> MAX_REFLECTION_LOD = <span class="hljs-number">4.0</span>;
+<span class="hljs-type">vec3</span> prefilteredColor = <span class="hljs-built_in">textureLod</span>(preFilteredEnvmap, R, roughness _ MAX_REFLECTION_LOD).rgb;
+<span class="hljs-type">vec2</span> brdf = <span class="hljs-built_in">texture</span>(brdfLUT, <span class="hljs-type">vec2</span>(<span class="hljs-built_in">max</span>(<span class="hljs-built_in">dot</span>(N, V), <span class="hljs-number">0.0</span>), roughness)).rg;
+specular = prefilteredColor * (F \* brdf.x + brdf.y);</code></pre><p>We combine the diffuse and specular components to compute the overall indirect lighting. We multiply this by the Ambient Occlusion (AO) value to obtain the final indirect lighting.</p>
+<pre><code class="hljs language-glsl"><span class="hljs-type">vec3</span> ambient = (kD * diffuse + specular) * ao;</code></pre><hr />
+<h2>4. Post Processing</h2>
+<h3>HDR Tonemapping</h3>
+<p>HDR images represent a wide range of luminance values, requiring proper tonemapping to display them accurately on standard display devices. In this code, Reinhard tonemapping is used to compress the brightness and bring the dynamic range of the image into a suitable range.</p>
+<p>Reinhard tonemapping is a method used to compress the dynamic range of high dynamic range (HDR) images so that they can be accurately displayed on low dynamic range (LDR) devices, such as computer monitors and TVs. This technique adjusts the brightness of the pixels in the HDR image based on their luminance values, aiming to maintain natural-looking contrast while preventing overexposure or loss of detail in both shadow and highlight areas.</p>
+<h3>Gamma Correction</h3>
+<p>HDR operations are performed entirely in linear space. In linear space, adjustments to brightness and color occur linearly, enabling more accurate and predictable calculations. However, most screens and image storage media use gamma-corrected nonlinear spaces. This helps efficiently represent details in bright areas by considering human visual characteristics.</p>
+<p>Therefore, before displaying HDR images, they need to be transformed from linear space to nonlinear space through gamma correction. This preserves details in bright areas better and results in a more natural display on the screen.</p>
+<pre><code class="hljs language-glsl"><span class="hljs-type">vec3</span> color = directLight + ambient;
 
-Based on the Fresnel coefficient, we calculate the Specular and Diffuse coefficients. kS represents the Specular coefficient, while KD represents the Diffuse coefficient. These coefficients are determined based on the surface's metallic property.
+<span class="hljs-comment">// HDR tonemapping</span>
+color = color / (color + <span class="hljs-type">vec3</span>(<span class="hljs-number">1.0</span>));
 
-```glsl
-vec3 kS = F;
-vec3 kD = 1.0 - kS;
-kD \*= 1.0 - metallic;
-```
+<span class="hljs-comment">// gamma correct</span>
+color = <span class="hljs-built_in">pow</span>(color, <span class="hljs-type">vec3</span>(<span class="hljs-number">1.0</span>/<span class="hljs-number">2.2</span>));</code></pre><hr />
+<h2>5. WebGL</h2>
+<p>I've migrated the code implemented in OpenGL to WebGL. However, dynamically implementing IBL textures like in the native environment was cumbersome, and there were difficulties in loading HDRI textures. So, I decided to first create a native texture generation app called "IBL Maker" to generate textures in advance. Then, I used those textures in WebGL to implement PBR.</p>
+<p>Since I saved the textures in JPG format, I had to pay attention to gamma correction when saving textures in OpenGL and loading textures in WebGL, unlike in the native environment.</p>
+<p>In the native code, tonemapping and gamma correction were done as follows:</p>
+<pre><code class="hljs language-glsl"><span class="hljs-type">vec3</span> color = ...;
 
-We calculate the surface's environmental lighting using the Irradiance Cubemap. By sampling the Irradiance Cubemap with the surface's normal vector (N), we obtain the diffuse component by multiplying the result with the surface's albedo.
+<span class="hljs-comment">// HDR tonemapping</span>
+color = color / (color + <span class="hljs-type">vec3</span>(<span class="hljs-number">1.0</span>));
 
-```glsl
-vec3 irradiance = texture(irradianceCubemap, N).rgb;
-vec3 diffuse = irradiance \* albedo;
-```
+<span class="hljs-comment">// prevent clipping</span>
+color = <span class="hljs-built_in">min</span>(color, <span class="hljs-type">vec3</span>(<span class="hljs-number">1.0</span>));
 
-We compute the specular component using the Pre-filtered Environment Map and the BRDF Look-Up Table (LUT). The Pre-filtered Environment Map represents the level of reflected environment map details based on the surface's roughness. The BRDF LUT is a precomputed table of BRDF values based on the angle and roughness between the surface's normal vector and the view vector. By combining these, we obtain the specular component.
+<span class="hljs-comment">// gamma correct</span>
+color = <span class="hljs-built_in">pow</span>(color, <span class="hljs-type">vec3</span>(<span class="hljs-number">1.0</span>/<span class="hljs-number">2.2</span>));</code></pre><p>In WebGL, I performed gamma correction each time a texture was loaded to linearize it:</p>
+<pre><code class="hljs language-glsl"><span class="hljs-type">vec3</span> envMap = <span class="hljs-built_in">pow</span>(<span class="hljs-built_in">textureLod</span>(envCubemap, R, roughness * MAX_REFLECTION_LOD).rgb, <span class="hljs-type">vec3</span>(<span class="hljs-number">2.2</span>));
 
-```glsl
-// sample both the pre-filter map and the BRDF lut and combine them together as per the Split-Sum approximation to get the IBL specular part.
-const float MAX_REFLECTION_LOD = 4.0;
-vec3 prefilteredColor = textureLod(preFilteredEnvmap, R, roughness _ MAX_REFLECTION_LOD).rgb;
-vec2 brdf = texture(brdfLUT, vec2(max(dot(N, V), 0.0), roughness)).rg;
-specular = prefilteredColor * (F \* brdf.x + brdf.y);
-```
-
-We combine the diffuse and specular components to compute the overall indirect lighting. We multiply this by the Ambient Occlusion (AO) value to obtain the final indirect lighting.
-
-```glsl
-vec3 ambient = (kD * diffuse + specular) * ao;
-```
-
----
-
-## 4. Post Processing
-
-### HDR Tonemapping
-
-HDR images represent a wide range of luminance values, requiring proper tonemapping to display them accurately on standard display devices. In this code, Reinhard tonemapping is used to compress the brightness and bring the dynamic range of the image into a suitable range.
-
-Reinhard tonemapping is a method used to compress the dynamic range of high dynamic range (HDR) images so that they can be accurately displayed on low dynamic range (LDR) devices, such as computer monitors and TVs. This technique adjusts the brightness of the pixels in the HDR image based on their luminance values, aiming to maintain natural-looking contrast while preventing overexposure or loss of detail in both shadow and highlight areas.
-
-### Gamma Correction
-
-HDR operations are performed entirely in linear space. In linear space, adjustments to brightness and color occur linearly, enabling more accurate and predictable calculations. However, most screens and image storage media use gamma-corrected nonlinear spaces. This helps efficiently represent details in bright areas by considering human visual characteristics.
-
-Therefore, before displaying HDR images, they need to be transformed from linear space to nonlinear space through gamma correction. This preserves details in bright areas better and results in a more natural display on the screen.
-
-```glsl
-vec3 color = directLight + ambient;
-
-// HDR tonemapping
-color = color / (color + vec3(1.0));
-
-// gamma correct
-color = pow(color, vec3(1.0/2.2));
-```
-
----
-
-## 5. WebGL
-
-I've migrated the code implemented in OpenGL to WebGL. However, dynamically implementing IBL textures like in the native environment was cumbersome, and there were difficulties in loading HDRI textures. So, I decided to first create a native texture generation app called "IBL Maker" to generate textures in advance. Then, I used those textures in WebGL to implement PBR.
-
-Since I saved the textures in JPG format, I had to pay attention to gamma correction when saving textures in OpenGL and loading textures in WebGL, unlike in the native environment.
-
-In the native code, tonemapping and gamma correction were done as follows:
-
-```glsl
-vec3 color = ...;
-
-// HDR tonemapping
-color = color / (color + vec3(1.0));
-
-// prevent clipping
-color = min(color, vec3(1.0));
-
-// gamma correct
-color = pow(color, vec3(1.0/2.2));
-```
-
-In WebGL, I performed gamma correction each time a texture was loaded to linearize it:
-
-```glsl
-vec3 envMap = pow(textureLod(envCubemap, R, roughness * MAX_REFLECTION_LOD).rgb, vec3(2.2));
-
-```
-
-### P.S.
-
-While learning the WebGPU API, I rewrote this example using WebGPU. You can check out the process at the link below.
-
-[Introduce to WebGPU](/post/introduce-to-webgpu)
-
-### References
-
-- [Learn OpenGL](https://learnopengl.com/)
-- [Normal Transformation](https://paroj.github.io/gltut/Illumination/Tut09%20Normal%20Transformation.html)
-- [SIGGRAPH 2013 Course: Physically Based Shading in Theory and Practice](https://blog.selfshadow.com/publications/s2013-shading-course)
-- [IBL Baker](https://www.derkreature.com/iblbaker)
-- [Tonemapping - 64.github.io](https://64.github.io/tonemapping/)
-- [Introduction to Computer Graphics with DirectX 11 - Part 3. Rendering Techniques](https://honglab.co.kr/courses/graphicspt3)
-3:[null,["$","html",null,{"lang":"en","children":["$","body",null,{"className":"mx-auto my-0","children":[["$","nav",null,{"className":"max-w-default mx-auto px-5 py-3","children":["$","$L6",null,{}]}],["$","header",null,{"children":["$","$L7",null,{}]}],["$","div",null,{"className":"max-w-default mx-auto p-5","children":["$","$L8",null,{"parallelRouterKey":"children","segmentPath":["children"],"loading":"$undefined","loadingStyles":"$undefined","hasLoading":false,"error":"$undefined","errorStyles":"$undefined","template":["$","$L9",null,{}],"templateStyles":"$undefined","notFound":[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":"404"}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],"notFoundStyles":[],"childProp":{"current":["$","$L8",null,{"parallelRouterKey":"children","segmentPath":["children","post","children"],"loading":"$undefined","loadingStyles":"$undefined","hasLoading":false,"error":"$undefined","errorStyles":"$undefined","template":["$","$L9",null,{}],"templateStyles":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined","childProp":{"current":[null,["$","$L8",null,{"parallelRouterKey":"children","segmentPath":["children","post","children",["slug","pbr-rendering","d"],"children"],"loading":"$undefined","loadingStyles":"$undefined","hasLoading":false,"error":"$undefined","errorStyles":"$undefined","template":["$","$L9",null,{}],"templateStyles":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined","childProp":{"current":["$La",["$","div",null,{"children":[["$","$Lb",null,{"href":"/posts/graphics","className":"text-gray-600 text-md pl-1 hover:font-bold","children":"GRAPHICS"}],["$","h1",null,{"children":"PBR Rendering"}],["$","p",null,{"className":"text-gray-400 text-sm m-0 mt-1","children":"1 April, 2024"}],["$","div",null,{"className":"mt-1","children":["$","div",null,{"className":"whitespace-nowrap overflow-x-auto pb-3","children":[["$","$Lb","opengl",{"href":"/tag/opengl","className":"mr-2 text-gray-500 hover:font-bold","children":"#opengl"}],["$","$Lb","pbr",{"href":"/tag/pbr","className":"mr-2 text-gray-500 hover:font-bold","children":"#pbr"}],["$","$Lb","glsl",{"href":"/tag/glsl","className":"mr-2 text-gray-500 hover:font-bold","children":"#glsl"}]]}]}],["$","div",null,{"className":"mt-8","children":["$","$Lc",null,{"content":"$d"}]}],["$","$Le",null,{"issueTerm":"PBR Rendering"}]]}],null],"segment":"__PAGE__?{\"slug\":\"pbr-rendering\"}"},"styles":[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/602feae4669a507e.css","precedence":"next","crossOrigin":""}]]}],null],"segment":["slug","pbr-rendering","d"]},"styles":[]}],"segment":"post"},"styles":[]}]}],["$","footer",null,{"className":"h-40 flex justify-center items-end","children":["$","p",null,{"className":"text-gray-500 text-sm","children":"(C) 2021. Wayne Choi. All rights reserved."}]}]]}]}],null]
-a:null
+</code></pre><h3>P.S.</h3>
+<p>While learning the WebGPU API, I rewrote this example using WebGPU. You can check out the process at the link below.</p>
+<p><a href="/post/introduce-to-webgpu" class="md-link">Introduce to WebGPU</a></p>
+<h3>References</h3>
+<ul>
+<li><a href="https://learnopengl.com/" class="md-link" target="_blank" rel="noopener noreferrer">Learn OpenGL</a></li>
+<li><a href="https://paroj.github.io/gltut/Illumination/Tut09%20Normal%20Transformation.html" class="md-link" target="_blank" rel="noopener noreferrer">Normal Transformation</a></li>
+<li><a href="https://blog.selfshadow.com/publications/s2013-shading-course" class="md-link" target="_blank" rel="noopener noreferrer">SIGGRAPH 2013 Course: Physically Based Shading in Theory and Practice</a></li>
+<li><a href="https://www.derkreature.com/iblbaker" class="md-link" target="_blank" rel="noopener noreferrer">IBL Baker</a></li>
+<li><a href="https://64.github.io/tonemapping/" class="md-link" target="_blank" rel="noopener noreferrer">Tonemapping - 64.github.io</a></li>
+<li><a href="https://honglab.co.kr/courses/graphicspt3" class="md-link" target="_blank" rel="noopener noreferrer">Introduction to Computer Graphics with DirectX 11 - Part 3. Rendering Techniques</a></li>
+</ul>
+c:["$","article",null,{"children":[["$","script",null,{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"{\"@context\":\"https://schema.org\",\"@type\":\"BlogPosting\",\"headline\":\"PBR Rendering\",\"description\":\"Implemented PBR rendering using OpenGL...\",\"datePublished\":\"2024-04-01\",\"author\":{\"@type\":\"Person\",\"name\":\"Wayne Choi\"},\"mainEntityOfPage\":\"https://waynechoi.dev/post/pbr-rendering/\"}"}}],["$","$L18",null,{"href":"/posts/graphics","className":"text-gray-600 hover:text-blue-800 hover:underline","children":"GRAPHICS"}],["$","h1",null,{"children":"PBR Rendering"}],["$","time",null,{"dateTime":"2024-04-01","className":"text-gray-500 text-sm","children":"1 Apr 2024"}],["$","div",null,{"className":"mt-2","children":["$","div",null,{"className":"whitespace-nowrap overflow-x-auto pb-2","aria-label":"Post tags","children":[["$","$L18","opengl",{"href":"/tag/opengl","className":"mr-2 text-gray-600 hover:text-blue-800 hover:underline","children":"#opengl"}],["$","$L18","pbr",{"href":"/tag/pbr","className":"mr-2 text-gray-600 hover:text-blue-800 hover:underline","children":"#pbr"}],["$","$L18","glsl",{"href":"/tag/glsl","className":"mr-2 text-gray-600 hover:text-blue-800 hover:underline","children":"#glsl"}]]}]}],["$","div",null,{"className":"mt-8","children":["$","div",null,{"className":"post-content","dangerouslySetInnerHTML":{"__html":"$19"}}]}],"$L1a"]}]
+1b:I[32948,["$2","$17"],"default"]
+1a:["$","$L1b",null,{"issueTerm":"PBR Rendering"}]
+12:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+1c:I[27201,["$5"],"IconMark"]
+f:null
+15:[["$","title","0",{"children":"PBR Rendering | WayneChoi.dev"}],["$","meta","1",{"name":"description","content":"Implemented PBR rendering using OpenGL..."}],["$","link","2",{"rel":"canonical","href":"https://waynechoi.dev/post/pbr-rendering/"}],["$","meta","3",{"property":"og:title","content":"PBR Rendering"}],["$","meta","4",{"property":"og:description","content":"Implemented PBR rendering using OpenGL..."}],["$","meta","5",{"property":"og:url","content":"https://waynechoi.dev/post/pbr-rendering/"}],["$","meta","6",{"property":"og:image","content":"https://waynechoi.dev/opengraph-image"}],["$","meta","7",{"property":"og:image:alt","content":"WayneChoi.dev"}],["$","meta","8",{"property":"og:type","content":"article"}],["$","meta","9",{"property":"article:published_time","content":"2024-04-01"}],["$","meta","10",{"property":"article:tag","content":"opengl"}],["$","meta","11",{"property":"article:tag","content":"pbr"}],["$","meta","12",{"property":"article:tag","content":"glsl"}],["$","meta","13",{"name":"twitter:card","content":"summary_large_image"}],["$","meta","14",{"name":"twitter:title","content":"PBR Rendering"}],["$","meta","15",{"name":"twitter:description","content":"Implemented PBR rendering using OpenGL..."}],["$","meta","16",{"name":"twitter:image","content":"https://waynechoi.dev/twitter-image"}],["$","link","17",{"rel":"icon","href":"/favicon.ico"}],["$","$L1c","18",{}]]

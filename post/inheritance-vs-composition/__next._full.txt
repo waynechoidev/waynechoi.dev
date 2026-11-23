@@ -1,0 +1,105 @@
+1:"$Sreact.fragment"
+2:"/_next/static/chunks/07ixqnujfllo2.js"
+3:I[47689,["$2"],"default"]
+4:I[70119,["$2"],"default"]
+5:"/_next/static/chunks/3qfy96eoyh-ek.js"
+6:I[39756,["$5"],"default"]
+7:I[37457,["$5"],"default"]
+d:I[97367,["$5"],"OutletBoundary"]
+e:"$Sreact.suspense"
+10:"ViewportBoundary"
+11:I[97367,["$5"],"$10"]
+13:"MetadataBoundary"
+14:I[97367,["$5"],"$13"]
+16:I[68027,["$2"],"default",1]
+:HL["/_next/static/chunks/2e79geki6z2_c.css","style"]
+:HC["/",""]
+9:X
+b:[["children",{"s":"__PAGE__","h":512,"d":{"r":["$","$1","c",{"children":["$Lc",[["$","script","script-0",{"src":"/_next/static/chunks/0288roqreptti.js","async":true,"nonce":"$undefined"}]],["$","$Ld",null,{"children":["$","$e",null,{"name":"Next.MetadataOutlet","children":"$@f"}]}]]}],"p":false,"v":null}}]]
+a:[["children",{"s":{"n":"slug","t":"d","k":"inheritance-vs-composition","s":[]},"h":512,"d":{"r":["$","$1","c",{"children":[null,["$","$L6",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L7",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],"p":false,"v":null},"c":"$Qb"}]]
+8:[["children",{"s":"post","h":512,"d":{"r":["$","$1","c",{"children":[null,["$","$L6",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L7",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],"p":false,"v":"$9"},"c":"$Qa"}]]
+0:{"P":null,"c":["","post","inheritance-vs-composition",""],"q":"","i":false,"t":{"t":{"s":"","h":528,"d":{"r":["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/2e79geki6z2_c.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],["$","script","script-0",{"src":"/_next/static/chunks/07ixqnujfllo2.js","async":true,"nonce":"$undefined"}]],["$","html",null,{"lang":"en","children":["$","body",null,{"className":"mx-auto my-0","children":[["$","a",null,{"href":"#main-content","className":"skip-link","children":"Skip to content"}],["$","nav",null,{"className":"max-w-default mx-auto px-5 py-3","aria-label":"Primary navigation","children":["$","$L3",null,{}]}],["$","header",null,{"children":["$","$L4",null,{}]}],["$","main",null,{"id":"main-content","className":"max-w-default mx-auto p-5","children":["$","$L6",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L7",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}],["$","footer",null,{"className":"h-40 flex justify-center items-end","children":["$","p",null,{"className":"text-gray-500 text-sm","children":["© 2021–",2026," Wayne Choi. All rights reserved."]}]}]]}]}]]}],"p":false,"v":null},"c":"$Q8"},"h":{"r":["$","$1","h",{"children":[null,["$","$L11",null,{"children":"$L12"}],["$","$L14",null,{"children":[["$","div",null,{"hidden":true,"children":["$","$e",null,{"name":"Next.Metadata","children":"$L15"}]}],null]}],null]}],"p":false,"v":null}},"m":"$undefined","G":["$16",[["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/2e79geki6z2_c.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]]],"S":true,"r":"$undefined","s":"$undefined","a":"$undefined","l":"$undefined","p":"$undefined","d":"$undefined","b":"MYLL76Di7kZHpNQU1HIFd"}
+17:"/_next/static/chunks/0288roqreptti.js"
+18:I[22016,["$2","$17"],""]
+9:C
+19:T1fea,<h2>Introduction</h2>
+<p>In the world of object-oriented programming, the phrase "Composition Over Inheritance" is often heard. Many developers treat this principle as a golden rule. But is it always the best choice in every situation? I would like to dive deeper into this topic and discuss when inheritance is still valid and might even be the better choice.</p>
+<h2>The Background of "Composition Over Inheritance"</h2>
+<p>To understand why the principle of "Composition Over Inheritance" emerged, I must first examine some fundamental problems with inheritance.</p>
+<ul>
+<li><p>Tight Coupling: One of the most significant issues with inheritance is the strong coupling between the parent and child classes. This strong coupling reduces code flexibility and makes changes more challenging. For example, even small changes in the parent class can have unexpected consequences for multiple child classes, a problem often referred to as the 'fragile base class problem.'</p>
+</li>
+<li><p>Increased Complexity: As the inheritance hierarchy deepens, the complexity of the code increases exponentially. If I need to trace through several layers of inheritance to understand the behavior of a particular method, it can significantly reduce code readability and maintainability.</p>
+</li>
+<li><p>Problems with Multiple Inheritance: Languages that support multiple inheritance face additional problems. For instance, issues like the diamond problem can arise, negatively affecting the predictability and stability of the code.</p>
+</li>
+<li><p>Lack of Flexibility: Inheritance is well-suited to represent 'is-a' relationships, but many real-world situations require more flexible relationships. This can lead to inappropriate or overly complex inheritance structures.</p>
+</li>
+</ul>
+<p>Due to these challenges, many developers began seeking alternatives, leading to the rise of composition. The benefits of composition are particularly evident in fields such as web backend API development.</p>
+<p>The key advantages of composition include:</p>
+<ul>
+<li><p>Flexibility: Composition allows for more flexible relationships between objects. For example, it’s easier to replace or mock components like services or repositories, which simplifies testing and maintenance.</p>
+</li>
+<li><p>Modularity: Because each component functions independently, code modularity improves, naturally adhering to the principle of separation of concerns.</p>
+</li>
+<li><p>Ease of Dependency Injection: Composition pairs well with the dependency injection pattern, reducing coupling between objects and enhancing code reusability and testability.</p>
+</li>
+<li><p>Scalability: When adding new features, it’s easier to expand the system by adding new components without modifying existing code, adhering to the Open-Closed Principle.</p>
+</li>
+</ul>
+<p>For these reasons, "Composition Over Inheritance" has become a widely accepted guideline. However, it should be seen as a general rule rather than an absolute law. As I’ll explore in the next section, there are still cases where inheritance is more suitable.</p>
+<h2>But There Are Times When Inheritance is Better</h2>
+<p>Despite the benefits of composition, it’s not always the best solution. In particular, inheritance remains a powerful and sometimes essential tool in event-driven client development. In this section, I’ll explore scenarios where inheritance is more appropriate.</p>
+<h3>Inheritance in Event-Driven Client Development</h3>
+<p>In event-driven client development, especially in GUI applications or game development, inheritance plays a vital role. Here’s why inheritance is useful in such environments:</p>
+<ul>
+<li><p>Consistent Event Handling: I can define common event handling logic in a base class, allowing child classes to extend or override it. This maintains code consistency while enabling customized behavior for specific components.</p>
+</li>
+<li><p>Lifecycle Management: I can manage the lifecycle (initialization, updating, rendering, destruction, etc.) of UI components or game objects in a base class, ensuring that all objects follow a consistent lifecycle.</p>
+</li>
+<li><p>Natural Expression of Hierarchical Structures: UI elements or game entities often follow hierarchical structures, and inheritance allows these structures to be naturally expressed in code.</p>
+</li>
+</ul>
+<h3>Applications with Strong Global State Dependencies</h3>
+<p>In applications where all logic strongly depends on global state, inheritance can be more effective than composition. Here's why:</p>
+<ul>
+<li><p>Avoiding Unnecessary Decoupling: If all components must eventually access the same global state, decoupling through composition and dependency injection might introduce unnecessary complexity. Inheritance can encapsulate access to global state, making the code more intuitive and manageable.</p>
+</li>
+<li><p>Centralization of Common Logic: By implementing global state handling logic in a parent class, I can reduce code duplication and maintain consistency, which is especially useful when managing side effects due to state changes.</p>
+</li>
+<li><p>Abstraction of State Access: By abstracting access to global state through inheritance, I can limit the scope of changes in case of architectural modifications (e.g. transitioning from global to local state).</p>
+</li>
+</ul>
+<h3>Effective Use of the Template Method Pattern</h3>
+<p>The template method pattern is a classic example of effectively utilizing inheritance:</p>
+<ul>
+<li><p>Defining Algorithm Structure: By defining the basic structure of an algorithm in a parent class and allowing child classes to implement specific steps, I can increase code reusability and extendibility.</p>
+</li>
+<li><p>Isolating Invariant Logic: By abstracting core logic that doesn’t change into the parent class, I can isolate it and allow changes only in the necessary parts in child classes, improving maintainability.</p>
+</li>
+<li><p>Ensuring Consistency: The template method pattern ensures consistency across multiple implementations, which is especially important in large projects where many developers collaborate.</p>
+</li>
+</ul>
+<h3>Inheritance in Framework Design</h3>
+<p>Many frameworks are designed around inheritance. In such cases, inheritance offers the following benefits:</p>
+<ul>
+<li><p>Providing Extension Points: Frameworks can provide core functionality while offering clear extension points for users to customize or extend specific parts.</p>
+</li>
+<li><p>Convention Over Configuration: By defining default behavior through inheritance and allowing users to override only when necessary, frameworks can implement the principle of "convention over configuration."</p>
+</li>
+<li><p>Type Safety: Inheritance enables compile-time type checking, preventing potential errors during framework use.</p>
+</li>
+</ul>
+<h2>Conclusion</h2>
+<p>The principle of "Composition Over Inheritance" is valid in many cases, but it’s not an absolute rule. Good developers know how to choose the right tool for the right situation.</p>
+<p>Both inheritance and composition have their strengths and weaknesses, and the choice should depend on project requirements, development context, and team preferences. The key is to fully understand the characteristics of both approaches and choose the one that best fits the problem at hand.</p>
+<p>Moreover, over the past decade, I’ve developed applications within a relatively 'perfect' object-oriented paradigm, but there’s now an increasing need for unconventional structures and low-level development. This shift underscores the importance of more flexible, situational approaches.</p>
+<p>In the end, great software design isn’t about blindly following dogmatic principles but about finding a balanced approach that fits the situation. Neither inheritance nor composition is always right or always wrong. As developers, my role is to understand the pros and cons of each technique, consider the evolving development environment and requirements, and choose the most suitable tools and methodologies for the task at hand. This flexible mindset is becoming increasingly important in modern software development.</p>
+c:["$","article",null,{"children":[["$","script",null,{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"{\"@context\":\"https://schema.org\",\"@type\":\"BlogPosting\",\"headline\":\"Inheritance vs Composition: There's No Always Right Answer\",\"description\":\"compares inheritance and composition, emphasizing the importance of choosing the right approach based on the specific software design context.\",\"datePublished\":\"2024-11-20\",\"author\":{\"@type\":\"Person\",\"name\":\"Wayne Choi\"},\"mainEntityOfPage\":\"https://waynechoi.dev/post/inheritance-vs-composition/\"}"}}],["$","$L18",null,{"href":"/posts/cs","className":"text-gray-600 hover:text-blue-800 hover:underline","children":"CS"}],["$","h1",null,{"children":"Inheritance vs Composition: There's No Always Right Answer"}],["$","time",null,{"dateTime":"2024-11-20","className":"text-gray-500 text-sm","children":"20 Nov 2024"}],["$","div",null,{"className":"mt-2","children":["$","div",null,{"className":"whitespace-nowrap overflow-x-auto pb-2","aria-label":"Post tags","children":[["$","$L18","software-design",{"href":"/tag/software-design","className":"mr-2 text-gray-600 hover:text-blue-800 hover:underline","children":"#software-design"}],["$","$L18","design-pattern",{"href":"/tag/design-pattern","className":"mr-2 text-gray-600 hover:text-blue-800 hover:underline","children":"#design-pattern"}],["$","$L18","inheritance",{"href":"/tag/inheritance","className":"mr-2 text-gray-600 hover:text-blue-800 hover:underline","children":"#inheritance"}],["$","$L18","composition",{"href":"/tag/composition","className":"mr-2 text-gray-600 hover:text-blue-800 hover:underline","children":"#composition"}]]}]}],["$","div",null,{"className":"mt-8","children":["$","div",null,{"className":"post-content","dangerouslySetInnerHTML":{"__html":"$19"}}]}],"$L1a"]}]
+1b:I[32948,["$2","$17"],"default"]
+1a:["$","$L1b",null,{"issueTerm":"Inheritance vs Composition: There's No Always Right Answer"}]
+12:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+1c:I[27201,["$5"],"IconMark"]
+f:null
+15:[["$","title","0",{"children":"Inheritance vs Composition: There's No Always Right Answer | WayneChoi.dev"}],["$","meta","1",{"name":"description","content":"compares inheritance and composition, emphasizing the importance of choosing the right approach based on the specific software design context."}],["$","link","2",{"rel":"canonical","href":"https://waynechoi.dev/post/inheritance-vs-composition/"}],["$","meta","3",{"property":"og:title","content":"Inheritance vs Composition: There's No Always Right Answer"}],["$","meta","4",{"property":"og:description","content":"compares inheritance and composition, emphasizing the importance of choosing the right approach based on the specific software design context."}],["$","meta","5",{"property":"og:url","content":"https://waynechoi.dev/post/inheritance-vs-composition/"}],["$","meta","6",{"property":"og:image","content":"https://waynechoi.dev/opengraph-image"}],["$","meta","7",{"property":"og:image:alt","content":"WayneChoi.dev"}],["$","meta","8",{"property":"og:type","content":"article"}],["$","meta","9",{"property":"article:published_time","content":"2024-11-20"}],["$","meta","10",{"property":"article:tag","content":"software-design"}],["$","meta","11",{"property":"article:tag","content":"design-pattern"}],["$","meta","12",{"property":"article:tag","content":"inheritance"}],["$","meta","13",{"property":"article:tag","content":"composition"}],["$","meta","14",{"name":"twitter:card","content":"summary_large_image"}],["$","meta","15",{"name":"twitter:title","content":"Inheritance vs Composition: There's No Always Right Answer"}],["$","meta","16",{"name":"twitter:description","content":"compares inheritance and composition, emphasizing the importance of choosing the right approach based on the specific software design context."}],["$","meta","17",{"name":"twitter:image","content":"https://waynechoi.dev/twitter-image"}],["$","link","18",{"rel":"icon","href":"/favicon.ico"}],["$","$L1c","19",{}]]

@@ -1,0 +1,110 @@
+1:"$Sreact.fragment"
+2:"/_next/static/chunks/07ixqnujfllo2.js"
+3:I[47689,["$2"],"default"]
+4:I[70119,["$2"],"default"]
+5:"/_next/static/chunks/3qfy96eoyh-ek.js"
+6:I[39756,["$5"],"default"]
+7:I[37457,["$5"],"default"]
+d:I[97367,["$5"],"OutletBoundary"]
+e:"$Sreact.suspense"
+10:"ViewportBoundary"
+11:I[97367,["$5"],"$10"]
+13:"MetadataBoundary"
+14:I[97367,["$5"],"$13"]
+16:I[68027,["$2"],"default",1]
+:HL["/_next/static/chunks/2e79geki6z2_c.css","style"]
+:HC["/",""]
+9:X
+b:[["children",{"s":"__PAGE__","h":512,"d":{"r":["$","$1","c",{"children":["$Lc",[["$","script","script-0",{"src":"/_next/static/chunks/0288roqreptti.js","async":true,"nonce":"$undefined"}]],["$","$Ld",null,{"children":["$","$e",null,{"name":"Next.MetadataOutlet","children":"$@f"}]}]]}],"p":false,"v":null}}]]
+a:[["children",{"s":{"n":"slug","t":"d","k":"opengl-uses-left-handed-coordinates","s":[]},"h":512,"d":{"r":["$","$1","c",{"children":[null,["$","$L6",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L7",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],"p":false,"v":null},"c":"$Qb"}]]
+8:[["children",{"s":"post","h":512,"d":{"r":["$","$1","c",{"children":[null,["$","$L6",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L7",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],"p":false,"v":"$9"},"c":"$Qa"}]]
+0:{"P":null,"c":["","post","opengl-uses-left-handed-coordinates",""],"q":"","i":false,"t":{"t":{"s":"","h":528,"d":{"r":["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/2e79geki6z2_c.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],["$","script","script-0",{"src":"/_next/static/chunks/07ixqnujfllo2.js","async":true,"nonce":"$undefined"}]],["$","html",null,{"lang":"en","children":["$","body",null,{"className":"mx-auto my-0","children":[["$","a",null,{"href":"#main-content","className":"skip-link","children":"Skip to content"}],["$","nav",null,{"className":"max-w-default mx-auto px-5 py-3","aria-label":"Primary navigation","children":["$","$L3",null,{}]}],["$","header",null,{"children":["$","$L4",null,{}]}],["$","main",null,{"id":"main-content","className":"max-w-default mx-auto p-5","children":["$","$L6",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L7",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}],["$","footer",null,{"className":"h-40 flex justify-center items-end","children":["$","p",null,{"className":"text-gray-500 text-sm","children":["© 2021–",2026," Wayne Choi. All rights reserved."]}]}]]}]}]]}],"p":false,"v":null},"c":"$Q8"},"h":{"r":["$","$1","h",{"children":[null,["$","$L11",null,{"children":"$L12"}],["$","$L14",null,{"children":[["$","div",null,{"hidden":true,"children":["$","$e",null,{"name":"Next.Metadata","children":"$L15"}]}],null]}],null]}],"p":false,"v":null}},"m":"$undefined","G":["$16",[["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/2e79geki6z2_c.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]]],"S":true,"r":"$undefined","s":"$undefined","a":"$undefined","l":"$undefined","p":"$undefined","d":"$undefined","b":"MYLL76Di7kZHpNQU1HIFd"}
+17:"/_next/static/chunks/0288roqreptti.js"
+18:I[22016,["$2","$17"],""]
+9:C
+19:T1c2a,<p>Starting with the conclusion, OpenGL coordinates use a left-handed system, just like DX. But GLM uses a right-handed coordinate system.</p>
+<p>Starting to handle new graphics APIs, I often found myself confused and lost due to different coordinate systems. I believe this is a common issue not only for myself but also for others. So, I aimed to precisely research and share about it this time. I began by seeking the official sources for two key facts I'm most clear about: OpenGL uses a right-handed coordinate system, while DX uses a left-handed one.</p>
+<p>However, I couldn't find any official documentation confirming the fact that OpenGL uses a right-handed coordinate system. Instead, I came across various blog posts. Opinions were not unified and were somewhat scattered, but there was some consensus that the coordinate system is right-handed while NDC (Normalized Device Coordinates) is left-handed. The fact that NDC is left-handed could be confirmed officially, but the mention of OpenGL being right-handed remained elusive.</p>
+<p>As I progressed with my research, I began to feel confused about what coordinate systems are and how they are handled by graphics APIs. So, I decided to rethink from the beginning. And then I realized. The fact that OpenGL uses a right-handed coordinate system for spaces has nothing to do with the graphics API itself.</p>
+<p>Typically, we send the MVP (Model-View-Projection) matrix along with the vertex's local coordinates to the vertex shader. Then, we operate on the local coordinates and MVP matrix in homogeneous space to obtain device coordinates, which are then returned in the vertex shader. The process of obtaining device coordinates before returning them in the vertex shader is entirely the user's logic and has nothing to do with the graphics API. Usually, it involves logic from math libraries like GLM. And the resulting device coordinates computed in this way are left-handed coordinate systems in both OpenGL and DX. It goes against the commonly perceived bias in the community, as they are often considered to be opposite.</p>
+<p>To confirm this visually, I made some modifications to the shader code for modeling a sphere to directly verify that OpenGL's NDC space is indeed a left-handed coordinate system. The following code snippet is from the vertex shader where I transformed the z-value of device coordinates, ranging from -1 to 1, into the range of 0 to 1, and then passed it to the fragment shader. I applied this value to the color, and upon observation, I confirmed that as the object gets closer to the screen, the z-value decreases.</p>
+<pre><code class="hljs language-glsl"><span class="hljs-comment">// vertex shader</span>
+<span class="hljs-meta">#version 420 core</span>
+
+<span class="hljs-keyword">layout</span> (<span class="hljs-keyword">location</span> = <span class="hljs-number">0</span>) <span class="hljs-keyword">in</span> <span class="hljs-type">vec3</span> pos;
+
+<span class="hljs-keyword">out</span> <span class="hljs-type">float</span> color;
+
+<span class="hljs-keyword">uniform</span>	<span class="hljs-type">mat4</span> model;
+<span class="hljs-keyword">uniform</span>	<span class="hljs-type">mat4</span> view;
+<span class="hljs-keyword">uniform</span>	<span class="hljs-type">mat4</span> projection;
+
+<span class="hljs-type">void</span> main()
+{
+	<span class="hljs-built_in">gl_Position</span> = projection * view * model * <span class="hljs-type">vec4</span>(pos, <span class="hljs-number">1.0</span>);
+	color = (<span class="hljs-built_in">gl_Position</span>.z + <span class="hljs-number">1.0</span> ) / <span class="hljs-number">2.0</span>;
+}
+
+<span class="hljs-comment">// fragment shader</span>
+<span class="hljs-meta">#version 420 core</span>
+
+<span class="hljs-keyword">out</span> <span class="hljs-type">vec4</span> FragColor;
+<span class="hljs-keyword">in</span> <span class="hljs-type">float</span> color;
+
+<span class="hljs-type">void</span> main()
+{
+    FragColor = <span class="hljs-type">vec4</span>(<span class="hljs-type">vec3</span>(color), <span class="hljs-number">1.0</span>);
+}</code></pre><p>Furthermore, I also confirmed that within the same graphics API, depending on the mathematical operation method, the world coordinate system can sometimes become a right-handed coordinate system and sometimes a left-handed coordinate system. When using the math operation library glmatrix with WebGL, it operated in a right-handed coordinate system similar to glm. However, in the <a href="https://webgl2fundamentals.org/webgl/lessons/webgl-3d-perspective.html" class="md-link" target="_blank" rel="noopener noreferrer">perspective example from WebGL2 Fundamentals</a>, where the projection matrix was manually calculated, it was implemented in a left-handed coordinate system.</p>
+<p>The conclusion is that the coordinate systems before obtaining device coordinates are not dependent on the graphics API. What we need to be mindful of is which library we are using, or whether we are directly implementing matrix calculations, and also the NDC (Normalized Device Coordinates) space, framebuffer coordinates, and texture coordinates.</p>
+<p>Now, below are the coordinate systems of each API that I initially set out to investigate:</p>
+<h2>1. OpenGL / WebGL</h2>
+<ul>
+<li>NDC<ul>
+<li>+Y is up. Point(-1, -1) is at the bottom left corner</li>
+<li>-1.0 ≤ x ≤ 1.0</li>
+<li>-1.0 ≤ y ≤ 1.0</li>
+<li>-1.0 ≤ z ≤ 1.0</li>
+</ul>
+</li>
+<li>Framebuffer coordinate: +Y is up. Origin(0, 0) is at the bottom left corner</li>
+<li>Texture Coordinates: +Y is up. Origin(0, 0) is at the bottom left corner</li>
+</ul>
+<h2>2. WebGPU / DirectX / Metal</h2>
+<ul>
+<li>NDC<ul>
+<li>+Y is up. Point(-1, -1) is at the bottom left corner</li>
+<li>-1.0 ≤ x ≤ 1.0</li>
+<li>-1.0 ≤ y ≤ 1.0</li>
+<li>0.0 ≤ z ≤ 1.0</li>
+</ul>
+</li>
+<li>Framebuffer coordinate: +Y is down. Origin(0, 0) is at the top left corner</li>
+<li>Texture coordinate: +Y is down. Origin(0, 0) is at the top left corner</li>
+</ul>
+<h2>3. Vulkan</h2>
+<ul>
+<li>NDC<ul>
+<li>+Y is down. Point(-1, -1) is at the top left corner</li>
+<li>-1.0 ≤ x ≤ 1.0</li>
+<li>-1.0 ≤ y ≤ 1.0</li>
+<li>0.0 ≤ z ≤ 1.0</li>
+</ul>
+</li>
+<li>Framebuffer coordinate: +Y is down. Origin(0, 0) is at the top left corner</li>
+<li>Texture coordinate: +Y is down. Origin(0, 0) is at the top left corner.</li>
+</ul>
+<h3>References</h3>
+<ul>
+<li><a href="https://www.w3.org/TR/webgpu" class="md-link" target="_blank" rel="noopener noreferrer">WebGPU W3C Working Draft</a></li>
+<li><a href="https://registry.khronos.org/OpenGL/specs/gl/glspec46.core.pdf" class="md-link" target="_blank" rel="noopener noreferrer">OpenGL 4.6 (Core Profile)</a></li>
+<li><a href="https://registry.khronos.org/vulkan/specs/1.3/html/chap24.html" class="md-link" target="_blank" rel="noopener noreferrer">Vulkan® 1.3.281 - A Specification</a></li>
+<li><a href="https://github.com/gpuweb/gpuweb/issues/416" class="md-link" target="_blank" rel="noopener noreferrer">WebGPU Coordinate systems</a></li>
+<li><a href="https://webgl2fundamentals.org/webgl/lessons/webgl-3d-perspective.html" class="md-link" target="_blank" rel="noopener noreferrer">WebGL2 Fundamentals</a></li>
+</ul>
+c:["$","article",null,{"children":[["$","script",null,{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"{\"@context\":\"https://schema.org\",\"@type\":\"BlogPosting\",\"headline\":\"OpenGL uses left-handed coordinates\",\"description\":\"coordinate systems for various graphics APIs...\",\"datePublished\":\"2024-04-09\",\"author\":{\"@type\":\"Person\",\"name\":\"Wayne Choi\"},\"mainEntityOfPage\":\"https://waynechoi.dev/post/opengl-uses-left-handed-coordinates/\"}"}}],["$","$L18",null,{"href":"/posts/graphics","className":"text-gray-600 hover:text-blue-800 hover:underline","children":"GRAPHICS"}],["$","h1",null,{"children":"OpenGL uses left-handed coordinates"}],["$","time",null,{"dateTime":"2024-04-09","className":"text-gray-500 text-sm","children":"9 Apr 2024"}],["$","div",null,{"className":"mt-2","children":["$","div",null,{"className":"whitespace-nowrap overflow-x-auto pb-2","aria-label":"Post tags","children":[["$","$L18","opengl",{"href":"/tag/opengl","className":"mr-2 text-gray-600 hover:text-blue-800 hover:underline","children":"#opengl"}],["$","$L18","coordinates",{"href":"/tag/coordinates","className":"mr-2 text-gray-600 hover:text-blue-800 hover:underline","children":"#coordinates"}],["$","$L18","ndc",{"href":"/tag/ndc","className":"mr-2 text-gray-600 hover:text-blue-800 hover:underline","children":"#ndc"}],["$","$L18","left-handed",{"href":"/tag/left-handed","className":"mr-2 text-gray-600 hover:text-blue-800 hover:underline","children":"#left-handed"}],["$","$L18","right-handed",{"href":"/tag/right-handed","className":"mr-2 text-gray-600 hover:text-blue-800 hover:underline","children":"#right-handed"}]]}]}],["$","div",null,{"className":"mt-8","children":["$","div",null,{"className":"post-content","dangerouslySetInnerHTML":{"__html":"$19"}}]}],"$L1a"]}]
+1b:I[32948,["$2","$17"],"default"]
+1a:["$","$L1b",null,{"issueTerm":"OpenGL uses left-handed coordinates"}]
+12:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+1c:I[27201,["$5"],"IconMark"]
+f:null
+15:[["$","title","0",{"children":"OpenGL uses left-handed coordinates | WayneChoi.dev"}],["$","meta","1",{"name":"description","content":"coordinate systems for various graphics APIs..."}],["$","link","2",{"rel":"canonical","href":"https://waynechoi.dev/post/opengl-uses-left-handed-coordinates/"}],["$","meta","3",{"property":"og:title","content":"OpenGL uses left-handed coordinates"}],["$","meta","4",{"property":"og:description","content":"coordinate systems for various graphics APIs..."}],["$","meta","5",{"property":"og:url","content":"https://waynechoi.dev/post/opengl-uses-left-handed-coordinates/"}],["$","meta","6",{"property":"og:image","content":"https://waynechoi.dev/opengraph-image"}],["$","meta","7",{"property":"og:image:alt","content":"WayneChoi.dev"}],["$","meta","8",{"property":"og:type","content":"article"}],["$","meta","9",{"property":"article:published_time","content":"2024-04-09"}],["$","meta","10",{"property":"article:tag","content":"opengl"}],["$","meta","11",{"property":"article:tag","content":"coordinates"}],["$","meta","12",{"property":"article:tag","content":"ndc"}],["$","meta","13",{"property":"article:tag","content":"left-handed"}],["$","meta","14",{"property":"article:tag","content":"right-handed"}],["$","meta","15",{"name":"twitter:card","content":"summary_large_image"}],["$","meta","16",{"name":"twitter:title","content":"OpenGL uses left-handed coordinates"}],["$","meta","17",{"name":"twitter:description","content":"coordinate systems for various graphics APIs..."}],["$","meta","18",{"name":"twitter:image","content":"https://waynechoi.dev/twitter-image"}],["$","link","19",{"rel":"icon","href":"/favicon.ico"}],["$","$L1c","20",{}]]

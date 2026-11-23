@@ -1,0 +1,81 @@
+1:"$Sreact.fragment"
+2:"/_next/static/chunks/07ixqnujfllo2.js"
+3:I[47689,["$2"],"default"]
+4:I[70119,["$2"],"default"]
+5:"/_next/static/chunks/3qfy96eoyh-ek.js"
+6:I[39756,["$5"],"default"]
+7:I[37457,["$5"],"default"]
+d:I[97367,["$5"],"OutletBoundary"]
+e:"$Sreact.suspense"
+10:"ViewportBoundary"
+11:I[97367,["$5"],"$10"]
+13:"MetadataBoundary"
+14:I[97367,["$5"],"$13"]
+16:I[68027,["$2"],"default",1]
+:HL["/_next/static/chunks/2e79geki6z2_c.css","style"]
+:HC["/",""]
+9:X
+b:[["children",{"s":"__PAGE__","h":512,"d":{"r":["$","$1","c",{"children":["$Lc",[["$","script","script-0",{"src":"/_next/static/chunks/0288roqreptti.js","async":true,"nonce":"$undefined"}]],["$","$Ld",null,{"children":["$","$e",null,{"name":"Next.MetadataOutlet","children":"$@f"}]}]]}],"p":false,"v":null}}]]
+a:[["children",{"s":{"n":"slug","t":"d","k":"n-body-problem","s":[]},"h":512,"d":{"r":["$","$1","c",{"children":[null,["$","$L6",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L7",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],"p":false,"v":null},"c":"$Qb"}]]
+8:[["children",{"s":"post","h":512,"d":{"r":["$","$1","c",{"children":[null,["$","$L6",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L7",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],"p":false,"v":"$9"},"c":"$Qa"}]]
+0:{"P":null,"c":["","post","n-body-problem",""],"q":"","i":false,"t":{"t":{"s":"","h":528,"d":{"r":["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/2e79geki6z2_c.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],["$","script","script-0",{"src":"/_next/static/chunks/07ixqnujfllo2.js","async":true,"nonce":"$undefined"}]],["$","html",null,{"lang":"en","children":["$","body",null,{"className":"mx-auto my-0","children":[["$","a",null,{"href":"#main-content","className":"skip-link","children":"Skip to content"}],["$","nav",null,{"className":"max-w-default mx-auto px-5 py-3","aria-label":"Primary navigation","children":["$","$L3",null,{}]}],["$","header",null,{"children":["$","$L4",null,{}]}],["$","main",null,{"id":"main-content","className":"max-w-default mx-auto p-5","children":["$","$L6",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L7",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}],["$","footer",null,{"className":"h-40 flex justify-center items-end","children":["$","p",null,{"className":"text-gray-500 text-sm","children":["© 2021–",2026," Wayne Choi. All rights reserved."]}]}]]}]}]]}],"p":false,"v":null},"c":"$Q8"},"h":{"r":["$","$1","h",{"children":[null,["$","$L11",null,{"children":"$L12"}],["$","$L14",null,{"children":[["$","div",null,{"hidden":true,"children":["$","$e",null,{"name":"Next.Metadata","children":"$L15"}]}],null]}],null]}],"p":false,"v":null}},"m":"$undefined","G":["$16",[["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/2e79geki6z2_c.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]]],"S":true,"r":"$undefined","s":"$undefined","a":"$undefined","l":"$undefined","p":"$undefined","d":"$undefined","b":"MYLL76Di7kZHpNQU1HIFd"}
+17:"/_next/static/chunks/0288roqreptti.js"
+18:I[22016,["$2","$17"],""]
+9:C
+19:T1b99,<img src="/img/n-body-problem.jpg" class="post-pic" loading="lazy" /><p><a href="https://waynechoidev.github.io/n-body-problem/" class="md-link" target="_blank" rel="noopener noreferrer">Sample</a> / <a href="https://github.com/waynechoidev/n-body-problem/" class="md-link" target="_blank" rel="noopener noreferrer">Repository</a></p>
+<p>Recently, I heard that the Netflix series "3 Body Problem" is popular, so I decided to try implementing an N-body simulation using WebGPU.</p>
+<p>I found that the largest observed multiple star system to date consists of 7 stars, so I constructed the simulation as a 7-body problem. Since I compute accelerations for all objects considering their distances and masses using a compute shader, I could increase the number of bodies as long as the GPU performance allows it, but I didn't increase it further because it didn't look aesthetically pleasing with too many bodies.</p>
+<p>I followed Newton's equations as is but adjusted the gravitational constant to fit the screen size and speed. Collisions are not implemented separately, so stars can pass through each other.</p>
+<p>Initially, there was an issue where position coordinates became NaN on Android mobile devices, which was due to floating-point precision. To use the f16 data type in WebGPU, a separate extension is required, which is not yet supported in Chrome for Android. So, for mobile devices, f32 data type needs to be used, but due to hardware limitations, computations are done with precision even lower than f16.</p>
+<p>When the distance between objects became excessively close, on desktops, computations were precise enough to avoid such issues. However, on mobile devices, when that distance was recognized as 0, it caused problems in the formulas of the law of gravitation where the distance squared is divided and in normalizing distance vectors to obtain direction vectors, resulting in NaN values. So, I resolved this by clamping the distance values to small decimals recognizable on mobile devices to prevent them from reaching 0.</p>
+<p>Below is the compute shader code for calculating the positions of objects.</p>
+<pre><code class="hljs language-js">struct <span class="hljs-title class_">Vertex</span> {
+  @<span class="hljs-title function_">location</span>(<span class="hljs-number">0</span>) <span class="hljs-attr">position</span>: vec3f,
+  @<span class="hljs-title function_">location</span>(<span class="hljs-number">1</span>) <span class="hljs-attr">velocity</span>: vec3f,
+  @<span class="hljs-title function_">location</span>(<span class="hljs-number">2</span>) <span class="hljs-attr">color</span>: vec3f,
+  @<span class="hljs-title function_">location</span>(<span class="hljs-number">3</span>) <span class="hljs-attr">texCoord</span>: vec2f,
+  @<span class="hljs-title function_">location</span>(<span class="hljs-number">4</span>) <span class="hljs-attr">radius</span>: f32,
+  @<span class="hljs-title function_">location</span>(<span class="hljs-number">5</span>) <span class="hljs-attr">mass</span>: f32,
+};
+
+@<span class="hljs-title function_">group</span>(<span class="hljs-number">0</span>) @<span class="hljs-title function_">binding</span>(<span class="hljs-number">0</span>) <span class="hljs-keyword">var</span>&lt;storage, read_write&gt; <span class="hljs-attr">objects</span>: array&lt;<span class="hljs-title class_">Vertex</span>&gt;;
+@<span class="hljs-title function_">group</span>(<span class="hljs-number">0</span>) @<span class="hljs-title function_">binding</span>(<span class="hljs-number">1</span>) <span class="hljs-keyword">var</span>&lt;uniform&gt; <span class="hljs-attr">numOfObject</span>: u32;
+@<span class="hljs-title function_">group</span>(<span class="hljs-number">0</span>) @<span class="hljs-title function_">binding</span>(<span class="hljs-number">2</span>) <span class="hljs-keyword">var</span>&lt;uniform&gt; <span class="hljs-attr">delta</span>: f32;
+
+<span class="hljs-keyword">const</span> <span class="hljs-attr">MIN_DISTANCE</span>: f32 = <span class="hljs-number">0.0001</span>;
+
+@compute @<span class="hljs-title function_">workgroup_size</span>(<span class="hljs-number">256</span>) fn <span class="hljs-title function_">computeSomething</span>(<span class="hljs-params">
+    @builtin(global_invocation_id) global_invocation_id : vec3u,
+</span>) {
+    <span class="hljs-keyword">let</span> index = global_invocation_id.<span class="hljs-property">x</span>;
+    <span class="hljs-keyword">var</span> body : <span class="hljs-title class_">Vertex</span> = objects[index];
+    <span class="hljs-keyword">var</span> acceleration = <span class="hljs-title function_">vec3f</span>(<span class="hljs-number">0.0</span>, <span class="hljs-number">0.0</span>, <span class="hljs-number">0.0</span>);
+
+    <span class="hljs-keyword">for</span> (<span class="hljs-keyword">var</span> i = 0u; i &lt; numOfObject; i++) {
+        <span class="hljs-keyword">if</span> (i != index) {
+            <span class="hljs-keyword">let</span> other : <span class="hljs-title class_">Vertex</span> = objects[i];
+            <span class="hljs-keyword">let</span> distance_vec = other.<span class="hljs-property">position</span> - body.<span class="hljs-property">position</span>;
+            <span class="hljs-keyword">var</span> distance = <span class="hljs-title function_">length</span>(distance_vec);
+            <span class="hljs-keyword">if</span> (distance &lt; <span class="hljs-variable constant_">MIN_DISTANCE</span>) {
+                distance = <span class="hljs-variable constant_">MIN_DISTANCE</span>;
+            }
+            <span class="hljs-keyword">let</span> force = (<span class="hljs-number">0.0006673</span> * body.<span class="hljs-property">mass</span> * other.<span class="hljs-property">mass</span>) / distance * distance;
+            <span class="hljs-keyword">var</span> direction = <span class="hljs-title function_">vec3</span>(<span class="hljs-number">0.0</span>, <span class="hljs-number">0.0</span>, <span class="hljs-number">0.0</span>);
+            <span class="hljs-keyword">if</span> (distance &gt; <span class="hljs-variable constant_">MIN_DISTANCE</span>) {
+                direction = <span class="hljs-title function_">normalize</span>(distance_vec);
+            }
+            acceleration += <span class="hljs-title function_">vec3</span>(direction * force / body.<span class="hljs-property">mass</span>);
+        }
+    }
+
+    body.<span class="hljs-property">velocity</span> += acceleration;
+    body.<span class="hljs-property">position</span> += body.<span class="hljs-property">velocity</span> * delta;
+    objects[index] = body;
+}</code></pre><p>For the graphics pipeline, I generated billboards from those positions in the compute shader, rotated them according to the camera direction, and then drew stars in the fragment shader. I referenced an <a href="https://www.shadertoy.com/view/4dXGR4" class="md-link" target="_blank" rel="noopener noreferrer">example made by "flight404" on ShaderToy</a> for the fragment shader code but simplified it significantly.</p>
+c:["$","article",null,{"children":[["$","script",null,{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"{\"@context\":\"https://schema.org\",\"@type\":\"BlogPosting\",\"headline\":\"N-body problem\",\"description\":\"simulated n-body problem with WebGPU compute shader...\",\"datePublished\":\"2024-04-29\",\"author\":{\"@type\":\"Person\",\"name\":\"Wayne Choi\"},\"mainEntityOfPage\":\"https://waynechoi.dev/post/n-body-problem/\"}"}}],["$","$L18",null,{"href":"/posts/graphics","className":"text-gray-600 hover:text-blue-800 hover:underline","children":"GRAPHICS"}],["$","h1",null,{"children":"N-body problem"}],["$","time",null,{"dateTime":"2024-04-29","className":"text-gray-500 text-sm","children":"29 Apr 2024"}],["$","div",null,{"className":"mt-2","children":["$","div",null,{"className":"whitespace-nowrap overflow-x-auto pb-2","aria-label":"Post tags","children":[["$","$L18","toyproject",{"href":"/tag/toyproject","className":"mr-2 text-gray-600 hover:text-blue-800 hover:underline","children":"#toyproject"}],["$","$L18","webgpu",{"href":"/tag/webgpu","className":"mr-2 text-gray-600 hover:text-blue-800 hover:underline","children":"#webgpu"}],["$","$L18","particles",{"href":"/tag/particles","className":"mr-2 text-gray-600 hover:text-blue-800 hover:underline","children":"#particles"}],["$","$L18","collision",{"href":"/tag/collision","className":"mr-2 text-gray-600 hover:text-blue-800 hover:underline","children":"#collision"}]]}]}],["$","div",null,{"className":"mt-8","children":["$","div",null,{"className":"post-content","dangerouslySetInnerHTML":{"__html":"$19"}}]}],"$L1a"]}]
+1b:I[32948,["$2","$17"],"default"]
+1a:["$","$L1b",null,{"issueTerm":"N-body problem"}]
+12:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+1c:I[27201,["$5"],"IconMark"]
+f:null
+15:[["$","title","0",{"children":"N-body problem | WayneChoi.dev"}],["$","meta","1",{"name":"description","content":"simulated n-body problem with WebGPU compute shader..."}],["$","link","2",{"rel":"canonical","href":"https://waynechoi.dev/post/n-body-problem/"}],["$","meta","3",{"property":"og:title","content":"N-body problem"}],["$","meta","4",{"property":"og:description","content":"simulated n-body problem with WebGPU compute shader..."}],["$","meta","5",{"property":"og:url","content":"https://waynechoi.dev/post/n-body-problem/"}],["$","meta","6",{"property":"og:image","content":"https://waynechoi.dev/opengraph-image"}],["$","meta","7",{"property":"og:image:alt","content":"WayneChoi.dev"}],["$","meta","8",{"property":"og:type","content":"article"}],["$","meta","9",{"property":"article:published_time","content":"2024-04-29"}],["$","meta","10",{"property":"article:tag","content":"toyproject"}],["$","meta","11",{"property":"article:tag","content":"webgpu"}],["$","meta","12",{"property":"article:tag","content":"particles"}],["$","meta","13",{"property":"article:tag","content":"collision"}],["$","meta","14",{"name":"twitter:card","content":"summary_large_image"}],["$","meta","15",{"name":"twitter:title","content":"N-body problem"}],["$","meta","16",{"name":"twitter:description","content":"simulated n-body problem with WebGPU compute shader..."}],["$","meta","17",{"name":"twitter:image","content":"https://waynechoi.dev/twitter-image"}],["$","link","18",{"rel":"icon","href":"/favicon.ico"}],["$","$L1c","19",{}]]

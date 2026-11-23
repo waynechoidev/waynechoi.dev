@@ -1,63 +1,57 @@
-1:HL["/_next/static/css/3864b451a61e4546.css","style",{"crossOrigin":""}]
-2:HL["/_next/static/css/2e2a7597edf4d608.css","style",{"crossOrigin":""}]
-0:["d1tlILPvfFQtQusXyx6Vm",[[["",{"children":["post",{"children":[["slug","image-based-lighting","d"],{"children":["__PAGE__?{\"slug\":\"image-based-lighting\"}",{}]}]}]},"$undefined","$undefined",true],"$L3",[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/3864b451a61e4546.css","precedence":"next","crossOrigin":""}],["$","link","1",{"rel":"stylesheet","href":"/_next/static/css/2e2a7597edf4d608.css","precedence":"next","crossOrigin":""}]],"$L4"]]]]
-5:HL["/_next/static/css/602feae4669a507e.css","style",{"crossOrigin":""}]
-6:I[9194,["326","static/chunks/326-6784f49434136418.js","185","static/chunks/app/layout-02f93a462dd22bde.js"],""]
-7:I[5629,["326","static/chunks/326-6784f49434136418.js","185","static/chunks/app/layout-02f93a462dd22bde.js"],""]
-8:I[6954,[],""]
-9:I[7264,[],""]
-b:I[8326,["954","static/chunks/d3ac728e-9e72e1d80e89da72.js","326","static/chunks/326-6784f49434136418.js","149","static/chunks/149-9f0c9c044d28f14f.js","605","static/chunks/app/post/%5Bslug%5D/page-dd1bc4deae325122.js"],""]
-c:I[7708,["954","static/chunks/d3ac728e-9e72e1d80e89da72.js","326","static/chunks/326-6784f49434136418.js","149","static/chunks/149-9f0c9c044d28f14f.js","605","static/chunks/app/post/%5Bslug%5D/page-dd1bc4deae325122.js"],""]
-e:I[5631,["954","static/chunks/d3ac728e-9e72e1d80e89da72.js","326","static/chunks/326-6784f49434136418.js","149","static/chunks/149-9f0c9c044d28f14f.js","605","static/chunks/app/post/%5Bslug%5D/page-dd1bc4deae325122.js"],""]
-4:[["$","meta","0",{"charSet":"utf-8"}],["$","title","1",{"children":"WayneChoi.Dev"}],["$","meta","2",{"name":"description","content":"Wayne Choi blog"}],["$","meta","3",{"name":"viewport","content":"width=device-width, initial-scale=1"}],["$","link","4",{"rel":"icon","href":"/favicon.ico"}]]
-d:Tc2c,
-<iframe width="560" height="315" src="https://www.youtube.com/embed/qR98uFPMKvo?si=uHEEg5A6C9q1Ofzi" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+1:"$Sreact.fragment"
+2:"/_next/static/chunks/07ixqnujfllo2.js"
+3:I[47689,["$2"],"default"]
+4:I[70119,["$2"],"default"]
+5:"/_next/static/chunks/3qfy96eoyh-ek.js"
+6:I[39756,["$5"],"default"]
+7:I[37457,["$5"],"default"]
+d:I[97367,["$5"],"OutletBoundary"]
+e:"$Sreact.suspense"
+10:"ViewportBoundary"
+11:I[97367,["$5"],"$10"]
+13:"MetadataBoundary"
+14:I[97367,["$5"],"$13"]
+16:I[68027,["$2"],"default",1]
+:HL["/_next/static/chunks/2e79geki6z2_c.css","style"]
+:HC["/",""]
+9:X
+b:[["children",{"s":"__PAGE__","h":512,"d":{"r":["$","$1","c",{"children":["$Lc",[["$","script","script-0",{"src":"/_next/static/chunks/0288roqreptti.js","async":true,"nonce":"$undefined"}]],["$","$Ld",null,{"children":["$","$e",null,{"name":"Next.MetadataOutlet","children":"$@f"}]}]]}],"p":false,"v":null}}]]
+a:[["children",{"s":{"n":"slug","t":"d","k":"image-based-lighting","s":[]},"h":512,"d":{"r":["$","$1","c",{"children":[null,["$","$L6",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L7",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],"p":false,"v":null},"c":"$Qb"}]]
+8:[["children",{"s":"post","h":512,"d":{"r":["$","$1","c",{"children":[null,["$","$L6",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L7",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],"p":false,"v":"$9"},"c":"$Qa"}]]
+0:{"P":null,"c":["","post","image-based-lighting",""],"q":"","i":false,"t":{"t":{"s":"","h":528,"d":{"r":["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/2e79geki6z2_c.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],["$","script","script-0",{"src":"/_next/static/chunks/07ixqnujfllo2.js","async":true,"nonce":"$undefined"}]],["$","html",null,{"lang":"en","children":["$","body",null,{"className":"mx-auto my-0","children":[["$","a",null,{"href":"#main-content","className":"skip-link","children":"Skip to content"}],["$","nav",null,{"className":"max-w-default mx-auto px-5 py-3","aria-label":"Primary navigation","children":["$","$L3",null,{}]}],["$","header",null,{"children":["$","$L4",null,{}]}],["$","main",null,{"id":"main-content","className":"max-w-default mx-auto p-5","children":["$","$L6",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L7",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}],["$","footer",null,{"className":"h-40 flex justify-center items-end","children":["$","p",null,{"className":"text-gray-500 text-sm","children":["© 2021–",2026," Wayne Choi. All rights reserved."]}]}]]}]}]]}],"p":false,"v":null},"c":"$Q8"},"h":{"r":["$","$1","h",{"children":[null,["$","$L11",null,{"children":"$L12"}],["$","$L14",null,{"children":[["$","div",null,{"hidden":true,"children":["$","$e",null,{"name":"Next.Metadata","children":"$L15"}]}],null]}],null]}],"p":false,"v":null}},"m":"$undefined","G":["$16",[["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/2e79geki6z2_c.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]]],"S":true,"r":"$undefined","s":"$undefined","a":"$undefined","l":"$undefined","p":"$undefined","d":"$undefined","b":"MYLL76Di7kZHpNQU1HIFd"}
+17:"/_next/static/chunks/0288roqreptti.js"
+18:I[22016,["$2","$17"],""]
+9:C
+19:Tf5c,<iframe width="560" height="315" src="https://www.youtube.com/embed/qR98uFPMKvo?si=uHEEg5A6C9q1Ofzi" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading="lazy"></iframe><p>I tried to implement a simple Image-Based Lighting (IBL) technique. It's not as complex as the methods used in actual products, but I wanted to explore a straightforward approach. Traditional Phong or Blinn-Phong lighting often falls short when it comes to capturing intricate real-world environments. That's why using cube maps and environment maps as the foundation for lighting can allow for the creation of more complex environments.</p>
+<hr />
+<img src="/img/image-based-lighting-1.jpg" class="post-pic" loading="lazy" /><p>I first implemented an environment map. I positioned a sphere model at the center and used a cube map texture to create a skybox. Initially, I focused on rendering the reflection of the background on the sphere's surface without considering lighting. In this case, I applied the cube map texture using the result of reflecting the toEye vector (normalized vector between the camera and the sphere's surface) with respect to the normal vector of the sphere's surface.</p>
+<pre><code class="hljs language-glsl"><span class="hljs-type">vec3</span> toEye = <span class="hljs-built_in">normalize</span>(viewPosition - posWorld);
+colour = <span class="hljs-built_in">texture</span>(cubemapTexture, <span class="hljs-built_in">reflect</span>(-toEye, normalWorld));</code></pre><hr />
+<p>While there are various ways to implement Image-Based Lighting (IBL), it is common to use cube map textures and a technique similar to environment mapping. However, the specific content and usage of cube map textures can vary depending on the project's goals and design. In this example, I used Diffuse and Specular cube maps. The Diffuse cube map contains color information reflecting off objects in the environment, often the base color of the object. On the other hand, the Specular cube map primarily contains data related to the intensity and reflection direction when light interacts with the object's surface, often representing properties like metallicity and glossiness.</p>
+<hr />
+<img src="/img/image-based-lighting-2.jpg" width="48%" loading="lazy" />
+<img src="/img/image-based-lighting-3.jpg" width="48%" loading="lazy" /><p>I got the Specular cubemap texture from <a href="http://www.humus.name" class="md-link" target="_blank" rel="noopener noreferrer">www.humus.name</a>, and I created the Diffuse cubemap texture based on it. I applied the Diffuse cubemap to the normal vectors of the sphere's surface, while I used the same technique as the previously implemented environment map for the Specular cubemap. However, I controlled the Specular cubemap's appearance by powering it with the material's shininess.</p>
+<pre><code class="hljs language-glsl"><span class="hljs-type">vec3</span> toEye = <span class="hljs-built_in">normalize</span>(viewPosition - posWorld);
 
-I tried to implement a simple Image-Based Lighting (IBL) technique. It's not as complex as the methods used in actual products, but I wanted to explore a straightforward approach. Traditional Phong or Blinn-Phong lighting often falls short when it comes to capturing intricate real-world environments. That's why using cube maps and environment maps as the foundation for lighting can allow for the creation of more complex environments.
+<span class="hljs-type">vec4</span> diffuse = <span class="hljs-built_in">texture</span>(diffuseCubemap, normalWorld);
+<span class="hljs-type">vec4</span> specular = <span class="hljs-built_in">texture</span>(SpecularCubemap, <span class="hljs-built_in">reflect</span>(-toEye, normalWorld));
 
----
-
-<img src="/img/image-based-lighting-1.jpg" class="post-pic">
-
-I first implemented an environment map. I positioned a sphere model at the center and used a cube map texture to create a skybox. Initially, I focused on rendering the reflection of the background on the sphere's surface without considering lighting. In this case, I applied the cube map texture using the result of reflecting the toEye vector (normalized vector between the camera and the sphere's surface) with respect to the normal vector of the sphere's surface.
-
-```glsl
-vec3 toEye = normalize(viewPosition - posWorld);
-colour = texture(cubemapTexture, reflect(-toEye, normalWorld));
-```
-
----
-
-While there are various ways to implement Image-Based Lighting (IBL), it is common to use cube map textures and a technique similar to environment mapping. However, the specific content and usage of cube map textures can vary depending on the project's goals and design. In this example, I used Diffuse and Specular cube maps. The Diffuse cube map contains color information reflecting off objects in the environment, often the base color of the object. On the other hand, the Specular cube map primarily contains data related to the intensity and reflection direction when light interacts with the object's surface, often representing properties like metallicity and glossiness.
-
----
-
-<img src="/img/image-based-lighting-2.jpg" width="48%">
-<img src="/img/image-based-lighting-3.jpg" width="48%">
-
-I got the Specular cubemap texture from [www.humus.name](http://www.humus.name), and I created the Diffuse cubemap texture based on it. I applied the Diffuse cubemap to the normal vectors of the sphere's surface, while I used the same technique as the previously implemented environment map for the Specular cubemap. However, I controlled the Specular cubemap's appearance by powering it with the material's shininess.
-
-```glsl
-vec3 toEye = normalize(viewPosition - posWorld);
-
-vec4 diffuse = texture(diffuseCubemap, normalWorld);
-vec4 specular = texture(SpecularCubemap, reflect(-toEye, normalWorld));
-
-specular *= pow((specular.x + specular.y + specular.z) / 3.0, material.shininess);
+specular *= <span class="hljs-built_in">pow</span>((specular.x + specular.y + specular.z) / <span class="hljs-number">3.0</span>, material.shininess);
 
 diffuse.xyz *= material.diffuse;
 specular.xyz *= material.specular;
 
-if(useTexture)
+<span class="hljs-keyword">if</span>(useTexture)
 {
-    diffuse *= texture(theTexture, TexCoord);
+    diffuse *= <span class="hljs-built_in">texture</span>(theTexture, TexCoord);
 }
 
-colour = diffuse + specular;
-```
-
----
-
-[Repository](https://github.com/waynechoidev/image-based-lighting/)
-3:[null,["$","html",null,{"lang":"en","children":["$","body",null,{"className":"mx-auto my-0","children":[["$","nav",null,{"className":"max-w-default mx-auto px-5 py-3","children":["$","$L6",null,{}]}],["$","header",null,{"children":["$","$L7",null,{}]}],["$","div",null,{"className":"max-w-default mx-auto p-5","children":["$","$L8",null,{"parallelRouterKey":"children","segmentPath":["children"],"loading":"$undefined","loadingStyles":"$undefined","hasLoading":false,"error":"$undefined","errorStyles":"$undefined","template":["$","$L9",null,{}],"templateStyles":"$undefined","notFound":[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":"404"}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],"notFoundStyles":[],"childProp":{"current":["$","$L8",null,{"parallelRouterKey":"children","segmentPath":["children","post","children"],"loading":"$undefined","loadingStyles":"$undefined","hasLoading":false,"error":"$undefined","errorStyles":"$undefined","template":["$","$L9",null,{}],"templateStyles":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined","childProp":{"current":[null,["$","$L8",null,{"parallelRouterKey":"children","segmentPath":["children","post","children",["slug","image-based-lighting","d"],"children"],"loading":"$undefined","loadingStyles":"$undefined","hasLoading":false,"error":"$undefined","errorStyles":"$undefined","template":["$","$L9",null,{}],"templateStyles":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined","childProp":{"current":["$La",["$","div",null,{"children":[["$","$Lb",null,{"href":"/posts/graphics","className":"text-gray-600 text-md pl-1 hover:font-bold","children":"GRAPHICS"}],["$","h1",null,{"children":"Image based lighting"}],["$","p",null,{"className":"text-gray-400 text-sm m-0 mt-1","children":"Oct 30, 2023"}],["$","div",null,{"className":"mt-1","children":["$","div",null,{"className":"whitespace-nowrap overflow-x-auto pb-3","children":[["$","$Lb","opengl",{"href":"/tag/opengl","className":"mr-2 text-gray-500 hover:font-bold","children":"#opengl"}],["$","$Lb","cubemap",{"href":"/tag/cubemap","className":"mr-2 text-gray-500 hover:font-bold","children":"#cubemap"}],["$","$Lb","lighting",{"href":"/tag/lighting","className":"mr-2 text-gray-500 hover:font-bold","children":"#lighting"}],["$","$Lb","cpp",{"href":"/tag/cpp","className":"mr-2 text-gray-500 hover:font-bold","children":"#cpp"}]]}]}],["$","div",null,{"className":"mt-8","children":["$","$Lc",null,{"content":"$d"}]}],["$","$Le",null,{"issueTerm":"Image based lighting"}]]}],null],"segment":"__PAGE__?{\"slug\":\"image-based-lighting\"}"},"styles":[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/602feae4669a507e.css","precedence":"next","crossOrigin":""}]]}],null],"segment":["slug","image-based-lighting","d"]},"styles":[]}],"segment":"post"},"styles":[]}]}],["$","footer",null,{"className":"h-40 flex justify-center items-end","children":["$","p",null,{"className":"text-gray-500 text-sm","children":"(C) 2021. Wayne Choi. All rights reserved."}]}]]}]}],null]
-a:null
+colour = diffuse + specular;</code></pre><hr />
+<p><a href="https://github.com/waynechoidev/image-based-lighting/" class="md-link" target="_blank" rel="noopener noreferrer">Repository</a></p>
+c:["$","article",null,{"children":[["$","script",null,{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"{\"@context\":\"https://schema.org\",\"@type\":\"BlogPosting\",\"headline\":\"Image based lighting\",\"description\":\"Implemented a simple Image-Based Lighting (IBL) technique...\",\"datePublished\":\"2023-10-30\",\"author\":{\"@type\":\"Person\",\"name\":\"Wayne Choi\"},\"mainEntityOfPage\":\"https://waynechoi.dev/post/image-based-lighting/\"}"}}],["$","$L18",null,{"href":"/posts/graphics","className":"text-gray-600 hover:text-blue-800 hover:underline","children":"GRAPHICS"}],["$","h1",null,{"children":"Image based lighting"}],["$","time",null,{"dateTime":"2023-10-30","className":"text-gray-500 text-sm","children":"30 Oct 2023"}],["$","div",null,{"className":"mt-2","children":["$","div",null,{"className":"whitespace-nowrap overflow-x-auto pb-2","aria-label":"Post tags","children":[["$","$L18","opengl",{"href":"/tag/opengl","className":"mr-2 text-gray-600 hover:text-blue-800 hover:underline","children":"#opengl"}],["$","$L18","cubemap",{"href":"/tag/cubemap","className":"mr-2 text-gray-600 hover:text-blue-800 hover:underline","children":"#cubemap"}],["$","$L18","lighting",{"href":"/tag/lighting","className":"mr-2 text-gray-600 hover:text-blue-800 hover:underline","children":"#lighting"}],["$","$L18","cpp",{"href":"/tag/cpp","className":"mr-2 text-gray-600 hover:text-blue-800 hover:underline","children":"#cpp"}]]}]}],["$","div",null,{"className":"mt-8","children":["$","div",null,{"className":"post-content","dangerouslySetInnerHTML":{"__html":"$19"}}]}],"$L1a"]}]
+1b:I[32948,["$2","$17"],"default"]
+1a:["$","$L1b",null,{"issueTerm":"Image based lighting"}]
+12:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+1c:I[27201,["$5"],"IconMark"]
+f:null
+15:[["$","title","0",{"children":"Image based lighting | WayneChoi.dev"}],["$","meta","1",{"name":"description","content":"Implemented a simple Image-Based Lighting (IBL) technique..."}],["$","link","2",{"rel":"canonical","href":"https://waynechoi.dev/post/image-based-lighting/"}],["$","meta","3",{"property":"og:title","content":"Image based lighting"}],["$","meta","4",{"property":"og:description","content":"Implemented a simple Image-Based Lighting (IBL) technique..."}],["$","meta","5",{"property":"og:url","content":"https://waynechoi.dev/post/image-based-lighting/"}],["$","meta","6",{"property":"og:image","content":"https://waynechoi.dev/opengraph-image"}],["$","meta","7",{"property":"og:image:alt","content":"WayneChoi.dev"}],["$","meta","8",{"property":"og:type","content":"article"}],["$","meta","9",{"property":"article:published_time","content":"2023-10-30"}],["$","meta","10",{"property":"article:tag","content":"opengl"}],["$","meta","11",{"property":"article:tag","content":"cubemap"}],["$","meta","12",{"property":"article:tag","content":"lighting"}],["$","meta","13",{"property":"article:tag","content":"cpp"}],["$","meta","14",{"name":"twitter:card","content":"summary_large_image"}],["$","meta","15",{"name":"twitter:title","content":"Image based lighting"}],["$","meta","16",{"name":"twitter:description","content":"Implemented a simple Image-Based Lighting (IBL) technique..."}],["$","meta","17",{"name":"twitter:image","content":"https://waynechoi.dev/twitter-image"}],["$","link","18",{"rel":"icon","href":"/favicon.ico"}],["$","$L1c","19",{}]]
